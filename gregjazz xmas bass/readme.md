@@ -3,7 +3,7 @@ Original Kontakt library and samples by Gregjazz. This SFZ mapping was created b
 
 How to use: 
 1. Download Gregjazz Xmas Bass Samples http://www.gregjazz.com/upload/XmasBass.rar 
-2. place the .sfz file and the "Regions" folder in the same place where the "Samples" folder is located. 
+2. Download the Xmas_Bass_aria_sfz.zip and place the .sfz file and the "Regions" folder in the same place where the "Samples" folder of the  original Xmas Bass library is located. 
 3. Load in Sforzando
 
 
