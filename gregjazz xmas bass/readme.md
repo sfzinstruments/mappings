@@ -2,7 +2,7 @@ SFZ mapping of Gregjazz' Xmas Bass for use with Sforzando.
 Original Kontakt library and samples by Gregjazz. This SFZ mapping was created by kinwie. Optimized for Sforzando. 
 
 How to use: 
-1. Download [Gregjazz Xmas Bass Samples] (http://www.gregjazz.com/upload/XmasBass.rar) 
+1. Download Gregjazz Xmas Bass Samples http://www.gregjazz.com/upload/XmasBass.rar 
 2. place the .sfz file and the "Regions" folder in the same place where the "Samples" folder is located. 
 3. Load in Sforzando
 
