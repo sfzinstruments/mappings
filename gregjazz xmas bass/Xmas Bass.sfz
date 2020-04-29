@@ -1,0 +1,144 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Xmas Bass
+// by Gregjazz
+// --------------------------------------
+// reprogrammed by kinwie
+// --------------------------------------
+
+<control>
+default_path=samples/
+
+label_cc73=attack (73)
+label_cc70=hold (70)
+label_cc75=decay (75)
+label_cc79=sustain (79)
+label_cc72=release (72)
+label_cc74=cutoff (74)
+label_cc71=resonance (71)
+label_cc68=legato (68)
+label_cc11=expression (11)
+label_cc99=veltrack (99)
+label_cc76=vibrato rate (76)
+label_cc1=vibrato (MW)
+label_cc67=rel on/off (67)
+
+set_hdcc72=0.0142
+set_hdcc79=1
+set_hdcc74=1
+set_hdcc11=1
+set_hdcc76=0.5
+set_hdcc67=1
+set_hdcc99=0.593
+
+
+//****************************************
+<global>
+loop_mode=no_loop
+cutoff=21.533203125
+cutoff_oncc74=12000
+resonance_oncc71=48
+amplitude_oncc11=100
+ampeg_hold_oncc70=10
+ampeg_decay_oncc75=50
+ampeg_sustain=0
+ampeg_sustain_oncc79=100
+ampeg_release_oncc72=5
+pitchlfo_freq_oncc76=10
+pitchlfo_depth_oncc1=50
+bend_up=1200
+bend_down=-1200
+amp_keycenter=26
+amp_keytrack=-0.222
+amp_veltrack=0
+amp_veltrack_oncc99=100
+seq_length=2
+off_mode=time
+off_time=0.01
+off_shape=0
+
+//==============================
+<master> master_label=attack
+trigger=attack
+group=1
+off_by=2
+ampeg_attack_oncc73=5
+<group> seq_position=1 group_label=index #include "region/index.txt"
+<group> seq_position=2 group_label=middle #include "region/middle.txt"
+
+<master> master_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset=10000
+offset_random=10000
+ampeg_attack=0.005
+locc68=1
+<group> seq_position=1 group_label=index #include "region/index.txt"
+<group> seq_position=2 group_label=middle #include "region/middle.txt"
+
+
+
+//****************************************
+<global>
+loop_mode=no_loop
+cutoff=21.533203125
+cutoff_oncc74=12000
+resonance_oncc71=48
+amplitude_oncc11=100
+
+
+//==============================
+<master> master_label=release
+trigger=release
+ampeg_release=0.029
+amp_veltrack=69.5
+seq_length=2
+rt_decay=8.5
+group_volume=-8
+locc67=1
+
+<group>
+seq_position=1
+group_label=index
+#include "region/index rel.txt"
+
+<group>
+seq_position=2
+group_label=middle
+#include "region/middle rel.txt"
+
+
+//==============================
+<master> master_label=mute
+ampeg_release=0.071
+amp_veltrack=59.3
+seq_length=2
+
+<group>
+seq_position=1
+group_label=index
+#include "region/index mute.txt"
+
+<group>
+seq_position=2
+group_label=middle
+#include "region/middle mute.txt"
+
+
+//==============================
+<master> master_label=effect
+amp_veltrack=0
+group_volume=-6
+
+<group>
+group_label=slide
+#include "region/slide.txt"
+
+<group>
+key=21
+group=3
+off_by=3
+group_label=slap
+#include "region/slap.txt"
