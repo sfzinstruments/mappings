@@ -1,8 +1,8 @@
-SFZ mapping of PastToFuture Samples Motown Drums Vol. 6 (https://gumroad.com/pasttofuturesamples) for use with Sforzando. Original Kontakt library and samples by PastToFuture Samples. This additional SFZ mapping was created by kinwie. Optimized for Sforzando.
+SFZ mapping of PastToFuture Samples Motown Drums Vol. 6 for use with Sforzando. Original Kontakt library and samples by PastToFuture Samples. This additional SFZ mapping was created by kinwie. Optimized for Sforzando.
 
 How to use:
 
-1. Download the library
+1. Download the Motown Drums Vol 6 library from PastToFuture Samples: https://gumroad.com/pasttofuturesamples
 2. place the .sfz mapping in the same place where the samples folder is located
 3. Load in Sforzando
 
