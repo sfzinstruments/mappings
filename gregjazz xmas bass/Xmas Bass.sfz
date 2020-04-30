@@ -1,0 +1,305 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Xmas Bass
+// by Gregjazz
+// --------------------------------------
+// reprogrammed by kinwie
+// --------------------------------------
+
+<control>
+default_path=samples/
+
+label_cc73=attack (73)
+label_cc70=hold (70)
+label_cc75=decay (75)
+label_cc79=sustain (79)
+label_cc72=release (72)
+label_cc74=cutoff (74)
+label_cc71=resonance (71)
+label_cc68=legato (68)
+label_cc11=expression (11)
+label_cc99=veltrack (99)
+label_cc76=vibrato rate (76)
+label_cc1=vibrato (MW)
+label_cc67=rel on/off (67)
+
+set_hdcc72=0.0142
+set_hdcc79=1
+set_hdcc74=1
+set_hdcc11=1
+set_hdcc76=0.5
+set_hdcc67=1
+set_hdcc99=0.593
+
+
+//****************************************
+<global>
+loop_mode=no_loop
+cutoff=21.533203125
+cutoff_oncc74=12000
+resonance_oncc71=48
+amplitude_oncc11=100
+ampeg_hold_oncc70=10
+ampeg_decay_oncc75=50
+ampeg_sustain=0
+ampeg_sustain_oncc79=100
+ampeg_release_oncc72=5
+pitchlfo_freq_oncc76=10
+pitchlfo_depth_oncc1=50
+bend_up=1200
+bend_down=-1200
+amp_keycenter=26
+amp_keytrack=-0.222
+amp_veltrack=0
+amp_veltrack_oncc99=100
+seq_length=2
+off_mode=time
+off_time=0.01
+off_shape=0
+
+//==============================
+<master> master_label=attack
+trigger=attack
+group=1
+off_by=2
+ampeg_attack_oncc73=5
+
+<group> seq_position=1 group_label=index
+<region> lokey=26 hikey=28 pitch_keycenter=28 sample=index E2.wav region_label=E2
+<region> lokey=29 hikey=30 pitch_keycenter=30 sample=index F#2.wav region_label=F#2
+<region> lokey=31 hikey=32 pitch_keycenter=32 sample=index G#2.wav region_label=G#2
+<region> lokey=33 hikey=34 pitch_keycenter=33 sample=index A2.wav region_label=A2
+<region> lokey=35 hikey=36 pitch_keycenter=35 sample=index B2.wav region_label=B2
+<region> lokey=37 hikey=37 pitch_keycenter=37 sample=index C#3.wav region_label=C#3
+<region> lokey=38 hikey=39 pitch_keycenter=38 sample=index D3.wav region_label=D3
+<region> lokey=40 hikey=41 pitch_keycenter=40 sample=index E3.wav region_label=E3
+<region> lokey=42 hikey=42 pitch_keycenter=42 sample=index F#3.wav region_label=F#3
+<region> lokey=43 hikey=44 pitch_keycenter=43 sample=index G3.wav region_label=G3
+<region> lokey=45 hikey=46 pitch_keycenter=45 sample=index A3.wav region_label=A3
+<region> lokey=47 hikey=48 pitch_keycenter=47 sample=index B3.wav region_label=B3
+<region> lokey=49 hikey=49 pitch_keycenter=49 sample=index C#4.wav region_label=C#4
+<region> lokey=50 hikey=51 pitch_keycenter=50 sample=index D4.wav region_label=D4
+<region> lokey=52 hikey=53 pitch_keycenter=52 sample=index E4.wav region_label=E4
+<region> lokey=54 hikey=54 pitch_keycenter=54 sample=index F#4.wav region_label=F#4
+<region> lokey=55 hikey=56 pitch_keycenter=55 sample=index G4.wav region_label=G4
+<region> lokey=57 hikey=58 pitch_keycenter=57 sample=index A4.wav region_label=A4
+<region> lokey=59 hikey=60 pitch_keycenter=59 sample=index B4.wav region_label=B4
+<region> lokey=61 hikey=61 pitch_keycenter=61 sample=index C#5.wav region_label=C#5
+<region> lokey=62 hikey=63 pitch_keycenter=62 sample=index D5.wav region_label=D5
+<region> lokey=64 hikey=65 pitch_keycenter=64 sample=index E5.wav region_label=E5
+<region> lokey=66 hikey=66 pitch_keycenter=66 sample=index F#5.wav region_label=F#5
+<region> lokey=67 hikey=67 pitch_keycenter=67 sample=index G5.wav region_label=G5
+
+<group> seq_position=2 group_label=middle
+<region> lokey=26 hikey=28 pitch_keycenter=28 sample=middle E2.wav region_label=E2
+<region> lokey=29 hikey=30 pitch_keycenter=30 sample=middle F#2.wav region_label=F#2
+<region> lokey=31 hikey=32 pitch_keycenter=32 sample=middle G#2.wav region_label=G#2
+<region> lokey=33 hikey=34 pitch_keycenter=33 sample=middle A2.wav region_label=A2
+<region> lokey=35 hikey=36 pitch_keycenter=35 sample=middle B2.wav region_label=B2
+<region> lokey=37 hikey=37 pitch_keycenter=37 sample=middle C#3.wav region_label=C#3
+<region> lokey=38 hikey=39 pitch_keycenter=38 sample=middle D3.wav region_label=D3
+<region> lokey=40 hikey=41 pitch_keycenter=40 sample=middle E3.wav region_label=E3
+<region> lokey=42 hikey=42 pitch_keycenter=42 sample=middle F#3.wav region_label=F#3
+<region> lokey=43 hikey=44 pitch_keycenter=43 sample=middle G3.wav region_label=G3
+<region> lokey=45 hikey=46 pitch_keycenter=45 sample=middle A3.wav region_label=A3
+<region> lokey=47 hikey=48 pitch_keycenter=47 sample=middle B3.wav region_label=B3
+<region> lokey=49 hikey=49 pitch_keycenter=49 sample=middle C#4.wav region_label=C#4
+<region> lokey=50 hikey=51 pitch_keycenter=50 sample=middle D4.wav region_label=D4
+<region> lokey=52 hikey=53 pitch_keycenter=52 sample=middle E4.wav region_label=E4
+<region> lokey=54 hikey=54 pitch_keycenter=54 sample=middle F#4.wav region_label=F#4
+<region> lokey=55 hikey=56 pitch_keycenter=55 sample=middle G4.wav region_label=G4
+<region> lokey=57 hikey=58 pitch_keycenter=57 sample=middle A4.wav region_label=A4
+<region> lokey=59 hikey=60 pitch_keycenter=59 sample=middle B4.wav region_label=B4
+<region> lokey=61 hikey=61 pitch_keycenter=61 sample=middle C#5.wav region_label=C#5
+<region> lokey=62 hikey=63 pitch_keycenter=62 sample=middle D5.wav region_label=D5
+<region> lokey=64 hikey=65 pitch_keycenter=64 sample=middle E5.wav region_label=E5
+<region> lokey=66 hikey=66 pitch_keycenter=66 sample=middle F#5.wav region_label=F#5
+<region> lokey=67 hikey=67 pitch_keycenter=67 sample=middle G5.wav region_label=G5
+
+
+<master> master_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset=10000
+offset_random=10000
+ampeg_attack=0.005
+locc68=1
+
+<group> seq_position=1 group_label=index
+<region> lokey=26 hikey=28 pitch_keycenter=28 sample=index E2.wav region_label=E2
+<region> lokey=29 hikey=30 pitch_keycenter=30 sample=index F#2.wav region_label=F#2
+<region> lokey=31 hikey=32 pitch_keycenter=32 sample=index G#2.wav region_label=G#2
+<region> lokey=33 hikey=34 pitch_keycenter=33 sample=index A2.wav region_label=A2
+<region> lokey=35 hikey=36 pitch_keycenter=35 sample=index B2.wav region_label=B2
+<region> lokey=37 hikey=37 pitch_keycenter=37 sample=index C#3.wav region_label=C#3
+<region> lokey=38 hikey=39 pitch_keycenter=38 sample=index D3.wav region_label=D3
+<region> lokey=40 hikey=41 pitch_keycenter=40 sample=index E3.wav region_label=E3
+<region> lokey=42 hikey=42 pitch_keycenter=42 sample=index F#3.wav region_label=F#3
+<region> lokey=43 hikey=44 pitch_keycenter=43 sample=index G3.wav region_label=G3
+<region> lokey=45 hikey=46 pitch_keycenter=45 sample=index A3.wav region_label=A3
+<region> lokey=47 hikey=48 pitch_keycenter=47 sample=index B3.wav region_label=B3
+<region> lokey=49 hikey=49 pitch_keycenter=49 sample=index C#4.wav region_label=C#4
+<region> lokey=50 hikey=51 pitch_keycenter=50 sample=index D4.wav region_label=D4
+<region> lokey=52 hikey=53 pitch_keycenter=52 sample=index E4.wav region_label=E4
+<region> lokey=54 hikey=54 pitch_keycenter=54 sample=index F#4.wav region_label=F#4
+<region> lokey=55 hikey=56 pitch_keycenter=55 sample=index G4.wav region_label=G4
+<region> lokey=57 hikey=58 pitch_keycenter=57 sample=index A4.wav region_label=A4
+<region> lokey=59 hikey=60 pitch_keycenter=59 sample=index B4.wav region_label=B4
+<region> lokey=61 hikey=61 pitch_keycenter=61 sample=index C#5.wav region_label=C#5
+<region> lokey=62 hikey=63 pitch_keycenter=62 sample=index D5.wav region_label=D5
+<region> lokey=64 hikey=65 pitch_keycenter=64 sample=index E5.wav region_label=E5
+<region> lokey=66 hikey=66 pitch_keycenter=66 sample=index F#5.wav region_label=F#5
+<region> lokey=67 hikey=67 pitch_keycenter=67 sample=index G5.wav region_label=G5
+
+<group> seq_position=2 group_label=middle
+<region> lokey=26 hikey=28 pitch_keycenter=28 sample=middle E2.wav region_label=E2
+<region> lokey=29 hikey=30 pitch_keycenter=30 sample=middle F#2.wav region_label=F#2
+<region> lokey=31 hikey=32 pitch_keycenter=32 sample=middle G#2.wav region_label=G#2
+<region> lokey=33 hikey=34 pitch_keycenter=33 sample=middle A2.wav region_label=A2
+<region> lokey=35 hikey=36 pitch_keycenter=35 sample=middle B2.wav region_label=B2
+<region> lokey=37 hikey=37 pitch_keycenter=37 sample=middle C#3.wav region_label=C#3
+<region> lokey=38 hikey=39 pitch_keycenter=38 sample=middle D3.wav region_label=D3
+<region> lokey=40 hikey=41 pitch_keycenter=40 sample=middle E3.wav region_label=E3
+<region> lokey=42 hikey=42 pitch_keycenter=42 sample=middle F#3.wav region_label=F#3
+<region> lokey=43 hikey=44 pitch_keycenter=43 sample=middle G3.wav region_label=G3
+<region> lokey=45 hikey=46 pitch_keycenter=45 sample=middle A3.wav region_label=A3
+<region> lokey=47 hikey=48 pitch_keycenter=47 sample=middle B3.wav region_label=B3
+<region> lokey=49 hikey=49 pitch_keycenter=49 sample=middle C#4.wav region_label=C#4
+<region> lokey=50 hikey=51 pitch_keycenter=50 sample=middle D4.wav region_label=D4
+<region> lokey=52 hikey=53 pitch_keycenter=52 sample=middle E4.wav region_label=E4
+<region> lokey=54 hikey=54 pitch_keycenter=54 sample=middle F#4.wav region_label=F#4
+<region> lokey=55 hikey=56 pitch_keycenter=55 sample=middle G4.wav region_label=G4
+<region> lokey=57 hikey=58 pitch_keycenter=57 sample=middle A4.wav region_label=A4
+<region> lokey=59 hikey=60 pitch_keycenter=59 sample=middle B4.wav region_label=B4
+<region> lokey=61 hikey=61 pitch_keycenter=61 sample=middle C#5.wav region_label=C#5
+<region> lokey=62 hikey=63 pitch_keycenter=62 sample=middle D5.wav region_label=D5
+<region> lokey=64 hikey=65 pitch_keycenter=64 sample=middle E5.wav region_label=E5
+<region> lokey=66 hikey=66 pitch_keycenter=66 sample=middle F#5.wav region_label=F#5
+<region> lokey=67 hikey=67 pitch_keycenter=67 sample=middle G5.wav region_label=G5
+
+
+//****************************************
+<global>
+loop_mode=no_loop
+cutoff=21.533203125
+cutoff_oncc74=12000
+resonance_oncc71=48
+amplitude_oncc11=100
+
+
+//==============================
+<master> master_label=release
+trigger=release
+ampeg_release=0.029
+amp_veltrack=69.5
+seq_length=2
+rt_decay=8.5
+group_volume=-8
+locc67=1
+
+<group>
+seq_position=1
+group_label=index
+<region> lokey=26 hikey=28 pitch_keycenter=28 sample=index E2 rel.wav region_label=E2 volume=2.8
+<region> lokey=29 hikey=30 pitch_keycenter=30 sample=index F#2 rel.wav region_label=F#2 volume=5.6
+<region> lokey=31 hikey=32 pitch_keycenter=32 sample=index G#2 rel.wav region_label=G#2
+<region> lokey=33 hikey=34 pitch_keycenter=33 sample=index A2 rel.wav region_label=A2 volume=-4
+<region> lokey=35 hikey=36 pitch_keycenter=35 sample=index B2 rel.wav region_label=B2 volume=-6.8
+<region> lokey=37 hikey=37 pitch_keycenter=37 sample=index C#3 rel.wav region_label=C#3
+<region> lokey=38 hikey=39 pitch_keycenter=38 sample=index D3 rel.wav region_label=D3
+<region> lokey=40 hikey=41 pitch_keycenter=40 sample=index E3 rel.wav region_label=E3
+<region> lokey=42 hikey=42 pitch_keycenter=42 sample=index F#3 rel.wav region_label=F#3
+<region> lokey=43 hikey=44 pitch_keycenter=43 sample=index G3 rel.wav region_label=G3
+<region> lokey=45 hikey=46 pitch_keycenter=45 sample=index A3 rel.wav region_label=A3
+<region> lokey=47 hikey=48 pitch_keycenter=47 sample=index B3 rel.wav region_label=B3
+<region> lokey=49 hikey=49 pitch_keycenter=49 sample=index C#4 rel.wav region_label=C#4
+<region> lokey=50 hikey=51 pitch_keycenter=50 sample=index D4 rel.wav region_label=D4
+<region> lokey=52 hikey=53 pitch_keycenter=52 sample=index E4 rel.wav region_label=E4
+<region> lokey=54 hikey=54 pitch_keycenter=54 sample=index F#4 rel.wav region_label=F#4
+<region> lokey=55 hikey=56 pitch_keycenter=55 sample=index G4 rel.wav region_label=G4
+<region> lokey=57 hikey=58 pitch_keycenter=57 sample=index A4 rel.wav region_label=A4
+<region> lokey=59 hikey=60 pitch_keycenter=59 sample=index B4 rel.wav region_label=B4
+<region> lokey=61 hikey=61 pitch_keycenter=61 sample=index C#5 rel.wav region_label=C#5
+<region> lokey=62 hikey=63 pitch_keycenter=62 sample=index D5 rel.wav region_label=D5
+<region> lokey=64 hikey=65 pitch_keycenter=64 sample=index E5 rel.wav region_label=E5
+<region> lokey=66 hikey=66 pitch_keycenter=66 sample=index F#5 rel.wav region_label=F#5
+<region> lokey=67 hikey=67 pitch_keycenter=67 sample=index G5 rel.wav region_label=G5
+
+<group>
+seq_position=2
+group_label=middle
+<region> lokey=26 hikey=28 pitch_keycenter=28 sample=middle E2 rel.wav region_label=E2 volume=6.2
+<region> lokey=29 hikey=30 pitch_keycenter=30 sample=middle F#2 rel.wav region_label=F#2 volume=-5.8
+<region> lokey=31 hikey=32 pitch_keycenter=32 sample=middle G#2 rel.wav region_label=G#2
+<region> lokey=33 hikey=34 pitch_keycenter=33 sample=middle A2 rel.wav region_label=A2 volume=2
+<region> lokey=35 hikey=36 pitch_keycenter=35 sample=middle B2 rel.wav region_label=B2
+<region> lokey=37 hikey=37 pitch_keycenter=37 sample=middle C#3 rel.wav region_label=C#3
+<region> lokey=38 hikey=39 pitch_keycenter=38 sample=middle D3 rel.wav region_label=D3
+<region> lokey=40 hikey=41 pitch_keycenter=40 sample=middle E3 rel.wav region_label=E3
+<region> lokey=42 hikey=42 pitch_keycenter=42 sample=middle F#3 rel.wav region_label=F#3
+<region> lokey=43 hikey=44 pitch_keycenter=43 sample=middle G3 rel.wav region_label=G3
+<region> lokey=45 hikey=46 pitch_keycenter=45 sample=middle A3 rel.wav region_label=A3
+<region> lokey=47 hikey=48 pitch_keycenter=47 sample=middle B3 rel.wav region_label=B3
+<region> lokey=49 hikey=49 pitch_keycenter=49 sample=middle C#4 rel.wav region_label=C#4
+<region> lokey=50 hikey=51 pitch_keycenter=50 sample=middle D4 rel.wav region_label=D4
+<region> lokey=52 hikey=53 pitch_keycenter=52 sample=middle E4 rel.wav region_label=E4
+<region> lokey=54 hikey=54 pitch_keycenter=54 sample=middle F#4 rel.wav region_label=F#4
+<region> lokey=55 hikey=56 pitch_keycenter=55 sample=middle G4 rel.wav region_label=G4
+<region> lokey=57 hikey=58 pitch_keycenter=57 sample=middle A4 rel.wav region_label=A4
+<region> lokey=59 hikey=60 pitch_keycenter=59 sample=middle B4 rel.wav region_label=B4
+<region> lokey=61 hikey=61 pitch_keycenter=61 sample=middle C#5 rel.wav region_label=C#5
+<region> lokey=62 hikey=63 pitch_keycenter=62 sample=middle D5 rel.wav region_label=D5
+<region> lokey=64 hikey=65 pitch_keycenter=64 sample=middle E5 rel.wav region_label=E5
+<region> lokey=66 hikey=66 pitch_keycenter=66 sample=middle F#5 rel.wav region_label=F#5
+<region> lokey=67 hikey=67 pitch_keycenter=67 sample=middle G5 rel.wav region_label=G5
+
+
+//==============================
+<master> master_label=mute
+ampeg_release=0.071
+amp_veltrack=59.3
+seq_length=2
+
+<group>
+seq_position=1
+group_label=index
+<region> key=22 sample=index mute E.wav region_label=E
+<region> key=23 sample=index mute A.wav region_label=A
+<region> key=24 sample=index mute D.wav region_label=D
+<region> key=25 sample=index mute G.wav region_label=G
+
+<group>
+seq_position=2
+group_label=middle
+<region> key=22 sample=middle mute E.wav region_label=E
+<region> key=23 sample=middle mute A.wav region_label=A
+<region> key=24 sample=middle mute D.wav region_label=D
+<region> key=25 sample=middle mute G.wav region_label=G
+
+
+//==============================
+<master> master_label=effect
+amp_veltrack=0
+group_volume=-6
+
+<group>
+group_label=slide
+<region> key=14 sample=slide 7.wav region_label=7
+<region> key=15 sample=slide 6.wav region_label=6
+<region> key=16 sample=slide 5.wav region_label=5
+<region> key=17 sample=slide 4.wav region_label=4
+<region> key=18 sample=slide 3.wav region_label=3
+<region> key=19 sample=slide 2.wav region_label=2
+<region> key=20 sample=slide 1.wav region_label=1
+
+<group>
+key=21
+group=3
+off_by=3
+group_label=slap
+<region> sample=slap 1.wav region_label=1 lorand=0.00 hirand=0.25
+<region> sample=slap 2.wav region_label=2 lorand=0.25 hirand=0.50
+<region> sample=slap 3.wav region_label=3 lorand=0.50 hirand=0.75
+<region> sample=slap 4.wav region_label=4 lorand=0.75 hirand=1.00
