@@ -1,13 +1,19 @@
 SFZ mapping for Drumdrops 60s Rogers Pop Kit (Single Hits Pack). Use this mapping with Sforzando. Original Kontakt library, mapping and samples by Drumdrops.
 This SFZ mapping was created by kinwie. 
 
-How to use:
+### How to use
 
 *There is an illegal character (for Win OS) in the sample folder name, so change it to :
 Paiste 602 20 Inch Ride*
 
 Download the .sfz mapping and place it next to (not into) the "samples" folder of the original library.
 Load in Sforzando
+
+### Some features
+
+- Using keyswitch to select snare
+- User can easily change key mapping, global velocity mapping and MIDI CC in the sfz file (the most top defines) via sforzando "Open In Text Editor" button
+- Added ride and crash mute keys (60 and 61)
 
 
 
