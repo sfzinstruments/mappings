@@ -1,0 +1,1965 @@
+<group>
+volume=-16
+ampeg_attack=1.667
+ampeg_decay=25
+ampeg_release=0.011
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\Main 2.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 4.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 6.wav
+lokey=51
+hikey=52
+pitch_keycenter=52
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 9.wav
+lokey=53
+hikey=55
+pitch_keycenter=55
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 18.wav
+lokey=63
+hikey=64
+pitch_keycenter=64
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 21.wav
+lokey=65
+hikey=67
+pitch_keycenter=67
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 30.wav
+lokey=75
+hikey=76
+pitch_keycenter=76
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 33.wav
+lokey=77
+hikey=79
+pitch_keycenter=79
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 42.wav
+lokey=87
+hikey=88
+pitch_keycenter=88
+lovel=1
+hivel=127
+
+<region> sample=Samples\Bridge Neck\Main 45.wav
+lokey=89
+hikey=91
+pitch_keycenter=91
+lovel=1
+hivel=127
+
+
+<group>
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L1A_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_06.wav
+lokey=51
+hikey=52
+pitch_keycenter=52
+lovel=1
+hivel=75
+volume=3.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_09.wav
+lokey=53
+hikey=55
+pitch_keycenter=55
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=1
+hivel=75
+volume=1
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_18.wav
+lokey=63
+hikey=64
+pitch_keycenter=64
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_21.wav
+lokey=65
+hikey=67
+pitch_keycenter=67
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_30.wav
+lokey=75
+hikey=76
+pitch_keycenter=76
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_33.wav
+lokey=77
+hikey=79
+pitch_keycenter=79
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_42.wav
+lokey=87
+hikey=88
+pitch_keycenter=88
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1A_45.wav
+lokey=89
+hikey=91
+pitch_keycenter=91
+lovel=1
+hivel=75
+volume=6.8
+seq_position=1
+
+
+<group>
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L1B_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_06.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_09.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=1
+hivel=75
+volume=4
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_11.wav
+lokey=56
+hikey=58
+pitch_keycenter=57
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_14.wav
+lokey=59
+hikey=60
+pitch_keycenter=60
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_18.wav
+lokey=63
+hikey=65
+pitch_keycenter=64
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_21.wav
+lokey=66
+hikey=67
+pitch_keycenter=67
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_30.wav
+lokey=75
+hikey=76
+pitch_keycenter=76
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_33.wav
+lokey=77
+hikey=79
+pitch_keycenter=79
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_42.wav
+lokey=87
+hikey=88
+pitch_keycenter=88
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1B_45.wav
+lokey=89
+hikey=91
+pitch_keycenter=91
+lovel=1
+hivel=75
+volume=6.8
+seq_position=2
+
+
+<group>
+ampeg_attack=0.006
+ampeg_decay=0.75
+ampeg_sustain=25
+ampeg_release=0.042
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L1C_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_06.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=76
+hivel=100
+volume=2.2
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_09.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=76
+hivel=100
+volume=2
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_11.wav
+lokey=56
+hikey=58
+pitch_keycenter=57
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_14.wav
+lokey=59
+hikey=60
+pitch_keycenter=60
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_18.wav
+lokey=63
+hikey=64
+pitch_keycenter=64
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_21.wav
+lokey=65
+hikey=67
+pitch_keycenter=67
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=76
+hivel=100
+volume=3
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=76
+hivel=100
+volume=8.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_30.wav
+lokey=75
+hikey=76
+pitch_keycenter=76
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_33.wav
+lokey=77
+hikey=79
+pitch_keycenter=79
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_42.wav
+lokey=87
+hikey=88
+pitch_keycenter=88
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L1C_45.wav
+lokey=89
+hikey=91
+pitch_keycenter=91
+lovel=76
+hivel=100
+volume=6.8
+seq_position=1
+
+
+<group>
+ampeg_attack=0.006
+ampeg_decay=0.75
+ampeg_sustain=25
+ampeg_release=0.042
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L1D_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_06.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=76
+hivel=100
+volume=4
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_09.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_18.wav
+lokey=63
+hikey=64
+pitch_keycenter=64
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_21.wav
+lokey=65
+hikey=67
+pitch_keycenter=67
+lovel=76
+hivel=100
+volume=-2
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_30.wav
+lokey=75
+hikey=76
+pitch_keycenter=76
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_33.wav
+lokey=77
+hikey=79
+pitch_keycenter=79
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_35.wav
+lokey=80
+hikey=82
+pitch_keycenter=81
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_38.wav
+lokey=83
+hikey=84
+pitch_keycenter=84
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_42.wav
+lokey=87
+hikey=88
+pitch_keycenter=88
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L1D_45.wav
+lokey=89
+hikey=91
+pitch_keycenter=91
+lovel=76
+hivel=100
+volume=6.8
+seq_position=2
+
+
+<group>
+volume=-14.4
+ampeg_attack=0.006
+ampeg_decay=0.75
+ampeg_sustain=25
+ampeg_release=0.042
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L5A_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_06.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_09.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_18.wav
+lokey=63
+hikey=65
+pitch_keycenter=64
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_21.wav
+lokey=66
+hikey=67
+pitch_keycenter=67
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_30.wav
+lokey=75
+hikey=77
+pitch_keycenter=76
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_33.wav
+lokey=78
+hikey=79
+pitch_keycenter=79
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_42.wav
+lokey=87
+hikey=89
+pitch_keycenter=88
+lovel=101
+hivel=123
+seq_position=1
+
+<region> sample=Samples\Bridge Neck\BD_L5A_45.wav
+lokey=90
+hikey=91
+pitch_keycenter=91
+lovel=101
+hivel=123
+seq_position=1
+
+
+<group>
+volume=-14.4
+ampeg_attack=0.006
+ampeg_decay=0.75
+ampeg_sustain=25
+ampeg_release=0.042
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L5B_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_06.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_09.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_18.wav
+lokey=63
+hikey=65
+pitch_keycenter=64
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_21.wav
+lokey=66
+hikey=67
+pitch_keycenter=67
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_30.wav
+lokey=75
+hikey=77
+pitch_keycenter=76
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_33.wav
+lokey=78
+hikey=79
+pitch_keycenter=79
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_42.wav
+lokey=87
+hikey=89
+pitch_keycenter=88
+lovel=101
+hivel=123
+seq_position=2
+
+<region> sample=Samples\Bridge Neck\BD_L5B_45.wav
+lokey=90
+hikey=91
+pitch_keycenter=91
+lovel=101
+hivel=123
+seq_position=2
+
+
+<group>
+volume=-12.8
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\BD_L5C_02.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_04.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_06.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_09.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_18.wav
+lokey=63
+hikey=65
+pitch_keycenter=64
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_21.wav
+lokey=66
+hikey=67
+pitch_keycenter=67
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_30.wav
+lokey=75
+hikey=77
+pitch_keycenter=76
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_33.wav
+lokey=78
+hikey=79
+pitch_keycenter=79
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_42.wav
+lokey=87
+hikey=89
+pitch_keycenter=88
+lovel=124
+hivel=127
+sw_last=36
+
+<region> sample=Samples\Bridge Neck\BD_L5C_45.wav
+lokey=90
+hikey=91
+pitch_keycenter=91
+lovel=124
+hivel=127
+sw_last=36
+
+
+<group>
+volume=-16
+ampeg_attack=1.697
+ampeg_decay=25
+ampeg_release=0.011
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\Main 2.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 4.wav
+lokey=49
+hikey=50
+pitch_keycenter=50
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 6.wav
+lokey=51
+hikey=52
+pitch_keycenter=52
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 9.wav
+lokey=53
+hikey=55
+pitch_keycenter=55
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 11.wav
+lokey=56
+hikey=57
+pitch_keycenter=57
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 14.wav
+lokey=58
+hikey=60
+pitch_keycenter=60
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 16.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 18.wav
+lokey=63
+hikey=64
+pitch_keycenter=64
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 21.wav
+lokey=65
+hikey=67
+pitch_keycenter=67
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 23.wav
+lokey=68
+hikey=69
+pitch_keycenter=69
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 26.wav
+lokey=70
+hikey=72
+pitch_keycenter=72
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 28.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 30.wav
+lokey=75
+hikey=76
+pitch_keycenter=76
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 33.wav
+lokey=77
+hikey=79
+pitch_keycenter=79
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 35.wav
+lokey=80
+hikey=81
+pitch_keycenter=81
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 38.wav
+lokey=82
+hikey=84
+pitch_keycenter=84
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 40.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 42.wav
+lokey=87
+hikey=88
+pitch_keycenter=88
+lovel=1
+hivel=123
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\Main 45.wav
+lokey=89
+hikey=91
+pitch_keycenter=91
+lovel=1
+hivel=123
+sw_last=39
+
+
+<group>
+volume=-12
+ampeg_attack=0.001
+ampeg_decay=25
+ampeg_release=0.06
+sw_lokey=36
+sw_hikey=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_01.wav
+lokey=47
+hikey=49
+pitch_keycenter=49
+lovel=124
+hivel=127
+offset=1008
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_02.wav
+key=50
+lovel=124
+hivel=127
+offset=1986
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_04.wav
+lokey=51
+hikey=53
+pitch_keycenter=52
+lovel=124
+hivel=127
+offset=972
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_07.wav
+lokey=54
+hikey=55
+pitch_keycenter=55
+lovel=124
+hivel=127
+offset=260
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_09.wav
+lokey=56
+hikey=58
+pitch_keycenter=57
+lovel=124
+hivel=127
+offset=2020
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_12.wav
+lokey=59
+hikey=60
+pitch_keycenter=60
+lovel=124
+hivel=127
+offset=1320
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_14.wav
+lokey=61
+hikey=62
+pitch_keycenter=62
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_16.wav
+lokey=63
+hikey=65
+pitch_keycenter=64
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_19.wav
+lokey=66
+hikey=67
+pitch_keycenter=67
+lovel=124
+hivel=127
+offset=450
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_21.wav
+lokey=68
+hikey=70
+pitch_keycenter=69
+lovel=124
+hivel=127
+offset=473
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_24.wav
+lokey=71
+hikey=72
+pitch_keycenter=72
+lovel=124
+hivel=127
+offset=725
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_26.wav
+lokey=73
+hikey=74
+pitch_keycenter=74
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_28.wav
+lokey=75
+hikey=77
+pitch_keycenter=76
+lovel=124
+hivel=127
+offset=225
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_31.wav
+lokey=78
+hikey=79
+pitch_keycenter=79
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_33.wav
+lokey=80
+hikey=82
+pitch_keycenter=81
+lovel=124
+hivel=127
+tune=10
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_36.wav
+lokey=83
+hikey=84
+pitch_keycenter=84
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_38.wav
+lokey=85
+hikey=86
+pitch_keycenter=86
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_40.wav
+lokey=87
+hikey=89
+pitch_keycenter=88
+lovel=124
+hivel=127
+sw_last=39
+
+<region> sample=Samples\Bridge Neck\DB_HamON_B+N_42.wav
+lokey=90
+hikey=91
+pitch_keycenter=90
+lovel=124
+hivel=127
+tune=-5
+sw_last=39
+
+
+<region> sample=Samples\releases\Rel_01.wav
+lokey=47
+hikey=48
+pitch_keycenter=48
+lovel=1
+hivel=127
+volume=-6
+trigger=release
+
+<region> sample=Samples\releases\Rel_02.wav
+key=49
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_03.wav
+key=50
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_04.wav
+key=51
+lovel=1
+hivel=127
+volume=-1.8
+trigger=release
+
+<region> sample=Samples\releases\Rel_05.wav
+key=52
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_06.wav
+key=53
+lovel=1
+hivel=127
+volume=4
+trigger=release
+
+<region> sample=Samples\releases\Rel_07.wav
+key=54
+lovel=1
+hivel=127
+volume=-4
+trigger=release
+
+<region> sample=Samples\releases\Rel_08.wav
+key=55
+lovel=1
+hivel=127
+volume=-6
+trigger=release
+
+<region> sample=Samples\releases\Rel_09.wav
+key=56
+lovel=1
+hivel=127
+volume=-6
+trigger=release
+
+<region> sample=Samples\releases\Rel_10.wav
+lokey=57
+hikey=58
+pitch_keycenter=57
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_12.wav
+key=59
+lovel=1
+hivel=127
+volume=10
+trigger=release
+
+<region> sample=Samples\releases\Rel_13.wav
+key=60
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_14.wav
+key=61
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_15.wav
+key=62
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_16.wav
+key=63
+lovel=1
+hivel=127
+volume=-3.2
+trigger=release
+
+<region> sample=Samples\releases\Rel_17.wav
+key=64
+lovel=1
+hivel=127
+volume=-6
+trigger=release
+
+<region> sample=Samples\releases\Rel_18.wav
+key=65
+lovel=1
+hivel=127
+volume=-8
+trigger=release
+
+<region> sample=Samples\releases\Rel_19.wav
+key=66
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_20.wav
+key=67
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_21.wav
+key=68
+lovel=1
+hivel=127
+volume=2
+trigger=release
+
+<region> sample=Samples\releases\Rel_22.wav
+key=69
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_23.wav
+key=70
+lovel=1
+hivel=127
+volume=3
+trigger=release
+
+<region> sample=Samples\releases\Rel_24.wav
+key=71
+lovel=1
+hivel=127
+trigger=release
+
+<region> sample=Samples\releases\Rel_25.wav
+key=72
+lovel=1
+hivel=127
+volume=1
+trigger=release
+
+<region> sample=Samples\releases\Rel_26.wav
+key=73
+lovel=1
+hivel=127
+volume=2
+trigger=release
+
+<region> sample=Samples\releases\Rel_27.wav
+key=74
+lovel=1
+hivel=127
+volume=4
+trigger=release
+
+<region> sample=Samples\releases\Rel_28.wav
+key=75
+lovel=1
+hivel=127
+volume=2
+trigger=release
+
+<region> sample=Samples\releases\Rel_29.wav
+key=76
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_30.wav
+key=77
+lovel=1
+hivel=127
+volume=2
+trigger=release
+
+<region> sample=Samples\releases\Rel_31.wav
+key=78
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_32.wav
+key=79
+lovel=1
+hivel=127
+trigger=release
+
+<region> sample=Samples\releases\Rel_33.wav
+key=80
+lovel=1
+hivel=127
+volume=-1
+trigger=release
+
+<region> sample=Samples\releases\Rel_34.wav
+key=81
+lovel=1
+hivel=127
+trigger=release
+
+<region> sample=Samples\releases\Rel_35.wav
+key=82
+lovel=1
+hivel=127
+volume=4
+trigger=release
+
+<region> sample=Samples\releases\Rel_36.wav
+key=83
+lovel=1
+hivel=127
+volume=9
+trigger=release
+
+<region> sample=Samples\releases\Rel_37.wav
+key=84
+lovel=1
+hivel=127
+volume=4
+trigger=release
+
+<region> sample=Samples\releases\Rel_38.wav
+key=85
+lovel=1
+hivel=127
+trigger=release
+
+<region> sample=Samples\releases\Rel_39.wav
+key=86
+lovel=1
+hivel=127
+volume=8
+trigger=release
+
+<region> sample=Samples\releases\Rel_40.wav
+key=87
+lovel=1
+hivel=127
+volume=3
+trigger=release
+
+<region> sample=Samples\releases\Rel_41.wav
+key=88
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_42.wav
+lokey=89
+hikey=90
+pitch_keycenter=89
+lovel=1
+hivel=127
+volume=-2
+trigger=release
+
+<region> sample=Samples\releases\Rel_43.wav
+key=91
+lovel=1
+hivel=127
+volume=7
+trigger=release
+
+
