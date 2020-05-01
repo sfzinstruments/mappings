@@ -3,8 +3,8 @@ This SFZ mapping was created by kinwie.
 
 How to use:
 
-(There is an illegal character (for Win OS) in the sample folder name, so change it to :
-Paiste 602 20 Inch Ride)
+*There is an illegal character (for Win OS) in the sample folder name, so change it to :
+Paiste 602 20 Inch Ride*
 
 Download the .sfz mapping and place it next to (not into) the "samples" folder of the original library.
 Load in Sforzando
