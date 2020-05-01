@@ -1,0 +1,486 @@
+//--------------------------------------
+// David's CP70
+// by Conner Sawchuk @pianobook
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $STEREO 98
+#define $VELTRACK 99
+
+
+////////////////////////////////////////////////////////////////
+<control>
+default_path=David's CP70 Samples/
+
+label_cc$RELEASE=Release ($RELEASE)
+label_cc$STEREO=Stereo ($STEREO)
+label_cc$VELTRACK=Veltrack ($VELTRACK)
+
+set_hdcc$RELEASE=0.14
+set_hdcc$STEREO=0
+set_hdcc$VELTRACK=1
+
+
+//===========================================================================
+<global>
+loop_mode=no_loop
+global_volume=-12
+ampeg_release_oncc$RELEASE=5
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+
+
+//--------------------------------------------------------------------------------------------------------------------
+<master>
+hicc$STEREO=0
+
+<group> group_label=01 pitch_keycenter=29 lokey=28 hikey=30
+<region> lovel=001 hivel=025 volume=37.6 region_label=V1 sample=F1 01.wav
+<region> lovel=026 hivel=050 volume=31.9 region_label=V2 sample=F1 02.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=22.4 region_label=V3 sample=F1 03.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=19.9 region_label=V4 sample=F1 04.wav
+<region> lovel=102 hivel=127 volume=11.7 region_label=V5 sample=F1 05.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=03 pitch_keycenter=34 lokey=34 hikey=35
+<region> lovel=001 hivel=021 volume=36.5 region_label=V1 sample=Bb1 06.wav offset=1856
+<region> lovel=022 hivel=042 volume=28.8 region_label=V2 sample=Bb1 07.wav
+<region> lovel=043 hivel=063 volume=26.9 region_label=V3 sample=Bb1 08.wav offset=1856 ampeg_attack=0.001
+<region> lovel=064 hivel=084 volume=21.1 region_label=V4 sample=Bb1 09.wav
+<region> lovel=085 hivel=105 volume=16.0 region_label=V5 sample=Bb1 10.wav
+<region> lovel=106 hivel=127 volume=12.4 region_label=V6 sample=Bb1 11.wav
+
+<group> group_label=05 pitch_keycenter=39 lokey=39 hikey=40
+<region> lovel=001 hivel=025 volume=40.8 region_label=V1 sample=Eb2 12.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=33.1 region_label=V2 sample=Eb2 13.wav
+<region> lovel=051 hivel=076 volume=27.5 region_label=V3 sample=Eb2 14.wav
+<region> lovel=077 hivel=101 volume=21.6 region_label=V4 sample=Eb2 15.wav
+<region> lovel=102 hivel=127 volume=14.7 region_label=V5 sample=Eb2 16.wav
+
+<group> group_label=07 pitch_keycenter=44 lokey=44 hikey=45
+<region> lovel=001 hivel=025 volume=50.8 region_label=V1 sample=Ab2 17.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=35.1 region_label=V2 sample=Ab2 18.wav
+<region> lovel=051 hivel=076 volume=25.7 region_label=V3 sample=Ab2 19.wav
+<region> lovel=077 hivel=101 volume=22.4 region_label=V4 sample=Ab2 20.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=12.3 region_label=V5 sample=Ab2 21.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=09 pitch_keycenter=49 lokey=49 hikey=50
+<region> lovel=001 hivel=025 volume=49.4 region_label=V1 sample=Db3 22.wav
+<region> lovel=026 hivel=050 volume=29.3 region_label=V2 sample=Db3 23.wav
+<region> lovel=051 hivel=076 volume=26.1 region_label=V3 sample=Db3 24.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=19.9 region_label=V4 sample=Db3 25.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=11.6 region_label=V5 sample=Db3 26.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=11 pitch_keycenter=54 lokey=54 hikey=55
+<region> lovel=001 hivel=021 volume=46.4 region_label=V1 sample=Gb3 27.wav offset=1856 ampeg_attack=0.001
+<region> lovel=022 hivel=042 volume=30.7 region_label=V2 sample=Gb3 28.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=25.3 region_label=V3 sample=Gb3 29.wav
+<region> lovel=064 hivel=084 volume=20.4 region_label=V4 sample=Gb3 30.wav
+<region> lovel=085 hivel=105 volume=11.4 region_label=V5 sample=Gb3 31.wav offset=1856 ampeg_attack=0.001
+<region> lovel=106 hivel=127 volume=06.7 region_label=V6 sample=Gb3 32.wav
+
+<group> group_label=13 pitch_keycenter=59 lokey=59 hikey=60
+<region> lovel=001 hivel=025 volume=41.6 region_label=V1 sample=B3 33.wav
+<region> lovel=026 hivel=050 volume=31.0 region_label=V2 sample=B3 34.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=25.2 region_label=V3 sample=B3 35.wav
+<region> lovel=077 hivel=101 volume=20.9 region_label=V4 sample=B3 36.wav
+<region> lovel=102 hivel=127 volume=13.6 region_label=V5 sample=B3 37.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=15 pitch_keycenter=64 lokey=64 hikey=65
+<region> lovel=001 hivel=021 volume=42.5 region_label=V1 sample=E4 38.wav offset=1856 ampeg_attack=0.001
+<region> lovel=022 hivel=042 volume=39.3 region_label=V2 sample=E4 39.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=29.3 region_label=V3 sample=E4 40.wav offset=1856 ampeg_attack=0.001
+<region> lovel=064 hivel=084 volume=22.2 region_label=V4 sample=E4 41.wav
+<region> lovel=085 hivel=105 volume=16.3 region_label=V5 sample=E4 42.wav
+<region> lovel=106 hivel=127 volume=11.7 region_label=V6 sample=E4 43.wav
+
+<group> group_label=17 pitch_keycenter=69 lokey=69 hikey=70
+<region> lovel=001 hivel=025 volume=46.7 region_label=V1 sample=A4 44.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=38.3 region_label=V2 sample=A4 45.wav
+<region> lovel=051 hivel=076 volume=31.0 region_label=V3 sample=A4 46.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=24.0 region_label=V4 sample=A4 47.wav
+<region> lovel=102 hivel=127 volume=11.2 region_label=V5 sample=A4 48.wav
+
+<group> group_label=19 pitch_keycenter=74 lokey=74 hikey=75
+<region> lovel=001 hivel=025 volume=52.0 region_label=V1 sample=D5 49.wav offset=1856
+<region> lovel=026 hivel=050 volume=43.6 region_label=V2 sample=D5 50.wav
+<region> lovel=051 hivel=076 volume=29.5 region_label=V3 sample=D5 51.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=19.2 region_label=V4 sample=D5 52.wav
+<region> lovel=102 hivel=127 volume=11.1 region_label=V5 sample=D5 53.wav
+
+<group> group_label=21 pitch_keycenter=79 lokey=79 hikey=80
+<region> lovel=001 hivel=021 volume=52.9 region_label=V1 sample=G5 54.wav
+<region> lovel=022 hivel=042 volume=38.7 region_label=V2 sample=G5 55.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=28.2 region_label=V3 sample=G5 56.wav offset=1856 ampeg_attack=0.001
+<region> lovel=064 hivel=084 volume=22.3 region_label=V4 sample=G5 57.wav
+<region> lovel=085 hivel=105 volume=16.6 region_label=V5 sample=G5 58.wav
+<region> lovel=106 hivel=127 volume=13.6 region_label=V6 sample=G5 59.wav
+
+<group> group_label=23 pitch_keycenter=84 lokey=84 hikey=85
+<region> lovel=001 hivel=021 volume=48.2 region_label=V1 sample=C6 60.wav
+<region> lovel=022 hivel=042 volume=34.3 region_label=V2 sample=C6 61.wav
+<region> lovel=043 hivel=063 volume=30.2 region_label=V3 sample=C6 62.wav offset=1856
+<region> lovel=064 hivel=084 volume=24.1 region_label=V4 sample=C6 63.wav offset=1856
+<region> lovel=085 hivel=105 volume=18.2 region_label=V5 sample=C6 64.wav offset=1856 ampeg_attack=0.001
+<region> lovel=106 hivel=127 volume=13.2 region_label=V6 sample=C6 65.wav
+
+<group> group_label=25 pitch_keycenter=89 lokey=89 hikey=90 tune=18
+<region> lovel=001 hivel=025 volume=55.5 region_label=V1 sample=F6 66.wav
+<region> lovel=026 hivel=050 volume=32.1 region_label=V2 sample=F6 67.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=27.2 region_label=V3 sample=F6 68.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=17.9 region_label=V4 sample=F6 69-[1].wav offset=1856
+<region> lovel=102 hivel=127 volume=09.7 region_label=V5 sample=F6 70.wav
+
+<group> group_label=27 pitch_keycenter=94 lokey=94 hikey=95
+<region> lovel=001 hivel=025 volume=49.5 region_label=V1 sample=Bb6 71.wav
+<region> lovel=026 hivel=050 volume=36.5 region_label=V2 sample=Bb6 72.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=25.0 region_label=V3 sample=Bb6 73.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=23.5 region_label=V4 sample=Bb6 74.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=13.1 region_label=V5 sample=Bb6 75.wav
+
+<group> group_label=29 pitch_keycenter=99 lokey=99 hikey=100 tune=30
+<region> lovel=001 hivel=031 volume=50.9 region_label=V1 sample=Eb7 76.wav offset=1856 ampeg_attack=0.001
+<region> lovel=032 hivel=063 volume=30.0 region_label=V2 sample=Eb7 77.wav offset=1856
+<region> lovel=064 hivel=095 volume=17.4 region_label=V3 sample=Eb7 78.wav
+<region> lovel=096 hivel=127 volume=13.6 region_label=V4 sample=Eb7 79.wav
+
+//--------------------------------------------------------------------------------------------------------------------
+
+<group> group_label=02 pitch_keycenter=32 lokey=31 hikey=33
+<region> lovel=001 hivel=025 volume=34.3 region_label=V1 sample=Ab1 80.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=28.9 region_label=V2 sample=Ab1 81.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=26.1 region_label=V3 sample=Ab1 82.wav offset=1856
+<region> lovel=077 hivel=101 volume=23.2 region_label=V4 sample=Ab1 83.wav
+<region> lovel=102 hivel=127 volume=11.1 region_label=V5 sample=Ab1 84.wav
+
+<group> group_label=04 pitch_keycenter=37 lokey=36 hikey=38
+<region> lovel=001 hivel=021 volume=44.3 region_label=V1 sample=Db2 85.wav
+<region> lovel=022 hivel=042 volume=32.7 region_label=V2 sample=Db2 86.wav
+<region> lovel=043 hivel=063 volume=26.9 region_label=V3 sample=Db2 87.wav
+<region> lovel=064 hivel=084 volume=21.9 region_label=V4 sample=Db2 88.wav
+<region> lovel=085 hivel=105 volume=13.2 region_label=V5 sample=Db2 89.wav
+<region> lovel=106 hivel=127 volume=10.0 region_label=V6 sample=Db2 90.wav
+
+<group> group_label=06 pitch_keycenter=42 lokey=41 hikey=43
+<region> lovel=001 hivel=025 volume=44.9 region_label=V1 sample=Gb2 91.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=35.1 region_label=V2 sample=Gb2 92.wav
+<region> lovel=051 hivel=076 volume=25.5 region_label=V3 sample=Gb2 93.wav
+<region> lovel=077 hivel=101 volume=22.2 region_label=V4 sample=Gb2 94.wav
+<region> lovel=102 hivel=127 volume=12.3 region_label=V5 sample=Gb2 95.wav
+
+<group> group_label=08 pitch_keycenter=47 lokey=46 hikey=48
+<region> lovel=001 hivel=025 volume=40.0 region_label=V1 sample=B2 96.wav
+<region> lovel=026 hivel=050 volume=36.3 region_label=V2 sample=B2 97.wav
+<region> lovel=051 hivel=076 volume=28.3 region_label=V3 sample=B2 98.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=23.4 region_label=V4 sample=B2 99.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=11.2 region_label=V5 sample=B2 100.wav offset=1856
+
+<group> group_label=10 pitch_keycenter=52 lokey=51 hikey=53
+<region> lovel=001 hivel=018 volume=45.1 region_label=V1 sample=E3 101.wav
+<region> lovel=019 hivel=036 volume=36.8 region_label=V2 sample=E3 102.wav offset=1856 ampeg_attack=0.001
+<region> lovel=037 hivel=054 volume=33.5 region_label=V3 sample=E3 103.wav offset=1856
+<region> lovel=055 hivel=072 volume=25.4 region_label=V4 sample=E3 104.wav offset=1856 ampeg_attack=0.001
+<region> lovel=073 hivel=090 volume=22.6 region_label=V5 sample=E3 105.wav offset=1856 ampeg_attack=0.001
+<region> lovel=091 hivel=108 volume=12.4 region_label=V6 sample=E3 106.wav offset=1856 ampeg_attack=0.001
+<region> lovel=109 hivel=127 volume=10.9 region_label=V7 sample=E3 107.wav
+
+<group> group_label=12 pitch_keycenter=57 lokey=56 hikey=58
+<region> lovel=001 hivel=025 volume=47.5 region_label=V1 sample=A3 108.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=28.7 region_label=V2 sample=A3 109.wav offset=38
+<region> lovel=051 hivel=076 volume=21.6 region_label=V3 sample=A3 110.wav offset=5
+<region> lovel=077 hivel=101 volume=16.0 region_label=V4 sample=A3 111.wav
+<region> lovel=102 hivel=127 volume=12.3 region_label=V5 sample=A3 112.wav
+
+<group> group_label=14 pitch_keycenter=62 lokey=61 hikey=63
+<region> lovel=001 hivel=018 volume=41.5 region_label=V1 sample=D4 113.wav offset=1856 ampeg_attack=0.001
+<region> lovel=019 hivel=036 volume=34.6 region_label=V2 sample=D4 115.wav offset=92
+<region> lovel=037 hivel=054 volume=34.0 region_label=V3 sample=D4 114.wav offset=1856 ampeg_attack=0.001
+<region> lovel=055 hivel=072 volume=26.0 region_label=V4 sample=D4 116.wav
+<region> lovel=073 hivel=090 volume=21.2 region_label=V5 sample=D4 117.wav offset=1856 ampeg_attack=0.001
+<region> lovel=091 hivel=108 volume=16.0 region_label=V6 sample=D4 118.wav
+<region> lovel=109 hivel=127 volume=12.3 region_label=V7 sample=D4 119.wav
+
+<group> group_label=16 pitch_keycenter=67 lokey=66 hikey=68
+<region> lovel=001 hivel=025 volume=50.4 region_label=V1 sample=G4 120.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=30.1 region_label=V2 sample=G4 121.wav
+<region> lovel=051 hivel=076 volume=29.6 region_label=V3 sample=G4 122.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=20.9 region_label=V4 sample=G4 123.wav
+<region> lovel=102 hivel=127 volume=13.1 region_label=V5 sample=G4 124.wav
+
+<group> group_label=18 pitch_keycenter=72 lokey=71 hikey=73
+<region> lovel=001 hivel=025 volume=53.9 region_label=V1 sample=C5 125.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=43.3 region_label=V2 sample=C5 126.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=31.1 region_label=V3 sample=C5 127.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=21.8 region_label=V4 sample=C5 128.wav offset=1856
+<region> lovel=102 hivel=127 volume=14.4 region_label=V5 sample=C5 129.wav offset=1856
+
+<group> group_label=20 pitch_keycenter=77 lokey=76 hikey=78
+<region> lovel=001 hivel=025 volume=48.0 region_label=V1 sample=F5 130.wav
+<region> lovel=026 hivel=050 volume=39.9 region_label=V2 sample=F5 131.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=29.6 region_label=V3 sample=F5 132.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=22.9 region_label=V4 sample=F5 133.wav
+<region> lovel=102 hivel=127 volume=14.5 region_label=V5 sample=F5 134.wav offset=1856
+
+<group> group_label=22 pitch_keycenter=82 lokey=81 hikey=83
+<region> lovel=001 hivel=025 volume=59.4 region_label=V1 sample=Bb5 135.wav
+<region> lovel=026 hivel=050 volume=42.8 region_label=V2 sample=Bb5 136.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=36.0 region_label=V3 sample=Bb5 137.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=23.2 region_label=V4 sample=Bb5 138.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=14.1 region_label=V5 sample=Bb5 139.wav
+
+<group> group_label=24 pitch_keycenter=87 lokey=86 hikey=88 tune=30
+<region> lovel=001 hivel=018 volume=51.6 region_label=V1 sample=Eb6 140.wav
+<region> lovel=019 hivel=036 volume=41.3 region_label=V2 sample=Eb6 141.wav offset=1856 ampeg_attack=0.001
+<region> lovel=037 hivel=054 volume=29.2 region_label=V3 sample=Eb6 142.wav
+<region> lovel=055 hivel=072 volume=29.0 region_label=V4 sample=Eb6 143.wav offset=1856 ampeg_attack=0.001
+<region> lovel=073 hivel=090 volume=21.8 region_label=V5 sample=Eb6 144.wav offset=1856 ampeg_attack=0.001
+<region> lovel=091 hivel=108 volume=16.9 region_label=V6 sample=Eb6 145.wav offset=1856 ampeg_attack=0.001
+<region> lovel=109 hivel=127 volume=10.2 region_label=V7 sample=Eb6 146.wav
+
+<group> group_label=26 pitch_keycenter=92 lokey=91 hikey=93 tune=20
+<region> lovel=001 hivel=025 volume=55.2 region_label=V1 sample=Ab6 147.wav
+<region> lovel=026 hivel=050 volume=37.4 region_label=V2 sample=Ab6 148.wav
+<region> lovel=051 hivel=076 volume=29.6 region_label=V3 sample=Ab6 149.wav
+<region> lovel=077 hivel=101 volume=17.8 region_label=V4 sample=Ab6 150.wav
+<region> lovel=102 hivel=127 volume=12.7 region_label=V5 sample=Ab6 151.wav
+
+<group> group_label=28 pitch_keycenter=97 lokey=96 hikey=98
+<region> lovel=001 hivel=021 volume=60.2 region_label=V1 sample=Db7 152.wav offset=1856 ampeg_attack=0.001
+<region> lovel=022 hivel=042 volume=51.8 region_label=V2 sample=Db7 153.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=34.7 region_label=V3 sample=Db7 154.wav
+<region> lovel=064 hivel=084 volume=23.8 region_label=V4 sample=Db7 155.wav
+<region> lovel=085 hivel=105 volume=23.4 region_label=V5 sample=Db7 156.wav offset=1856 ampeg_attack=0.001
+<region> lovel=106 hivel=127 volume=17.9 region_label=V6 sample=Db7 157.wav offset=1856 ampeg_attack=0.001
+
+
+//--------------------------------------------------------------------------------------------------------------------
+<master>
+locc$STEREO=1
+pan_oncc$STEREO=-100
+master_volume=-3
+
+<group> group_label=Stereo pitch_keycenter=29 lokey=28 hikey=31
+<region> lovel=001 hivel=025 volume=37.6 region_label=V1 sample=F1 01.wav
+<region> lovel=026 hivel=050 volume=31.9 region_label=V2 sample=F1 02.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=22.4 region_label=V3 sample=F1 03.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=19.9 region_label=V4 sample=F1 04.wav
+<region> lovel=102 hivel=127 volume=11.7 region_label=V5 sample=F1 05.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=Stereo pitch_keycenter=34 lokey=32 hikey=36
+<region> lovel=001 hivel=021 volume=36.5 region_label=V1 sample=Bb1 06.wav offset=1856
+<region> lovel=022 hivel=042 volume=28.8 region_label=V2 sample=Bb1 07.wav
+<region> lovel=043 hivel=063 volume=26.9 region_label=V3 sample=Bb1 08.wav offset=1856 ampeg_attack=0.001
+<region> lovel=064 hivel=084 volume=21.1 region_label=V4 sample=Bb1 09.wav
+<region> lovel=085 hivel=105 volume=16.0 region_label=V5 sample=Bb1 10.wav
+<region> lovel=106 hivel=127 volume=12.4 region_label=V6 sample=Bb1 11.wav
+
+<group> group_label=Stereo pitch_keycenter=39 lokey=37 hikey=41
+<region> lovel=001 hivel=025 volume=40.8 region_label=V1 sample=Eb2 12.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=33.1 region_label=V2 sample=Eb2 13.wav
+<region> lovel=051 hivel=076 volume=27.5 region_label=V3 sample=Eb2 14.wav
+<region> lovel=077 hivel=101 volume=21.6 region_label=V4 sample=Eb2 15.wav
+<region> lovel=102 hivel=127 volume=14.7 region_label=V5 sample=Eb2 16.wav
+
+<group> group_label=Stereo pitch_keycenter=44 lokey=42 hikey=46
+<region> lovel=001 hivel=025 volume=50.8 region_label=V1 sample=Ab2 17.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=35.1 region_label=V2 sample=Ab2 18.wav
+<region> lovel=051 hivel=076 volume=25.7 region_label=V3 sample=Ab2 19.wav
+<region> lovel=077 hivel=101 volume=22.4 region_label=V4 sample=Ab2 20.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=12.3 region_label=V5 sample=Ab2 21.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=Stereo pitch_keycenter=49 lokey=47 hikey=51
+<region> lovel=001 hivel=025 volume=49.4 region_label=V1 sample=Db3 22.wav
+<region> lovel=026 hivel=050 volume=29.3 region_label=V2 sample=Db3 23.wav
+<region> lovel=051 hivel=076 volume=26.1 region_label=V3 sample=Db3 24.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=19.9 region_label=V4 sample=Db3 25.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=11.6 region_label=V5 sample=Db3 26.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=Stereo pitch_keycenter=54 lokey=52 hikey=56
+<region> lovel=001 hivel=021 volume=46.4 region_label=V1 sample=Gb3 27.wav offset=1856 ampeg_attack=0.001
+<region> lovel=022 hivel=042 volume=30.7 region_label=V2 sample=Gb3 28.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=25.3 region_label=V3 sample=Gb3 29.wav
+<region> lovel=064 hivel=084 volume=20.4 region_label=V4 sample=Gb3 30.wav
+<region> lovel=085 hivel=105 volume=11.4 region_label=V5 sample=Gb3 31.wav offset=1856 ampeg_attack=0.001
+<region> lovel=106 hivel=127 volume=06.7 region_label=V6 sample=Gb3 32.wav
+
+<group> group_label=Stereo pitch_keycenter=59 lokey=57 hikey=61
+<region> lovel=001 hivel=025 volume=41.6 region_label=V1 sample=B3 33.wav
+<region> lovel=026 hivel=050 volume=31.0 region_label=V2 sample=B3 34.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=25.2 region_label=V3 sample=B3 35.wav
+<region> lovel=077 hivel=101 volume=20.9 region_label=V4 sample=B3 36.wav
+<region> lovel=102 hivel=127 volume=13.6 region_label=V5 sample=B3 37.wav offset=1856 ampeg_attack=0.001
+
+<group> group_label=Stereo pitch_keycenter=64 lokey=62 hikey=66
+<region> lovel=001 hivel=021 volume=42.5 region_label=V1 sample=E4 38.wav offset=1856 ampeg_attack=0.001
+<region> lovel=022 hivel=042 volume=39.3 region_label=V2 sample=E4 39.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=29.3 region_label=V3 sample=E4 40.wav offset=1856 ampeg_attack=0.001
+<region> lovel=064 hivel=084 volume=22.2 region_label=V4 sample=E4 41.wav
+<region> lovel=085 hivel=105 volume=16.3 region_label=V5 sample=E4 42.wav
+<region> lovel=106 hivel=127 volume=11.7 region_label=V6 sample=E4 43.wav
+
+<group> group_label=Stereo pitch_keycenter=69 lokey=67 hikey=71
+<region> lovel=001 hivel=025 volume=46.7 region_label=V1 sample=A4 44.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=38.3 region_label=V2 sample=A4 45.wav
+<region> lovel=051 hivel=076 volume=31.0 region_label=V3 sample=A4 46.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=24.0 region_label=V4 sample=A4 47.wav
+<region> lovel=102 hivel=127 volume=11.2 region_label=V5 sample=A4 48.wav
+
+<group> group_label=Stereo pitch_keycenter=74 lokey=72 hikey=76
+<region> lovel=001 hivel=025 volume=52.0 region_label=V1 sample=D5 49.wav offset=1856
+<region> lovel=026 hivel=050 volume=43.6 region_label=V2 sample=D5 50.wav
+<region> lovel=051 hivel=076 volume=29.5 region_label=V3 sample=D5 51.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=19.2 region_label=V4 sample=D5 52.wav
+<region> lovel=102 hivel=127 volume=11.1 region_label=V5 sample=D5 53.wav
+
+<group> group_label=Stereo pitch_keycenter=79 lokey=77 hikey=81
+<region> lovel=001 hivel=021 volume=52.9 region_label=V1 sample=G5 54.wav
+<region> lovel=022 hivel=042 volume=38.7 region_label=V2 sample=G5 55.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=28.2 region_label=V3 sample=G5 56.wav offset=1856 ampeg_attack=0.001
+<region> lovel=064 hivel=084 volume=22.3 region_label=V4 sample=G5 57.wav
+<region> lovel=085 hivel=105 volume=16.6 region_label=V5 sample=G5 58.wav
+<region> lovel=106 hivel=127 volume=13.6 region_label=V6 sample=G5 59.wav
+
+<group> group_label=Stereo pitch_keycenter=84 lokey=82 hikey=86
+<region> lovel=001 hivel=021 volume=48.2 region_label=V1 sample=C6 60.wav
+<region> lovel=022 hivel=042 volume=34.3 region_label=V2 sample=C6 61.wav
+<region> lovel=043 hivel=063 volume=30.2 region_label=V3 sample=C6 62.wav offset=1856
+<region> lovel=064 hivel=084 volume=24.1 region_label=V4 sample=C6 63.wav offset=1856
+<region> lovel=085 hivel=105 volume=18.2 region_label=V5 sample=C6 64.wav offset=1856 ampeg_attack=0.001
+<region> lovel=106 hivel=127 volume=13.2 region_label=V6 sample=C6 65.wav
+
+<group> group_label=Stereo pitch_keycenter=89 lokey=87 hikey=91 tune=18
+<region> lovel=001 hivel=025 volume=55.5 region_label=V1 sample=F6 66.wav
+<region> lovel=026 hivel=050 volume=32.1 region_label=V2 sample=F6 67.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=27.2 region_label=V3 sample=F6 68.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=17.9 region_label=V4 sample=F6 69-[1].wav offset=1856
+<region> lovel=102 hivel=127 volume=09.7 region_label=V5 sample=F6 70.wav
+
+<group> group_label=Stereo pitch_keycenter=94 lokey=92 hikey=96
+<region> lovel=001 hivel=025 volume=49.5 region_label=V1 sample=Bb6 71.wav
+<region> lovel=026 hivel=050 volume=36.5 region_label=V2 sample=Bb6 72.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=25.0 region_label=V3 sample=Bb6 73.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=23.5 region_label=V4 sample=Bb6 74.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=13.1 region_label=V5 sample=Bb6 75.wav
+
+<group> group_label=Stereo pitch_keycenter=99 lokey=97 hikey=100 tune=30
+<region> lovel=001 hivel=031 volume=50.9 region_label=V1 sample=Eb7 76.wav offset=1856 ampeg_attack=0.001
+<region> lovel=032 hivel=063 volume=30.0 region_label=V2 sample=Eb7 77.wav offset=1856
+<region> lovel=064 hivel=095 volume=17.4 region_label=V3 sample=Eb7 78.wav
+<region> lovel=096 hivel=127 volume=13.6 region_label=V4 sample=Eb7 79.wav
+
+
+//--------------------------------------------------------------------------------------------------------------------
+<master>
+locc$STEREO=1
+pan_oncc$STEREO=100
+master_volume=-3
+
+<group> group_label=Stereo pitch_keycenter=32 lokey=28 hikey=34
+<region> lovel=001 hivel=025 volume=34.3 region_label=V1 sample=Ab1 80.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=28.9 region_label=V2 sample=Ab1 81.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=26.1 region_label=V3 sample=Ab1 82.wav offset=1856
+<region> lovel=077 hivel=101 volume=23.2 region_label=V4 sample=Ab1 83.wav
+<region> lovel=102 hivel=127 volume=11.1 region_label=V5 sample=Ab1 84.wav
+
+<group> group_label=Stereo pitch_keycenter=37 lokey=35 hikey=39
+<region> lovel=001 hivel=021 volume=44.3 region_label=V1 sample=Db2 85.wav
+<region> lovel=022 hivel=042 volume=32.7 region_label=V2 sample=Db2 86.wav
+<region> lovel=043 hivel=063 volume=26.9 region_label=V3 sample=Db2 87.wav
+<region> lovel=064 hivel=084 volume=21.9 region_label=V4 sample=Db2 88.wav
+<region> lovel=085 hivel=105 volume=13.2 region_label=V5 sample=Db2 89.wav
+<region> lovel=106 hivel=127 volume=10.0 region_label=V6 sample=Db2 90.wav
+
+<group> group_label=Stereo pitch_keycenter=42 lokey=40 hikey=44
+<region> lovel=001 hivel=025 volume=44.9 region_label=V1 sample=Gb2 91.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=35.1 region_label=V2 sample=Gb2 92.wav
+<region> lovel=051 hivel=076 volume=25.5 region_label=V3 sample=Gb2 93.wav
+<region> lovel=077 hivel=101 volume=22.2 region_label=V4 sample=Gb2 94.wav
+<region> lovel=102 hivel=127 volume=12.3 region_label=V5 sample=Gb2 95.wav
+
+<group> group_label=Stereo pitch_keycenter=47 lokey=45 hikey=49
+<region> lovel=001 hivel=025 volume=40.0 region_label=V1 sample=B2 96.wav
+<region> lovel=026 hivel=050 volume=36.3 region_label=V2 sample=B2 97.wav
+<region> lovel=051 hivel=076 volume=28.3 region_label=V3 sample=B2 98.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=23.4 region_label=V4 sample=B2 99.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=11.2 region_label=V5 sample=B2 100.wav offset=1856
+
+<group> group_label=Stereo pitch_keycenter=52 lokey=50 hikey=54
+<region> lovel=001 hivel=018 volume=45.1 region_label=V1 sample=E3 101.wav
+<region> lovel=019 hivel=036 volume=36.8 region_label=V2 sample=E3 102.wav offset=1856 ampeg_attack=0.001
+<region> lovel=037 hivel=054 volume=33.5 region_label=V3 sample=E3 103.wav offset=1856
+<region> lovel=055 hivel=072 volume=25.4 region_label=V4 sample=E3 104.wav offset=1856 ampeg_attack=0.001
+<region> lovel=073 hivel=090 volume=22.6 region_label=V5 sample=E3 105.wav offset=1856 ampeg_attack=0.001
+<region> lovel=091 hivel=108 volume=12.4 region_label=V6 sample=E3 106.wav offset=1856 ampeg_attack=0.001
+<region> lovel=109 hivel=127 volume=10.9 region_label=V7 sample=E3 107.wav
+
+<group> group_label=Stereo pitch_keycenter=57 lokey=55 hikey=59
+<region> lovel=001 hivel=025 volume=47.5 region_label=V1 sample=A3 108.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=28.7 region_label=V2 sample=A3 109.wav offset=38
+<region> lovel=051 hivel=076 volume=21.6 region_label=V3 sample=A3 110.wav offset=5
+<region> lovel=077 hivel=101 volume=16.0 region_label=V4 sample=A3 111.wav
+<region> lovel=102 hivel=127 volume=12.3 region_label=V5 sample=A3 112.wav
+
+<group> group_label=Stereo pitch_keycenter=62 lokey=60 hikey=64
+<region> lovel=001 hivel=018 volume=41.5 region_label=V1 sample=D4 113.wav offset=1856 ampeg_attack=0.001
+<region> lovel=019 hivel=036 volume=34.6 region_label=V2 sample=D4 115.wav offset=92
+<region> lovel=037 hivel=054 volume=34.0 region_label=V3 sample=D4 114.wav offset=1856 ampeg_attack=0.001
+<region> lovel=055 hivel=072 volume=26.0 region_label=V4 sample=D4 116.wav
+<region> lovel=073 hivel=090 volume=21.2 region_label=V5 sample=D4 117.wav offset=1856 ampeg_attack=0.001
+<region> lovel=091 hivel=108 volume=16.0 region_label=V6 sample=D4 118.wav
+<region> lovel=109 hivel=127 volume=12.3 region_label=V7 sample=D4 119.wav
+
+<group> group_label=Stereo pitch_keycenter=67 lokey=65 hikey=69
+<region> lovel=001 hivel=025 volume=50.4 region_label=V1 sample=G4 120.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=30.1 region_label=V2 sample=G4 121.wav
+<region> lovel=051 hivel=076 volume=29.6 region_label=V3 sample=G4 122.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=20.9 region_label=V4 sample=G4 123.wav
+<region> lovel=102 hivel=127 volume=13.1 region_label=V5 sample=G4 124.wav
+
+<group> group_label=Stereo pitch_keycenter=72 lokey=70 hikey=74
+<region> lovel=001 hivel=025 volume=53.9 region_label=V1 sample=C5 125.wav offset=1856 ampeg_attack=0.001
+<region> lovel=026 hivel=050 volume=43.3 region_label=V2 sample=C5 126.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=31.1 region_label=V3 sample=C5 127.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=21.8 region_label=V4 sample=C5 128.wav offset=1856
+<region> lovel=102 hivel=127 volume=14.4 region_label=V5 sample=C5 129.wav offset=1856
+
+<group> group_label=Stereo pitch_keycenter=77 lokey=75 hikey=79
+<region> lovel=001 hivel=025 volume=48.0 region_label=V1 sample=F5 130.wav
+<region> lovel=026 hivel=050 volume=39.9 region_label=V2 sample=F5 131.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=29.6 region_label=V3 sample=F5 132.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=22.9 region_label=V4 sample=F5 133.wav
+<region> lovel=102 hivel=127 volume=14.5 region_label=V5 sample=F5 134.wav offset=1856
+
+<group> group_label=Stereo pitch_keycenter=82 lokey=80 hikey=84
+<region> lovel=001 hivel=025 volume=59.4 region_label=V1 sample=Bb5 135.wav
+<region> lovel=026 hivel=050 volume=42.8 region_label=V2 sample=Bb5 136.wav offset=1856 ampeg_attack=0.001
+<region> lovel=051 hivel=076 volume=36.0 region_label=V3 sample=Bb5 137.wav offset=1856 ampeg_attack=0.001
+<region> lovel=077 hivel=101 volume=23.2 region_label=V4 sample=Bb5 138.wav offset=1856 ampeg_attack=0.001
+<region> lovel=102 hivel=127 volume=14.1 region_label=V5 sample=Bb5 139.wav
+
+<group> group_label=Stereo pitch_keycenter=87 lokey=85 hikey=89 tune=30
+<region> lovel=001 hivel=018 volume=51.6 region_label=V1 sample=Eb6 140.wav
+<region> lovel=019 hivel=036 volume=41.3 region_label=V2 sample=Eb6 141.wav offset=1856 ampeg_attack=0.001
+<region> lovel=037 hivel=054 volume=29.2 region_label=V3 sample=Eb6 142.wav
+<region> lovel=055 hivel=072 volume=29.0 region_label=V4 sample=Eb6 143.wav offset=1856 ampeg_attack=0.001
+<region> lovel=073 hivel=090 volume=21.8 region_label=V5 sample=Eb6 144.wav offset=1856 ampeg_attack=0.001
+<region> lovel=091 hivel=108 volume=16.9 region_label=V6 sample=Eb6 145.wav offset=1856 ampeg_attack=0.001
+<region> lovel=109 hivel=127 volume=10.2 region_label=V7 sample=Eb6 146.wav
+
+<group> group_label=Stereo pitch_keycenter=92 lokey=90 hikey=94 tune=20
+<region> lovel=001 hivel=025 volume=55.2 region_label=V1 sample=Ab6 147.wav
+<region> lovel=026 hivel=050 volume=37.4 region_label=V2 sample=Ab6 148.wav
+<region> lovel=051 hivel=076 volume=29.6 region_label=V3 sample=Ab6 149.wav
+<region> lovel=077 hivel=101 volume=17.8 region_label=V4 sample=Ab6 150.wav
+<region> lovel=102 hivel=127 volume=12.7 region_label=V5 sample=Ab6 151.wav
+
+<group> group_label=Stereo pitch_keycenter=97 lokey=95 hikey=100
+<region> lovel=001 hivel=021 volume=60.2 region_label=V1 sample=Db7 152.wav offset=1856 ampeg_attack=0.001
+<region> lovel=022 hivel=042 volume=51.8 region_label=V2 sample=Db7 153.wav offset=1856 ampeg_attack=0.001
+<region> lovel=043 hivel=063 volume=34.7 region_label=V3 sample=Db7 154.wav
+<region> lovel=064 hivel=084 volume=23.8 region_label=V4 sample=Db7 155.wav
+<region> lovel=085 hivel=105 volume=23.4 region_label=V5 sample=Db7 156.wav offset=1856 ampeg_attack=0.001
+<region> lovel=106 hivel=127 volume=17.9 region_label=V6 sample=Db7 157.wav offset=1856 ampeg_attack=0.001
