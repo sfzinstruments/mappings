@@ -1,0 +1,338 @@
+<group>
+ampeg_decay=25
+ampeg_release=0.006
+
+<region> sample=Samples\Hammond\Sound 2 02.wav
+lokey=36
+hikey=37
+pitch_keycenter=36
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+end=-39625
+
+<region> sample=Samples\Hammond\Sound 2 03.wav
+lokey=38
+hikey=39
+pitch_keycenter=38
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=1137
+
+<region> sample=Samples\Hammond\Sound 2 04.wav
+key=40
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=1448
+
+<region> sample=Samples\Hammond\Sound 2 05.wav
+lokey=41
+hikey=42
+pitch_keycenter=41
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 06.wav
+lokey=43
+hikey=44
+pitch_keycenter=43
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=5696
+
+<region> sample=Samples\Hammond\Sound 2 07.wav
+lokey=45
+hikey=46
+pitch_keycenter=45
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=3830
+
+<region> sample=Samples\Hammond\Sound 2 08.wav
+key=47
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 09.wav
+lokey=48
+hikey=49
+pitch_keycenter=48
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=16422
+
+<region> sample=Samples\Hammond\Sound 2 10.wav
+lokey=50
+hikey=51
+pitch_keycenter=50
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=9025
+
+<region> sample=Samples\Hammond\Sound 2 11.wav
+key=52
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=8648
+
+<region> sample=Samples\Hammond\Sound 2 12.wav
+lokey=53
+hikey=54
+pitch_keycenter=53
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=14432
+
+<region> sample=Samples\Hammond\Sound 2 13.wav
+lokey=55
+hikey=56
+pitch_keycenter=55
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=29154
+
+<region> sample=Samples\Hammond\Sound 2 14.wav
+lokey=57
+hikey=58
+pitch_keycenter=57
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 15.wav
+key=59
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=4472
+
+<region> sample=Samples\Hammond\Sound 2 16.wav
+lokey=60
+hikey=61
+pitch_keycenter=60
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 17.wav
+lokey=62
+hikey=63
+pitch_keycenter=62
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=20237
+
+<region> sample=Samples\Hammond\Sound 2 18.wav
+key=64
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=33800
+
+<region> sample=Samples\Hammond\Sound 2 19.wav
+lokey=65
+hikey=66
+pitch_keycenter=65
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=15839
+
+<region> sample=Samples\Hammond\Sound 2 20.wav
+lokey=67
+hikey=68
+pitch_keycenter=67
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 21.wav
+lokey=69
+hikey=70
+pitch_keycenter=69
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=6384
+
+<region> sample=Samples\Hammond\Sound 2 22.wav
+key=71
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=18179
+
+<region> sample=Samples\Hammond\Sound 2 23.wav
+lokey=72
+hikey=73
+pitch_keycenter=72
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=21266
+
+<region> sample=Samples\Hammond\Sound 2 24.wav
+lokey=74
+hikey=75
+pitch_keycenter=74
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=64740
+
+<region> sample=Samples\Hammond\Sound 2 25.wav
+key=76
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=11725
+
+<region> sample=Samples\Hammond\Sound 2 26.wav
+lokey=77
+hikey=78
+pitch_keycenter=77
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=28390
+
+<region> sample=Samples\Hammond\Sound 2 27.wav
+lokey=79
+hikey=80
+pitch_keycenter=79
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=55945
+
+<region> sample=Samples\Hammond\Sound 2 28.wav
+lokey=81
+hikey=82
+pitch_keycenter=81
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=18425
+
+<region> sample=Samples\Hammond\Sound 2 29.wav
+key=83
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=8500
+
+<region> sample=Samples\Hammond\Sound 2 31.wav
+lokey=84
+hikey=85
+pitch_keycenter=84
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=37129
+
+<region> sample=Samples\Hammond\Sound 2 32.wav
+lokey=86
+hikey=87
+pitch_keycenter=86
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 34.wav
+key=88
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 35.wav
+lokey=89
+hikey=90
+pitch_keycenter=89
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 36.wav
+lokey=91
+hikey=92
+pitch_keycenter=91
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+offset=17524
+
+<region> sample=Samples\Hammond\Sound 2 37.wav
+lokey=93
+hikey=94
+pitch_keycenter=93
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 38.wav
+key=95
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<region> sample=Samples\Hammond\Sound 2 39.wav
+lokey=96
+hikey=97
+pitch_keycenter=96
+lovel=1
+hivel=127
+loop_mode=loop_sustain
+
+<group>
+volume=-6
+
+<region> sample=Samples\Scratch\s3.wav
+lokey=72
+hikey=83
+pitch_keycenter=72
+lovel=1
+hivel=127
+offset=28952
+
+<region> sample=Samples\Scratch\s6.wav
+lokey=48
+hikey=59
+pitch_keycenter=48
+lovel=1
+hivel=127
+
+<region> sample=Samples\Scratch\s12.wav
+lokey=84
+hikey=96
+pitch_keycenter=84
+lovel=1
+hivel=127
+
+<region> sample=Samples\Scratch\s3.wav
+lokey=36
+hikey=47
+pitch_keycenter=36
+lovel=1
+hivel=127
+offset=1848
+
+<region> sample=Samples\Scratch\s12.wav
+lokey=60
+hikey=71
+pitch_keycenter=60
+lovel=1
+hivel=127
+
+
