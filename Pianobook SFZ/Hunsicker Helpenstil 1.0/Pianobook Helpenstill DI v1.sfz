@@ -1,0 +1,47 @@
+//--------------------------------------
+// Helpinstill Roadmaster 64
+// by Aaron Newberry @pianobook
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+<control>
+default_path=samples_DI/
+
+<global>
+ampeg_release=0.7
+
+<group> group_label=p group_volume=15 hivel=63
+<region> lokey=33 hikey=39 pitch_keycenter=36 region_label=1 offset=051594 sample=Pianobook Helpenstill 1 DI p C0.wav
+<region> lokey=40 hikey=46 pitch_keycenter=43 region_label=2 offset=045358 sample=Pianobook Helpenstill 1 DI p G0.wav
+<region> lokey=47 hikey=53 pitch_keycenter=50 region_label=3 offset=041243 sample=Pianobook Helpenstill 1 DI p D1.wav
+<region> lokey=54 hikey=60 pitch_keycenter=57 region_label=4 offset=039753 sample=Pianobook Helpenstill 1 DI p A1.wav
+<region> lokey=61 hikey=67 pitch_keycenter=64 region_label=5 offset=037419 sample=Pianobook Helpenstill 1 DI p E2.wav
+<region> lokey=68 hikey=74 pitch_keycenter=71 region_label=6 offset=037516 sample=Pianobook Helpenstill 1 DI p B2.wav
+<region> lokey=75 hikey=81 pitch_keycenter=78 region_label=7 offset=039115 sample=Pianobook Helpenstill 1 DI p F#3.wav
+<region> lokey=82 hikey=88 pitch_keycenter=85 region_label=8 offset=112153 sample=Pianobook Helpenstill 1 DI p C#4.wav
+<region> lokey=89 hikey=96 pitch_keycenter=92 region_label=9 offset=038158 sample=Pianobook Helpenstill 1 DI p G#4.wav
+
+<group> group_label=f lovel=64
+<region> lokey=33 hikey=39 pitch_keycenter=36 region_label=1 offset=00000 sample=Pianobook Helpenstill 1 DI f C0.wav
+<region> lokey=40 hikey=46 pitch_keycenter=43 region_label=2 offset=33594 sample=Pianobook Helpenstill 1 DI f G0.wav
+<region> lokey=47 hikey=53 pitch_keycenter=50 region_label=3 offset=31042 sample=Pianobook Helpenstill 1 DI f D1.wav
+<region> lokey=54 hikey=60 pitch_keycenter=57 region_label=4 offset=34146 sample=Pianobook Helpenstill 1 DI f A1.wav
+<region> lokey=61 hikey=67 pitch_keycenter=64 region_label=5 offset=35427 sample=Pianobook Helpenstill 1 DI f E2.wav
+<region> lokey=68 hikey=74 pitch_keycenter=71 region_label=6 offset=32474 sample=Pianobook Helpenstill 1 DI f B2.wav
+<region> lokey=75 hikey=81 pitch_keycenter=78 region_label=7 offset=35352 sample=Pianobook Helpenstill 1 DI f F#3.wav
+<region> lokey=82 hikey=88 pitch_keycenter=85 region_label=8 offset=33519 sample=Pianobook Helpenstill 1 DI f C#4.wav
+<region> lokey=89 hikey=96 pitch_keycenter=92 region_label=9 offset=32951 sample=Pianobook Helpenstill 1 DI f G#4.wav
+
+<group> group_label=rt group_volume=-16 trigger=release rt_decay=3 group=1 polyphony=1 pitch_keytrack=25
+<region> lokey=33 hikey=39 pitch_keycenter=36 region_label=1 offset=32811 sample=Pianobook Helpenstill 1 DI RT C0.wav
+<region> lokey=40 hikey=46 pitch_keycenter=43 region_label=2 offset=32882 sample=Pianobook Helpenstill 1 DI RT G0.wav
+<region> lokey=47 hikey=53 pitch_keycenter=50 region_label=3 offset=35439 sample=Pianobook Helpenstill 1 DI RT D1.wav
+<region> lokey=54 hikey=60 pitch_keycenter=57 region_label=4 offset=32524 sample=Pianobook Helpenstill 1 DI RT A1.wav
+<region> lokey=61 hikey=67 pitch_keycenter=64 region_label=5 offset=32018 sample=Pianobook Helpenstill 1 DI RT E2.wav
+<region> lokey=68 hikey=74 pitch_keycenter=71 region_label=6 offset=33328 sample=Pianobook Helpenstill 1 DI RT B2.wav
+<region> lokey=75 hikey=81 pitch_keycenter=78 region_label=7 offset=33765 sample=Pianobook Helpenstill 1 DI RT F#4.wav
+<region> lokey=82 hikey=88 pitch_keycenter=85 region_label=8 offset=32478 sample=Pianobook Helpenstill 1 DI RT C#4.wav
+<region> lokey=89 hikey=96 pitch_keycenter=92 region_label=9 offset=33893 sample=Pianobook Helpenstill 1 DI RT G#4.wav
