@@ -1,4 +1,4 @@
-SFZ mapping for MTG Trumpet. Use these mappings with Sforzando. Original samples by Music Technology Group (MTG) of the Universitat Pompeu Fabra.
+SFZ mapping for MTG Trumpet. Use these mappings with Sforzando. Original samples by Music Technology Group (MTG) of the Universitat Pompeu Fabra. https://www.upf.edu/web/mtg
 
 This SFZ mapping was created by kinwie. 
 
