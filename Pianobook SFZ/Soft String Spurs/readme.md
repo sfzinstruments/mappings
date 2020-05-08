@@ -1,4 +1,4 @@
-SFZ mapping for Soft String Spurs. Use these mappings with Sforzando. Original library programming & samples by Dan Keen with additional
+SFZ mapping for Soft String Spurs. Use these mappings with Sforzando. Original EXS24 library programming & samples by Dan Keen with additional
 Kontakt programming by Angus Roberts Carey. https://www.pianobook.co.uk/library/soft-string-spurs/
 
 This SFZ version mapping was created by kinwie. 
