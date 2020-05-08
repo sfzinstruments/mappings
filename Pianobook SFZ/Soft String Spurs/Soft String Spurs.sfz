@@ -1,0 +1,246 @@
+//--------------------------------------
+// Soft String Spurs
+// by Dan Keen @pianobook
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+// Initial Version 1.0
+//--------------------------------------
+
+
+//midi cc
+#define $MW 1
+#define $EXP 11
+#define $ATTACK 20
+#define $RELEASE 21
+#define $HARM 22
+#define $SWELL 23
+#define $SOFT 24
+#define $HARD 25
+
+
+//////////////////////////////////////////////////////
+<control>
+default_path=Soft String Spurs Samples/
+
+label_cc$MW=MW ($MW)
+label_cc$EXP=Exp ($EXP)
+label_cc$ATTACK=Attack
+label_cc$RELEASE=Release
+label_cc$HARM=Harmonics
+label_cc$SWELL=Swells
+label_cc$SOFT=Soft Longs
+label_cc$HARD=Hard Longs
+
+set_hdcc$MW=0.3
+set_hdcc$EXP=1
+set_hdcc$ATTACK=0.1
+set_hdcc$RELEASE=0.4
+set_hdcc$HARM=0.5
+set_hdcc$SWELL=0.5
+set_hdcc$SOFT=0.5
+set_hdcc$HARD=0.5
+
+
+//**************************************************************************
+<global>
+loop_mode=loop_continuous
+amp_veltrack=50
+amplitude_oncc$EXP=100
+ampeg_attack_oncc$ATTACK=1
+ampeg_release_oncc$RELEASE=5
+
+
+//===============================================
+<master>
+xfin_locc$MW=0
+xfin_hicc$MW=127
+
+//-----------------------------------------------------
+<group>
+group_label=Harmonics
+amplitude_oncc$HARM=200
+
+<region> region_label=01
+sample=SSS_Harmonics_C3.wav
+loop_start=139608
+loop_end=1145831
+pitch_keycenter=60
+lokey=43
+hikey=67
+xfout_lokey=60
+xfout_hikey=66
+volume=-6
+
+<region> region_label=02
+sample=SSS_Harmonics_G3.wav
+loop_start=397703
+loop_end=1543447
+pitch_keycenter=67
+lokey=60
+hikey=74
+xfin_lokey=61
+xfin_hikey=67
+xfout_lokey=67
+xfout_hikey=73
+volume=4
+
+<region> region_label=03
+sample=SSS_Harmonics_D4.wav
+loop_start=286221
+loop_end=1413948
+pitch_keycenter=74
+lokey=67
+hikey=81
+xfin_lokey=68
+xfin_hikey=74
+xfout_lokey=74
+xfout_hikey=80
+
+<region> region_label=04
+sample=SSS_Harmonics_A4.wav
+loop_start=470285
+loop_end=1251758
+pitch_keycenter=81
+lokey=74
+hikey=91
+xfin_lokey=75
+xfin_hikey=81
+
+//-----------------------------------------------------
+<group>
+group_label=Swells
+amplitude_oncc$SWELL=200
+<region> pitch_keycenter=48 lokey=43 hikey=49 region_label=01 offset=12332 loop_start=15200 loop_end=593343 sample=SSS_Swells_C2.wav
+<region> pitch_keycenter=50 lokey=50 hikey=51 region_label=02 offset=08999 loop_start=10262 loop_end=421058 sample=SSS_Swells_D2.wav
+<region> pitch_keycenter=52 lokey=52 hikey=53 region_label=03 offset=28498 loop_start=03872 loop_end=442495 sample=SSS_Swells_E2.wav
+<region> pitch_keycenter=54 lokey=54 hikey=55 region_label=04 offset=19579 loop_start=21144 loop_end=433540 sample=SSS_Swells_F#2.wav
+<region> pitch_keycenter=56 lokey=56 hikey=57 region_label=05 offset=12666 loop_start=07837 loop_end=538668 sample=SSS_Swells_G#2.wav
+<region> pitch_keycenter=58 lokey=58 hikey=59 region_label=06 offset=31996 loop_start=32066 loop_end=613234 sample=SSS_Swells_A#2.wav
+<region> pitch_keycenter=60 lokey=60 hikey=61 region_label=07 offset=21997 loop_start=17067 loop_end=442553 sample=SSS_Swells_C3.wav
+<region> pitch_keycenter=62 lokey=62 hikey=63 region_label=08 offset=00000 loop_start=01856 loop_end=463216 sample=SSS_Swells_D3.wav
+<region> pitch_keycenter=64 lokey=64 hikey=65 region_label=09 offset=19315 loop_start=14319 loop_end=462770 sample=SSS_Swells_E3.wav
+<region> pitch_keycenter=66 lokey=66 hikey=67 region_label=10 offset=24012 loop_start=20278 loop_end=453074 sample=SSS_Swells_F#3.wav
+<region> pitch_keycenter=68 lokey=68 hikey=69 region_label=11 offset=30767 loop_start=30549 loop_end=435174 sample=SSS_Swells_G#3.wav
+<region> pitch_keycenter=70 lokey=70 hikey=71 region_label=12 offset=22414 loop_start=17038 loop_end=435438 sample=SSS_Swells_A#3.wav
+<region> pitch_keycenter=72 lokey=72 hikey=73 region_label=13 offset=24747 loop_start=30175 loop_end=421189 sample=SSS_Swells_C4.wav
+<region> pitch_keycenter=74 lokey=74 hikey=75 region_label=14 offset=31137 loop_start=23708 loop_end=385337 sample=SSS_Swells_D4.wav
+<region> pitch_keycenter=76 lokey=76 hikey=77 region_label=15 offset=22693 loop_start=22594 loop_end=401444 sample=SSS_Swells_E4.wav
+<region> pitch_keycenter=78 lokey=78 hikey=79 region_label=16 offset=24804 loop_start=27213 loop_end=398118 sample=SSS_Swells_F#4.wav
+<region> pitch_keycenter=80 lokey=80 hikey=81 region_label=17 offset=25701 loop_start=24859 loop_end=433462 sample=SSS_Swells_G#4.wav
+<region> pitch_keycenter=82 lokey=82 hikey=83 region_label=18 offset=28580 loop_start=28227 loop_end=387374 sample=SSS_Swells_A#4.wav
+<region> pitch_keycenter=84 lokey=84 hikey=91 region_label=19 offset=27330 loop_start=33561 loop_end=366927 sample=SSS_Swells_C5.wav
+
+
+//===============================================
+<master>
+amplitude_oncc$SOFT=200
+
+<group>
+xfin_locc$MW=0
+xfin_hicc$MW=31
+xfout_locc$MW=31
+xfout_hicc$MW=62
+group_label=Layer //1
+<region> pitch_keycenter=48 lokey=43 hikey=49 region_label=01 offset=18703 loop_start=810103 loop_end=1227559 sample=SSS_Level2_C2.wav
+<region> pitch_keycenter=50 lokey=50 hikey=51 region_label=02 offset=08996 loop_start=627638 loop_end=1098047 sample=SSS_Level2_D2.wav
+<region> pitch_keycenter=52 lokey=52 hikey=53 region_label=03 offset=23439 loop_start=678680 loop_end=1132706 sample=SSS_Level2_E2.wav
+<region> pitch_keycenter=54 lokey=54 hikey=55 region_label=04 offset=23123 loop_start=637669 loop_end=1098583 sample=SSS_Level2_F#2.wav
+<region> pitch_keycenter=56 lokey=56 hikey=57 region_label=05 offset=23991 loop_start=615718 loop_end=0980054 sample=SSS_Level2_G#2.wav
+<region> pitch_keycenter=58 lokey=58 hikey=59 region_label=06 offset=27621 loop_start=520987 loop_end=0943287 sample=SSS_Level2_A#2.wav
+<region> pitch_keycenter=60 lokey=60 hikey=61 region_label=07 offset=22728 loop_start=548021 loop_end=0996081 sample=SSS_Level2_C3.wav
+<region> pitch_keycenter=62 lokey=62 hikey=63 region_label=08 offset=20992 loop_start=618244 loop_end=1069603 sample=SSS_Level2_D3.wav
+<region> pitch_keycenter=64 lokey=64 hikey=65 region_label=09 offset=20440 loop_start=655286 loop_end=1096276 sample=SSS_Level2_E3.wav
+<region> pitch_keycenter=66 lokey=66 hikey=67 region_label=10 offset=24465 loop_start=404939 loop_end=1124442 sample=SSS_Level2_F#3.wav
+<region> pitch_keycenter=68 lokey=68 hikey=69 region_label=11 offset=24622 loop_start=376398 loop_end=0916890 sample=SSS_Level2_G#3.wav
+<region> pitch_keycenter=70 lokey=70 hikey=71 region_label=12 offset=21150 loop_start=772739 loop_end=1128950 sample=SSS_Level2_A#3.wav
+<region> pitch_keycenter=72 lokey=72 hikey=73 region_label=13 offset=18782 loop_start=531449 loop_end=0935677 sample=SSS_Level2_C4.wav
+<region> pitch_keycenter=74 lokey=74 hikey=75 region_label=14 offset=15231 loop_start=725105 loop_end=1022118 sample=SSS_Level2_D4.wav
+<region> pitch_keycenter=76 lokey=76 hikey=77 region_label=15 offset=04340 loop_start=571289 loop_end=0947275 sample=SSS_Level2_E4.wav
+<region> pitch_keycenter=78 lokey=78 hikey=79 region_label=16 offset=18546 loop_start=601701 loop_end=0900530 sample=SSS_Level2_F#4.wav
+<region> pitch_keycenter=80 lokey=80 hikey=81 region_label=17 offset=05208 loop_start=587124 loop_end=0994067 sample=SSS_Level2_G#4.wav
+<region> pitch_keycenter=82 lokey=82 hikey=83 region_label=18 offset=23202 loop_start=535892 loop_end=0993748 sample=SSS_Level2_A#4.wav
+<region> pitch_keycenter=84 lokey=84 hikey=91 region_label=19 offset=15783 loop_start=407539 loop_end=1032208 sample=SSS_Level2_C5.wav
+
+<group>
+xfin_locc$MW=32
+xfin_hicc$MW=63
+xfout_locc$MW=63
+xfout_hicc$MW=94
+group_label=Layer //2
+<region> pitch_keycenter=48 lokey=43 hikey=49 region_label=01 offset=25011 loop_start=656434 loop_end=1101161 sample=SSS_Level1_C2.wav
+<region> pitch_keycenter=50 lokey=50 hikey=51 region_label=02 offset=28852 loop_start=334887 loop_end=1112668 sample=SSS_Level1_D2.wav
+<region> pitch_keycenter=52 lokey=52 hikey=53 region_label=03 offset=33376 loop_start=434670 loop_end=1145810 sample=SSS_Level1_E2.wav
+<region> pitch_keycenter=54 lokey=54 hikey=55 region_label=04 offset=26377 loop_start=534589 loop_end=0979300 sample=SSS_Level1_F#2.wav
+<region> pitch_keycenter=56 lokey=56 hikey=57 region_label=05 offset=31328 loop_start=530808 loop_end=1059686 sample=SSS_Level1_G#2.wav
+<region> pitch_keycenter=58 lokey=58 hikey=59 region_label=06 offset=27465 loop_start=565906 loop_end=1130410 sample=SSS_Level1_A#2.wav
+<region> pitch_keycenter=60 lokey=60 hikey=61 region_label=07 offset=29877 loop_start=453036 loop_end=1307393 sample=SSS_Level1_C3.wav
+<region> pitch_keycenter=62 lokey=62 hikey=63 region_label=08 offset=24926 loop_start=441586 loop_end=1159265 sample=SSS_Level1_D3.wav
+<region> pitch_keycenter=64 lokey=64 hikey=65 region_label=09 offset=31157 loop_start=489807 loop_end=1171780 sample=SSS_Level1_E3.wav
+<region> pitch_keycenter=66 lokey=66 hikey=67 region_label=10 offset=38242 loop_start=744519 loop_end=1345294 sample=SSS_Level1_F#3.wav
+<region> pitch_keycenter=68 lokey=68 hikey=69 region_label=11 offset=28084 loop_start=517134 loop_end=1167644 sample=SSS_Level1_G#3.wav
+<region> pitch_keycenter=70 lokey=70 hikey=71 region_label=12 offset=29048 loop_start=433762 loop_end=0975216 sample=SSS_Level1_A#3.wav
+<region> pitch_keycenter=72 lokey=72 hikey=73 region_label=13 offset=31584 loop_start=594392 loop_end=1091686 sample=SSS_Level1_C4.wav
+<region> pitch_keycenter=74 lokey=74 hikey=75 region_label=14 offset=19377 loop_start=656772 loop_end=1198002 sample=SSS_Level1_D4.wav
+<region> pitch_keycenter=76 lokey=76 hikey=77 region_label=15 offset=30303 loop_start=579210 loop_end=1195300 sample=SSS_Level1_E4.wav
+<region> pitch_keycenter=78 lokey=78 hikey=79 region_label=16 offset=27401 loop_start=444783 loop_end=1123811 sample=SSS_Level1_F#4.wav
+<region> pitch_keycenter=80 lokey=80 hikey=81 region_label=17 offset=26718 loop_start=481287 loop_end=1139377 sample=SSS_Level1_G#4.wav
+<region> pitch_keycenter=82 lokey=82 hikey=83 region_label=18 offset=33025 loop_start=584394 loop_end=1158586 sample=SSS_Level1_A#4.wav
+<region> pitch_keycenter=84 lokey=84 hikey=91 region_label=19 offset=32437 loop_start=628806 loop_end=1200420 sample=SSS_Level1_C5.wav
+
+
+//===============================================
+<master>
+amplitude_oncc$HARD=200
+
+<group>
+xfin_locc$MW=64
+xfin_hicc$MW=95
+xfout_locc$MW=95
+xfout_hicc$MW=126
+group_label=Layer //3
+<region> pitch_keycenter=48 lokey=43 hikey=49 region_label=01 offset=24139 loop_start=545439 loop_end=979579 sample=SSS_Level3_C2.wav
+<region> pitch_keycenter=50 lokey=50 hikey=51 region_label=02 offset=28884 loop_start=511541 loop_end=899221 sample=SSS_Level3_D2.wav
+<region> pitch_keycenter=52 lokey=52 hikey=53 region_label=03 offset=21352 loop_start=514650 loop_end=945132 sample=SSS_Level3_E2.wav
+<region> pitch_keycenter=54 lokey=54 hikey=55 region_label=04 offset=22064 loop_start=286208 loop_end=751329 sample=SSS_Level3_F#2.wav
+<region> pitch_keycenter=56 lokey=56 hikey=57 region_label=05 offset=28113 loop_start=413244 loop_end=759115 sample=SSS_Level3_G#2.wav
+<region> pitch_keycenter=58 lokey=58 hikey=59 region_label=06 offset=25029 loop_start=303717 loop_end=694241 sample=SSS_Level3_A#2.wav
+<region> pitch_keycenter=60 lokey=60 hikey=61 region_label=07 offset=24911 loop_start=304746 loop_end=700769 sample=SSS_Level3_C3.wav
+<region> pitch_keycenter=62 lokey=62 hikey=63 region_label=08 offset=25800 loop_start=480092 loop_end=775872 sample=SSS_Level3_D3.wav
+<region> pitch_keycenter=64 lokey=64 hikey=65 region_label=09 offset=30901 loop_start=325554 loop_end=723627 sample=SSS_Level3_E3.wav
+<region> pitch_keycenter=66 lokey=66 hikey=67 region_label=10 offset=25088 loop_start=199809 loop_end=847402 sample=SSS_Level3_F#3.wav
+<region> pitch_keycenter=68 lokey=68 hikey=69 region_label=11 offset=20521 loop_start=413439 loop_end=768181 sample=SSS_Level3_G#3.wav
+<region> pitch_keycenter=70 lokey=70 hikey=71 region_label=12 offset=28647 loop_start=397548 loop_end=815094 sample=SSS_Level3_A#3.wav
+<region> pitch_keycenter=72 lokey=72 hikey=73 region_label=13 offset=26393 loop_start=444157 loop_end=783514 sample=SSS_Level3_C4.wav
+<region> pitch_keycenter=74 lokey=74 hikey=75 region_label=14 offset=30664 loop_start=180714 loop_end=802807 sample=SSS_Level3_D4.wav
+<region> pitch_keycenter=76 lokey=76 hikey=77 region_label=15 offset=20047 loop_start=393838 loop_end=727341 sample=SSS_Level3_E4.wav
+<region> pitch_keycenter=78 lokey=78 hikey=79 region_label=16 offset=27876 loop_start=407741 loop_end=733289 sample=SSS_Level3_F#4.wav
+<region> pitch_keycenter=80 lokey=80 hikey=81 region_label=17 offset=27461 loop_start=398201 loop_end=786367 sample=SSS_Level3_G#4.wav
+<region> pitch_keycenter=82 lokey=82 hikey=83 region_label=18 offset=28173 loop_start=426245 loop_end=725872 sample=SSS_Level3_A#4.wav
+<region> pitch_keycenter=84 lokey=84 hikey=91 region_label=19 offset=26690 loop_start=398849 loop_end=722830 sample=SSS_Level3_C5.wav
+
+<group>
+xfin_locc$MW=96
+xfin_hicc$MW=127
+group_volume=-3
+group_label=Layer //4
+<region> pitch_keycenter=48 lokey=43 hikey=49 region_label=01 offset=29338 loop_start=321158 loop_end=564868 sample=SSS_Level4_C2.wav
+<region> pitch_keycenter=50 lokey=50 hikey=51 region_label=02 offset=28168 loop_start=228219 loop_end=488170 sample=SSS_Level4_D2.wav
+<region> pitch_keycenter=52 lokey=52 hikey=53 region_label=03 offset=26919 loop_start=209948 loop_end=475064 sample=SSS_Level4_E2.wav
+<region> pitch_keycenter=54 lokey=54 hikey=55 region_label=04 offset=31445 loop_start=200386 loop_end=552806 sample=SSS_Level4_F#2.wav
+<region> pitch_keycenter=56 lokey=56 hikey=57 region_label=05 offset=29049 loop_start=225856 loop_end=459924 sample=SSS_Level4_G#2.wav
+<region> pitch_keycenter=58 lokey=58 hikey=59 region_label=06 offset=25437 loop_start=137353 loop_end=486493 sample=SSS_Level4_A#2.wav
+<region> pitch_keycenter=60 lokey=60 hikey=61 region_label=07 offset=27700 loop_start=267929 loop_end=474026 sample=SSS_Level4_C3.wav
+<region> pitch_keycenter=62 lokey=62 hikey=63 region_label=08 offset=24422 loop_start=074842 loop_end=461606 sample=SSS_Level4_D3.wav
+<region> pitch_keycenter=64 lokey=64 hikey=65 region_label=09 offset=30509 loop_start=199279 loop_end=508012 sample=SSS_Level4_E3.wav
+<region> pitch_keycenter=66 lokey=66 hikey=67 region_label=10 offset=30943 loop_start=212181 loop_end=439562 sample=SSS_Level4_F#3.wav
+<region> pitch_keycenter=68 lokey=68 hikey=69 region_label=11 offset=32559 loop_start=216321 loop_end=465072 sample=SSS_Level4_G#3.wav
+<region> pitch_keycenter=70 lokey=70 hikey=71 region_label=12 offset=30509 loop_start=271166 loop_end=454659 sample=SSS_Level4_A#3.wav
+<region> pitch_keycenter=72 lokey=72 hikey=73 region_label=13 offset=26451 loop_start=279799 loop_end=465403 sample=SSS_Level4_C4.wav
+<region> pitch_keycenter=74 lokey=74 hikey=75 region_label=14 offset=32927 loop_start=088818 loop_end=384555 sample=SSS_Level4_D4.wav
+<region> pitch_keycenter=76 lokey=76 hikey=77 region_label=15 offset=26919 loop_start=164626 loop_end=483578 sample=SSS_Level4_E4.wav
+<region> pitch_keycenter=78 lokey=78 hikey=79 region_label=16 offset=29834 loop_start=209402 loop_end=411423 sample=SSS_Level4_F#4.wav
+<region> pitch_keycenter=80 lokey=80 hikey=81 region_label=17 offset=29280 loop_start=205767 loop_end=432608 sample=SSS_Level4_G#4.wav
+<region> pitch_keycenter=82 lokey=82 hikey=83 region_label=18 offset=28324 loop_start=264988 loop_end=463754 sample=SSS_Level4_A#4.wav
+<region> pitch_keycenter=84 lokey=84 hikey=91 region_label=19 offset=35580 loop_start=155262 loop_end=390878 sample=SSS_Level4_C5.wav
