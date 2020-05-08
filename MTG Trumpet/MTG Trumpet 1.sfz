@@ -1,0 +1,971 @@
+//--------------------------------------
+// Trumpet single notes
+// by MTG @freesound.org
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $VIB_RATE 76
+#define $VIBRATO 1
+#define $LEGATO 64
+#define $EXPRESSION 11
+#define $VELTRACK 99
+
+#define $USER mtg
+#define $SOUND overall-quality-of-single-note-trumpet
+
+
+///////////////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$RELEASE=Release ($RELEASE)
+label_cc$VIB_RATE=Vib Rate ($VIB_RATE)
+label_cc$VIBRATO=Vibrato ($VIBRATO)
+label_cc$LEGATO=Legato ($LEGATO)
+label_cc$EXPRESSION=Exp ($EXPRESSION)
+label_cc$VELTRACK=Veltrack ($VELTRACK)
+
+set_hdcc$RELEASE=0.2
+set_hdcc$VIB_RATE=0.5
+set_hdcc$EXPRESSION=1
+set_hdcc$VELTRACK=1
+
+
+//***************************************************************
+<global>
+loop_mode=loop_continuous
+seq_length=3
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+ampeg_release_oncc$RELEASE=1
+amplitude_oncc$EXPRESSION=100
+pitchlfo_freq_oncc$VIB_RATE=10
+pitchlfo_depth_oncc$VIBRATO=50
+sustain_sw=off
+off_mode=time
+off_time=0.01
+off_shape=0
+
+
+//==========================================================================================================
+<master>
+master_label=attack
+trigger=attack
+group=1
+off_by=2
+
+<group> group_label=pp lovel=1 hivel=15
+<region> region_label=01_rr1 seq_position=1 key=54 offset=31625 loop_start=210417 loop_end=257495 sample=247370__$USER__$SOUND-f-3.wav tune=35
+<region> region_label=02_rr1 seq_position=1 key=55 offset=20475 loop_start=227398 loop_end=276676 sample=247371__$USER__$SOUND-g3.wav tune=40
+<region> region_label=03_rr1 seq_position=1 key=56 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=04_rr1 seq_position=1 key=57 offset=18794 loop_start=090411 loop_end=154806 sample=247373__$USER__$SOUND-a3.wav volume=-4 tune=-39
+<region> region_label=05_rr1 seq_position=1 key=58 offset=10932 loop_start=349168 loop_end=428835 sample=247374__$USER__$SOUND-a-3.wav volume=-1 tune=-43
+<region> region_label=06_rr1 seq_position=1 key=59 offset=15738 loop_start=189301 loop_end=232851 sample=247375__$USER__$SOUND-b3.wav tune=-44
+<region> region_label=07_rr1 seq_position=1 key=60 offset=17616 loop_start=230363 loop_end=281594 sample=247376__$USER__$SOUND-c4.wav tune=-18
+<region> region_label=08_rr1 seq_position=1 key=61 offset=18668 loop_start=224323 loop_end=261638 sample=247377__$USER__$SOUND-c-4.wav tune=-4
+<region> region_label=09_rr1 seq_position=1 key=62 offset=33660 loop_start=200939 loop_end=235012 sample=247378__$USER__$SOUND-d4.wav tune=-29
+<region> region_label=10_rr1 seq_position=1 key=63 offset=26092 loop_start=254989 loop_end=294916 sample=247379__$USER__$SOUND-d-4.wav volume=-2 tune=-9
+<region> region_label=11_rr1 seq_position=1 key=64 offset=25067 loop_start=214037 loop_end=250637 sample=247380__$USER__$SOUND-e4.wav tune=31
+<region> region_label=12_rr1 seq_position=1 key=65 offset=22466 loop_start=208086 loop_end=269729 sample=247381__$USER__$SOUND-f4.wav tune=22
+<region> region_label=13_rr1 seq_position=1 key=66 offset=38232 loop_start=263304 loop_end=328064 sample=247382__$USER__$SOUND-f-4.wav tune=20
+<region> region_label=14_rr1 seq_position=1 key=67 offset=32004 loop_start=249201 loop_end=309167 sample=247383__$USER__$SOUND-g4.wav tune=15
+<region> region_label=15_rr1 seq_position=1 key=68 offset=25067 loop_start=230149 loop_end=308162 sample=247384__$USER__$SOUND-g-4.wav tune=-5
+<region> region_label=16_rr1 seq_position=1 key=69 offset=39572 loop_start=239647 loop_end=358513 sample=247385__$USER__$SOUND-a4.wav tune=-5
+<region> region_label=17_rr1 seq_position=1 key=70 offset=22387 loop_start=287540 loop_end=324292 sample=247386__$USER__$SOUND-a-4.wav tune=-9
+<region> region_label=18_rr1 seq_position=1 key=71 offset=29639 loop_start=272592 loop_end=317981 sample=247387__$USER__$SOUND-b4.wav volume=2 tune=-20
+<region> region_label=19_rr1 seq_position=1 key=72 offset=37032 loop_start=272963 loop_end=347327 sample=247388__$USER__$SOUND-c5.wav tune=-6
+<region> region_label=20_rr1 seq_position=1 key=73 offset=39256 loop_start=263170 loop_end=295886 sample=247389__$USER__$SOUND-c-5.wav tune=2
+<region> region_label=21_rr1 seq_position=1 key=74 offset=44617 loop_start=229184 loop_end=259848 sample=247390__$USER__$SOUND-d5.wav tune=-17
+<region> region_label=22_rr1 seq_position=1 key=75 offset=50450 loop_start=324512 loop_end=372205 sample=247391__$USER__$SOUND-d-5.wav tune=-33
+<region> region_label=23_rr1 seq_position=1 key=76 offset=28896 loop_start=230267 loop_end=308133 sample=247392__$USER__$SOUND-e5.wav volume=2 tune=-14
+<region> region_label=24_rr1 seq_position=1 key=77 offset=27196 loop_start=229562 loop_end=326127 sample=247393__$USER__$SOUND-f5.wav volume=1 tune=-38
+<region> region_label=25_rr1 seq_position=1 key=78 offset=12533 loop_start=205198 loop_end=283796 sample=247394__$USER__$SOUND-f-5.wav volume=1 tune=-16
+<region> region_label=26_rr1 seq_position=1 key=79 offset=21047 loop_start=198257 loop_end=281825 sample=247395__$USER__$SOUND-g5.wav tune=-34
+<region> region_label=27_rr1 seq_position=1 key=80 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=28_rr1 seq_position=1 key=81 offset=08907 loop_start=151844 loop_end=219996 sample=247397__$USER__$SOUND-a5.wav tune=2
+<region> region_label=29_rr1 seq_position=1 key=82 offset=37365 loop_start=225438 loop_end=296455 sample=247398__$USER__$SOUND-a-5.wav tune=-2
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=20475 loop_start=227398 loop_end=276676 sample=247371__$USER__$SOUND-g3.wav tune=40
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=18794 loop_start=090411 loop_end=154806 sample=247373__$USER__$SOUND-a3.wav volume=-4 tune=-39
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=10932 loop_start=349168 loop_end=428835 sample=247374__$USER__$SOUND-a-3.wav volume=-1 tune=-43
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=15738 loop_start=189301 loop_end=232851 sample=247375__$USER__$SOUND-b3.wav tune=-44
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=17616 loop_start=230363 loop_end=281594 sample=247376__$USER__$SOUND-c4.wav tune=-18
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=18668 loop_start=224323 loop_end=261638 sample=247377__$USER__$SOUND-c-4.wav tune=-4
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=33660 loop_start=200939 loop_end=235012 sample=247378__$USER__$SOUND-d4.wav tune=-29
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=26092 loop_start=254989 loop_end=294916 sample=247379__$USER__$SOUND-d-4.wav volume=-2 tune=-9
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=25067 loop_start=214037 loop_end=250637 sample=247380__$USER__$SOUND-e4.wav tune=31
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=22466 loop_start=208086 loop_end=269729 sample=247381__$USER__$SOUND-f4.wav tune=22
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=38232 loop_start=263304 loop_end=328064 sample=247382__$USER__$SOUND-f-4.wav tune=20
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=32004 loop_start=249201 loop_end=309167 sample=247383__$USER__$SOUND-g4.wav tune=15
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=25067 loop_start=230149 loop_end=308162 sample=247384__$USER__$SOUND-g-4.wav tune=-5
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=39572 loop_start=239647 loop_end=358513 sample=247385__$USER__$SOUND-a4.wav tune=-5
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=22387 loop_start=287540 loop_end=324292 sample=247386__$USER__$SOUND-a-4.wav tune=-9
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=29639 loop_start=272592 loop_end=317981 sample=247387__$USER__$SOUND-b4.wav volume=2 tune=-20
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=37032 loop_start=272963 loop_end=347327 sample=247388__$USER__$SOUND-c5.wav tune=-6
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=39256 loop_start=263170 loop_end=295886 sample=247389__$USER__$SOUND-c-5.wav tune=2
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=44617 loop_start=229184 loop_end=259848 sample=247390__$USER__$SOUND-d5.wav tune=-17
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=50450 loop_start=324512 loop_end=372205 sample=247391__$USER__$SOUND-d-5.wav tune=-33
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=28896 loop_start=230267 loop_end=308133 sample=247392__$USER__$SOUND-e5.wav volume=2 tune=-14
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=27196 loop_start=229562 loop_end=326127 sample=247393__$USER__$SOUND-f5.wav volume=1 tune=-38
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=12533 loop_start=205198 loop_end=283796 sample=247394__$USER__$SOUND-f-5.wav volume=1 tune=-16
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=21047 loop_start=198257 loop_end=281825 sample=247395__$USER__$SOUND-g5.wav tune=-34
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=08907 loop_start=151844 loop_end=219996 sample=247397__$USER__$SOUND-a5.wav tune=2
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=37365 loop_start=225438 loop_end=296455 sample=247398__$USER__$SOUND-a-5.wav tune=-2
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=31625 loop_start=210417 loop_end=257495 sample=247370__$USER__$SOUND-f-3.wav tune=35
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=20475 loop_start=227398 loop_end=276676 sample=247371__$USER__$SOUND-g3.wav tune=40
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=18794 loop_start=090411 loop_end=154806 sample=247373__$USER__$SOUND-a3.wav volume=-4 tune=-39
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=10932 loop_start=349168 loop_end=428835 sample=247374__$USER__$SOUND-a-3.wav volume=-1 tune=-43
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=15738 loop_start=189301 loop_end=232851 sample=247375__$USER__$SOUND-b3.wav tune=-44
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=17616 loop_start=230363 loop_end=281594 sample=247376__$USER__$SOUND-c4.wav tune=-18
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=18668 loop_start=224323 loop_end=261638 sample=247377__$USER__$SOUND-c-4.wav tune=-4
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=33660 loop_start=200939 loop_end=235012 sample=247378__$USER__$SOUND-d4.wav tune=-29
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=26092 loop_start=254989 loop_end=294916 sample=247379__$USER__$SOUND-d-4.wav volume=-2 tune=-9
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=25067 loop_start=214037 loop_end=250637 sample=247380__$USER__$SOUND-e4.wav tune=31
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=22466 loop_start=208086 loop_end=269729 sample=247381__$USER__$SOUND-f4.wav tune=22
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=38232 loop_start=263304 loop_end=328064 sample=247382__$USER__$SOUND-f-4.wav tune=20
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=32004 loop_start=249201 loop_end=309167 sample=247383__$USER__$SOUND-g4.wav tune=15
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=25067 loop_start=230149 loop_end=308162 sample=247384__$USER__$SOUND-g-4.wav tune=-5
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=39572 loop_start=239647 loop_end=358513 sample=247385__$USER__$SOUND-a4.wav tune=-5
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=22387 loop_start=287540 loop_end=324292 sample=247386__$USER__$SOUND-a-4.wav tune=-9
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=29639 loop_start=272592 loop_end=317981 sample=247387__$USER__$SOUND-b4.wav volume=2 tune=-20
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=37032 loop_start=272963 loop_end=347327 sample=247388__$USER__$SOUND-c5.wav tune=-6
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=39256 loop_start=263170 loop_end=295886 sample=247389__$USER__$SOUND-c-5.wav tune=2
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=44617 loop_start=229184 loop_end=259848 sample=247390__$USER__$SOUND-d5.wav tune=-17
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=50450 loop_start=324512 loop_end=372205 sample=247391__$USER__$SOUND-d-5.wav tune=-33
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=28896 loop_start=230267 loop_end=308133 sample=247392__$USER__$SOUND-e5.wav volume=2 tune=-14
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=27196 loop_start=229562 loop_end=326127 sample=247393__$USER__$SOUND-f5.wav volume=1 tune=-38
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=12533 loop_start=205198 loop_end=283796 sample=247394__$USER__$SOUND-f-5.wav volume=1 tune=-16
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=21047 loop_start=198257 loop_end=281825 sample=247395__$USER__$SOUND-g5.wav tune=-34
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=08907 loop_start=151844 loop_end=219996 sample=247397__$USER__$SOUND-a5.wav tune=2
+
+<group> group_label=p lovel=16 hivel=31
+<region> region_label=01_rr1 seq_position=1 key=54 offset=11364 loop_start=145601 loop_end=202168 sample=247287__$USER__$SOUND-f-3.wav tune=16
+<region> region_label=02_rr1 seq_position=1 key=55 offset=12051 loop_start=163232 loop_end=215428 sample=247286__$USER__$SOUND-g3.wav
+<region> region_label=03_rr1 seq_position=1 key=56 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=04_rr1 seq_position=1 key=57 offset=11565 loop_start=131433 loop_end=193375 sample=247284__$USER__$SOUND-a3.wav tune=-18
+<region> region_label=05_rr1 seq_position=1 key=58 offset=13168 loop_start=125891 loop_end=178653 sample=247283__$USER__$SOUND-a-3.wav volume=-1.5 tune=-24
+<region> region_label=06_rr1 seq_position=1 key=59 offset=14886 loop_start=167728 loop_end=208181 sample=247282__$USER__$SOUND-b3.wav tune=-40
+<region> region_label=07_rr1 seq_position=1 key=60 offset=15916 loop_start=102019 loop_end=126259 sample=247281__$USER__$SOUND-c4.wav tune=-24
+<region> region_label=08_rr1 seq_position=1 key=61 offset=05324 loop_start=143934 loop_end=174250 sample=247280__$USER__$SOUND-c-4.wav tune=-27
+<region> region_label=09_rr1 seq_position=1 key=62 offset=12567 loop_start=099169 loop_end=175164 sample=247279__$USER__$SOUND-d4.wav tune=-22
+<region> region_label=10_rr1 seq_position=1 key=63 offset=13197 loop_start=106814 loop_end=171466 sample=247278__$USER__$SOUND-d-4.wav volume=-2 tune=-19
+<region> region_label=11_rr1 seq_position=1 key=64 offset=12624 loop_start=101938 loop_end=141124 sample=247277__$USER__$SOUND-e4.wav volume=-3 tune=-6
+<region> region_label=12_rr1 seq_position=1 key=65 offset=11908 loop_start=096243 loop_end=149866 sample=247276__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=13_rr1 seq_position=1 key=66 offset=13082 loop_start=121253 loop_end=136616 sample=247275__$USER__$SOUND-f-4.wav tune=-8
+<region> region_label=14_rr1 seq_position=1 key=67 offset=12996 loop_start=150369 loop_end=189669 sample=247274__$USER__$SOUND-g4.wav volume=-3 tune=-20
+<region> region_label=15_rr1 seq_position=1 key=68 offset=06355 loop_start=134521 loop_end=163082 sample=247273__$USER__$SOUND-g-4.wav tune=-13
+<region> region_label=16_rr1 seq_position=1 key=69 offset=12882 loop_start=133793 loop_end=148064 sample=247272__$USER__$SOUND-a4.wav volume=-1 tune=-2
+<region> region_label=17_rr1 seq_position=1 key=70 offset=15029 loop_start=056101 loop_end=084914 sample=247271__$USER__$SOUND-a-4.wav tune=-7
+<region> region_label=18_rr1 seq_position=1 key=71 offset=13712 loop_start=122571 loop_end=152552 sample=247270__$USER__$SOUND-b4.wav volume=-1 tune=-15
+<region> region_label=19_rr1 seq_position=1 key=72 offset=13569 loop_start=142965 loop_end=160986 sample=247269__$USER__$SOUND-c5.wav tune=-13
+<region> region_label=20_rr1 seq_position=1 key=73 offset=15029 loop_start=084061 loop_end=134507 sample=247268__$USER__$SOUND-c-5.wav volume=-1 tune=-12
+<region> region_label=21_rr1 seq_position=1 key=74 offset=14599 loop_start=086550 loop_end=144860 sample=247267__$USER__$SOUND-d5.wav tune=-21
+<region> region_label=22_rr1 seq_position=1 key=75 offset=13426 loop_start=092198 loop_end=132362 sample=247266__$USER__$SOUND-d-5.wav volume=2 tune=-28
+<region> region_label=23_rr1 seq_position=1 key=76 offset=14342 loop_start=117879 loop_end=131717 sample=247265__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=24_rr1 seq_position=1 key=77 offset=15429 loop_start=060997 loop_end=085745 sample=247264__$USER__$SOUND-f5.wav tune=-24
+<region> region_label=25_rr1 seq_position=1 key=78 offset=16832 loop_start=072687 loop_end=100104 sample=247263__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=26_rr1 seq_position=1 key=79 offset=15286 loop_start=114661 loop_end=136682 sample=247262__$USER__$SOUND-g5.wav volume=0.5 tune=-20
+<region> region_label=27_rr1 seq_position=1 key=80 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=28_rr1 seq_position=1 key=81 offset=14828 loop_start=101410 loop_end=134537 sample=247260__$USER__$SOUND-a5.wav volume=3 tune=-2
+<region> region_label=29_rr1 seq_position=1 key=82 offset=17586 loop_start=066797 loop_end=108370 sample=247259__$USER__$SOUND-a-5.wav volume=2 tune=7
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=12051 loop_start=163232 loop_end=215428 sample=247286__$USER__$SOUND-g3.wav
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=11565 loop_start=131433 loop_end=193375 sample=247284__$USER__$SOUND-a3.wav tune=-18
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=13168 loop_start=125891 loop_end=178653 sample=247283__$USER__$SOUND-a-3.wav volume=-1.5 tune=-24
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=14886 loop_start=167728 loop_end=208181 sample=247282__$USER__$SOUND-b3.wav tune=-40
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=15916 loop_start=102019 loop_end=126259 sample=247281__$USER__$SOUND-c4.wav tune=-24
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=05324 loop_start=143934 loop_end=174250 sample=247280__$USER__$SOUND-c-4.wav tune=-27
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=12567 loop_start=099169 loop_end=175164 sample=247279__$USER__$SOUND-d4.wav tune=-22
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=13197 loop_start=106814 loop_end=171466 sample=247278__$USER__$SOUND-d-4.wav volume=-2 tune=-19
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=12624 loop_start=101938 loop_end=141124 sample=247277__$USER__$SOUND-e4.wav volume=-3 tune=-6
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=11908 loop_start=096243 loop_end=149866 sample=247276__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=13082 loop_start=121253 loop_end=136616 sample=247275__$USER__$SOUND-f-4.wav tune=-8
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=12996 loop_start=150369 loop_end=189669 sample=247274__$USER__$SOUND-g4.wav volume=-3 tune=-20
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=06355 loop_start=134521 loop_end=163082 sample=247273__$USER__$SOUND-g-4.wav tune=-13
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=12882 loop_start=133793 loop_end=148064 sample=247272__$USER__$SOUND-a4.wav volume=-1 tune=-2
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=15029 loop_start=056101 loop_end=084914 sample=247271__$USER__$SOUND-a-4.wav tune=-7
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=13712 loop_start=122571 loop_end=152552 sample=247270__$USER__$SOUND-b4.wav volume=-1 tune=-15
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=13569 loop_start=142965 loop_end=160986 sample=247269__$USER__$SOUND-c5.wav tune=-13
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=15029 loop_start=084061 loop_end=134507 sample=247268__$USER__$SOUND-c-5.wav volume=-1 tune=-12
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=14599 loop_start=086550 loop_end=144860 sample=247267__$USER__$SOUND-d5.wav tune=-21
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=13426 loop_start=092198 loop_end=132362 sample=247266__$USER__$SOUND-d-5.wav volume=2 tune=-28
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=14342 loop_start=117879 loop_end=131717 sample=247265__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=15429 loop_start=060997 loop_end=085745 sample=247264__$USER__$SOUND-f5.wav tune=-24
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=16832 loop_start=072687 loop_end=100104 sample=247263__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=15286 loop_start=114661 loop_end=136682 sample=247262__$USER__$SOUND-g5.wav volume=0.5 tune=-20
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=14828 loop_start=101410 loop_end=134537 sample=247260__$USER__$SOUND-a5.wav volume=3 tune=-2
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=17586 loop_start=066797 loop_end=108370 sample=247259__$USER__$SOUND-a-5.wav volume=2 tune=7
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=11364 loop_start=145601 loop_end=202168 sample=247287__$USER__$SOUND-f-3.wav tune=16
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=12051 loop_start=163232 loop_end=215428 sample=247286__$USER__$SOUND-g3.wav
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=11565 loop_start=131433 loop_end=193375 sample=247284__$USER__$SOUND-a3.wav tune=-18
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=13168 loop_start=125891 loop_end=178653 sample=247283__$USER__$SOUND-a-3.wav volume=-1.5 tune=-24
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=14886 loop_start=167728 loop_end=208181 sample=247282__$USER__$SOUND-b3.wav tune=-40
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=15916 loop_start=102019 loop_end=126259 sample=247281__$USER__$SOUND-c4.wav tune=-24
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=05324 loop_start=143934 loop_end=174250 sample=247280__$USER__$SOUND-c-4.wav tune=-27
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=12567 loop_start=099169 loop_end=175164 sample=247279__$USER__$SOUND-d4.wav tune=-22
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=13197 loop_start=106814 loop_end=171466 sample=247278__$USER__$SOUND-d-4.wav volume=-2 tune=-19
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=12624 loop_start=101938 loop_end=141124 sample=247277__$USER__$SOUND-e4.wav volume=-3 tune=-6
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=11908 loop_start=096243 loop_end=149866 sample=247276__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=13082 loop_start=121253 loop_end=136616 sample=247275__$USER__$SOUND-f-4.wav tune=-8
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=12996 loop_start=150369 loop_end=189669 sample=247274__$USER__$SOUND-g4.wav volume=-3 tune=-20
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=06355 loop_start=134521 loop_end=163082 sample=247273__$USER__$SOUND-g-4.wav tune=-13
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=12882 loop_start=133793 loop_end=148064 sample=247272__$USER__$SOUND-a4.wav volume=-1 tune=-2
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=15029 loop_start=056101 loop_end=084914 sample=247271__$USER__$SOUND-a-4.wav tune=-7
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=13712 loop_start=122571 loop_end=152552 sample=247270__$USER__$SOUND-b4.wav volume=-1 tune=-15
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=13569 loop_start=142965 loop_end=160986 sample=247269__$USER__$SOUND-c5.wav tune=-13
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=15029 loop_start=084061 loop_end=134507 sample=247268__$USER__$SOUND-c-5.wav volume=-1 tune=-12
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=14599 loop_start=086550 loop_end=144860 sample=247267__$USER__$SOUND-d5.wav tune=-21
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=13426 loop_start=092198 loop_end=132362 sample=247266__$USER__$SOUND-d-5.wav volume=2 tune=-28
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=14342 loop_start=117879 loop_end=131717 sample=247265__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=15429 loop_start=060997 loop_end=085745 sample=247264__$USER__$SOUND-f5.wav tune=-24
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=16832 loop_start=072687 loop_end=100104 sample=247263__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=15286 loop_start=114661 loop_end=136682 sample=247262__$USER__$SOUND-g5.wav volume=0.5 tune=-20
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=14828 loop_start=101410 loop_end=134537 sample=247260__$USER__$SOUND-a5.wav volume=3 tune=-2
+
+<group> group_label=mp group_volume=-6 lovel=32 hivel=63
+<region> region_label=01_rr1 seq_position=1 key=54 offset=15944 loop_start=177949 loop_end=212533 sample=247113__$USER__$SOUND-f-3.wav volume=-1 tune=17
+<region> region_label=02_rr1 seq_position=1 key=55 offset=13550 loop_start=142286 loop_end=205582 sample=247112__$USER__$SOUND-g3.wav tune=-13
+<region> region_label=03_rr1 seq_position=1 key=56 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=04_rr1 seq_position=1 key=57 offset=07514 loop_start=100819 loop_end=184086 sample=247110__$USER__$SOUND-a3.wav tune=-16
+<region> region_label=05_rr1 seq_position=1 key=58 offset=08753 loop_start=143480 loop_end=181201 sample=247109__$USER__$SOUND-a-3.wav volume=-1 tune=-35
+<region> region_label=06_rr1 seq_position=1 key=59 offset=08273 loop_start=081584 loop_end=118682 sample=247108__$USER__$SOUND-b3.wav tune=-38
+<region> region_label=07_rr1 seq_position=1 key=60 offset=07835 loop_start=144513 loop_end=178108 sample=247107__$USER__$SOUND-c4.wav tune=-27
+<region> region_label=08_rr1 seq_position=1 key=61 offset=03759 loop_start=117074 loop_end=156703 sample=247106__$USER__$SOUND-c-4.wav tune=-18
+<region> region_label=09_rr1 seq_position=1 key=62 offset=08224 loop_start=093419 loop_end=133664 sample=247105__$USER__$SOUND-d4.wav volume=-3 tune=-33
+<region> region_label=10_rr1 seq_position=1 key=63 offset=10043 loop_start=120192 loop_end=160056 sample=247104__$USER__$SOUND-d-4.wav tune=-24
+<region> region_label=11_rr1 seq_position=1 key=64 offset=13774 loop_start=134800 loop_end=178576 sample=247103__$USER__$SOUND-e4.wav volume=-1 tune=-14
+<region> region_label=12_rr1 seq_position=1 key=65 offset=13968 loop_start=059210 loop_end=130471 sample=247102__$USER__$SOUND-f4.wav tune=-14
+<region> region_label=13_rr1 seq_position=1 key=66 offset=12786 loop_start=096232 loop_end=146442 sample=247101__$USER__$SOUND-f-4.wav volume=-3 tune=-8
+<region> region_label=14_rr1 seq_position=1 key=67 offset=14965 loop_start=113067 loop_end=166094 sample=247100__$USER__$SOUND-g4.wav volume=-1 tune=-15
+<region> region_label=15_rr1 seq_position=1 key=68 offset=10432 loop_start=089389 loop_end=122626 sample=247099__$USER__$SOUND-g-4.wav volume=-2 tune=-26
+<region> region_label=16_rr1 seq_position=1 key=69 offset=10710 loop_start=062031 loop_end=124286 sample=247098__$USER__$SOUND-a4.wav volume=-1 tune=-19
+<region> region_label=17_rr1 seq_position=1 key=70 offset=11637 loop_start=112255 loop_end=154233 sample=247097__$USER__$SOUND-a-4.wav tune=-35
+<region> region_label=18_rr1 seq_position=1 key=71 offset=10878 loop_start=091021 loop_end=134100 sample=247096__$USER__$SOUND-b4.wav tune=-10
+<region> region_label=19_rr1 seq_position=1 key=72 offset=12626 loop_start=102371 loop_end=153278 sample=247095__$USER__$SOUND-c5.wav tune=-15
+<region> region_label=20_rr1 seq_position=1 key=73 offset=02555 loop_start=077669 loop_end=119998 sample=247094__$USER__$SOUND-c-5.wav
+<region> region_label=21_rr1 seq_position=1 key=74 offset=14026 loop_start=128854 loop_end=149699 sample=247093__$USER__$SOUND-d5.wav volume=-2 tune=-6
+<region> region_label=22_rr1 seq_position=1 key=75 offset=11603 loop_start=097537 loop_end=144270 sample=247092__$USER__$SOUND-d-5.wav volume=-2 tune=-32
+<region> region_label=23_rr1 seq_position=1 key=76 offset=16494 loop_start=062397 loop_end=099534 sample=247091__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=24_rr1 seq_position=1 key=77 offset=07580 loop_start=104913 loop_end=129186 sample=247090__$USER__$SOUND-f5.wav tune=-28
+<region> region_label=25_rr1 seq_position=1 key=78 offset=09205 loop_start=112378 loop_end=131172 sample=247089__$USER__$SOUND-f-5.wav tune=-13
+<region> region_label=26_rr1 seq_position=1 key=79 offset=04326 loop_start=082205 loop_end=129451 sample=247088__$USER__$SOUND-g5.wav volume=-2 tune=-12
+<region> region_label=27_rr1 seq_position=1 key=80 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=28_rr1 seq_position=1 key=81 offset=04766 loop_start=092559 loop_end=126607 sample=247086__$USER__$SOUND-a5.wav volume=-2 tune=-8
+<region> region_label=29_rr1 seq_position=1 key=82 offset=02740 loop_start=083164 loop_end=126365 sample=247085__$USER__$SOUND-a-5.wav volume=-3 tune=5
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=13550 loop_start=142286 loop_end=205582 sample=247112__$USER__$SOUND-g3.wav tune=-13
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=07514 loop_start=100819 loop_end=184086 sample=247110__$USER__$SOUND-a3.wav tune=-16
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=08753 loop_start=143480 loop_end=181201 sample=247109__$USER__$SOUND-a-3.wav volume=-1 tune=-35
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=08273 loop_start=081584 loop_end=118682 sample=247108__$USER__$SOUND-b3.wav tune=-38
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=07835 loop_start=144513 loop_end=178108 sample=247107__$USER__$SOUND-c4.wav tune=-27
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=03759 loop_start=117074 loop_end=156703 sample=247106__$USER__$SOUND-c-4.wav tune=-18
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=08224 loop_start=093419 loop_end=133664 sample=247105__$USER__$SOUND-d4.wav volume=-3 tune=-33
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=10043 loop_start=120192 loop_end=160056 sample=247104__$USER__$SOUND-d-4.wav tune=-24
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=13774 loop_start=134800 loop_end=178576 sample=247103__$USER__$SOUND-e4.wav volume=-1 tune=-14
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=13968 loop_start=059210 loop_end=130471 sample=247102__$USER__$SOUND-f4.wav tune=-14
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=12786 loop_start=096232 loop_end=146442 sample=247101__$USER__$SOUND-f-4.wav volume=-3 tune=-8
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=14965 loop_start=113067 loop_end=166094 sample=247100__$USER__$SOUND-g4.wav volume=-1 tune=-15
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=10432 loop_start=089389 loop_end=122626 sample=247099__$USER__$SOUND-g-4.wav volume=-2 tune=-26
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=10710 loop_start=062031 loop_end=124286 sample=247098__$USER__$SOUND-a4.wav volume=-1 tune=-19
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=11637 loop_start=112255 loop_end=154233 sample=247097__$USER__$SOUND-a-4.wav tune=-35
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=10878 loop_start=091021 loop_end=134100 sample=247096__$USER__$SOUND-b4.wav tune=-10
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=12626 loop_start=102371 loop_end=153278 sample=247095__$USER__$SOUND-c5.wav tune=-15
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=02555 loop_start=077669 loop_end=119998 sample=247094__$USER__$SOUND-c-5.wav
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=14026 loop_start=128854 loop_end=149699 sample=247093__$USER__$SOUND-d5.wav volume=-2 tune=-6
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=11603 loop_start=097537 loop_end=144270 sample=247092__$USER__$SOUND-d-5.wav volume=-2 tune=-32
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=16494 loop_start=062397 loop_end=099534 sample=247091__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=07580 loop_start=104913 loop_end=129186 sample=247090__$USER__$SOUND-f5.wav tune=-28
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=09205 loop_start=112378 loop_end=131172 sample=247089__$USER__$SOUND-f-5.wav tune=-13
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=04326 loop_start=082205 loop_end=129451 sample=247088__$USER__$SOUND-g5.wav volume=-2 tune=-12
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=04766 loop_start=092559 loop_end=126607 sample=247086__$USER__$SOUND-a5.wav volume=-2 tune=-8
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=02740 loop_start=083164 loop_end=126365 sample=247085__$USER__$SOUND-a-5.wav volume=-3 tune=5
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=15944 loop_start=177949 loop_end=212533 sample=247113__$USER__$SOUND-f-3.wav volume=-1 tune=17
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=13550 loop_start=142286 loop_end=205582 sample=247112__$USER__$SOUND-g3.wav tune=-13
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=07514 loop_start=100819 loop_end=184086 sample=247110__$USER__$SOUND-a3.wav tune=-16
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=08753 loop_start=143480 loop_end=181201 sample=247109__$USER__$SOUND-a-3.wav volume=-1 tune=-35
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=08273 loop_start=081584 loop_end=118682 sample=247108__$USER__$SOUND-b3.wav tune=-38
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=07835 loop_start=144513 loop_end=178108 sample=247107__$USER__$SOUND-c4.wav tune=-27
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=03759 loop_start=117074 loop_end=156703 sample=247106__$USER__$SOUND-c-4.wav tune=-18
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=08224 loop_start=093419 loop_end=133664 sample=247105__$USER__$SOUND-d4.wav volume=-3 tune=-33
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=10043 loop_start=120192 loop_end=160056 sample=247104__$USER__$SOUND-d-4.wav tune=-24
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=13774 loop_start=134800 loop_end=178576 sample=247103__$USER__$SOUND-e4.wav volume=-1 tune=-14
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=13968 loop_start=059210 loop_end=130471 sample=247102__$USER__$SOUND-f4.wav tune=-14
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=12786 loop_start=096232 loop_end=146442 sample=247101__$USER__$SOUND-f-4.wav volume=-3 tune=-8
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=14965 loop_start=113067 loop_end=166094 sample=247100__$USER__$SOUND-g4.wav volume=-1 tune=-15
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=10432 loop_start=089389 loop_end=122626 sample=247099__$USER__$SOUND-g-4.wav volume=-2 tune=-26
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=10710 loop_start=062031 loop_end=124286 sample=247098__$USER__$SOUND-a4.wav volume=-1 tune=-19
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=11637 loop_start=112255 loop_end=154233 sample=247097__$USER__$SOUND-a-4.wav tune=-35
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=10878 loop_start=091021 loop_end=134100 sample=247096__$USER__$SOUND-b4.wav tune=-10
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=12626 loop_start=102371 loop_end=153278 sample=247095__$USER__$SOUND-c5.wav tune=-15
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=02555 loop_start=077669 loop_end=119998 sample=247094__$USER__$SOUND-c-5.wav
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=14026 loop_start=128854 loop_end=149699 sample=247093__$USER__$SOUND-d5.wav volume=-2 tune=-6
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=11603 loop_start=097537 loop_end=144270 sample=247092__$USER__$SOUND-d-5.wav volume=-2 tune=-32
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=16494 loop_start=062397 loop_end=099534 sample=247091__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=07580 loop_start=104913 loop_end=129186 sample=247090__$USER__$SOUND-f5.wav tune=-28
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=09205 loop_start=112378 loop_end=131172 sample=247089__$USER__$SOUND-f-5.wav tune=-13
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=04326 loop_start=082205 loop_end=129451 sample=247088__$USER__$SOUND-g5.wav volume=-2 tune=-12
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=04766 loop_start=092559 loop_end=126607 sample=247086__$USER__$SOUND-a5.wav volume=-2 tune=-8
+
+<group> group_label=mf lovel=64 hivel=95
+<region> region_label=01_rr1 seq_position=1 key=54 offset=09353 loop_start=147029 loop_end=217065 sample=247084__$USER__$SOUND-f-3.wav tune=40
+<region> region_label=02_rr1 seq_position=1 key=55 offset=18126 loop_start=166582 loop_end=227229 sample=247083__$USER__$SOUND-g3.wav volume=2 tune=3
+<region> region_label=03_rr1 seq_position=1 key=56 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=04_rr1 seq_position=1 key=57 offset=14457 loop_start=143035 loop_end=190673 sample=247081__$USER__$SOUND-a3.wav volume=-1 tune=-20
+<region> region_label=05_rr1 seq_position=1 key=58 offset=16220 loop_start=153967 loop_end=222784 sample=247080__$USER__$SOUND-a-3.wav tune=-3
+<region> region_label=06_rr1 seq_position=1 key=59 offset=17430 loop_start=131625 loop_end=174687 sample=247079__$USER__$SOUND-b3.wav volume=-0.5 tune=-35
+<region> region_label=07_rr1 seq_position=1 key=60 offset=18661 loop_start=125934 loop_end=190426 sample=247078__$USER__$SOUND-c4.wav volume=-1.5 tune=-22
+<region> region_label=08_rr1 seq_position=1 key=61 offset=18572 loop_start=130206 loop_end=213818 sample=247077__$USER__$SOUND-c-4.wav tune=5
+<region> region_label=09_rr1 seq_position=1 key=62 offset=15596 loop_start=162606 loop_end=245843 sample=247076__$USER__$SOUND-d4.wav volume=-2 tune=-10
+<region> region_label=10_rr1 seq_position=1 key=63 offset=09542 loop_start=127163 loop_end=183215 sample=247075__$USER__$SOUND-d-4.wav volume=-1.5 tune=-3
+<region> region_label=11_rr1 seq_position=1 key=64 offset=23038 loop_start=179177 loop_end=222891 sample=247074__$USER__$SOUND-e4.wav volume=-3 tune=7
+<region> region_label=12_rr1 seq_position=1 key=65 offset=12174 loop_start=101176 loop_end=196648 sample=247073__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=13_rr1 seq_position=1 key=66 offset=17053 loop_start=138157 loop_end=209172 sample=247072__$USER__$SOUND-f-4.wav volume=-1 tune=8
+<region> region_label=14_rr1 seq_position=1 key=67 offset=20047 loop_start=138727 loop_end=196174 sample=247071__$USER__$SOUND-g4.wav volume=-3.5 tune=-25
+<region> region_label=15_rr1 seq_position=1 key=68 offset=19346 loop_start=128042 loop_end=182819 sample=247070__$USER__$SOUND-g-4.wav volume=-1.5 tune=-7
+<region> region_label=16_rr1 seq_position=1 key=69 offset=15544 loop_start=106543 loop_end=153133 sample=247069__$USER__$SOUND-a4.wav volume=-2 tune=9
+<region> region_label=17_rr1 seq_position=1 key=70 offset=09089 loop_start=123053 loop_end=182530 sample=247068__$USER__$SOUND-a-4.wav volume=-2 tune=-16
+<region> region_label=18_rr1 seq_position=1 key=71 offset=14678 loop_start=087033 loop_end=145911 sample=247067__$USER__$SOUND-b4.wav volume=-1 tune=-8
+<region> region_label=19_rr1 seq_position=1 key=72 offset=19914 loop_start=147093 loop_end=230521 sample=247066__$USER__$SOUND-c5.wav volume=-3.5
+<region> region_label=20_rr1 seq_position=1 key=73 offset=11484 loop_start=059766 loop_end=115252 sample=247065__$USER__$SOUND-c-5.wav volume=-2 tune=-6
+<region> region_label=21_rr1 seq_position=1 key=74 offset=23936 loop_start=175600 loop_end=206983 sample=247064__$USER__$SOUND-d5.wav volume=-1 tune=8
+<region> region_label=22_rr1 seq_position=1 key=75 offset=12518 loop_start=150891 loop_end=178968 sample=247063__$USER__$SOUND-d-5.wav volume=-2 tune=-24
+<region> region_label=23_rr1 seq_position=1 key=76 offset=14349 loop_start=125086 loop_end=167821 sample=247062__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=24_rr1 seq_position=1 key=77 offset=25354 loop_start=096688 loop_end=147716 sample=247061__$USER__$SOUND-f5.wav volume=-2 tune=-36
+<region> region_label=25_rr1 seq_position=1 key=78 offset=21308 loop_start=116449 loop_end=144567 sample=247060__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=26_rr1 seq_position=1 key=79 offset=17957 loop_start=154686 loop_end=190774 sample=247059__$USER__$SOUND-g5.wav volume=2 tune=-36
+<region> region_label=27_rr1 seq_position=1 key=80 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=28_rr1 seq_position=1 key=81 offset=07302 loop_start=120949 loop_end=175803 sample=247057__$USER__$SOUND-a5.wav volume=4 tune=-7
+<region> region_label=29_rr1 seq_position=1 key=82 offset=12757 loop_start=140033 loop_end=162981 sample=247056__$USER__$SOUND-a-5.wav volume=-3 tune=-5
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=18126 loop_start=166582 loop_end=227229 sample=247083__$USER__$SOUND-g3.wav volume=2 tune=3
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=14457 loop_start=143035 loop_end=190673 sample=247081__$USER__$SOUND-a3.wav volume=-1 tune=-20
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=16220 loop_start=153967 loop_end=222784 sample=247080__$USER__$SOUND-a-3.wav tune=-3
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=17430 loop_start=131625 loop_end=174687 sample=247079__$USER__$SOUND-b3.wav volume=-0.5 tune=-35
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=18661 loop_start=125934 loop_end=190426 sample=247078__$USER__$SOUND-c4.wav volume=-1.5 tune=-22
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=18572 loop_start=130206 loop_end=213818 sample=247077__$USER__$SOUND-c-4.wav tune=5
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=15596 loop_start=162606 loop_end=245843 sample=247076__$USER__$SOUND-d4.wav volume=-2 tune=-10
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=09542 loop_start=127163 loop_end=183215 sample=247075__$USER__$SOUND-d-4.wav volume=-1.5 tune=-3
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=23038 loop_start=179177 loop_end=222891 sample=247074__$USER__$SOUND-e4.wav volume=-3 tune=7
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=12174 loop_start=101176 loop_end=196648 sample=247073__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=17053 loop_start=138157 loop_end=209172 sample=247072__$USER__$SOUND-f-4.wav volume=-1 tune=8
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=20047 loop_start=138727 loop_end=196174 sample=247071__$USER__$SOUND-g4.wav volume=-3.5 tune=-25
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=19346 loop_start=128042 loop_end=182819 sample=247070__$USER__$SOUND-g-4.wav volume=-1.5 tune=-7
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=15544 loop_start=106543 loop_end=153133 sample=247069__$USER__$SOUND-a4.wav volume=-2 tune=9
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=09089 loop_start=123053 loop_end=182530 sample=247068__$USER__$SOUND-a-4.wav volume=-2 tune=-16
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=14678 loop_start=087033 loop_end=145911 sample=247067__$USER__$SOUND-b4.wav volume=-1 tune=-8
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=19914 loop_start=147093 loop_end=230521 sample=247066__$USER__$SOUND-c5.wav volume=-3.5
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=11484 loop_start=059766 loop_end=115252 sample=247065__$USER__$SOUND-c-5.wav volume=-2 tune=-6
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=23936 loop_start=175600 loop_end=206983 sample=247064__$USER__$SOUND-d5.wav volume=-1 tune=8
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=12518 loop_start=150891 loop_end=178968 sample=247063__$USER__$SOUND-d-5.wav volume=-2 tune=-24
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=14349 loop_start=125086 loop_end=167821 sample=247062__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=25354 loop_start=096688 loop_end=147716 sample=247061__$USER__$SOUND-f5.wav volume=-2 tune=-36
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=21308 loop_start=116449 loop_end=144567 sample=247060__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=17957 loop_start=154686 loop_end=190774 sample=247059__$USER__$SOUND-g5.wav volume=2 tune=-36
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=07302 loop_start=120949 loop_end=175803 sample=247057__$USER__$SOUND-a5.wav volume=4 tune=-7
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=12757 loop_start=140033 loop_end=162981 sample=247056__$USER__$SOUND-a-5.wav volume=-3 tune=-5
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=09353 loop_start=147029 loop_end=217065 sample=247084__$USER__$SOUND-f-3.wav tune=40
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=18126 loop_start=166582 loop_end=227229 sample=247083__$USER__$SOUND-g3.wav volume=2 tune=3
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=14457 loop_start=143035 loop_end=190673 sample=247081__$USER__$SOUND-a3.wav volume=-1 tune=-20
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=16220 loop_start=153967 loop_end=222784 sample=247080__$USER__$SOUND-a-3.wav tune=-3
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=17430 loop_start=131625 loop_end=174687 sample=247079__$USER__$SOUND-b3.wav volume=-0.5 tune=-35
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=18661 loop_start=125934 loop_end=190426 sample=247078__$USER__$SOUND-c4.wav volume=-1.5 tune=-22
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=18572 loop_start=130206 loop_end=213818 sample=247077__$USER__$SOUND-c-4.wav tune=5
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=15596 loop_start=162606 loop_end=245843 sample=247076__$USER__$SOUND-d4.wav volume=-2 tune=-10
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=09542 loop_start=127163 loop_end=183215 sample=247075__$USER__$SOUND-d-4.wav volume=-1.5 tune=-3
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=23038 loop_start=179177 loop_end=222891 sample=247074__$USER__$SOUND-e4.wav volume=-3 tune=7
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=12174 loop_start=101176 loop_end=196648 sample=247073__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=17053 loop_start=138157 loop_end=209172 sample=247072__$USER__$SOUND-f-4.wav volume=-1 tune=8
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=20047 loop_start=138727 loop_end=196174 sample=247071__$USER__$SOUND-g4.wav volume=-3.5 tune=-25
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=19346 loop_start=128042 loop_end=182819 sample=247070__$USER__$SOUND-g-4.wav volume=-1.5 tune=-7
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=15544 loop_start=106543 loop_end=153133 sample=247069__$USER__$SOUND-a4.wav volume=-2 tune=9
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=09089 loop_start=123053 loop_end=182530 sample=247068__$USER__$SOUND-a-4.wav volume=-2 tune=-16
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=14678 loop_start=087033 loop_end=145911 sample=247067__$USER__$SOUND-b4.wav volume=-1 tune=-8
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=19914 loop_start=147093 loop_end=230521 sample=247066__$USER__$SOUND-c5.wav volume=-3.5
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=11484 loop_start=059766 loop_end=115252 sample=247065__$USER__$SOUND-c-5.wav volume=-2 tune=-6
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=23936 loop_start=175600 loop_end=206983 sample=247064__$USER__$SOUND-d5.wav volume=-1 tune=8
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=12518 loop_start=150891 loop_end=178968 sample=247063__$USER__$SOUND-d-5.wav volume=-2 tune=-24
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=14349 loop_start=125086 loop_end=167821 sample=247062__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=25354 loop_start=096688 loop_end=147716 sample=247061__$USER__$SOUND-f5.wav volume=-2 tune=-36
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=21308 loop_start=116449 loop_end=144567 sample=247060__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=17957 loop_start=154686 loop_end=190774 sample=247059__$USER__$SOUND-g5.wav volume=2 tune=-36
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=07302 loop_start=120949 loop_end=175803 sample=247057__$USER__$SOUND-a5.wav volume=4 tune=-7
+
+<group> group_label=f lovel=96 hivel=127
+<region> region_label=01_rr1 seq_position=1 key=54 offset=09707 loop_start=043593 loop_end=073933 sample=247142__$USER__$SOUND-f-3.wav volume=-1 tune=14
+<region> region_label=02_rr1 seq_position=1 key=55 offset=04504 loop_start=084837 loop_end=134523 sample=247141__$USER__$SOUND-g3.wav tune=8
+<region> region_label=03_rr1 seq_position=1 key=56 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=04_rr1 seq_position=1 key=57 offset=08439 loop_start=080283 loop_end=149041 sample=247139__$USER__$SOUND-a3.wav tune=120
+<region> region_label=05_rr1 seq_position=1 key=58 offset=07357 loop_start=076493 loop_end=113231 sample=247138__$USER__$SOUND-a-3.wav tune=125
+<region> region_label=06_rr1 seq_position=1 key=59 offset=07218 loop_start=082128 loop_end=150404 sample=247137__$USER__$SOUND-b3.wav volume=-2 tune=113
+<region> region_label=07_rr1 seq_position=1 key=60 offset=06060 loop_start=101530 loop_end=144068 sample=247136__$USER__$SOUND-c4.wav tune=-30
+<region> region_label=08_rr1 seq_position=1 key=61 offset=07299 loop_start=109501 loop_end=145169 sample=247135__$USER__$SOUND-c-4.wav tune=-31
+<region> region_label=09_rr1 seq_position=1 key=62 offset=07032 loop_start=093748 loop_end=134061 sample=247134__$USER__$SOUND-d4.wav tune=-32
+<region> region_label=10_rr1 seq_position=1 key=63 offset=07234 loop_start=073459 loop_end=102958 sample=247133__$USER__$SOUND-d-4.wav volume=-2 tune=-25
+<region> region_label=11_rr1 seq_position=1 key=64 offset=05322 loop_start=055837 loop_end=102096 sample=247132__$USER__$SOUND-e4.wav volume=-3 tune=-24
+<region> region_label=12_rr1 seq_position=1 key=65 offset=09126 loop_start=069247 loop_end=107063 sample=247131__$USER__$SOUND-f4.wav volume=-3 tune=-12
+<region> region_label=13_rr1 seq_position=1 key=66 offset=06737 loop_start=065314 loop_end=105834 sample=247130__$USER__$SOUND-f-4.wav volume=-3 tune=18
+<region> region_label=14_rr1 seq_position=1 key=67 offset=04693 loop_start=038492 loop_end=075007 sample=247129__$USER__$SOUND-g4.wav volume=-3 tune=14
+<region> region_label=15_rr1 seq_position=1 key=68 offset=07902 loop_start=052529 loop_end=096010 sample=247128__$USER__$SOUND-g-4.wav volume=-3 tune=21
+<region> region_label=16_rr1 seq_position=1 key=69 offset=04695 loop_start=076920 loop_end=110919 sample=247127__$USER__$SOUND-a4.wav volume=-3 tune=21
+<region> region_label=17_rr1 seq_position=1 key=70 offset=05918 loop_start=078802 loop_end=108532 sample=247126__$USER__$SOUND-a-4.wav volume=-3 tune=11
+<region> region_label=18_rr1 seq_position=1 key=71 offset=04180 loop_start=055014 loop_end=099643 sample=247125__$USER__$SOUND-b4.wav volume=-5 tune=15
+<region> region_label=19_rr1 seq_position=1 key=72 offset=13677 loop_start=061426 loop_end=099731 sample=247124__$USER__$SOUND-c5.wav tune=-10
+<region> region_label=20_rr1 seq_position=1 key=73 offset=12877 loop_start=063775 loop_end=103510 sample=247123__$USER__$SOUND-c-5.wav volume=-1 tune=18
+<region> region_label=21_rr1 seq_position=1 key=74 offset=11670 loop_start=067156 loop_end=073952 sample=247122__$USER__$SOUND-d5.wav volume=-0.5 tune=-17
+<region> region_label=22_rr1 seq_position=1 key=75 offset=07293 loop_start=074479 loop_end=110008 sample=247121__$USER__$SOUND-d-5.wav tune=-24
+<region> region_label=23_rr1 seq_position=1 key=76 offset=11058 loop_start=079459 loop_end=116962 sample=247120__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=24_rr1 seq_position=1 key=77 offset=08116 loop_start=068334 loop_end=117343 sample=247119__$USER__$SOUND-f5.wav volume=-0.5 tune=-22
+<region> region_label=25_rr1 seq_position=1 key=78 offset=06869 loop_start=087546 loop_end=113506 sample=247118__$USER__$SOUND-f-5.wav volume=-0.5 tune=-21
+<region> region_label=26_rr1 seq_position=1 key=79 offset=07403 loop_start=063246 loop_end=096374 sample=247117__$USER__$SOUND-g5.wav volume=2 tune=-35
+<region> region_label=27_rr1 seq_position=1 key=80 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=28_rr1 seq_position=1 key=81 offset=10354 loop_start=040883 loop_end=057071 sample=247115__$USER__$SOUND-a5.wav tune=-7
+<region> region_label=29_rr1 seq_position=1 key=82 offset=05869 loop_start=097839 loop_end=110385 sample=247114__$USER__$SOUND-a-5.wav tune=-9
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=04504 loop_start=084837 loop_end=134523 sample=247141__$USER__$SOUND-g3.wav tune=8
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=08439 loop_start=080283 loop_end=149041 sample=247139__$USER__$SOUND-a3.wav tune=120
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=07357 loop_start=076493 loop_end=113231 sample=247138__$USER__$SOUND-a-3.wav tune=125
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=07218 loop_start=082128 loop_end=150404 sample=247137__$USER__$SOUND-b3.wav volume=-2 tune=113
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=06060 loop_start=101530 loop_end=144068 sample=247136__$USER__$SOUND-c4.wav tune=-30
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=07299 loop_start=109501 loop_end=145169 sample=247135__$USER__$SOUND-c-4.wav tune=-31
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=07032 loop_start=093748 loop_end=134061 sample=247134__$USER__$SOUND-d4.wav tune=-32
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=07234 loop_start=073459 loop_end=102958 sample=247133__$USER__$SOUND-d-4.wav volume=-2 tune=-25
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=05322 loop_start=055837 loop_end=102096 sample=247132__$USER__$SOUND-e4.wav volume=-3 tune=-24
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=09126 loop_start=069247 loop_end=107063 sample=247131__$USER__$SOUND-f4.wav volume=-3 tune=-12
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=06737 loop_start=065314 loop_end=105834 sample=247130__$USER__$SOUND-f-4.wav volume=-3 tune=18
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=04693 loop_start=038492 loop_end=075007 sample=247129__$USER__$SOUND-g4.wav volume=-3 tune=14
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=07902 loop_start=052529 loop_end=096010 sample=247128__$USER__$SOUND-g-4.wav volume=-3 tune=21
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=04695 loop_start=076920 loop_end=110919 sample=247127__$USER__$SOUND-a4.wav volume=-3 tune=21
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=05918 loop_start=078802 loop_end=108532 sample=247126__$USER__$SOUND-a-4.wav volume=-3 tune=11
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=04180 loop_start=055014 loop_end=099643 sample=247125__$USER__$SOUND-b4.wav volume=-5 tune=15
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=13677 loop_start=061426 loop_end=099731 sample=247124__$USER__$SOUND-c5.wav tune=-10
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=12877 loop_start=063775 loop_end=103510 sample=247123__$USER__$SOUND-c-5.wav volume=-1 tune=18
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=11670 loop_start=067156 loop_end=073952 sample=247122__$USER__$SOUND-d5.wav volume=-0.5 tune=-17
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=07293 loop_start=074479 loop_end=110008 sample=247121__$USER__$SOUND-d-5.wav tune=-24
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=11058 loop_start=079459 loop_end=116962 sample=247120__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=08116 loop_start=068334 loop_end=117343 sample=247119__$USER__$SOUND-f5.wav volume=-0.5 tune=-22
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=06869 loop_start=087546 loop_end=113506 sample=247118__$USER__$SOUND-f-5.wav volume=-0.5 tune=-21
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=07403 loop_start=063246 loop_end=096374 sample=247117__$USER__$SOUND-g5.wav volume=2 tune=-35
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=10354 loop_start=040883 loop_end=057071 sample=247115__$USER__$SOUND-a5.wav tune=-7
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=05869 loop_start=097839 loop_end=110385 sample=247114__$USER__$SOUND-a-5.wav tune=-9
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=09707 loop_start=043593 loop_end=073933 sample=247142__$USER__$SOUND-f-3.wav volume=-1 tune=14
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=04504 loop_start=084837 loop_end=134523 sample=247141__$USER__$SOUND-g3.wav tune=8
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=08439 loop_start=080283 loop_end=149041 sample=247139__$USER__$SOUND-a3.wav tune=120
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=07357 loop_start=076493 loop_end=113231 sample=247138__$USER__$SOUND-a-3.wav tune=125
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=07218 loop_start=082128 loop_end=150404 sample=247137__$USER__$SOUND-b3.wav volume=-2 tune=113
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=06060 loop_start=101530 loop_end=144068 sample=247136__$USER__$SOUND-c4.wav tune=-30
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=07299 loop_start=109501 loop_end=145169 sample=247135__$USER__$SOUND-c-4.wav tune=-31
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=07032 loop_start=093748 loop_end=134061 sample=247134__$USER__$SOUND-d4.wav tune=-32
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=07234 loop_start=073459 loop_end=102958 sample=247133__$USER__$SOUND-d-4.wav volume=-2 tune=-25
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=05322 loop_start=055837 loop_end=102096 sample=247132__$USER__$SOUND-e4.wav volume=-3 tune=-24
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=09126 loop_start=069247 loop_end=107063 sample=247131__$USER__$SOUND-f4.wav volume=-3 tune=-12
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=06737 loop_start=065314 loop_end=105834 sample=247130__$USER__$SOUND-f-4.wav volume=-3 tune=18
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=04693 loop_start=038492 loop_end=075007 sample=247129__$USER__$SOUND-g4.wav volume=-3 tune=14
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=07902 loop_start=052529 loop_end=096010 sample=247128__$USER__$SOUND-g-4.wav volume=-3 tune=21
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=04695 loop_start=076920 loop_end=110919 sample=247127__$USER__$SOUND-a4.wav volume=-3 tune=21
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=05918 loop_start=078802 loop_end=108532 sample=247126__$USER__$SOUND-a-4.wav volume=-3 tune=11
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=04180 loop_start=055014 loop_end=099643 sample=247125__$USER__$SOUND-b4.wav volume=-5 tune=15
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=13677 loop_start=061426 loop_end=099731 sample=247124__$USER__$SOUND-c5.wav tune=-10
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=12877 loop_start=063775 loop_end=103510 sample=247123__$USER__$SOUND-c-5.wav volume=-1 tune=18
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=11670 loop_start=067156 loop_end=073952 sample=247122__$USER__$SOUND-d5.wav volume=-0.5 tune=-17
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=07293 loop_start=074479 loop_end=110008 sample=247121__$USER__$SOUND-d-5.wav tune=-24
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=11058 loop_start=079459 loop_end=116962 sample=247120__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=08116 loop_start=068334 loop_end=117343 sample=247119__$USER__$SOUND-f5.wav volume=-0.5 tune=-22
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=06869 loop_start=087546 loop_end=113506 sample=247118__$USER__$SOUND-f-5.wav volume=-0.5 tune=-21
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=07403 loop_start=063246 loop_end=096374 sample=247117__$USER__$SOUND-g5.wav volume=2 tune=-35
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=10354 loop_start=040883 loop_end=057071 sample=247115__$USER__$SOUND-a5.wav tune=-7
+
+
+//==========================================================================================================
+<master>
+master_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset_oncc$LEGATO=10000
+offset_curvecc$LEGATO=7
+offset_random=10000
+ampeg_attack=0.01
+locc$LEGATO=1
+
+<group> group_label=pp lovel=1 hivel=15
+<region> region_label=01_rr1 seq_position=1 key=54 offset=31625 loop_start=210417 loop_end=257495 sample=247370__$USER__$SOUND-f-3.wav tune=35
+<region> region_label=02_rr1 seq_position=1 key=55 offset=20475 loop_start=227398 loop_end=276676 sample=247371__$USER__$SOUND-g3.wav tune=40
+<region> region_label=03_rr1 seq_position=1 key=56 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=04_rr1 seq_position=1 key=57 offset=18794 loop_start=090411 loop_end=154806 sample=247373__$USER__$SOUND-a3.wav volume=-4 tune=-39
+<region> region_label=05_rr1 seq_position=1 key=58 offset=10932 loop_start=349168 loop_end=428835 sample=247374__$USER__$SOUND-a-3.wav volume=-1 tune=-43
+<region> region_label=06_rr1 seq_position=1 key=59 offset=15738 loop_start=189301 loop_end=232851 sample=247375__$USER__$SOUND-b3.wav tune=-44
+<region> region_label=07_rr1 seq_position=1 key=60 offset=17616 loop_start=230363 loop_end=281594 sample=247376__$USER__$SOUND-c4.wav tune=-18
+<region> region_label=08_rr1 seq_position=1 key=61 offset=18668 loop_start=224323 loop_end=261638 sample=247377__$USER__$SOUND-c-4.wav tune=-4
+<region> region_label=09_rr1 seq_position=1 key=62 offset=33660 loop_start=200939 loop_end=235012 sample=247378__$USER__$SOUND-d4.wav tune=-29
+<region> region_label=10_rr1 seq_position=1 key=63 offset=26092 loop_start=254989 loop_end=294916 sample=247379__$USER__$SOUND-d-4.wav volume=-2 tune=-9
+<region> region_label=11_rr1 seq_position=1 key=64 offset=25067 loop_start=214037 loop_end=250637 sample=247380__$USER__$SOUND-e4.wav tune=31
+<region> region_label=12_rr1 seq_position=1 key=65 offset=22466 loop_start=208086 loop_end=269729 sample=247381__$USER__$SOUND-f4.wav tune=22
+<region> region_label=13_rr1 seq_position=1 key=66 offset=38232 loop_start=263304 loop_end=328064 sample=247382__$USER__$SOUND-f-4.wav tune=20
+<region> region_label=14_rr1 seq_position=1 key=67 offset=32004 loop_start=249201 loop_end=309167 sample=247383__$USER__$SOUND-g4.wav tune=15
+<region> region_label=15_rr1 seq_position=1 key=68 offset=25067 loop_start=230149 loop_end=308162 sample=247384__$USER__$SOUND-g-4.wav tune=-5
+<region> region_label=16_rr1 seq_position=1 key=69 offset=39572 loop_start=239647 loop_end=358513 sample=247385__$USER__$SOUND-a4.wav tune=-5
+<region> region_label=17_rr1 seq_position=1 key=70 offset=22387 loop_start=287540 loop_end=324292 sample=247386__$USER__$SOUND-a-4.wav tune=-9
+<region> region_label=18_rr1 seq_position=1 key=71 offset=29639 loop_start=272592 loop_end=317981 sample=247387__$USER__$SOUND-b4.wav volume=2 tune=-20
+<region> region_label=19_rr1 seq_position=1 key=72 offset=37032 loop_start=272963 loop_end=347327 sample=247388__$USER__$SOUND-c5.wav tune=-6
+<region> region_label=20_rr1 seq_position=1 key=73 offset=39256 loop_start=263170 loop_end=295886 sample=247389__$USER__$SOUND-c-5.wav tune=2
+<region> region_label=21_rr1 seq_position=1 key=74 offset=44617 loop_start=229184 loop_end=259848 sample=247390__$USER__$SOUND-d5.wav tune=-17
+<region> region_label=22_rr1 seq_position=1 key=75 offset=50450 loop_start=324512 loop_end=372205 sample=247391__$USER__$SOUND-d-5.wav tune=-33
+<region> region_label=23_rr1 seq_position=1 key=76 offset=28896 loop_start=230267 loop_end=308133 sample=247392__$USER__$SOUND-e5.wav volume=2 tune=-14
+<region> region_label=24_rr1 seq_position=1 key=77 offset=27196 loop_start=229562 loop_end=326127 sample=247393__$USER__$SOUND-f5.wav volume=1 tune=-38
+<region> region_label=25_rr1 seq_position=1 key=78 offset=12533 loop_start=205198 loop_end=283796 sample=247394__$USER__$SOUND-f-5.wav volume=1 tune=-16
+<region> region_label=26_rr1 seq_position=1 key=79 offset=21047 loop_start=198257 loop_end=281825 sample=247395__$USER__$SOUND-g5.wav tune=-34
+<region> region_label=27_rr1 seq_position=1 key=80 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=28_rr1 seq_position=1 key=81 offset=08907 loop_start=151844 loop_end=219996 sample=247397__$USER__$SOUND-a5.wav tune=2
+<region> region_label=29_rr1 seq_position=1 key=82 offset=37365 loop_start=225438 loop_end=296455 sample=247398__$USER__$SOUND-a-5.wav tune=-2
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=20475 loop_start=227398 loop_end=276676 sample=247371__$USER__$SOUND-g3.wav tune=40
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=18794 loop_start=090411 loop_end=154806 sample=247373__$USER__$SOUND-a3.wav volume=-4 tune=-39
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=10932 loop_start=349168 loop_end=428835 sample=247374__$USER__$SOUND-a-3.wav volume=-1 tune=-43
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=15738 loop_start=189301 loop_end=232851 sample=247375__$USER__$SOUND-b3.wav tune=-44
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=17616 loop_start=230363 loop_end=281594 sample=247376__$USER__$SOUND-c4.wav tune=-18
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=18668 loop_start=224323 loop_end=261638 sample=247377__$USER__$SOUND-c-4.wav tune=-4
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=33660 loop_start=200939 loop_end=235012 sample=247378__$USER__$SOUND-d4.wav tune=-29
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=26092 loop_start=254989 loop_end=294916 sample=247379__$USER__$SOUND-d-4.wav volume=-2 tune=-9
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=25067 loop_start=214037 loop_end=250637 sample=247380__$USER__$SOUND-e4.wav tune=31
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=22466 loop_start=208086 loop_end=269729 sample=247381__$USER__$SOUND-f4.wav tune=22
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=38232 loop_start=263304 loop_end=328064 sample=247382__$USER__$SOUND-f-4.wav tune=20
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=32004 loop_start=249201 loop_end=309167 sample=247383__$USER__$SOUND-g4.wav tune=15
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=25067 loop_start=230149 loop_end=308162 sample=247384__$USER__$SOUND-g-4.wav tune=-5
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=39572 loop_start=239647 loop_end=358513 sample=247385__$USER__$SOUND-a4.wav tune=-5
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=22387 loop_start=287540 loop_end=324292 sample=247386__$USER__$SOUND-a-4.wav tune=-9
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=29639 loop_start=272592 loop_end=317981 sample=247387__$USER__$SOUND-b4.wav volume=2 tune=-20
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=37032 loop_start=272963 loop_end=347327 sample=247388__$USER__$SOUND-c5.wav tune=-6
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=39256 loop_start=263170 loop_end=295886 sample=247389__$USER__$SOUND-c-5.wav tune=2
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=44617 loop_start=229184 loop_end=259848 sample=247390__$USER__$SOUND-d5.wav tune=-17
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=50450 loop_start=324512 loop_end=372205 sample=247391__$USER__$SOUND-d-5.wav tune=-33
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=28896 loop_start=230267 loop_end=308133 sample=247392__$USER__$SOUND-e5.wav volume=2 tune=-14
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=27196 loop_start=229562 loop_end=326127 sample=247393__$USER__$SOUND-f5.wav volume=1 tune=-38
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=12533 loop_start=205198 loop_end=283796 sample=247394__$USER__$SOUND-f-5.wav volume=1 tune=-16
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=21047 loop_start=198257 loop_end=281825 sample=247395__$USER__$SOUND-g5.wav tune=-34
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=08907 loop_start=151844 loop_end=219996 sample=247397__$USER__$SOUND-a5.wav tune=2
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=37365 loop_start=225438 loop_end=296455 sample=247398__$USER__$SOUND-a-5.wav tune=-2
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=31625 loop_start=210417 loop_end=257495 sample=247370__$USER__$SOUND-f-3.wav tune=35
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=20475 loop_start=227398 loop_end=276676 sample=247371__$USER__$SOUND-g3.wav tune=40
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=20468 loop_start=271960 loop_end=331738 sample=247372__$USER__$SOUND-g-3.wav volume=-2 tune=-32
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=18794 loop_start=090411 loop_end=154806 sample=247373__$USER__$SOUND-a3.wav volume=-4 tune=-39
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=10932 loop_start=349168 loop_end=428835 sample=247374__$USER__$SOUND-a-3.wav volume=-1 tune=-43
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=15738 loop_start=189301 loop_end=232851 sample=247375__$USER__$SOUND-b3.wav tune=-44
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=17616 loop_start=230363 loop_end=281594 sample=247376__$USER__$SOUND-c4.wav tune=-18
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=18668 loop_start=224323 loop_end=261638 sample=247377__$USER__$SOUND-c-4.wav tune=-4
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=33660 loop_start=200939 loop_end=235012 sample=247378__$USER__$SOUND-d4.wav tune=-29
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=26092 loop_start=254989 loop_end=294916 sample=247379__$USER__$SOUND-d-4.wav volume=-2 tune=-9
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=25067 loop_start=214037 loop_end=250637 sample=247380__$USER__$SOUND-e4.wav tune=31
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=22466 loop_start=208086 loop_end=269729 sample=247381__$USER__$SOUND-f4.wav tune=22
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=38232 loop_start=263304 loop_end=328064 sample=247382__$USER__$SOUND-f-4.wav tune=20
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=32004 loop_start=249201 loop_end=309167 sample=247383__$USER__$SOUND-g4.wav tune=15
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=25067 loop_start=230149 loop_end=308162 sample=247384__$USER__$SOUND-g-4.wav tune=-5
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=39572 loop_start=239647 loop_end=358513 sample=247385__$USER__$SOUND-a4.wav tune=-5
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=22387 loop_start=287540 loop_end=324292 sample=247386__$USER__$SOUND-a-4.wav tune=-9
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=29639 loop_start=272592 loop_end=317981 sample=247387__$USER__$SOUND-b4.wav volume=2 tune=-20
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=37032 loop_start=272963 loop_end=347327 sample=247388__$USER__$SOUND-c5.wav tune=-6
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=39256 loop_start=263170 loop_end=295886 sample=247389__$USER__$SOUND-c-5.wav tune=2
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=44617 loop_start=229184 loop_end=259848 sample=247390__$USER__$SOUND-d5.wav tune=-17
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=50450 loop_start=324512 loop_end=372205 sample=247391__$USER__$SOUND-d-5.wav tune=-33
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=28896 loop_start=230267 loop_end=308133 sample=247392__$USER__$SOUND-e5.wav volume=2 tune=-14
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=27196 loop_start=229562 loop_end=326127 sample=247393__$USER__$SOUND-f5.wav volume=1 tune=-38
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=12533 loop_start=205198 loop_end=283796 sample=247394__$USER__$SOUND-f-5.wav volume=1 tune=-16
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=21047 loop_start=198257 loop_end=281825 sample=247395__$USER__$SOUND-g5.wav tune=-34
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=22545 loop_start=209539 loop_end=272472 sample=247396__$USER__$SOUND-g-5.wav volume=1 tune=13
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=08907 loop_start=151844 loop_end=219996 sample=247397__$USER__$SOUND-a5.wav tune=2
+
+<group> group_label=p lovel=16 hivel=31
+<region> region_label=01_rr1 seq_position=1 key=54 offset=11364 loop_start=145601 loop_end=202168 sample=247287__$USER__$SOUND-f-3.wav tune=16
+<region> region_label=02_rr1 seq_position=1 key=55 offset=12051 loop_start=163232 loop_end=215428 sample=247286__$USER__$SOUND-g3.wav
+<region> region_label=03_rr1 seq_position=1 key=56 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=04_rr1 seq_position=1 key=57 offset=11565 loop_start=131433 loop_end=193375 sample=247284__$USER__$SOUND-a3.wav tune=-18
+<region> region_label=05_rr1 seq_position=1 key=58 offset=13168 loop_start=125891 loop_end=178653 sample=247283__$USER__$SOUND-a-3.wav volume=-1.5 tune=-24
+<region> region_label=06_rr1 seq_position=1 key=59 offset=14886 loop_start=167728 loop_end=208181 sample=247282__$USER__$SOUND-b3.wav tune=-40
+<region> region_label=07_rr1 seq_position=1 key=60 offset=15916 loop_start=102019 loop_end=126259 sample=247281__$USER__$SOUND-c4.wav tune=-24
+<region> region_label=08_rr1 seq_position=1 key=61 offset=05324 loop_start=143934 loop_end=174250 sample=247280__$USER__$SOUND-c-4.wav tune=-27
+<region> region_label=09_rr1 seq_position=1 key=62 offset=12567 loop_start=099169 loop_end=175164 sample=247279__$USER__$SOUND-d4.wav tune=-22
+<region> region_label=10_rr1 seq_position=1 key=63 offset=13197 loop_start=106814 loop_end=171466 sample=247278__$USER__$SOUND-d-4.wav volume=-2 tune=-19
+<region> region_label=11_rr1 seq_position=1 key=64 offset=12624 loop_start=101938 loop_end=141124 sample=247277__$USER__$SOUND-e4.wav volume=-3 tune=-6
+<region> region_label=12_rr1 seq_position=1 key=65 offset=11908 loop_start=096243 loop_end=149866 sample=247276__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=13_rr1 seq_position=1 key=66 offset=13082 loop_start=121253 loop_end=136616 sample=247275__$USER__$SOUND-f-4.wav tune=-8
+<region> region_label=14_rr1 seq_position=1 key=67 offset=12996 loop_start=150369 loop_end=189669 sample=247274__$USER__$SOUND-g4.wav volume=-3 tune=-20
+<region> region_label=15_rr1 seq_position=1 key=68 offset=06355 loop_start=134521 loop_end=163082 sample=247273__$USER__$SOUND-g-4.wav tune=-13
+<region> region_label=16_rr1 seq_position=1 key=69 offset=12882 loop_start=133793 loop_end=148064 sample=247272__$USER__$SOUND-a4.wav volume=-1 tune=-2
+<region> region_label=17_rr1 seq_position=1 key=70 offset=15029 loop_start=056101 loop_end=084914 sample=247271__$USER__$SOUND-a-4.wav tune=-7
+<region> region_label=18_rr1 seq_position=1 key=71 offset=13712 loop_start=122571 loop_end=152552 sample=247270__$USER__$SOUND-b4.wav volume=-1 tune=-15
+<region> region_label=19_rr1 seq_position=1 key=72 offset=13569 loop_start=142965 loop_end=160986 sample=247269__$USER__$SOUND-c5.wav tune=-13
+<region> region_label=20_rr1 seq_position=1 key=73 offset=15029 loop_start=084061 loop_end=134507 sample=247268__$USER__$SOUND-c-5.wav volume=-1 tune=-12
+<region> region_label=21_rr1 seq_position=1 key=74 offset=14599 loop_start=086550 loop_end=144860 sample=247267__$USER__$SOUND-d5.wav tune=-21
+<region> region_label=22_rr1 seq_position=1 key=75 offset=13426 loop_start=092198 loop_end=132362 sample=247266__$USER__$SOUND-d-5.wav volume=2 tune=-28
+<region> region_label=23_rr1 seq_position=1 key=76 offset=14342 loop_start=117879 loop_end=131717 sample=247265__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=24_rr1 seq_position=1 key=77 offset=15429 loop_start=060997 loop_end=085745 sample=247264__$USER__$SOUND-f5.wav tune=-24
+<region> region_label=25_rr1 seq_position=1 key=78 offset=16832 loop_start=072687 loop_end=100104 sample=247263__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=26_rr1 seq_position=1 key=79 offset=15286 loop_start=114661 loop_end=136682 sample=247262__$USER__$SOUND-g5.wav volume=0.5 tune=-20
+<region> region_label=27_rr1 seq_position=1 key=80 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=28_rr1 seq_position=1 key=81 offset=14828 loop_start=101410 loop_end=134537 sample=247260__$USER__$SOUND-a5.wav volume=3 tune=-2
+<region> region_label=29_rr1 seq_position=1 key=82 offset=17586 loop_start=066797 loop_end=108370 sample=247259__$USER__$SOUND-a-5.wav volume=2 tune=7
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=12051 loop_start=163232 loop_end=215428 sample=247286__$USER__$SOUND-g3.wav
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=11565 loop_start=131433 loop_end=193375 sample=247284__$USER__$SOUND-a3.wav tune=-18
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=13168 loop_start=125891 loop_end=178653 sample=247283__$USER__$SOUND-a-3.wav volume=-1.5 tune=-24
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=14886 loop_start=167728 loop_end=208181 sample=247282__$USER__$SOUND-b3.wav tune=-40
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=15916 loop_start=102019 loop_end=126259 sample=247281__$USER__$SOUND-c4.wav tune=-24
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=05324 loop_start=143934 loop_end=174250 sample=247280__$USER__$SOUND-c-4.wav tune=-27
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=12567 loop_start=099169 loop_end=175164 sample=247279__$USER__$SOUND-d4.wav tune=-22
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=13197 loop_start=106814 loop_end=171466 sample=247278__$USER__$SOUND-d-4.wav volume=-2 tune=-19
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=12624 loop_start=101938 loop_end=141124 sample=247277__$USER__$SOUND-e4.wav volume=-3 tune=-6
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=11908 loop_start=096243 loop_end=149866 sample=247276__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=13082 loop_start=121253 loop_end=136616 sample=247275__$USER__$SOUND-f-4.wav tune=-8
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=12996 loop_start=150369 loop_end=189669 sample=247274__$USER__$SOUND-g4.wav volume=-3 tune=-20
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=06355 loop_start=134521 loop_end=163082 sample=247273__$USER__$SOUND-g-4.wav tune=-13
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=12882 loop_start=133793 loop_end=148064 sample=247272__$USER__$SOUND-a4.wav volume=-1 tune=-2
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=15029 loop_start=056101 loop_end=084914 sample=247271__$USER__$SOUND-a-4.wav tune=-7
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=13712 loop_start=122571 loop_end=152552 sample=247270__$USER__$SOUND-b4.wav volume=-1 tune=-15
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=13569 loop_start=142965 loop_end=160986 sample=247269__$USER__$SOUND-c5.wav tune=-13
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=15029 loop_start=084061 loop_end=134507 sample=247268__$USER__$SOUND-c-5.wav volume=-1 tune=-12
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=14599 loop_start=086550 loop_end=144860 sample=247267__$USER__$SOUND-d5.wav tune=-21
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=13426 loop_start=092198 loop_end=132362 sample=247266__$USER__$SOUND-d-5.wav volume=2 tune=-28
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=14342 loop_start=117879 loop_end=131717 sample=247265__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=15429 loop_start=060997 loop_end=085745 sample=247264__$USER__$SOUND-f5.wav tune=-24
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=16832 loop_start=072687 loop_end=100104 sample=247263__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=15286 loop_start=114661 loop_end=136682 sample=247262__$USER__$SOUND-g5.wav volume=0.5 tune=-20
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=14828 loop_start=101410 loop_end=134537 sample=247260__$USER__$SOUND-a5.wav volume=3 tune=-2
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=17586 loop_start=066797 loop_end=108370 sample=247259__$USER__$SOUND-a-5.wav volume=2 tune=7
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=11364 loop_start=145601 loop_end=202168 sample=247287__$USER__$SOUND-f-3.wav tune=16
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=12051 loop_start=163232 loop_end=215428 sample=247286__$USER__$SOUND-g3.wav
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=11422 loop_start=164238 loop_end=213683 sample=247285__$USER__$SOUND-g-3.wav tune=-17
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=11565 loop_start=131433 loop_end=193375 sample=247284__$USER__$SOUND-a3.wav tune=-18
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=13168 loop_start=125891 loop_end=178653 sample=247283__$USER__$SOUND-a-3.wav volume=-1.5 tune=-24
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=14886 loop_start=167728 loop_end=208181 sample=247282__$USER__$SOUND-b3.wav tune=-40
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=15916 loop_start=102019 loop_end=126259 sample=247281__$USER__$SOUND-c4.wav tune=-24
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=05324 loop_start=143934 loop_end=174250 sample=247280__$USER__$SOUND-c-4.wav tune=-27
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=12567 loop_start=099169 loop_end=175164 sample=247279__$USER__$SOUND-d4.wav tune=-22
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=13197 loop_start=106814 loop_end=171466 sample=247278__$USER__$SOUND-d-4.wav volume=-2 tune=-19
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=12624 loop_start=101938 loop_end=141124 sample=247277__$USER__$SOUND-e4.wav volume=-3 tune=-6
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=11908 loop_start=096243 loop_end=149866 sample=247276__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=13082 loop_start=121253 loop_end=136616 sample=247275__$USER__$SOUND-f-4.wav tune=-8
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=12996 loop_start=150369 loop_end=189669 sample=247274__$USER__$SOUND-g4.wav volume=-3 tune=-20
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=06355 loop_start=134521 loop_end=163082 sample=247273__$USER__$SOUND-g-4.wav tune=-13
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=12882 loop_start=133793 loop_end=148064 sample=247272__$USER__$SOUND-a4.wav volume=-1 tune=-2
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=15029 loop_start=056101 loop_end=084914 sample=247271__$USER__$SOUND-a-4.wav tune=-7
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=13712 loop_start=122571 loop_end=152552 sample=247270__$USER__$SOUND-b4.wav volume=-1 tune=-15
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=13569 loop_start=142965 loop_end=160986 sample=247269__$USER__$SOUND-c5.wav tune=-13
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=15029 loop_start=084061 loop_end=134507 sample=247268__$USER__$SOUND-c-5.wav volume=-1 tune=-12
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=14599 loop_start=086550 loop_end=144860 sample=247267__$USER__$SOUND-d5.wav tune=-21
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=13426 loop_start=092198 loop_end=132362 sample=247266__$USER__$SOUND-d-5.wav volume=2 tune=-28
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=14342 loop_start=117879 loop_end=131717 sample=247265__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=15429 loop_start=060997 loop_end=085745 sample=247264__$USER__$SOUND-f5.wav tune=-24
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=16832 loop_start=072687 loop_end=100104 sample=247263__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=15286 loop_start=114661 loop_end=136682 sample=247262__$USER__$SOUND-g5.wav volume=0.5 tune=-20
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=16260 loop_start=100562 loop_end=124486 sample=247261__$USER__$SOUND-g-5.wav volume=4 tune=-5
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=14828 loop_start=101410 loop_end=134537 sample=247260__$USER__$SOUND-a5.wav volume=3 tune=-2
+
+<group> group_label=mp group_volume=-6 lovel=32 hivel=63
+<region> region_label=01_rr1 seq_position=1 key=54 offset=15944 loop_start=177949 loop_end=212533 sample=247113__$USER__$SOUND-f-3.wav volume=-1 tune=17
+<region> region_label=02_rr1 seq_position=1 key=55 offset=13550 loop_start=142286 loop_end=205582 sample=247112__$USER__$SOUND-g3.wav tune=-13
+<region> region_label=03_rr1 seq_position=1 key=56 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=04_rr1 seq_position=1 key=57 offset=07514 loop_start=100819 loop_end=184086 sample=247110__$USER__$SOUND-a3.wav tune=-16
+<region> region_label=05_rr1 seq_position=1 key=58 offset=08753 loop_start=143480 loop_end=181201 sample=247109__$USER__$SOUND-a-3.wav volume=-1 tune=-35
+<region> region_label=06_rr1 seq_position=1 key=59 offset=08273 loop_start=081584 loop_end=118682 sample=247108__$USER__$SOUND-b3.wav tune=-38
+<region> region_label=07_rr1 seq_position=1 key=60 offset=07835 loop_start=144513 loop_end=178108 sample=247107__$USER__$SOUND-c4.wav tune=-27
+<region> region_label=08_rr1 seq_position=1 key=61 offset=03759 loop_start=117074 loop_end=156703 sample=247106__$USER__$SOUND-c-4.wav tune=-18
+<region> region_label=09_rr1 seq_position=1 key=62 offset=08224 loop_start=093419 loop_end=133664 sample=247105__$USER__$SOUND-d4.wav volume=-3 tune=-33
+<region> region_label=10_rr1 seq_position=1 key=63 offset=10043 loop_start=120192 loop_end=160056 sample=247104__$USER__$SOUND-d-4.wav tune=-24
+<region> region_label=11_rr1 seq_position=1 key=64 offset=13774 loop_start=134800 loop_end=178576 sample=247103__$USER__$SOUND-e4.wav volume=-1 tune=-14
+<region> region_label=12_rr1 seq_position=1 key=65 offset=13968 loop_start=059210 loop_end=130471 sample=247102__$USER__$SOUND-f4.wav tune=-14
+<region> region_label=13_rr1 seq_position=1 key=66 offset=12786 loop_start=096232 loop_end=146442 sample=247101__$USER__$SOUND-f-4.wav volume=-3 tune=-8
+<region> region_label=14_rr1 seq_position=1 key=67 offset=14965 loop_start=113067 loop_end=166094 sample=247100__$USER__$SOUND-g4.wav volume=-1 tune=-15
+<region> region_label=15_rr1 seq_position=1 key=68 offset=10432 loop_start=089389 loop_end=122626 sample=247099__$USER__$SOUND-g-4.wav volume=-2 tune=-26
+<region> region_label=16_rr1 seq_position=1 key=69 offset=10710 loop_start=062031 loop_end=124286 sample=247098__$USER__$SOUND-a4.wav volume=-1 tune=-19
+<region> region_label=17_rr1 seq_position=1 key=70 offset=11637 loop_start=112255 loop_end=154233 sample=247097__$USER__$SOUND-a-4.wav tune=-35
+<region> region_label=18_rr1 seq_position=1 key=71 offset=10878 loop_start=091021 loop_end=134100 sample=247096__$USER__$SOUND-b4.wav tune=-10
+<region> region_label=19_rr1 seq_position=1 key=72 offset=12626 loop_start=102371 loop_end=153278 sample=247095__$USER__$SOUND-c5.wav tune=-15
+<region> region_label=20_rr1 seq_position=1 key=73 offset=02555 loop_start=077669 loop_end=119998 sample=247094__$USER__$SOUND-c-5.wav
+<region> region_label=21_rr1 seq_position=1 key=74 offset=14026 loop_start=128854 loop_end=149699 sample=247093__$USER__$SOUND-d5.wav volume=-2 tune=-6
+<region> region_label=22_rr1 seq_position=1 key=75 offset=11603 loop_start=097537 loop_end=144270 sample=247092__$USER__$SOUND-d-5.wav volume=-2 tune=-32
+<region> region_label=23_rr1 seq_position=1 key=76 offset=16494 loop_start=062397 loop_end=099534 sample=247091__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=24_rr1 seq_position=1 key=77 offset=07580 loop_start=104913 loop_end=129186 sample=247090__$USER__$SOUND-f5.wav tune=-28
+<region> region_label=25_rr1 seq_position=1 key=78 offset=09205 loop_start=112378 loop_end=131172 sample=247089__$USER__$SOUND-f-5.wav tune=-13
+<region> region_label=26_rr1 seq_position=1 key=79 offset=04326 loop_start=082205 loop_end=129451 sample=247088__$USER__$SOUND-g5.wav volume=-2 tune=-12
+<region> region_label=27_rr1 seq_position=1 key=80 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=28_rr1 seq_position=1 key=81 offset=04766 loop_start=092559 loop_end=126607 sample=247086__$USER__$SOUND-a5.wav volume=-2 tune=-8
+<region> region_label=29_rr1 seq_position=1 key=82 offset=02740 loop_start=083164 loop_end=126365 sample=247085__$USER__$SOUND-a-5.wav volume=-3 tune=5
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=13550 loop_start=142286 loop_end=205582 sample=247112__$USER__$SOUND-g3.wav tune=-13
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=07514 loop_start=100819 loop_end=184086 sample=247110__$USER__$SOUND-a3.wav tune=-16
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=08753 loop_start=143480 loop_end=181201 sample=247109__$USER__$SOUND-a-3.wav volume=-1 tune=-35
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=08273 loop_start=081584 loop_end=118682 sample=247108__$USER__$SOUND-b3.wav tune=-38
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=07835 loop_start=144513 loop_end=178108 sample=247107__$USER__$SOUND-c4.wav tune=-27
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=03759 loop_start=117074 loop_end=156703 sample=247106__$USER__$SOUND-c-4.wav tune=-18
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=08224 loop_start=093419 loop_end=133664 sample=247105__$USER__$SOUND-d4.wav volume=-3 tune=-33
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=10043 loop_start=120192 loop_end=160056 sample=247104__$USER__$SOUND-d-4.wav tune=-24
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=13774 loop_start=134800 loop_end=178576 sample=247103__$USER__$SOUND-e4.wav volume=-1 tune=-14
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=13968 loop_start=059210 loop_end=130471 sample=247102__$USER__$SOUND-f4.wav tune=-14
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=12786 loop_start=096232 loop_end=146442 sample=247101__$USER__$SOUND-f-4.wav volume=-3 tune=-8
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=14965 loop_start=113067 loop_end=166094 sample=247100__$USER__$SOUND-g4.wav volume=-1 tune=-15
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=10432 loop_start=089389 loop_end=122626 sample=247099__$USER__$SOUND-g-4.wav volume=-2 tune=-26
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=10710 loop_start=062031 loop_end=124286 sample=247098__$USER__$SOUND-a4.wav volume=-1 tune=-19
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=11637 loop_start=112255 loop_end=154233 sample=247097__$USER__$SOUND-a-4.wav tune=-35
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=10878 loop_start=091021 loop_end=134100 sample=247096__$USER__$SOUND-b4.wav tune=-10
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=12626 loop_start=102371 loop_end=153278 sample=247095__$USER__$SOUND-c5.wav tune=-15
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=02555 loop_start=077669 loop_end=119998 sample=247094__$USER__$SOUND-c-5.wav
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=14026 loop_start=128854 loop_end=149699 sample=247093__$USER__$SOUND-d5.wav volume=-2 tune=-6
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=11603 loop_start=097537 loop_end=144270 sample=247092__$USER__$SOUND-d-5.wav volume=-2 tune=-32
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=16494 loop_start=062397 loop_end=099534 sample=247091__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=07580 loop_start=104913 loop_end=129186 sample=247090__$USER__$SOUND-f5.wav tune=-28
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=09205 loop_start=112378 loop_end=131172 sample=247089__$USER__$SOUND-f-5.wav tune=-13
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=04326 loop_start=082205 loop_end=129451 sample=247088__$USER__$SOUND-g5.wav volume=-2 tune=-12
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=04766 loop_start=092559 loop_end=126607 sample=247086__$USER__$SOUND-a5.wav volume=-2 tune=-8
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=02740 loop_start=083164 loop_end=126365 sample=247085__$USER__$SOUND-a-5.wav volume=-3 tune=5
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=15944 loop_start=177949 loop_end=212533 sample=247113__$USER__$SOUND-f-3.wav volume=-1 tune=17
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=13550 loop_start=142286 loop_end=205582 sample=247112__$USER__$SOUND-g3.wav tune=-13
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=10034 loop_start=150335 loop_end=208979 sample=247111__$USER__$SOUND-g-3.wav volume=-1 tune=-15
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=07514 loop_start=100819 loop_end=184086 sample=247110__$USER__$SOUND-a3.wav tune=-16
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=08753 loop_start=143480 loop_end=181201 sample=247109__$USER__$SOUND-a-3.wav volume=-1 tune=-35
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=08273 loop_start=081584 loop_end=118682 sample=247108__$USER__$SOUND-b3.wav tune=-38
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=07835 loop_start=144513 loop_end=178108 sample=247107__$USER__$SOUND-c4.wav tune=-27
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=03759 loop_start=117074 loop_end=156703 sample=247106__$USER__$SOUND-c-4.wav tune=-18
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=08224 loop_start=093419 loop_end=133664 sample=247105__$USER__$SOUND-d4.wav volume=-3 tune=-33
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=10043 loop_start=120192 loop_end=160056 sample=247104__$USER__$SOUND-d-4.wav tune=-24
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=13774 loop_start=134800 loop_end=178576 sample=247103__$USER__$SOUND-e4.wav volume=-1 tune=-14
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=13968 loop_start=059210 loop_end=130471 sample=247102__$USER__$SOUND-f4.wav tune=-14
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=12786 loop_start=096232 loop_end=146442 sample=247101__$USER__$SOUND-f-4.wav volume=-3 tune=-8
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=14965 loop_start=113067 loop_end=166094 sample=247100__$USER__$SOUND-g4.wav volume=-1 tune=-15
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=10432 loop_start=089389 loop_end=122626 sample=247099__$USER__$SOUND-g-4.wav volume=-2 tune=-26
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=10710 loop_start=062031 loop_end=124286 sample=247098__$USER__$SOUND-a4.wav volume=-1 tune=-19
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=11637 loop_start=112255 loop_end=154233 sample=247097__$USER__$SOUND-a-4.wav tune=-35
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=10878 loop_start=091021 loop_end=134100 sample=247096__$USER__$SOUND-b4.wav tune=-10
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=12626 loop_start=102371 loop_end=153278 sample=247095__$USER__$SOUND-c5.wav tune=-15
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=02555 loop_start=077669 loop_end=119998 sample=247094__$USER__$SOUND-c-5.wav
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=14026 loop_start=128854 loop_end=149699 sample=247093__$USER__$SOUND-d5.wav volume=-2 tune=-6
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=11603 loop_start=097537 loop_end=144270 sample=247092__$USER__$SOUND-d-5.wav volume=-2 tune=-32
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=16494 loop_start=062397 loop_end=099534 sample=247091__$USER__$SOUND-e5.wav tune=-26
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=07580 loop_start=104913 loop_end=129186 sample=247090__$USER__$SOUND-f5.wav tune=-28
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=09205 loop_start=112378 loop_end=131172 sample=247089__$USER__$SOUND-f-5.wav tune=-13
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=04326 loop_start=082205 loop_end=129451 sample=247088__$USER__$SOUND-g5.wav volume=-2 tune=-12
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=10774 loop_start=098081 loop_end=152736 sample=247087__$USER__$SOUND-g-5.wav tune=-19
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=04766 loop_start=092559 loop_end=126607 sample=247086__$USER__$SOUND-a5.wav volume=-2 tune=-8
+
+<group> group_label=mf lovel=64 hivel=95
+<region> region_label=01_rr1 seq_position=1 key=54 offset=09353 loop_start=147029 loop_end=217065 sample=247084__$USER__$SOUND-f-3.wav tune=40
+<region> region_label=02_rr1 seq_position=1 key=55 offset=18126 loop_start=166582 loop_end=227229 sample=247083__$USER__$SOUND-g3.wav volume=2 tune=3
+<region> region_label=03_rr1 seq_position=1 key=56 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=04_rr1 seq_position=1 key=57 offset=14457 loop_start=143035 loop_end=190673 sample=247081__$USER__$SOUND-a3.wav volume=-1 tune=-20
+<region> region_label=05_rr1 seq_position=1 key=58 offset=16220 loop_start=153967 loop_end=222784 sample=247080__$USER__$SOUND-a-3.wav tune=-3
+<region> region_label=06_rr1 seq_position=1 key=59 offset=17430 loop_start=131625 loop_end=174687 sample=247079__$USER__$SOUND-b3.wav volume=-0.5 tune=-35
+<region> region_label=07_rr1 seq_position=1 key=60 offset=18661 loop_start=125934 loop_end=190426 sample=247078__$USER__$SOUND-c4.wav volume=-1.5 tune=-22
+<region> region_label=08_rr1 seq_position=1 key=61 offset=18572 loop_start=130206 loop_end=213818 sample=247077__$USER__$SOUND-c-4.wav tune=5
+<region> region_label=09_rr1 seq_position=1 key=62 offset=15596 loop_start=162606 loop_end=245843 sample=247076__$USER__$SOUND-d4.wav volume=-2 tune=-10
+<region> region_label=10_rr1 seq_position=1 key=63 offset=09542 loop_start=127163 loop_end=183215 sample=247075__$USER__$SOUND-d-4.wav volume=-1.5 tune=-3
+<region> region_label=11_rr1 seq_position=1 key=64 offset=23038 loop_start=179177 loop_end=222891 sample=247074__$USER__$SOUND-e4.wav volume=-3 tune=7
+<region> region_label=12_rr1 seq_position=1 key=65 offset=12174 loop_start=101176 loop_end=196648 sample=247073__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=13_rr1 seq_position=1 key=66 offset=17053 loop_start=138157 loop_end=209172 sample=247072__$USER__$SOUND-f-4.wav volume=-1 tune=8
+<region> region_label=14_rr1 seq_position=1 key=67 offset=20047 loop_start=138727 loop_end=196174 sample=247071__$USER__$SOUND-g4.wav volume=-3.5 tune=-25
+<region> region_label=15_rr1 seq_position=1 key=68 offset=19346 loop_start=128042 loop_end=182819 sample=247070__$USER__$SOUND-g-4.wav volume=-1.5 tune=-7
+<region> region_label=16_rr1 seq_position=1 key=69 offset=15544 loop_start=106543 loop_end=153133 sample=247069__$USER__$SOUND-a4.wav volume=-2 tune=9
+<region> region_label=17_rr1 seq_position=1 key=70 offset=09089 loop_start=123053 loop_end=182530 sample=247068__$USER__$SOUND-a-4.wav volume=-2 tune=-16
+<region> region_label=18_rr1 seq_position=1 key=71 offset=14678 loop_start=087033 loop_end=145911 sample=247067__$USER__$SOUND-b4.wav volume=-1 tune=-8
+<region> region_label=19_rr1 seq_position=1 key=72 offset=19914 loop_start=147093 loop_end=230521 sample=247066__$USER__$SOUND-c5.wav volume=-3.5
+<region> region_label=20_rr1 seq_position=1 key=73 offset=11484 loop_start=059766 loop_end=115252 sample=247065__$USER__$SOUND-c-5.wav volume=-2 tune=-6
+<region> region_label=21_rr1 seq_position=1 key=74 offset=23936 loop_start=175600 loop_end=206983 sample=247064__$USER__$SOUND-d5.wav volume=-1 tune=8
+<region> region_label=22_rr1 seq_position=1 key=75 offset=12518 loop_start=150891 loop_end=178968 sample=247063__$USER__$SOUND-d-5.wav volume=-2 tune=-24
+<region> region_label=23_rr1 seq_position=1 key=76 offset=14349 loop_start=125086 loop_end=167821 sample=247062__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=24_rr1 seq_position=1 key=77 offset=25354 loop_start=096688 loop_end=147716 sample=247061__$USER__$SOUND-f5.wav volume=-2 tune=-36
+<region> region_label=25_rr1 seq_position=1 key=78 offset=21308 loop_start=116449 loop_end=144567 sample=247060__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=26_rr1 seq_position=1 key=79 offset=17957 loop_start=154686 loop_end=190774 sample=247059__$USER__$SOUND-g5.wav volume=2 tune=-36
+<region> region_label=27_rr1 seq_position=1 key=80 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=28_rr1 seq_position=1 key=81 offset=07302 loop_start=120949 loop_end=175803 sample=247057__$USER__$SOUND-a5.wav volume=4 tune=-7
+<region> region_label=29_rr1 seq_position=1 key=82 offset=12757 loop_start=140033 loop_end=162981 sample=247056__$USER__$SOUND-a-5.wav volume=-3 tune=-5
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=18126 loop_start=166582 loop_end=227229 sample=247083__$USER__$SOUND-g3.wav volume=2 tune=3
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=14457 loop_start=143035 loop_end=190673 sample=247081__$USER__$SOUND-a3.wav volume=-1 tune=-20
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=16220 loop_start=153967 loop_end=222784 sample=247080__$USER__$SOUND-a-3.wav tune=-3
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=17430 loop_start=131625 loop_end=174687 sample=247079__$USER__$SOUND-b3.wav volume=-0.5 tune=-35
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=18661 loop_start=125934 loop_end=190426 sample=247078__$USER__$SOUND-c4.wav volume=-1.5 tune=-22
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=18572 loop_start=130206 loop_end=213818 sample=247077__$USER__$SOUND-c-4.wav tune=5
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=15596 loop_start=162606 loop_end=245843 sample=247076__$USER__$SOUND-d4.wav volume=-2 tune=-10
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=09542 loop_start=127163 loop_end=183215 sample=247075__$USER__$SOUND-d-4.wav volume=-1.5 tune=-3
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=23038 loop_start=179177 loop_end=222891 sample=247074__$USER__$SOUND-e4.wav volume=-3 tune=7
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=12174 loop_start=101176 loop_end=196648 sample=247073__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=17053 loop_start=138157 loop_end=209172 sample=247072__$USER__$SOUND-f-4.wav volume=-1 tune=8
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=20047 loop_start=138727 loop_end=196174 sample=247071__$USER__$SOUND-g4.wav volume=-3.5 tune=-25
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=19346 loop_start=128042 loop_end=182819 sample=247070__$USER__$SOUND-g-4.wav volume=-1.5 tune=-7
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=15544 loop_start=106543 loop_end=153133 sample=247069__$USER__$SOUND-a4.wav volume=-2 tune=9
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=09089 loop_start=123053 loop_end=182530 sample=247068__$USER__$SOUND-a-4.wav volume=-2 tune=-16
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=14678 loop_start=087033 loop_end=145911 sample=247067__$USER__$SOUND-b4.wav volume=-1 tune=-8
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=19914 loop_start=147093 loop_end=230521 sample=247066__$USER__$SOUND-c5.wav volume=-3.5
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=11484 loop_start=059766 loop_end=115252 sample=247065__$USER__$SOUND-c-5.wav volume=-2 tune=-6
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=23936 loop_start=175600 loop_end=206983 sample=247064__$USER__$SOUND-d5.wav volume=-1 tune=8
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=12518 loop_start=150891 loop_end=178968 sample=247063__$USER__$SOUND-d-5.wav volume=-2 tune=-24
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=14349 loop_start=125086 loop_end=167821 sample=247062__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=25354 loop_start=096688 loop_end=147716 sample=247061__$USER__$SOUND-f5.wav volume=-2 tune=-36
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=21308 loop_start=116449 loop_end=144567 sample=247060__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=17957 loop_start=154686 loop_end=190774 sample=247059__$USER__$SOUND-g5.wav volume=2 tune=-36
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=07302 loop_start=120949 loop_end=175803 sample=247057__$USER__$SOUND-a5.wav volume=4 tune=-7
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=12757 loop_start=140033 loop_end=162981 sample=247056__$USER__$SOUND-a-5.wav volume=-3 tune=-5
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=09353 loop_start=147029 loop_end=217065 sample=247084__$USER__$SOUND-f-3.wav tune=40
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=18126 loop_start=166582 loop_end=227229 sample=247083__$USER__$SOUND-g3.wav volume=2 tune=3
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=22468 loop_start=164782 loop_end=215322 sample=247082__$USER__$SOUND-g-3.wav tune=-2
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=14457 loop_start=143035 loop_end=190673 sample=247081__$USER__$SOUND-a3.wav volume=-1 tune=-20
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=16220 loop_start=153967 loop_end=222784 sample=247080__$USER__$SOUND-a-3.wav tune=-3
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=17430 loop_start=131625 loop_end=174687 sample=247079__$USER__$SOUND-b3.wav volume=-0.5 tune=-35
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=18661 loop_start=125934 loop_end=190426 sample=247078__$USER__$SOUND-c4.wav volume=-1.5 tune=-22
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=18572 loop_start=130206 loop_end=213818 sample=247077__$USER__$SOUND-c-4.wav tune=5
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=15596 loop_start=162606 loop_end=245843 sample=247076__$USER__$SOUND-d4.wav volume=-2 tune=-10
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=09542 loop_start=127163 loop_end=183215 sample=247075__$USER__$SOUND-d-4.wav volume=-1.5 tune=-3
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=23038 loop_start=179177 loop_end=222891 sample=247074__$USER__$SOUND-e4.wav volume=-3 tune=7
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=12174 loop_start=101176 loop_end=196648 sample=247073__$USER__$SOUND-f4.wav volume=-3 tune=5
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=17053 loop_start=138157 loop_end=209172 sample=247072__$USER__$SOUND-f-4.wav volume=-1 tune=8
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=20047 loop_start=138727 loop_end=196174 sample=247071__$USER__$SOUND-g4.wav volume=-3.5 tune=-25
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=19346 loop_start=128042 loop_end=182819 sample=247070__$USER__$SOUND-g-4.wav volume=-1.5 tune=-7
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=15544 loop_start=106543 loop_end=153133 sample=247069__$USER__$SOUND-a4.wav volume=-2 tune=9
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=09089 loop_start=123053 loop_end=182530 sample=247068__$USER__$SOUND-a-4.wav volume=-2 tune=-16
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=14678 loop_start=087033 loop_end=145911 sample=247067__$USER__$SOUND-b4.wav volume=-1 tune=-8
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=19914 loop_start=147093 loop_end=230521 sample=247066__$USER__$SOUND-c5.wav volume=-3.5
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=11484 loop_start=059766 loop_end=115252 sample=247065__$USER__$SOUND-c-5.wav volume=-2 tune=-6
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=23936 loop_start=175600 loop_end=206983 sample=247064__$USER__$SOUND-d5.wav volume=-1 tune=8
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=12518 loop_start=150891 loop_end=178968 sample=247063__$USER__$SOUND-d-5.wav volume=-2 tune=-24
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=14349 loop_start=125086 loop_end=167821 sample=247062__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=25354 loop_start=096688 loop_end=147716 sample=247061__$USER__$SOUND-f5.wav volume=-2 tune=-36
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=21308 loop_start=116449 loop_end=144567 sample=247060__$USER__$SOUND-f-5.wav volume=2 tune=-26
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=17957 loop_start=154686 loop_end=190774 sample=247059__$USER__$SOUND-g5.wav volume=2 tune=-36
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=09749 loop_start=110181 loop_end=146129 sample=247058__$USER__$SOUND-g-5.wav volume=0.5 tune=-30
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=07302 loop_start=120949 loop_end=175803 sample=247057__$USER__$SOUND-a5.wav volume=4 tune=-7
+
+<group> group_label=f lovel=96 hivel=127
+<region> region_label=01_rr1 seq_position=1 key=54 offset=09707 loop_start=043593 loop_end=073933 sample=247142__$USER__$SOUND-f-3.wav volume=-1 tune=14
+<region> region_label=02_rr1 seq_position=1 key=55 offset=04504 loop_start=084837 loop_end=134523 sample=247141__$USER__$SOUND-g3.wav tune=8
+<region> region_label=03_rr1 seq_position=1 key=56 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=04_rr1 seq_position=1 key=57 offset=08439 loop_start=080283 loop_end=149041 sample=247139__$USER__$SOUND-a3.wav tune=120
+<region> region_label=05_rr1 seq_position=1 key=58 offset=07357 loop_start=076493 loop_end=113231 sample=247138__$USER__$SOUND-a-3.wav tune=125
+<region> region_label=06_rr1 seq_position=1 key=59 offset=07218 loop_start=082128 loop_end=150404 sample=247137__$USER__$SOUND-b3.wav volume=-2 tune=113
+<region> region_label=07_rr1 seq_position=1 key=60 offset=06060 loop_start=101530 loop_end=144068 sample=247136__$USER__$SOUND-c4.wav tune=-30
+<region> region_label=08_rr1 seq_position=1 key=61 offset=07299 loop_start=109501 loop_end=145169 sample=247135__$USER__$SOUND-c-4.wav tune=-31
+<region> region_label=09_rr1 seq_position=1 key=62 offset=07032 loop_start=093748 loop_end=134061 sample=247134__$USER__$SOUND-d4.wav tune=-32
+<region> region_label=10_rr1 seq_position=1 key=63 offset=07234 loop_start=073459 loop_end=102958 sample=247133__$USER__$SOUND-d-4.wav volume=-2 tune=-25
+<region> region_label=11_rr1 seq_position=1 key=64 offset=05322 loop_start=055837 loop_end=102096 sample=247132__$USER__$SOUND-e4.wav volume=-3 tune=-24
+<region> region_label=12_rr1 seq_position=1 key=65 offset=09126 loop_start=069247 loop_end=107063 sample=247131__$USER__$SOUND-f4.wav volume=-3 tune=-12
+<region> region_label=13_rr1 seq_position=1 key=66 offset=06737 loop_start=065314 loop_end=105834 sample=247130__$USER__$SOUND-f-4.wav volume=-3 tune=18
+<region> region_label=14_rr1 seq_position=1 key=67 offset=04693 loop_start=038492 loop_end=075007 sample=247129__$USER__$SOUND-g4.wav volume=-3 tune=14
+<region> region_label=15_rr1 seq_position=1 key=68 offset=07902 loop_start=052529 loop_end=096010 sample=247128__$USER__$SOUND-g-4.wav volume=-3 tune=21
+<region> region_label=16_rr1 seq_position=1 key=69 offset=04695 loop_start=076920 loop_end=110919 sample=247127__$USER__$SOUND-a4.wav volume=-3 tune=21
+<region> region_label=17_rr1 seq_position=1 key=70 offset=05918 loop_start=078802 loop_end=108532 sample=247126__$USER__$SOUND-a-4.wav volume=-3 tune=11
+<region> region_label=18_rr1 seq_position=1 key=71 offset=04180 loop_start=055014 loop_end=099643 sample=247125__$USER__$SOUND-b4.wav volume=-5 tune=15
+<region> region_label=19_rr1 seq_position=1 key=72 offset=13677 loop_start=061426 loop_end=099731 sample=247124__$USER__$SOUND-c5.wav tune=-10
+<region> region_label=20_rr1 seq_position=1 key=73 offset=12877 loop_start=063775 loop_end=103510 sample=247123__$USER__$SOUND-c-5.wav volume=-1 tune=18
+<region> region_label=21_rr1 seq_position=1 key=74 offset=11670 loop_start=067156 loop_end=073952 sample=247122__$USER__$SOUND-d5.wav volume=-0.5 tune=-17
+<region> region_label=22_rr1 seq_position=1 key=75 offset=07293 loop_start=074479 loop_end=110008 sample=247121__$USER__$SOUND-d-5.wav tune=-24
+<region> region_label=23_rr1 seq_position=1 key=76 offset=11058 loop_start=079459 loop_end=116962 sample=247120__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=24_rr1 seq_position=1 key=77 offset=08116 loop_start=068334 loop_end=117343 sample=247119__$USER__$SOUND-f5.wav volume=-0.5 tune=-22
+<region> region_label=25_rr1 seq_position=1 key=78 offset=06869 loop_start=087546 loop_end=113506 sample=247118__$USER__$SOUND-f-5.wav volume=-0.5 tune=-21
+<region> region_label=26_rr1 seq_position=1 key=79 offset=07403 loop_start=063246 loop_end=096374 sample=247117__$USER__$SOUND-g5.wav volume=2 tune=-35
+<region> region_label=27_rr1 seq_position=1 key=80 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=28_rr1 seq_position=1 key=81 offset=10354 loop_start=040883 loop_end=057071 sample=247115__$USER__$SOUND-a5.wav tune=-7
+<region> region_label=29_rr1 seq_position=1 key=82 offset=05869 loop_start=097839 loop_end=110385 sample=247114__$USER__$SOUND-a-5.wav tune=-9
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=54 offset=04504 loop_start=084837 loop_end=134523 sample=247141__$USER__$SOUND-g3.wav tune=8
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=55 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=56 offset=08439 loop_start=080283 loop_end=149041 sample=247139__$USER__$SOUND-a3.wav tune=120
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=57 offset=07357 loop_start=076493 loop_end=113231 sample=247138__$USER__$SOUND-a-3.wav tune=125
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=58 offset=07218 loop_start=082128 loop_end=150404 sample=247137__$USER__$SOUND-b3.wav volume=-2 tune=113
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=59 offset=06060 loop_start=101530 loop_end=144068 sample=247136__$USER__$SOUND-c4.wav tune=-30
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=60 offset=07299 loop_start=109501 loop_end=145169 sample=247135__$USER__$SOUND-c-4.wav tune=-31
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=61 offset=07032 loop_start=093748 loop_end=134061 sample=247134__$USER__$SOUND-d4.wav tune=-32
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=62 offset=07234 loop_start=073459 loop_end=102958 sample=247133__$USER__$SOUND-d-4.wav volume=-2 tune=-25
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=63 offset=05322 loop_start=055837 loop_end=102096 sample=247132__$USER__$SOUND-e4.wav volume=-3 tune=-24
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=64 offset=09126 loop_start=069247 loop_end=107063 sample=247131__$USER__$SOUND-f4.wav volume=-3 tune=-12
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=65 offset=06737 loop_start=065314 loop_end=105834 sample=247130__$USER__$SOUND-f-4.wav volume=-3 tune=18
+<region> region_label=13_rr2 seq_position=2 transpose=-1 key=66 offset=04693 loop_start=038492 loop_end=075007 sample=247129__$USER__$SOUND-g4.wav volume=-3 tune=14
+<region> region_label=14_rr2 seq_position=2 transpose=-1 key=67 offset=07902 loop_start=052529 loop_end=096010 sample=247128__$USER__$SOUND-g-4.wav volume=-3 tune=21
+<region> region_label=15_rr2 seq_position=2 transpose=-1 key=68 offset=04695 loop_start=076920 loop_end=110919 sample=247127__$USER__$SOUND-a4.wav volume=-3 tune=21
+<region> region_label=16_rr2 seq_position=2 transpose=-1 key=69 offset=05918 loop_start=078802 loop_end=108532 sample=247126__$USER__$SOUND-a-4.wav volume=-3 tune=11
+<region> region_label=17_rr2 seq_position=2 transpose=-1 key=70 offset=04180 loop_start=055014 loop_end=099643 sample=247125__$USER__$SOUND-b4.wav volume=-5 tune=15
+<region> region_label=18_rr2 seq_position=2 transpose=-1 key=71 offset=13677 loop_start=061426 loop_end=099731 sample=247124__$USER__$SOUND-c5.wav tune=-10
+<region> region_label=19_rr2 seq_position=2 transpose=-1 key=72 offset=12877 loop_start=063775 loop_end=103510 sample=247123__$USER__$SOUND-c-5.wav volume=-1 tune=18
+<region> region_label=20_rr2 seq_position=2 transpose=-1 key=73 offset=11670 loop_start=067156 loop_end=073952 sample=247122__$USER__$SOUND-d5.wav volume=-0.5 tune=-17
+<region> region_label=21_rr2 seq_position=2 transpose=-1 key=74 offset=07293 loop_start=074479 loop_end=110008 sample=247121__$USER__$SOUND-d-5.wav tune=-24
+<region> region_label=22_rr2 seq_position=2 transpose=-1 key=75 offset=11058 loop_start=079459 loop_end=116962 sample=247120__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=23_rr2 seq_position=2 transpose=-1 key=76 offset=08116 loop_start=068334 loop_end=117343 sample=247119__$USER__$SOUND-f5.wav volume=-0.5 tune=-22
+<region> region_label=24_rr2 seq_position=2 transpose=-1 key=77 offset=06869 loop_start=087546 loop_end=113506 sample=247118__$USER__$SOUND-f-5.wav volume=-0.5 tune=-21
+<region> region_label=25_rr2 seq_position=2 transpose=-1 key=78 offset=07403 loop_start=063246 loop_end=096374 sample=247117__$USER__$SOUND-g5.wav volume=2 tune=-35
+<region> region_label=26_rr2 seq_position=2 transpose=-1 key=79 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=27_rr2 seq_position=2 transpose=-1 key=80 offset=10354 loop_start=040883 loop_end=057071 sample=247115__$USER__$SOUND-a5.wav tune=-7
+<region> region_label=28_rr2 seq_position=2 transpose=-1 key=81 offset=05869 loop_start=097839 loop_end=110385 sample=247114__$USER__$SOUND-a-5.wav tune=-9
+<region> region_label=29_rr2 seq_position=2 transpose=2 key=82 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=54 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=55 offset=09707 loop_start=043593 loop_end=073933 sample=247142__$USER__$SOUND-f-3.wav volume=-1 tune=14
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=56 offset=04504 loop_start=084837 loop_end=134523 sample=247141__$USER__$SOUND-g3.wav tune=8
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=57 offset=07055 loop_start=115666 loop_end=183253 sample=247140__$USER__$SOUND-g-3.wav tune=106
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=58 offset=08439 loop_start=080283 loop_end=149041 sample=247139__$USER__$SOUND-a3.wav tune=120
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=59 offset=07357 loop_start=076493 loop_end=113231 sample=247138__$USER__$SOUND-a-3.wav tune=125
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=60 offset=07218 loop_start=082128 loop_end=150404 sample=247137__$USER__$SOUND-b3.wav volume=-2 tune=113
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=61 offset=06060 loop_start=101530 loop_end=144068 sample=247136__$USER__$SOUND-c4.wav tune=-30
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=62 offset=07299 loop_start=109501 loop_end=145169 sample=247135__$USER__$SOUND-c-4.wav tune=-31
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=63 offset=07032 loop_start=093748 loop_end=134061 sample=247134__$USER__$SOUND-d4.wav tune=-32
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=64 offset=07234 loop_start=073459 loop_end=102958 sample=247133__$USER__$SOUND-d-4.wav volume=-2 tune=-25
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=65 offset=05322 loop_start=055837 loop_end=102096 sample=247132__$USER__$SOUND-e4.wav volume=-3 tune=-24
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=66 offset=09126 loop_start=069247 loop_end=107063 sample=247131__$USER__$SOUND-f4.wav volume=-3 tune=-12
+<region> region_label=14_rr3 seq_position=3 transpose=1 key=67 offset=06737 loop_start=065314 loop_end=105834 sample=247130__$USER__$SOUND-f-4.wav volume=-3 tune=18
+<region> region_label=15_rr3 seq_position=3 transpose=1 key=68 offset=04693 loop_start=038492 loop_end=075007 sample=247129__$USER__$SOUND-g4.wav volume=-3 tune=14
+<region> region_label=16_rr3 seq_position=3 transpose=1 key=69 offset=07902 loop_start=052529 loop_end=096010 sample=247128__$USER__$SOUND-g-4.wav volume=-3 tune=21
+<region> region_label=17_rr3 seq_position=3 transpose=1 key=70 offset=04695 loop_start=076920 loop_end=110919 sample=247127__$USER__$SOUND-a4.wav volume=-3 tune=21
+<region> region_label=18_rr3 seq_position=3 transpose=1 key=71 offset=05918 loop_start=078802 loop_end=108532 sample=247126__$USER__$SOUND-a-4.wav volume=-3 tune=11
+<region> region_label=19_rr3 seq_position=3 transpose=1 key=72 offset=04180 loop_start=055014 loop_end=099643 sample=247125__$USER__$SOUND-b4.wav volume=-5 tune=15
+<region> region_label=20_rr3 seq_position=3 transpose=1 key=73 offset=13677 loop_start=061426 loop_end=099731 sample=247124__$USER__$SOUND-c5.wav tune=-10
+<region> region_label=21_rr3 seq_position=3 transpose=1 key=74 offset=12877 loop_start=063775 loop_end=103510 sample=247123__$USER__$SOUND-c-5.wav volume=-1 tune=18
+<region> region_label=22_rr3 seq_position=3 transpose=1 key=75 offset=11670 loop_start=067156 loop_end=073952 sample=247122__$USER__$SOUND-d5.wav volume=-0.5 tune=-17
+<region> region_label=23_rr3 seq_position=3 transpose=1 key=76 offset=07293 loop_start=074479 loop_end=110008 sample=247121__$USER__$SOUND-d-5.wav tune=-24
+<region> region_label=24_rr3 seq_position=3 transpose=1 key=77 offset=11058 loop_start=079459 loop_end=116962 sample=247120__$USER__$SOUND-e5.wav volume=-0.5 tune=-23
+<region> region_label=25_rr3 seq_position=3 transpose=1 key=78 offset=08116 loop_start=068334 loop_end=117343 sample=247119__$USER__$SOUND-f5.wav volume=-0.5 tune=-22
+<region> region_label=26_rr3 seq_position=3 transpose=1 key=79 offset=06869 loop_start=087546 loop_end=113506 sample=247118__$USER__$SOUND-f-5.wav volume=-0.5 tune=-21
+<region> region_label=27_rr3 seq_position=3 transpose=1 key=80 offset=07403 loop_start=063246 loop_end=096374 sample=247117__$USER__$SOUND-g5.wav volume=2 tune=-35
+<region> region_label=28_rr3 seq_position=3 transpose=1 key=81 offset=06845 loop_start=089405 loop_end=119290 sample=247116__$USER__$SOUND-g-5.wav volume=1 tune=-29
+<region> region_label=29_rr3 seq_position=3 transpose=1 key=82 offset=10354 loop_start=040883 loop_end=057071 sample=247115__$USER__$SOUND-a5.wav tune=-7
+
+
+//--------------------------
+<curve>
+curve_index=7
+v000=0
+v001=1
+v127=1

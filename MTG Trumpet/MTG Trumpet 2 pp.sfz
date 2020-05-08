@@ -1,0 +1,161 @@
+//--------------------------------------
+// Trumpet single notes
+// by MTG @freesound.org
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $VIB_RATE 76
+#define $VIBRATO 1
+#define $LEGATO 64
+#define $EXPRESSION 11
+#define $VELTRACK 99
+
+#define $USER mtg
+#define $SOUND trumpet
+
+
+///////////////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$RELEASE=Release ($RELEASE)
+label_cc$VIB_RATE=Vib Rate ($VIB_RATE)
+label_cc$VIBRATO=Vibrato ($VIBRATO)
+label_cc$LEGATO=Legato ($LEGATO)
+label_cc$EXPRESSION=Exp ($EXPRESSION)
+label_cc$VELTRACK=Veltrack ($VELTRACK)
+
+set_hdcc$RELEASE=0.2
+set_hdcc$VIB_RATE=0.5
+set_hdcc$EXPRESSION=1
+set_hdcc$VELTRACK=1
+
+
+//***************************************************************
+<global>
+loop_mode=loop_continuous
+seq_length=3
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+ampeg_release_oncc$RELEASE=1
+amplitude_oncc$EXPRESSION=100
+pitchlfo_freq_oncc$VIB_RATE=10
+pitchlfo_depth_oncc$VIBRATO=50
+sustain_sw=off
+off_mode=time
+off_time=0.01
+off_shape=0
+
+
+//==========================================================================================================
+<group>
+group_label=attack
+trigger=attack
+group=1
+off_by=2
+
+<region> region_label=01_rr1 seq_position=1 key=58 offset=111092 loop_start=141687 loop_end=208493 sample=357569__$USER__$SOUND-asharp3.wav volume=4
+<region> region_label=02_rr1 seq_position=1 key=59 offset=029392 loop_start=129874 loop_end=148237 sample=357547__$USER__$SOUND-b3.wav tune=-9
+<region> region_label=03_rr1 seq_position=1 key=60 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=04_rr1 seq_position=1 key=61 offset=017184 loop_start=116632 loop_end=142330 sample=357478__$USER__$SOUND-csharp4.wav volume=-3 tune=-7
+<region> region_label=05_rr1 seq_position=1 key=62 offset=024074 loop_start=099515 loop_end=135700 sample=357434__$USER__$SOUND-d4.wav tune=-13
+<region> region_label=06_rr1 seq_position=1 key=63 offset=016276 loop_start=091018 loop_end=127462 sample=357388__$USER__$SOUND-dsharp4.wav volume=1 tune=9
+<region> region_label=07_rr1 seq_position=1 key=64 offset=022668 loop_start=107661 loop_end=145191 sample=357565__$USER__$SOUND-e4.wav tune=5
+<region> region_label=08_rr1 seq_position=1 key=65 offset=027968 loop_start=098504 loop_end=141955 sample=357389__$USER__$SOUND-f4.wav tune=6
+<region> region_label=09_rr1 seq_position=1 key=66 offset=028735 loop_start=072994 loop_end=129360 sample=357323__$USER__$SOUND-fsharp4.wav tune=10
+<region> region_label=10_rr1 seq_position=1 key=67 offset=045362 loop_start=103748 loop_end=124978 sample=357365__$USER__$SOUND-g4.wav tune=-7
+<region> region_label=11_rr1 seq_position=1 key=68 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=12_rr1 seq_position=1 key=69 offset=042786 loop_start=162166 loop_end=183041 sample=357391__$USER__$SOUND-a4.wav tune=13
+<region> region_label=13_rr1 seq_position=1 key=70 offset=047616 loop_start=148993 loop_end=185953 sample=357548__$USER__$SOUND-asharp4.wav tune=14
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=58 offset=029392 loop_start=129874 loop_end=148237 sample=357547__$USER__$SOUND-b3.wav tune=-9
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=59 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=60 offset=017184 loop_start=116632 loop_end=142330 sample=357478__$USER__$SOUND-csharp4.wav volume=-3 tune=-7
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=61 offset=024074 loop_start=099515 loop_end=135700 sample=357434__$USER__$SOUND-d4.wav tune=-13
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=62 offset=016276 loop_start=091018 loop_end=127462 sample=357388__$USER__$SOUND-dsharp4.wav volume=1 tune=9
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=63 offset=022668 loop_start=107661 loop_end=145191 sample=357565__$USER__$SOUND-e4.wav tune=5
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=64 offset=027968 loop_start=098504 loop_end=141955 sample=357389__$USER__$SOUND-f4.wav tune=6
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=65 offset=028735 loop_start=072994 loop_end=129360 sample=357323__$USER__$SOUND-fsharp4.wav tune=10
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=66 offset=045362 loop_start=103748 loop_end=124978 sample=357365__$USER__$SOUND-g4.wav tune=-7
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=67 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=68 offset=042786 loop_start=162166 loop_end=183041 sample=357391__$USER__$SOUND-a4.wav tune=13
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=69 offset=047616 loop_start=148993 loop_end=185953 sample=357548__$USER__$SOUND-asharp4.wav tune=14
+<region> region_label=13_rr2 seq_position=2 transpose=2 key=70 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=58 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=59 offset=111092 loop_start=141687 loop_end=208493 sample=357569__$USER__$SOUND-asharp3.wav volume=4
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=60 offset=029392 loop_start=129874 loop_end=148237 sample=357547__$USER__$SOUND-b3.wav tune=-9
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=61 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=62 offset=017184 loop_start=116632 loop_end=142330 sample=357478__$USER__$SOUND-csharp4.wav volume=-3 tune=-7
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=63 offset=024074 loop_start=099515 loop_end=135700 sample=357434__$USER__$SOUND-d4.wav tune=-13
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=64 offset=016276 loop_start=091018 loop_end=127462 sample=357388__$USER__$SOUND-dsharp4.wav volume=1 tune=9
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=65 offset=022668 loop_start=107661 loop_end=145191 sample=357565__$USER__$SOUND-e4.wav tune=5
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=66 offset=027968 loop_start=098504 loop_end=141955 sample=357389__$USER__$SOUND-f4.wav tune=6
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=67 offset=028735 loop_start=072994 loop_end=129360 sample=357323__$USER__$SOUND-fsharp4.wav tune=10
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=68 offset=045362 loop_start=103748 loop_end=124978 sample=357365__$USER__$SOUND-g4.wav tune=-7
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=69 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=70 offset=042786 loop_start=162166 loop_end=183041 sample=357391__$USER__$SOUND-a4.wav tune=13
+
+
+//==========================================================================================================
+<group>
+group_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset_oncc$LEGATO=10000
+offset_curvecc$LEGATO=7
+offset_random=10000
+ampeg_attack=0.01
+locc$LEGATO=1
+
+<region> region_label=01_rr1 seq_position=1 key=58 offset=111092 loop_start=141687 loop_end=208493 sample=357569__$USER__$SOUND-asharp3.wav volume=4
+<region> region_label=02_rr1 seq_position=1 key=59 offset=029392 loop_start=129874 loop_end=148237 sample=357547__$USER__$SOUND-b3.wav tune=-9
+<region> region_label=03_rr1 seq_position=1 key=60 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=04_rr1 seq_position=1 key=61 offset=017184 loop_start=116632 loop_end=142330 sample=357478__$USER__$SOUND-csharp4.wav volume=-3 tune=-7
+<region> region_label=05_rr1 seq_position=1 key=62 offset=024074 loop_start=099515 loop_end=135700 sample=357434__$USER__$SOUND-d4.wav tune=-13
+<region> region_label=06_rr1 seq_position=1 key=63 offset=016276 loop_start=091018 loop_end=127462 sample=357388__$USER__$SOUND-dsharp4.wav volume=1 tune=9
+<region> region_label=07_rr1 seq_position=1 key=64 offset=022668 loop_start=107661 loop_end=145191 sample=357565__$USER__$SOUND-e4.wav tune=5
+<region> region_label=08_rr1 seq_position=1 key=65 offset=027968 loop_start=098504 loop_end=141955 sample=357389__$USER__$SOUND-f4.wav tune=6
+<region> region_label=09_rr1 seq_position=1 key=66 offset=028735 loop_start=072994 loop_end=129360 sample=357323__$USER__$SOUND-fsharp4.wav tune=10
+<region> region_label=10_rr1 seq_position=1 key=67 offset=045362 loop_start=103748 loop_end=124978 sample=357365__$USER__$SOUND-g4.wav tune=-7
+<region> region_label=11_rr1 seq_position=1 key=68 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=12_rr1 seq_position=1 key=69 offset=042786 loop_start=162166 loop_end=183041 sample=357391__$USER__$SOUND-a4.wav tune=13
+<region> region_label=13_rr1 seq_position=1 key=70 offset=047616 loop_start=148993 loop_end=185953 sample=357548__$USER__$SOUND-asharp4.wav tune=14
+<region> region_label=01_rr2 seq_position=2 transpose=-1 key=58 offset=029392 loop_start=129874 loop_end=148237 sample=357547__$USER__$SOUND-b3.wav tune=-9
+<region> region_label=02_rr2 seq_position=2 transpose=-1 key=59 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=03_rr2 seq_position=2 transpose=-1 key=60 offset=017184 loop_start=116632 loop_end=142330 sample=357478__$USER__$SOUND-csharp4.wav volume=-3 tune=-7
+<region> region_label=04_rr2 seq_position=2 transpose=-1 key=61 offset=024074 loop_start=099515 loop_end=135700 sample=357434__$USER__$SOUND-d4.wav tune=-13
+<region> region_label=05_rr2 seq_position=2 transpose=-1 key=62 offset=016276 loop_start=091018 loop_end=127462 sample=357388__$USER__$SOUND-dsharp4.wav volume=1 tune=9
+<region> region_label=06_rr2 seq_position=2 transpose=-1 key=63 offset=022668 loop_start=107661 loop_end=145191 sample=357565__$USER__$SOUND-e4.wav tune=5
+<region> region_label=07_rr2 seq_position=2 transpose=-1 key=64 offset=027968 loop_start=098504 loop_end=141955 sample=357389__$USER__$SOUND-f4.wav tune=6
+<region> region_label=08_rr2 seq_position=2 transpose=-1 key=65 offset=028735 loop_start=072994 loop_end=129360 sample=357323__$USER__$SOUND-fsharp4.wav tune=10
+<region> region_label=09_rr2 seq_position=2 transpose=-1 key=66 offset=045362 loop_start=103748 loop_end=124978 sample=357365__$USER__$SOUND-g4.wav tune=-7
+<region> region_label=10_rr2 seq_position=2 transpose=-1 key=67 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=11_rr2 seq_position=2 transpose=-1 key=68 offset=042786 loop_start=162166 loop_end=183041 sample=357391__$USER__$SOUND-a4.wav tune=13
+<region> region_label=12_rr2 seq_position=2 transpose=-1 key=69 offset=047616 loop_start=148993 loop_end=185953 sample=357548__$USER__$SOUND-asharp4.wav tune=14
+<region> region_label=13_rr2 seq_position=2 transpose=2 key=70 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=01_rr3 seq_position=3 transpose=-2 key=58 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=02_rr3 seq_position=3 transpose=1 key=59 offset=111092 loop_start=141687 loop_end=208493 sample=357569__$USER__$SOUND-asharp3.wav volume=4
+<region> region_label=03_rr3 seq_position=3 transpose=1 key=60 offset=029392 loop_start=129874 loop_end=148237 sample=357547__$USER__$SOUND-b3.wav tune=-9
+<region> region_label=04_rr3 seq_position=3 transpose=1 key=61 offset=026456 loop_start=097202 loop_end=125510 sample=357387__$USER__$SOUND-c4.wav tune=-19
+<region> region_label=05_rr3 seq_position=3 transpose=1 key=62 offset=017184 loop_start=116632 loop_end=142330 sample=357478__$USER__$SOUND-csharp4.wav volume=-3 tune=-7
+<region> region_label=06_rr3 seq_position=3 transpose=1 key=63 offset=024074 loop_start=099515 loop_end=135700 sample=357434__$USER__$SOUND-d4.wav tune=-13
+<region> region_label=07_rr3 seq_position=3 transpose=1 key=64 offset=016276 loop_start=091018 loop_end=127462 sample=357388__$USER__$SOUND-dsharp4.wav volume=1 tune=9
+<region> region_label=08_rr3 seq_position=3 transpose=1 key=65 offset=022668 loop_start=107661 loop_end=145191 sample=357565__$USER__$SOUND-e4.wav tune=5
+<region> region_label=09_rr3 seq_position=3 transpose=1 key=66 offset=027968 loop_start=098504 loop_end=141955 sample=357389__$USER__$SOUND-f4.wav tune=6
+<region> region_label=10_rr3 seq_position=3 transpose=1 key=67 offset=028735 loop_start=072994 loop_end=129360 sample=357323__$USER__$SOUND-fsharp4.wav tune=10
+<region> region_label=11_rr3 seq_position=3 transpose=1 key=68 offset=045362 loop_start=103748 loop_end=124978 sample=357365__$USER__$SOUND-g4.wav tune=-7
+<region> region_label=12_rr3 seq_position=3 transpose=1 key=69 offset=036367 loop_start=121309 loop_end=139693 sample=357390__$USER__$SOUND-gsharp4.wav tune=11
+<region> region_label=13_rr3 seq_position=3 transpose=1 key=70 offset=042786 loop_start=162166 loop_end=183041 sample=357391__$USER__$SOUND-a4.wav tune=13
+
+
+//--------------------------
+<curve>
+curve_index=7
+v000=0
+v001=1
+v127=1
