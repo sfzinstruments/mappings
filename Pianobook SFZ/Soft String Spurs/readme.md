@@ -4,12 +4,20 @@ This SFZ mapping was created by kinwie.
 
 ### How to use
 
-- Download the original Kontakt library: https://www.pianobook.co.uk/library/soft-string-spurs/
+- Download the Kontakt version of Soft String Spurs (created by Angus Roberts Carey): https://www.pianobook.co.uk/library/soft-string-spurs/
 
 - Download the .sfz mapping and place it next to (not into) the "Samples" directory 
 
 - Load in Sforzando.
 
+Note:
+
+The SFZ version is slightly different from the original EXS and Kontakt versions. It doesn't use crossfades or any scripting that is contained in the original versions, but it's still quite playable. 
+
+The dynamics layers switching is using Mod wheel (cc1) with additional common Volume Expression cc11.
+No velocity switching version. Volume for layers control, follow the kontakt version : Harmonics, Swells, Soft Longs and Hard Longs
+
+There's possibly noticeable click on some samples. 
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
