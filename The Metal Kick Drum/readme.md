@@ -1,4 +1,5 @@
 SFZ mapping of The Metal Kick Drum  for use with Sforzando. Original Kontakt library and samples by www.themetalkickdrum.com / R. Prieto.
+
 This SFZ mapping was created by kinwie.
 
 ### Original Sample Library Description:
