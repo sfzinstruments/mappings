@@ -1,0 +1,212 @@
+//--------------------------------------
+// Kawai Felt Piano
+// by Jon Meyer
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $SOF_PED 67
+
+
+//=======================================
+<control>
+default_path=Kawai Felt Piano Samples/
+
+label_cc$SOF_PED=Fast Resp ($SOF_PED)
+set_hdcc$SOF_PED=0
+
+
+//*************************************************************************
+<global>
+seq_length=2
+ampeg_release=0.8
+ampeg_attack_oncc$SOF_PED=0.001
+ampeg_attack_curvecc$SOF_PED=7
+offset_curvecc$SOF_PED=7
+
+
+//-------------------------------------------------------------------------
+<master>
+hivel=63
+group_volume=16
+
+<group> group_label= p_rr1 seq_position=1
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=68309 offset_oncc$SOF_PED=1753 sample=Felt Piano p B-1 RR1.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=70455 offset_oncc$SOF_PED=1104 sample=Felt Piano p F#0 RR1.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=69152 offset_oncc$SOF_PED=1535 sample=Felt Piano p B0 RR1.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=70441 offset_oncc$SOF_PED=1137 sample=Felt Piano p D1 RR1.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=70590 offset_oncc$SOF_PED=1078 sample=Felt Piano p F#1 RR1.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=47945 offset_oncc$SOF_PED=1496 sample=Felt Piano p B1 RR1.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=70692 offset_oncc$SOF_PED=1083 sample=Felt Piano p D2 RR1.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=70898 offset_oncc$SOF_PED=0819 sample=Felt Piano p F#2 RR1.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=71044 offset_oncc$SOF_PED=0841 sample=Felt Piano p B2 RR1.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=69457 offset_oncc$SOF_PED=2211 sample=Felt Piano p D3 RR1.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=70286 offset_oncc$SOF_PED=1236 sample=Felt Piano p F#3 RR1.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=70825 offset_oncc$SOF_PED=0773 sample=Felt Piano p B3 RR1.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=70392 offset_oncc$SOF_PED=1335 sample=Felt Piano p D4 RR1.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=70440 offset_oncc$SOF_PED=1277 sample=Felt Piano p F#4 RR1.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=71067 offset_oncc$SOF_PED=0513 sample=Felt Piano p B4 RR1.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=68733 offset_oncc$SOF_PED=2325 sample=Felt Piano p D5 RR1.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=69611 offset_oncc$SOF_PED=1423 sample=Felt Piano p F#5 RR1.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=70864 offset_oncc$SOF_PED=0825 sample=Felt Piano p D6 RR1.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=71228 offset_oncc$SOF_PED=0369 sample=Felt Piano p A6 RR1.wav
+
+<group> group_label= p_rr2 seq_position=2
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=68425 offset_oncc$SOF_PED=1999 sample=Felt Piano p B-1 RR2.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=69512 offset_oncc$SOF_PED=2052 sample=Felt Piano p F#0 RR2.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=69656 offset_oncc$SOF_PED=1807 sample=Felt Piano p B0 RR2.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=70653 offset_oncc$SOF_PED=1022 sample=Felt Piano p D1 RR2.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=70528 offset_oncc$SOF_PED=1052 sample=Felt Piano p F#1 RR2.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=70594 offset_oncc$SOF_PED=0980 sample=Felt Piano p B1 RR2.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=61625 offset_oncc$SOF_PED=0561 sample=Felt Piano p D2 RR2.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=70589 offset_oncc$SOF_PED=1125 sample=Felt Piano p F#2 RR2.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=70452 offset_oncc$SOF_PED=1177 sample=Felt Piano p B2 RR2.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=69362 offset_oncc$SOF_PED=1757 sample=Felt Piano p D3 RR2.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=70263 offset_oncc$SOF_PED=1297 sample=Felt Piano p F#3 RR2.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=70551 offset_oncc$SOF_PED=1035 sample=Felt Piano p B3 RR2.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=70282 offset_oncc$SOF_PED=1407 sample=Felt Piano p D4 RR2.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=70369 offset_oncc$SOF_PED=1284 sample=Felt Piano p F#4 RR2.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=70059 offset_oncc$SOF_PED=0869 sample=Felt Piano p B4 RR2.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=70136 offset_oncc$SOF_PED=1721 sample=Felt Piano p D5 RR2.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=69843 offset_oncc$SOF_PED=1155 sample=Felt Piano p F#5 RR2.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=70390 offset_oncc$SOF_PED=1417 sample=Felt Piano p D6 RR2.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=71321 offset_oncc$SOF_PED=0560 sample=Felt Piano p A6 RR2.wav
+
+
+//-------------------------------------------------------------------------
+<master>
+lovel=64
+hivel=105
+group_volume=5
+
+<group> group_label= m_rr1 seq_position=1
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=70157 offset_oncc$SOF_PED=1698 sample=Felt Piano m B-1 RR1.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=70467 offset_oncc$SOF_PED=2115 sample=Felt Piano m F#0 RR1.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=70662 offset_oncc$SOF_PED=1177 sample=Felt Piano m B0 RR1.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=70772 offset_oncc$SOF_PED=1061 sample=Felt Piano m D1 RR2.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=70529 offset_oncc$SOF_PED=1393 sample=Felt Piano m F#1 RR1.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=71133 offset_oncc$SOF_PED=0767 sample=Felt Piano m B1 RR1.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=69868 offset_oncc$SOF_PED=1980 sample=Felt Piano m D2 RR1.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=70583 offset_oncc$SOF_PED=1209 sample=Felt Piano m F#2 RR1.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=70781 offset_oncc$SOF_PED=1120 sample=Felt Piano m B2 RR1.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=70770 offset_oncc$SOF_PED=1085 sample=Felt Piano m D3 RR1.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=71174 offset_oncc$SOF_PED=0668 sample=Felt Piano m F#3 RR1.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=70005 offset_oncc$SOF_PED=1858 sample=Felt Piano m B3 RR1.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=71133 offset_oncc$SOF_PED=0714 sample=Felt Piano m D4 RR1.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=71495 offset_oncc$SOF_PED=0424 sample=Felt Piano m F#4 RR1.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=71024 offset_oncc$SOF_PED=0738 sample=Felt Piano m B4 RR1.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=71182 offset_oncc$SOF_PED=0648 sample=Felt Piano m D5 RR1.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=71237 offset_oncc$SOF_PED=0543 sample=Felt Piano m F#5 RR1.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=71565 offset_oncc$SOF_PED=0407 sample=Felt Piano m D6 RR1.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=71692 offset_oncc$SOF_PED=0296 sample=Felt Piano m A6 RR1.wav
+
+<group> group_label= m_rr2 seq_position=2
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=68624 offset_oncc$SOF_PED=3116 sample=Felt Piano m B-1 RR2.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=70106 offset_oncc$SOF_PED=2703 sample=Felt Piano m F#0 RR2.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=71732 offset_oncc$SOF_PED=0812 sample=Felt Piano m B0 RR2.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=70772 offset_oncc$SOF_PED=1061 sample=Felt Piano m D1 RR2.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=70407 offset_oncc$SOF_PED=1485 sample=Felt Piano m F#1 RR2.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=71212 offset_oncc$SOF_PED=0622 sample=Felt Piano m B1 RR2.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=71275 offset_oncc$SOF_PED=0598 sample=Felt Piano m D2 RR2.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=70080 offset_oncc$SOF_PED=1761 sample=Felt Piano m F#2 RR2.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=71198 offset_oncc$SOF_PED=0649 sample=Felt Piano m B2 RR2.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=69373 offset_oncc$SOF_PED=2534 sample=Felt Piano m D3 RR2.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=70842 offset_oncc$SOF_PED=1066 sample=Felt Piano m F#3 RR2.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=70963 offset_oncc$SOF_PED=0928 sample=Felt Piano m B3 RR2.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=70044 offset_oncc$SOF_PED=1853 sample=Felt Piano m D4 RR2.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=70737 offset_oncc$SOF_PED=1141 sample=Felt Piano m F#4 RR2.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=69977 offset_oncc$SOF_PED=1962 sample=Felt Piano m B4 RR2.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=70057 offset_oncc$SOF_PED=1831 sample=Felt Piano m D5 RR2.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=70408 offset_oncc$SOF_PED=1416 sample=Felt Piano m F#5 RR2.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=70985 offset_oncc$SOF_PED=0976 sample=Felt Piano m D6 RR2.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=71611 offset_oncc$SOF_PED=0362 sample=Felt Piano m A6 RR2.wav
+
+
+//-------------------------------------------------------------------------
+<master>
+lovel=106
+
+<group> group_label= f_rr1 seq_position=1
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=71656 offset_oncc$SOF_PED=0878 sample=Felt Piano f B-1 RR1.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=71706 offset_oncc$SOF_PED=0765 sample=Felt Piano f F#0 RR1.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=71887 offset_oncc$SOF_PED=0574 sample=Felt Piano f B0 RR1.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=71786 offset_oncc$SOF_PED=0523 sample=Felt Piano f D1 RR1.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=71499 offset_oncc$SOF_PED=0708 sample=Felt Piano f F#1 RR1.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=71802 offset_oncc$SOF_PED=0489 sample=Felt Piano f B1 RR1.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=71611 offset_oncc$SOF_PED=0547 sample=Felt Piano f D2 RR1.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=71624 offset_oncc$SOF_PED=0428 sample=Felt Piano f F#2 RR1.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=71835 offset_oncc$SOF_PED=0337 sample=Felt Piano f B2 RR1.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=71473 offset_oncc$SOF_PED=0456 sample=Felt Piano f D3 RR1.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=71299 offset_oncc$SOF_PED=0604 sample=Felt Piano f F#3 RR1.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=71535 offset_oncc$SOF_PED=0421 sample=Felt Piano f B3 RR1.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=71468 offset_oncc$SOF_PED=0486 sample=Felt Piano f D4 RR1.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=71497 offset_oncc$SOF_PED=0472 sample=Felt Piano f F#4 RR1.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=71591 offset_oncc$SOF_PED=0403 sample=Felt Piano f B4 RR1.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=71565 offset_oncc$SOF_PED=0400 sample=Felt Piano f D5 RR1.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=71600 offset_oncc$SOF_PED=0327 sample=Felt Piano f F#5 RR1.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=71681 offset_oncc$SOF_PED=0321 sample=Felt Piano f D6 RR1.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=70606 offset_oncc$SOF_PED=1247 sample=Felt Piano f A6 RR1.wav
+
+<group> group_label= f_rr2 seq_position=2
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=71557 offset_oncc$SOF_PED=0865 sample=Felt Piano f B-1 RR2.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=71335 offset_oncc$SOF_PED=1233 sample=Felt Piano f F#0 RR2.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=71737 offset_oncc$SOF_PED=0716 sample=Felt Piano f B0 RR2.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=71094 offset_oncc$SOF_PED=1305 sample=Felt Piano f D1 RR2.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=71360 offset_oncc$SOF_PED=0853 sample=Felt Piano f F#1 RR2.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=71627 offset_oncc$SOF_PED=0642 sample=Felt Piano f B1 RR2.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=71484 offset_oncc$SOF_PED=0559 sample=Felt Piano f D2 RR2.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=71552 offset_oncc$SOF_PED=0578 sample=Felt Piano f F#2 RR2.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=71719 offset_oncc$SOF_PED=0544 sample=Felt Piano f B2 RR2.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=71087 offset_oncc$SOF_PED=0816 sample=Felt Piano f D3 RR2.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=71456 offset_oncc$SOF_PED=0575 sample=Felt Piano f F#3 RR2.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=71240 offset_oncc$SOF_PED=0716 sample=Felt Piano f B3 RR2.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=71463 offset_oncc$SOF_PED=0465 sample=Felt Piano f D4 RR2.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=71124 offset_oncc$SOF_PED=0915 sample=Felt Piano f F#4 RR2.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=69348 offset_oncc$SOF_PED=2636 sample=Felt Piano f B4 RR2.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=71379 offset_oncc$SOF_PED=0558 sample=Felt Piano f D5 RR2.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=71302 offset_oncc$SOF_PED=0590 sample=Felt Piano f F#5 RR2.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=71667 offset_oncc$SOF_PED=0326 sample=Felt Piano f D6 RR2.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=73960 offset_oncc$SOF_PED=1349 sample=Felt Piano f A6 RR2.wav
+
+
+//-------------------------------------------------------------------------
+<master>
+trigger=release
+pitch_keytrack=25
+rt_decay=2
+group=1
+polyphony=1
+group_label=rt
+group_volume=-6
+seq_length=1
+
+<region> region_label=01 lokey=021 hikey=026 pitch_keycenter=023 offset=68014 offset_oncc$SOF_PED=1503 sample=Felt Piano Release B-1.wav
+<region> region_label=02 lokey=027 hikey=032 pitch_keycenter=030 offset=66665 offset_oncc$SOF_PED=2720 sample=Felt Piano Release F#0.wav
+<region> region_label=03 lokey=033 hikey=036 pitch_keycenter=035 offset=71722 offset_oncc$SOF_PED=2117 sample=Felt Piano Release B0.wav
+<region> region_label=04 lokey=037 hikey=040 pitch_keycenter=038 offset=74696 offset_oncc$SOF_PED=0717 sample=Felt Piano Release D1.wav
+<region> region_label=05 lokey=041 hikey=044 pitch_keycenter=042 offset=72322 offset_oncc$SOF_PED=1535 sample=Felt Piano Release F#1.wav
+<region> region_label=06 lokey=045 hikey=048 pitch_keycenter=047 offset=69233 offset_oncc$SOF_PED=2065 sample=Felt Piano Release B1.wav
+<region> region_label=07 lokey=049 hikey=052 pitch_keycenter=050 offset=69951 offset_oncc$SOF_PED=0968 sample=Felt Piano Release D2.wav
+<region> region_label=08 lokey=053 hikey=056 pitch_keycenter=054 offset=69017 offset_oncc$SOF_PED=2290 sample=Felt Piano Release F#2.wav
+<region> region_label=09 lokey=057 hikey=060 pitch_keycenter=059 offset=72375 offset_oncc$SOF_PED=2037 sample=Felt Piano Release B2.wav
+<region> region_label=10 lokey=061 hikey=064 pitch_keycenter=062 offset=70227 offset_oncc$SOF_PED=1023 sample=Felt Piano Release D3.wav
+<region> region_label=11 lokey=065 hikey=068 pitch_keycenter=066 offset=70307 offset_oncc$SOF_PED=0966 sample=Felt Piano Release F#3.wav
+<region> region_label=12 lokey=069 hikey=072 pitch_keycenter=071 offset=71287 offset_oncc$SOF_PED=1195 sample=Felt Piano Release B3.wav
+<region> region_label=13 lokey=073 hikey=076 pitch_keycenter=074 offset=75325 offset_oncc$SOF_PED=0505 sample=Felt Piano Release D4.wav
+<region> region_label=14 lokey=077 hikey=080 pitch_keycenter=078 offset=71348 offset_oncc$SOF_PED=1930 sample=Felt Piano Release F#4.wav
+<region> region_label=15 lokey=081 hikey=084 pitch_keycenter=083 offset=69725 offset_oncc$SOF_PED=1405 sample=Felt Piano Release B4.wav
+<region> region_label=16 lokey=085 hikey=088 pitch_keycenter=086 offset=70644 offset_oncc$SOF_PED=0826 sample=Felt Piano Release D5.wav
+<region> region_label=17 lokey=089 hikey=094 pitch_keycenter=090 offset=70229 offset_oncc$SOF_PED=2161 sample=Felt Piano Release F#5.wav
+<region> region_label=18 lokey=095 hikey=101 pitch_keycenter=098 offset=69851 offset_oncc$SOF_PED=1936 sample=Felt Piano Release D6.wav
+<region> region_label=19 lokey=102 hikey=108 pitch_keycenter=105 offset=69738 offset_oncc$SOF_PED=1607 sample=Felt Piano Release A6.wav
+
+
+//-------------------------------------------------------------------------
+<curve>
+curve_index=7
+v000=0
+v001=1
+v127=1
