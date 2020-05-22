@@ -1,4 +1,4 @@
-SFZ mapping for Jon Meyer Music Kawai Felt Piano. Use this mapping with Sforzando. Original library, mapping and samples by Conner.
+SFZ mapping for Jon Meyer Music Kawai Felt Piano. Use this mapping with Sforzando. Original library, mapping and samples by Jon Meyer.
 This SFZ mapping was created by kinwie. 
 
 ### How to use
