@@ -5,7 +5,7 @@ This SFZ mapping was created by kinwie.
 
 
 
-- Download the original library at Pianobook: https://www.pianobook.co.uk/library/kawai-felt-piano/
+- Download the original Kontakt library at Pianobook: https://www.pianobook.co.uk/library/kawai-felt-piano/
 - Download the .sfz mapping and place it next to (not into) the "samples" folder of the original library.
 - Load in Sforzando
 
