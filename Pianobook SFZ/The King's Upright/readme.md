@@ -5,6 +5,7 @@ This SFZ mapping was created by kinwie.
 ### How to use
 
  SFZ version uses #define for sustain pedal value (used by pedal noise samples) - user can easily change the amount of pedal noise. 
+ Soft-pedal cc67 is a toggle for faster response (on/off) or you can just press the left pedal of sforzando
  Mod Wheel controls the amount of the additional pad sound. 
 
 
