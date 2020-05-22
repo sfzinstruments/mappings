@@ -5,7 +5,7 @@ This SFZ mapping was created by kinwie.
 
 Plain .SFZ mapping with no additional tweaks!
 
-- Download the original library at Pianobook: https://www.pianobook.co.uk/library/hunsicker-helpenstill/
+- Download the original EXS24 library at Pianobook: https://www.pianobook.co.uk/library/hunsicker-helpenstill/
 - Download the .sfz mapping and place it next to (not into) the "samples" folder of the original library.
 - Load in Sforzando
 
