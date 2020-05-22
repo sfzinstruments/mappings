@@ -1,0 +1,179 @@
+//--------------------------------------
+// Sol's Piano 1910 Steinway B
+// by Pete Calandra @pianobook
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//***********************************************
+<global>
+loop_mode=no_loop
+ampeg_release=0.8
+
+
+//==============================================
+
+<control> default_path=1910 Steinway B Samples/1910 Steinway B Samples MP/
+<group>
+hivel=42
+amp_velcurve_42=1
+group_label=MP
+<region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=0000 sample=1920SteinwayBEwks_MP_C0.wav
+<region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=0000 sample=1920SteinwayBEwks_MP_E0.wav
+<region> pitch_keycenter=031 lokey=030 hikey=032 region_label=03 offset=0000 sample=1920SteinwayBEwks_MP_G0.wav
+<region> pitch_keycenter=035 lokey=033 hikey=036 region_label=04 offset=0000 sample=1920SteinwayBEwks_MP_B0.wav
+<region> pitch_keycenter=038 lokey=037 hikey=039 region_label=05 offset=0000 sample=1920SteinwayBEwks_MP_D1.wav
+<region> pitch_keycenter=042 lokey=040 hikey=043 region_label=06 offset=0000 sample=1920SteinwayBEwks_MP_F#1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=046 region_label=07 offset=0000 sample=1920SteinwayBEwks_MP_A1.wav
+<region> pitch_keycenter=049 lokey=047 hikey=050 region_label=08 offset=1428 sample=1920SteinwayBEwks_MP_C#2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=053 region_label=09 offset=0000 sample=1920SteinwayBEwks_MP_E2.wav
+<region> pitch_keycenter=056 lokey=054 hikey=057 region_label=10 offset=0000 sample=1920SteinwayBEwks_MP_G#2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=060 region_label=11 offset=6670 sample=1920SteinwayBEwks_MP_B2.wav
+<region> pitch_keycenter=063 lokey=061 hikey=064 region_label=12 offset=0000 sample=1920SteinwayBEwks_MP_D#3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=1768 sample=1920SteinwayBEwks_MP_Gb3.wav
+<region> pitch_keycenter=070 lokey=068 hikey=071 region_label=14 offset=1897 sample=1920SteinwayBEwks_MP_Bb3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=6042 sample=1920SteinwayBEwks_MP_Db4.wav
+<region> pitch_keycenter=077 lokey=075 hikey=078 region_label=16 offset=4343 sample=1920SteinwayBEwks_MP_F4.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=1885 sample=1920SteinwayBEwks_MP_Ab4.wav
+<region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=0284 sample=1920SteinwayBEwks_MP_C5.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=0000 sample=1920SteinwayBEwks_MP_Eb5.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=1515 sample=1920SteinwayBEwks_MP_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=1503 sample=1920SteinwayBEwks_MP_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=1020 sample=1920SteinwayBEwks_MP_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=1241 sample=1920SteinwayBEwks_MP_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=1132 sample=1920SteinwayBEwks_MP_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=1590 sample=1920SteinwayBEwks_MP_C7.wav
+
+<control> default_path=1910 Steinway B Samples/1910 Steinway B Samples MF/
+<group>
+lovel=43
+hivel=70
+amp_velcurve_70=1
+group_label=MF
+<region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=0746 sample=1920SteinwayBEwks_MF_C0.wav
+<region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=0674 sample=1920SteinwayBEwks_MF_E0.wav
+<region> pitch_keycenter=031 lokey=030 hikey=032 region_label=03 offset=0459 sample=1920SteinwayBEwks_MF_G0.wav
+<region> pitch_keycenter=035 lokey=033 hikey=036 region_label=04 offset=1222 sample=1920SteinwayBEwks_MF_B0.wav
+<region> pitch_keycenter=038 lokey=037 hikey=039 region_label=05 offset=0402 sample=1920SteinwayBEwks_MF_D1.wav
+<region> pitch_keycenter=042 lokey=040 hikey=043 region_label=06 offset=1569 sample=1920SteinwayBEwks_MF_F#1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=046 region_label=07 offset=3159 sample=1920SteinwayBEwks_MF_A1.wav
+<region> pitch_keycenter=049 lokey=047 hikey=050 region_label=08 offset=4792 sample=1920SteinwayBEwks_MF_C#2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=053 region_label=09 offset=1758 sample=1920SteinwayBEwks_MF_E2.wav
+<region> pitch_keycenter=056 lokey=054 hikey=057 region_label=10 offset=3873 sample=1920SteinwayBEwks_MF_G#2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=060 region_label=11 offset=4064 sample=1920SteinwayBEwks_MF_B2.wav
+<region> pitch_keycenter=063 lokey=061 hikey=064 region_label=12 offset=3252 sample=1920SteinwayBEwks_MF_D#3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=5326 sample=1920SteinwayBEwks_MF_Gb3.wav
+<region> pitch_keycenter=070 lokey=068 hikey=071 region_label=14 offset=1452 sample=1920SteinwayBEwks_MF_Bb3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=0821 sample=1920SteinwayBEwks_MF_Db4.wav
+<region> pitch_keycenter=077 lokey=075 hikey=078 region_label=16 offset=2530 sample=1920SteinwayBEwks_MF_F4.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=2726 sample=1920SteinwayBEwks_MF_Ab4.wav
+<region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=0000 sample=1920SteinwayBEwks_MF_C5.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=3049 sample=1920SteinwayBEwks_MF_Eb5.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=3376 sample=1920SteinwayBEwks_MF_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=4125 sample=1920SteinwayBEwks_MF_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3815 sample=1920SteinwayBEwks_MF_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=6006 sample=1920SteinwayBEwks_MF_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=3340 sample=1920SteinwayBEwks_MF_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=3377 sample=1920SteinwayBEwks_MF_C7.wav
+
+<control> default_path=1910 Steinway B Samples/1910 Steinway B Samples F/
+<group>
+lovel=71
+hivel=98
+amp_velcurve_98=1
+group_label=F
+<region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=4661 sample=1910SteinwayBEwks_F_C0.wav
+<region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=4988 sample=1910SteinwayBEwks_F_E0.wav
+<region> pitch_keycenter=031 lokey=030 hikey=032 region_label=03 offset=4615 sample=1910SteinwayBEwks_F_G0.wav
+<region> pitch_keycenter=035 lokey=033 hikey=036 region_label=04 offset=4755 sample=1910SteinwayBEwks_F_B0.wav
+<region> pitch_keycenter=038 lokey=037 hikey=039 region_label=05 offset=3848 sample=1910SteinwayBEwks_F_D1.wav
+<region> pitch_keycenter=042 lokey=040 hikey=043 region_label=06 offset=8790 sample=1910SteinwayBEwks_F_F#1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=046 region_label=07 offset=4711 sample=1910SteinwayBEwks_F_A1.wav
+<region> pitch_keycenter=049 lokey=047 hikey=050 region_label=08 offset=6517 sample=1910SteinwayBEwks_F_C#2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=053 region_label=09 offset=5711 sample=1910SteinwayBEwks_F_E2.wav
+<region> pitch_keycenter=056 lokey=054 hikey=057 region_label=10 offset=6206 sample=1910SteinwayBEwks_F_G#2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=060 region_label=11 offset=4818 sample=1910SteinwayBEwks_F_B2.wav
+<region> pitch_keycenter=063 lokey=061 hikey=064 region_label=12 offset=6195 sample=1910SteinwayBEwks_F_D#3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=6823 sample=1910SteinwayBEwks_F_Gb3.wav
+<region> pitch_keycenter=070 lokey=068 hikey=071 region_label=14 offset=5815 sample=1910SteinwayBEwks_F_Bb3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=6203 sample=1910SteinwayBEwks_F_Db4.wav
+<region> pitch_keycenter=077 lokey=075 hikey=078 region_label=16 offset=4956 sample=1910SteinwayBEwks_F_F4.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=7184 sample=1910SteinwayBEwks_F_Ab4.wav
+<region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=5927 sample=1910SteinwayBEwks_F_C5.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=7577 sample=1910SteinwayBEwks_F_Eb5.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=7017 sample=1910SteinwayBEwks_F_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=5980 sample=1910SteinwayBEwks_F_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=2033 sample=1910SteinwayBEwks_F_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=5748 sample=1910SteinwayBEwks_F_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=5437 sample=1910SteinwayBEwks_F_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=4929 sample=1910SteinwayBEwks_F_C7.wav
+
+<control> default_path=1910 Steinway B Samples/1910 Steinway B Samples FF/
+<group>
+lovel=99
+group_label=FF
+<region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=2311 sample=1910SteinwayBEwks_FF_C0.wav
+<region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=0647 sample=1910SteinwayBEwks_FF_E0.wav
+<region> pitch_keycenter=031 lokey=030 hikey=032 region_label=03 offset=0000 sample=1910SteinwayBEwks_FF_G0.wav
+<region> pitch_keycenter=035 lokey=033 hikey=036 region_label=04 offset=5734 sample=1910SteinwayBEwks_FF_B0.wav
+<region> pitch_keycenter=038 lokey=037 hikey=039 region_label=05 offset=7847 sample=1910SteinwayBEwks_FF_D1.wav
+<region> pitch_keycenter=042 lokey=040 hikey=043 region_label=06 offset=2303 sample=1910SteinwayBEwks_FF_F#1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=046 region_label=07 offset=0000 sample=1910SteinwayBEwks_FF_A1.wav
+<region> pitch_keycenter=049 lokey=047 hikey=050 region_label=08 offset=5246 sample=1910SteinwayBEwks_FF_C#2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=053 region_label=09 offset=2266 sample=1910SteinwayBEwks_FF_E2.wav
+<region> pitch_keycenter=056 lokey=054 hikey=057 region_label=10 offset=5178 sample=1910SteinwayBEwks_FF_G#2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=060 region_label=11 offset=2017 sample=1910SteinwayBEwks_FF_B2.wav
+<region> pitch_keycenter=063 lokey=061 hikey=064 region_label=12 offset=5476 sample=1910SteinwayBEwks_FF_D#3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=7613 sample=1910SteinwayBEwks_FF_Gb3.wav
+<region> pitch_keycenter=070 lokey=068 hikey=071 region_label=14 offset=6274 sample=1910SteinwayBEwks_FF_Bb3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=3880 sample=1910SteinwayBEwks_FF_Db4.wav
+<region> pitch_keycenter=077 lokey=075 hikey=078 region_label=16 offset=5744 sample=1910SteinwayBEwks_FF_F4.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=0515 sample=1910SteinwayBEwks_FF_Ab4.wav
+<region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=3193 sample=1910SteinwayBEwks_FF_C5.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=6757 sample=1910SteinwayBEwks_FF_Eb5.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=5676 sample=1910SteinwayBEwks_FF_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=2420 sample=1910SteinwayBEwks_FF_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3454 sample=1910SteinwayBEwks_FF_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=3710 sample=1910SteinwayBEwks_FF_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=4348 sample=1910SteinwayBEwks_FF_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=5283 sample=1910SteinwayBEwks_FF_C7.wav
+
+
+//==============================================
+<master>
+trigger=release
+pitch_keytrack=25
+rt_decay=2
+group=1
+polyphony=1
+group_volume=12
+
+<control> default_path=1910 Steinway B Samples/1910 Steinway B Release Triggers/
+<group> group_label=RT
+<region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=1441 sample=Rlse_MP_C0.wav
+<region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=4903 sample=Rlse_MP_E0.wav
+<region> pitch_keycenter=031 lokey=030 hikey=032 region_label=03 offset=4157 sample=Rlse_MP_G0.wav
+<region> pitch_keycenter=035 lokey=033 hikey=036 region_label=04 offset=3775 sample=Rlse_MP_B0.wav
+<region> pitch_keycenter=038 lokey=037 hikey=039 region_label=05 offset=4402 sample=Rlse_MP_D1.wav
+<region> pitch_keycenter=042 lokey=040 hikey=043 region_label=06 offset=1911 sample=Rlse_MP_F#1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=046 region_label=07 offset=3524 sample=Rlse_MP_A1.wav
+<region> pitch_keycenter=049 lokey=047 hikey=050 region_label=08 offset=1096 sample=Rlse_MP_C#2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=053 region_label=09 offset=2099 sample=Rlse_MP_E2.wav
+<region> pitch_keycenter=056 lokey=054 hikey=057 region_label=10 offset=1975 sample=Rlse_MP_G#2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=060 region_label=11 offset=4449 sample=Rlse_MP_B2.wav
+<region> pitch_keycenter=063 lokey=061 hikey=064 region_label=12 offset=4652 sample=Rlse_MP_D#3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=0000 sample=Rlse_MP_Gb3.wav
+<region> pitch_keycenter=070 lokey=068 hikey=071 region_label=14 offset=5138 sample=Rlse_MP_Bb3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=5279 sample=Rlse_MP_Db4.wav
+<region> pitch_keycenter=077 lokey=075 hikey=078 region_label=16 offset=3773 sample=Rlse_MP_F4.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=3697 sample=Rlse_MP_Ab4.wav
+<region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=3415 sample=Rlse_MP_C5.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=3822 sample=Rlse_MP_Eb5.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=2240 sample=Rlse_MP_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=4762 sample=Rlse_MP_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3994 sample=Rlse_MP_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=1857 sample=Rlse_MP_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=1723 sample=Rlse_MP_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=1441 sample=Rlse_MP_C7.wav
