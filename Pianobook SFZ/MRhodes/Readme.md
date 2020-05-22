@@ -3,7 +3,6 @@ This SFZ mapping was created by kinwie.
 
 ### How to use
 
-With evenly distributed velocity splits! 
 
 - Download the original EXS library at Pianobook: https://www.pianobook.co.uk/library/mrhodes/
 - Download the .sfz mapping and place it next to (not into) the "samples" folder of the original library.
