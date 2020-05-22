@@ -1,4 +1,4 @@
-SFZ mapping for Pianobook.co.uk David's CP70 Use this mapping with Sforzando. Original library, mapping and samples by Conner.
+SFZ mapping for Pianobook.co.uk David's CP70 Use this mapping with Sforzando. Original library, mapping and samples by Conner Sawchuk.
 This SFZ mapping was created by kinwie. 
 
 ### How to use
