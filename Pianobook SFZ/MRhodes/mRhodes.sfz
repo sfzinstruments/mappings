@@ -1,0 +1,65 @@
+//--------------------------------------
+// mRhodes
+// by Markus Kaes @pianobook
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+<control>
+default_path=samples/original/
+label_cc72=Release (72)
+set_hdcc72=0.1
+
+<global>
+loop_mode=no_loop
+ampeg_release_oncc72=1
+
+<group> group_label=p group_volume=12 hivel=63
+<region> region_label=01 lokey=28 hikey=29 pitch_keycenter=28 offset=15665 sample=mRhodes V3 p E0.aif
+<region> region_label=02 lokey=30 hikey=33 pitch_keycenter=31 offset=17486 sample=mRhodes V3 p G0.aif
+<region> region_label=03 lokey=34 hikey=36 pitch_keycenter=35 offset=17552 sample=mRhodes V3 p B0.aif
+<region> region_label=04 lokey=37 hikey=40 pitch_keycenter=38 offset=20069 sample=mRhodes V3 p D1.aif
+<region> region_label=05 lokey=41 hikey=43 pitch_keycenter=42 offset=14240 sample=mRhodes V3 p F#1.aif
+<region> region_label=06 lokey=44 hikey=47 pitch_keycenter=45 offset=18579 sample=mRhodes V3 p A1.aif
+<region> region_label=07 lokey=48 hikey=50 pitch_keycenter=49 offset=19904 sample=mRhodes V3 p C#2.aif
+<region> region_label=08 lokey=51 hikey=54 pitch_keycenter=52 offset=20599 sample=mRhodes V3 p E2.aif
+<region> region_label=09 lokey=55 hikey=57 pitch_keycenter=56 offset=17519 sample=mRhodes V3 p G#2.aif
+<region> region_label=10 lokey=58 hikey=61 pitch_keycenter=59 offset=18877 sample=mRhodes V3 p B2.aif
+<region> region_label=11 lokey=62 hikey=64 pitch_keycenter=63 offset=22255 sample=mRhodes V3 p D#3.aif
+<region> region_label=12 lokey=65 hikey=68 pitch_keycenter=66 offset=21560 sample=mRhodes V3 p F#3.aif
+<region> region_label=13 lokey=69 hikey=71 pitch_keycenter=70 offset=19871 sample=mRhodes V3 p A#3.aif
+<region> region_label=14 lokey=72 hikey=75 pitch_keycenter=73 offset=18182 sample=mRhodes V3 p C#4.aif
+<region> region_label=15 lokey=76 hikey=78 pitch_keycenter=77 offset=18910 sample=mRhodes V3 p F4.aif
+<region> region_label=16 lokey=79 hikey=82 pitch_keycenter=80 offset=18182 sample=mRhodes V3 p G#4.aif
+<region> region_label=17 lokey=83 hikey=86 pitch_keycenter=84 offset=19241 sample=mRhodes V3 p C5.aif
+<region> region_label=18 lokey=87 hikey=89 pitch_keycenter=87 offset=17022 sample=mRhodes V3 p D#5.aif
+<region> region_label=19 lokey=90 hikey=92 pitch_keycenter=91 offset=15102 sample=mRhodes V3 p G5.aif
+<region> region_label=20 lokey=93 hikey=96 pitch_keycenter=94 offset=16956 sample=mRhodes V3 p A#5.aif
+<region> region_label=21 lokey=97 hikey=100 pitch_keycenter=99 offset=19937 sample=mRhodes V3 p D#6.aif
+
+<group> group_label=f lovel=64
+<region> region_label=01 lokey=28 hikey=29 pitch_keycenter=28 offset=17985 sample=mRhodes V3 f E0.aif ampeg_attack=0.001
+<region> region_label=02 lokey=30 hikey=33 pitch_keycenter=31 offset=16405 sample=mRhodes V3 f G0.aif
+<region> region_label=03 lokey=34 hikey=36 pitch_keycenter=35 offset=16643 sample=mRhodes V3 f B0.aif
+<region> region_label=04 lokey=37 hikey=40 pitch_keycenter=38 offset=18511 sample=mRhodes V3 f D1.aif
+<region> region_label=05 lokey=41 hikey=43 pitch_keycenter=42 offset=16032 sample=mRhodes V3 f F#1.aif
+<region> region_label=06 lokey=44 hikey=47 pitch_keycenter=45 offset=19975 sample=mRhodes V3 f A1.aif
+<region> region_label=07 lokey=48 hikey=50 pitch_keycenter=49 offset=14843 sample=mRhodes V3 f C#2.aif
+<region> region_label=08 lokey=51 hikey=54 pitch_keycenter=52 offset=16677 sample=mRhodes V3 f E2.aif
+<region> region_label=09 lokey=55 hikey=57 pitch_keycenter=56 offset=16337 sample=mRhodes V3 f G#2.aif
+<region> region_label=10 lokey=58 hikey=61 pitch_keycenter=59 offset=17424 sample=mRhodes V3 f B2.aif
+<region> region_label=11 lokey=62 hikey=64 pitch_keycenter=63 offset=17730 sample=mRhodes V3 f D#3.aif
+<region> region_label=12 lokey=65 hikey=68 pitch_keycenter=66 offset=16100 sample=mRhodes V3 f F#3.aif
+<region> region_label=13 lokey=69 hikey=71 pitch_keycenter=70 offset=16656 sample=mRhodes V3 f A#3.aif
+<region> region_label=14 lokey=72 hikey=74 pitch_keycenter=73 offset=19021 sample=mRhodes V3 f C#4.aif
+<region> region_label=15 lokey=75 hikey=76 pitch_keycenter=76 offset=00000 sample=mRhodes V3 f E4.aif
+<region> region_label=16 lokey=77 hikey=78 pitch_keycenter=77 offset=17288 sample=mRhodes V3 f F4.aif
+<region> region_label=17 lokey=79 hikey=82 pitch_keycenter=80 offset=16745 sample=mRhodes V3 f G#4.aif
+<region> region_label=18 lokey=83 hikey=84 pitch_keycenter=84 offset=17051 sample=mRhodes V3 f C5.aif
+<region> region_label=19 lokey=85 hikey=86 pitch_keycenter=86 offset=00985 sample=mRhodes V3 f D5.aif
+<region> region_label=20 lokey=87 hikey=89 pitch_keycenter=87 offset=15828 sample=mRhodes V3 f D#5.aif
+<region> region_label=21 lokey=90 hikey=92 pitch_keycenter=91 offset=15556 sample=mRhodes V3 f G5.aif
+<region> region_label=22 lokey=93 hikey=96 pitch_keycenter=94 offset=17566 sample=mRhodes V3 f A#5.aif
+<region> region_label=23 lokey=97 hikey=100 pitch_keycenter=99 offset=16949 sample=mRhodes V3 f D#6.aif
