@@ -1,0 +1,331 @@
+//--------------------------------------
+// The King's Upright
+// by Dan Keen @pianobook
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $PAD_VOL 1
+#define $PAD_ATT 20
+#define $PAD_REL 21
+#define $SUS_PED 64
+#define $SOF_PED 67
+
+//sustain pedal range
+#define $SUS_UP 0
+#define $SUS_DOWN 127
+
+
+//////////////////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$PAD_VOL=Pad Blend ($PAD_VOL)
+label_cc$PAD_ATT=Pad Attack ($PAD_ATT)
+label_cc$PAD_REL=Pad Release ($PAD_REL)
+label_cc$SUS_PED=Sus Pedal ($SUS_PED)
+label_cc$SOF_PED=Fast Resp ($SOF_PED)
+
+set_hdcc$PAD_VOL=0
+set_hdcc$PAD_ATT=0.5
+set_hdcc$PAD_REL=0.5
+
+
+//===========================================
+<group>
+group_volume=-12
+loop_mode=loop_continuous
+amplitude_oncc$PAD_VOL=100
+ampeg_attack_oncc$PAD_ATT=5
+ampeg_release_oncc$PAD_REL=5
+<region> pitch_keycenter=051 lokey=021 hikey=057 loop_start=0387925 loop_end=0944559 region_label=01 sample=TKI_Pads_D#2.wav
+<region> pitch_keycenter=063 lokey=058 hikey=069 loop_start=0530603 loop_end=0882099 region_label=02 sample=TKI_Pads_D#3.wav
+<region> pitch_keycenter=075 lokey=070 hikey=081 loop_start=0560441 loop_end=0909719 region_label=03 sample=TKI_Pads_D#4.wav
+<region> pitch_keycenter=087 lokey=082 hikey=093 loop_start=0607872 loop_end=1327871 region_label=04 sample=TKI_Pads_D#5.wav
+<region> pitch_keycenter=099 lokey=094 hikey=108 loop_start=0439400 loop_end=1027157 region_label=05 sample=TKI_Pads_D#6.wav
+
+
+//*********************************************************************
+<global>
+global_volume=-6
+loop_mode=no_loop
+seq_length=3
+ampeg_release=0.8
+ampeg_attack_oncc$SOF_PED=0.001
+ampeg_attack_curvecc$SOF_PED=7
+offset_curvecc$SOF_PED=7
+
+
+//---------------------------------------------------------------------
+<master>
+hivel=84
+group_volume=12
+
+<group> group_label=p_rr1 seq_position=1
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=34350 offset_oncc$SOF_PED=0538 sample=TKI_C0_Level1_RR1.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=33777 offset_oncc$SOF_PED=1258 sample=TKI_E0_Level1_RR1.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=32008 offset_oncc$SOF_PED=1242 sample=TKI_G0_Level1_RR1.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=33592 offset_oncc$SOF_PED=0764 sample=TKI_B0_Level1_RR1.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=34152 offset_oncc$SOF_PED=0373 sample=TKI_D1_Level1_RR1.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=30125 offset_oncc$SOF_PED=1422 sample=TKI_F#1_Level1_RR1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=31855 offset_oncc$SOF_PED=2131 sample=TKI_A1_Level1_RR1.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=33753 offset_oncc$SOF_PED=1722 sample=TKI_C#2_Level1_RR1.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=31316 offset_oncc$SOF_PED=2262 sample=TKI_E2_Level1_RR1.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=28818 offset_oncc$SOF_PED=1966 sample=TKI_G#2_Level1_RR1.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=33447 offset_oncc$SOF_PED=1750 sample=TKI_B2_Level1_RR1.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=32006 offset_oncc$SOF_PED=1547 sample=TKI_D#3_Level1_RR1.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=33636 offset_oncc$SOF_PED=1623 sample=TKI_F#3_Level1_RR1.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=33437 offset_oncc$SOF_PED=1818 sample=TKI_A3_Level1_RR1.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=30954 offset_oncc$SOF_PED=1812 sample=TKI_C#4_Level1_RR1.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=32815 offset_oncc$SOF_PED=1025 sample=TKI_E4_Level1_RR1.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=32944 offset_oncc$SOF_PED=2633 sample=TKI_G#4_Level1_RR1.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=32123 offset_oncc$SOF_PED=1540 sample=TKI_B4_Level1_RR1.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=32656 offset_oncc$SOF_PED=3451 sample=TKI_D#5_Level1_RR1.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=33081 offset_oncc$SOF_PED=2731 sample=TKI_F#5_Level1_RR1.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=37238 offset_oncc$SOF_PED=0643 sample=TKI_A#5_Level1_RR1.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32100 offset_oncc$SOF_PED=2814 sample=TKI_D#6_Level1_RR1.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=31106 offset_oncc$SOF_PED=3370 sample=TKI_F6_Level1_RR1.wav
+
+<group> group_label=p_rr2 seq_position=2
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=35352 offset_oncc$SOF_PED=0478 sample=TKI_C0_Level1_RR2.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=33743 offset_oncc$SOF_PED=1957 sample=TKI_E0_Level1_RR2.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=36223 offset_oncc$SOF_PED=2125 sample=TKI_G0_Level1_RR2.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=32100 offset_oncc$SOF_PED=1110 sample=TKI_B0_Level1_RR2.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=36027 offset_oncc$SOF_PED=0676 sample=TKI_D1_Level1_RR2.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=33085 offset_oncc$SOF_PED=1695 sample=TKI_F#1_Level1_RR2.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=30126 offset_oncc$SOF_PED=1617 sample=TKI_A1_Level1_RR2.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=30586 offset_oncc$SOF_PED=1412 sample=TKI_C#2_Level1_RR2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=31599 offset_oncc$SOF_PED=2106 sample=TKI_E2_Level1_RR2.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=33576 offset_oncc$SOF_PED=2709 sample=TKI_G#2_Level1_RR2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=35594 offset_oncc$SOF_PED=1465 sample=TKI_B2_Level1_RR2.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=33347 offset_oncc$SOF_PED=1614 sample=TKI_D#3_Level1_RR2.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=33200 offset_oncc$SOF_PED=2531 sample=TKI_F#3_Level1_RR2.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=31531 offset_oncc$SOF_PED=1090 sample=TKI_A3_Level1_RR2.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=33619 offset_oncc$SOF_PED=2474 sample=TKI_C#4_Level1_RR2.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=34033 offset_oncc$SOF_PED=1060 sample=TKI_E4_Level1_RR2.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=34162 offset_oncc$SOF_PED=2530 sample=TKI_G#4_Level1_RR2.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=34523 offset_oncc$SOF_PED=1954 sample=TKI_B4_Level1_RR2.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=33980 offset_oncc$SOF_PED=2714 sample=TKI_D#5_Level1_RR2.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34611 offset_oncc$SOF_PED=1741 sample=TKI_F#5_Level1_RR2.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=34884 offset_oncc$SOF_PED=0403 sample=TKI_A#5_Level1_RR2.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32595 offset_oncc$SOF_PED=1705 sample=TKI_D#6_Level1_RR2.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=33554 offset_oncc$SOF_PED=2086 sample=TKI_F6_Level1_RR2.wav
+
+<group> group_label=p_rr3 seq_position=3
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=35221 offset_oncc$SOF_PED=3254 sample=TKI_C0_Level1_RR3.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=35889 offset_oncc$SOF_PED=1766 sample=TKI_E0_Level1_RR3.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=34389 offset_oncc$SOF_PED=2476 sample=TKI_G0_Level1_RR3.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=33388 offset_oncc$SOF_PED=0951 sample=TKI_B0_Level1_RR3.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=36888 offset_oncc$SOF_PED=0948 sample=TKI_D1_Level1_RR3.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=33206 offset_oncc$SOF_PED=1431 sample=TKI_F#1_Level1_RR3.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=30981 offset_oncc$SOF_PED=1556 sample=TKI_A1_Level1_RR3.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=33286 offset_oncc$SOF_PED=1703 sample=TKI_C#2_Level1_RR3.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=31714 offset_oncc$SOF_PED=3982 sample=TKI_E2_Level1_RR3.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=34792 offset_oncc$SOF_PED=2278 sample=TKI_G#2_Level1_RR3.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=36122 offset_oncc$SOF_PED=0815 sample=TKI_B2_Level1_RR3.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=32590 offset_oncc$SOF_PED=2385 sample=TKI_D#3_Level1_RR3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=33938 offset_oncc$SOF_PED=1051 sample=TKI_F#3_Level1_RR3.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=32484 offset_oncc$SOF_PED=1775 sample=TKI_A3_Level1_RR3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=33254 offset_oncc$SOF_PED=1989 sample=TKI_C#4_Level1_RR3.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=31615 offset_oncc$SOF_PED=2746 sample=TKI_E4_Level1_RR3.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=32121 offset_oncc$SOF_PED=2602 sample=TKI_G#4_Level1_RR3.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=33002 offset_oncc$SOF_PED=2307 sample=TKI_B4_Level1_RR3.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=32217 offset_oncc$SOF_PED=3842 sample=TKI_D#5_Level1_RR3.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=32657 offset_oncc$SOF_PED=3025 sample=TKI_F#5_Level1_RR3.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=36229 offset_oncc$SOF_PED=0577 sample=TKI_A#5_Level1_RR3.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=30803 offset_oncc$SOF_PED=2375 sample=TKI_D#6_Level1_RR3.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=33301 offset_oncc$SOF_PED=1925 sample=TKI_F6_Level1_RR3.wav
+
+
+//---------------------------------------------------------------------
+<master>
+lovel=85
+
+<group> group_label=f_rr1 seq_position=1
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32353 offset_oncc$SOF_PED=3130 sample=TKI_C0_Level2_RR1.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=31793 offset_oncc$SOF_PED=2092 sample=TKI_E0_Level2_RR1.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=32064 offset_oncc$SOF_PED=2681 sample=TKI_G0_Level2_RR1.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=32626 offset_oncc$SOF_PED=1734 sample=TKI_B0_Level2_RR1.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=33932 offset_oncc$SOF_PED=1519 sample=TKI_D1_Level2_RR1.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=34536 offset_oncc$SOF_PED=3819 sample=TKI_F#1_Level2_RR1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=31570 offset_oncc$SOF_PED=3117 sample=TKI_A1_Level2_RR1.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=33382 offset_oncc$SOF_PED=2634 sample=TKI_C#2_Level2_RR1.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=31984 offset_oncc$SOF_PED=2544 sample=TKI_E2_Level2_RR1.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=32293 offset_oncc$SOF_PED=3141 sample=TKI_G#2_Level2_RR1.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=33695 offset_oncc$SOF_PED=2156 sample=TKI_B2_Level2_RR1.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=32925 offset_oncc$SOF_PED=2909 sample=TKI_D#3_Level2_RR1.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=33730 offset_oncc$SOF_PED=1837 sample=TKI_F#3_Level2_RR1.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=32532 offset_oncc$SOF_PED=1969 sample=TKI_A3_Level2_RR1.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=32691 offset_oncc$SOF_PED=1893 sample=TKI_C#4_Level2_RR1.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=32870 offset_oncc$SOF_PED=1730 sample=TKI_E4_Level2_RR1.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=31679 offset_oncc$SOF_PED=2139 sample=TKI_G#4_Level2_RR1.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=31395 offset_oncc$SOF_PED=1756 sample=TKI_B4_Level2_RR1.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=34130 offset_oncc$SOF_PED=1491 sample=TKI_D#5_Level2_RR1.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34468 offset_oncc$SOF_PED=1301 sample=TKI_F#5_Level2_RR1.wav
+<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=33097 offset_oncc$SOF_PED=1288 sample=TKI_A5_Level2_RR1.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=33968 offset_oncc$SOF_PED=1362 sample=TKI_D#6_Level2_RR1.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=34327 offset_oncc$SOF_PED=1411 sample=TKI_F6_Level2_RR1.wav
+
+<group> group_label=f_rr2 seq_position=2
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32776 offset_oncc$SOF_PED=2961 sample=TKI_C0_Level2_RR2.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=33218 offset_oncc$SOF_PED=2262 sample=TKI_E0_Level2_RR2.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=33550 offset_oncc$SOF_PED=2002 sample=TKI_G0_Level2_RR2.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=33609 offset_oncc$SOF_PED=3300 sample=TKI_B0_Level2_RR2.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=33633 offset_oncc$SOF_PED=3047 sample=TKI_D1_Level2_RR2.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=31718 offset_oncc$SOF_PED=2936 sample=TKI_F#1_Level2_RR2.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=33228 offset_oncc$SOF_PED=3281 sample=TKI_A1_Level2_RR2.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=34133 offset_oncc$SOF_PED=2443 sample=TKI_C#2_Level2_RR2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=32360 offset_oncc$SOF_PED=2550 sample=TKI_E2_Level2_RR2.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=32210 offset_oncc$SOF_PED=3001 sample=TKI_G#2_Level2_RR2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=34194 offset_oncc$SOF_PED=0721 sample=TKI_B2_Level2_RR2.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=33225 offset_oncc$SOF_PED=2088 sample=TKI_D#3_Level2_RR2.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=32290 offset_oncc$SOF_PED=1848 sample=TKI_F#3_Level2_RR2.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=34210 offset_oncc$SOF_PED=2009 sample=TKI_A3_Level2_RR2.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=35151 offset_oncc$SOF_PED=1865 sample=TKI_C#4_Level2_RR2.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=33960 offset_oncc$SOF_PED=1855 sample=TKI_E4_Level2_RR2.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=34274 offset_oncc$SOF_PED=2210 sample=TKI_G#4_Level2_RR2.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=33682 offset_oncc$SOF_PED=2050 sample=TKI_B4_Level2_RR2.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=33689 offset_oncc$SOF_PED=1674 sample=TKI_D#5_Level2_RR2.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=33548 offset_oncc$SOF_PED=1413 sample=TKI_F#5_Level2_RR2.wav
+<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=34619 offset_oncc$SOF_PED=1241 sample=TKI_A5_Level2_RR2.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=34245 offset_oncc$SOF_PED=1625 sample=TKI_D#6_Level2_RR2.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35262 offset_oncc$SOF_PED=0979 sample=TKI_F6_Level2_RR2.wav
+
+<group> group_label=f_rr3 seq_position=3
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32564 offset_oncc$SOF_PED=3657 sample=TKI_C0_Level2_RR3.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=31705 offset_oncc$SOF_PED=2671 sample=TKI_E0_Level2_RR3.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=33777 offset_oncc$SOF_PED=2503 sample=TKI_G0_Level2_RR3.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=32512 offset_oncc$SOF_PED=3330 sample=TKI_B0_Level2_RR3.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=31112 offset_oncc$SOF_PED=4132 sample=TKI_D1_Level2_RR3.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=31988 offset_oncc$SOF_PED=3758 sample=TKI_F#1_Level2_RR3.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=32355 offset_oncc$SOF_PED=3424 sample=TKI_A1_Level2_RR3.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=33818 offset_oncc$SOF_PED=2690 sample=TKI_C#2_Level2_RR3.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=32705 offset_oncc$SOF_PED=2587 sample=TKI_E2_Level2_RR3.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=32289 offset_oncc$SOF_PED=2582 sample=TKI_G#2_Level2_RR3.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=32105 offset_oncc$SOF_PED=3016 sample=TKI_B2_Level2_RR3.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=32073 offset_oncc$SOF_PED=2177 sample=TKI_D#3_Level2_RR3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=33207 offset_oncc$SOF_PED=2396 sample=TKI_F#3_Level2_RR3.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=33859 offset_oncc$SOF_PED=1939 sample=TKI_A3_Level2_RR3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=33825 offset_oncc$SOF_PED=2386 sample=TKI_C#4_Level2_RR3.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=32131 offset_oncc$SOF_PED=1799 sample=TKI_E4_Level2_RR3.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=33005 offset_oncc$SOF_PED=2340 sample=TKI_G#4_Level2_RR3.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=35183 offset_oncc$SOF_PED=2367 sample=TKI_B4_Level2_RR3.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=34115 offset_oncc$SOF_PED=1667 sample=TKI_D#5_Level2_RR3.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34578 offset_oncc$SOF_PED=1485 sample=TKI_F#5_Level2_RR3.wav
+<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=35332 offset_oncc$SOF_PED=1146 sample=TKI_A5_Level2_RR3.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=35678 offset_oncc$SOF_PED=1323 sample=TKI_D#6_Level2_RR3.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35652 offset_oncc$SOF_PED=1072 sample=TKI_F6_Level2_RR3.wav
+
+
+//---------------------------------------------------------------------
+<master>
+trigger=release
+pitch_keytrack=25
+rt_decay=2
+group=1
+polyphony=1
+
+<group> group_label=rt_rr1 seq_position=1
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=35549 sample=TKI_C0_RT_RR1.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=33030 sample=TKI_E0_RT_RR1.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=33772 sample=TKI_G0_RT_RR1.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=33463 sample=TKI_B0_RT_RR1.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=32889 sample=TKI_D1_RT_RR1.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=34901 sample=TKI_F#1_RT_RR1.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=35020 sample=TKI_A1_RT_RR1.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=33381 sample=TKI_C#2_RT_RR1.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=28936 sample=TKI_E2_RT_RR1.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=32669 sample=TKI_G#2_RT_RR1.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=32130 sample=TKI_B2_RT_RR1.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=35746 sample=TKI_D#3_RT_RR1.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=33606 sample=TKI_F#3_RT_RR1.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=32007 sample=TKI_A3_RT_RR1.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=32150 sample=TKI_C#4_RT_RR1.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=35697 sample=TKI_E4_RT_RR1.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=32440 sample=TKI_G#4_RT_RR1.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=32960 sample=TKI_B4_RT_RR1.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=30881 sample=TKI_D#5_RT_RR1.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34636 sample=TKI_F#5_RT_RR1.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=32086 sample=TKI_A#5_RT_RR1.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=33160 sample=TKI_D#6_RT_RR1.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=34601 sample=TKI_F6_RT_RR1.wav
+
+<group> group_label=rt_rr2 seq_position=2
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32595 sample=TKI_C0_RT_RR2.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=31843 sample=TKI_E0_RT_RR2.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=32686 sample=TKI_G0_RT_RR2.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=31570 sample=TKI_B0_RT_RR2.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=31400 sample=TKI_D1_RT_RR2.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=31674 sample=TKI_F#1_RT_RR2.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=33612 sample=TKI_A1_RT_RR2.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=33127 sample=TKI_C#2_RT_RR2.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=33587 sample=TKI_E2_RT_RR2.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=30540 sample=TKI_G#2_RT_RR2.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=31895 sample=TKI_B2_RT_RR2.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=32185 sample=TKI_D#3_RT_RR2.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=31170 sample=TKI_F#3_RT_RR2.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=30951 sample=TKI_A3_RT_RR2.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=32874 sample=TKI_C#4_RT_RR2.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=32070 sample=TKI_E4_RT_RR2.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=31334 sample=TKI_G#4_RT_RR2.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=31668 sample=TKI_B4_RT_RR2.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=33201 sample=TKI_D#5_RT_RR2.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=31369 sample=TKI_F#5_RT_RR2.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=32712 sample=TKI_A#5_RT_RR2.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32123 sample=TKI_D#6_RT_RR2.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=34376 sample=TKI_F6_RT_RR2.wav
+
+<group> group_label=rt_rr3 seq_position=3
+<region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=34121 sample=TKI_C0_RT_RR3.wav
+<region> pitch_keycenter=028 lokey=027 hikey=029 region_label=02 offset=32017 sample=TKI_E0_RT_RR3.wav
+<region> pitch_keycenter=031 lokey=030 hikey=033 region_label=03 offset=32094 sample=TKI_G0_RT_RR3.wav
+<region> pitch_keycenter=035 lokey=034 hikey=036 region_label=04 offset=32531 sample=TKI_B0_RT_RR3.wav
+<region> pitch_keycenter=038 lokey=037 hikey=040 region_label=05 offset=32660 sample=TKI_D1_RT_RR3.wav
+<region> pitch_keycenter=042 lokey=041 hikey=043 region_label=06 offset=31538 sample=TKI_F#1_RT_RR3.wav
+<region> pitch_keycenter=045 lokey=044 hikey=047 region_label=07 offset=31186 sample=TKI_A1_RT_RR3.wav
+<region> pitch_keycenter=049 lokey=048 hikey=050 region_label=08 offset=31953 sample=TKI_C#2_RT_RR3.wav
+<region> pitch_keycenter=052 lokey=051 hikey=054 region_label=09 offset=32805 sample=TKI_E2_RT_RR3.wav
+<region> pitch_keycenter=056 lokey=055 hikey=057 region_label=10 offset=31257 sample=TKI_G#2_RT_RR3.wav
+<region> pitch_keycenter=059 lokey=058 hikey=061 region_label=11 offset=30389 sample=TKI_B2_RT_RR3.wav
+<region> pitch_keycenter=063 lokey=062 hikey=064 region_label=12 offset=30806 sample=TKI_D#3_RT_RR3.wav
+<region> pitch_keycenter=066 lokey=065 hikey=067 region_label=13 offset=29067 sample=TKI_F#3_RT_RR3.wav
+<region> pitch_keycenter=069 lokey=068 hikey=071 region_label=14 offset=30833 sample=TKI_A3_RT_RR3.wav
+<region> pitch_keycenter=073 lokey=072 hikey=074 region_label=15 offset=30565 sample=TKI_C#4_RT_RR3.wav
+<region> pitch_keycenter=076 lokey=075 hikey=078 region_label=16 offset=32397 sample=TKI_E4_RT_RR3.wav
+<region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=30835 sample=TKI_G#4_RT_RR3.wav
+<region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=33965 sample=TKI_B4_RT_RR3.wav
+<region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=29751 sample=TKI_D#5_RT_RR3.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=32494 sample=TKI_F#5_RT_RR3.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=32399 sample=TKI_A#5_RT_RR3.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=33591 sample=TKI_D#6_RT_RR3.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35129 sample=TKI_F6_RT_RR3.wav
+
+
+//---------------------------------------------------------------------
+<master>
+master_volume=-30
+group=2
+polyphony=1
+lokey=-1
+hikey=-1
+
+<group> group_label=pd on_locc$SUS_PED=$SUS_DOWN
+<region> seq_position=1 region_label=rr1 offset=32246 sample=TKI_PD_RR1.wav
+<region> seq_position=2 region_label=rr2 offset=27040 sample=TKI_PD_RR2.wav
+<region> seq_position=3 region_label=rr3 offset=28499 sample=TKI_PD_RR3.wav
+
+<group> group_label=pu on_hicc$SUS_PED=$SUS_UP
+<region> seq_position=1 region_label=rr1 offset=39362 sample=TKI_PU_RR1.wav
+<region> seq_position=2 region_label=rr2 offset=39992 sample=TKI_PU_RR2.wav
+<region> seq_position=3 region_label=rr3 offset=37723 sample=TKI_PU_RR3.wav
+
+
+//---------------------------------------------------------------------
+<curve>
+curve_index=7
+v000=0
+v001=1
+v127=1
