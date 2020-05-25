@@ -1,5 +1,5 @@
 SFZ mapping for Gregjazz Jazz Funk Kit for use with Sforzando. 
-Original library and samples by Gregjazz. 
+Original library and samples by Gregjazz (Orangetreesamples). 
 
 This SFZ mapping was created by kinwie in April 2020. Optimized for Sforzando.
 Alternative mappings (older) can be found here: http://drealm.co.uk/sfz/GregJazz/
