@@ -1,0 +1,603 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Jazz Funk Kit
+// (c) 2008 Orange Tree Samples,
+// All Rights Reserved
+// --------------------------------------
+// reprogrammed by kinwie
+// --------------------------------------
+
+//keymap
+#define $SN_OFF 33
+#define $SN_ON 34
+#define $KEY_KICK_A 35
+#define $KEY_KICK_B 36
+#define $KEY_SN_CS 37
+#define $KEY_SN_CT 38
+#define $KEY_SN_SS 39
+#define $KEY_SN_RS 40
+#define $KEY_FT 41
+#define $KEY_RT 42
+#define $KEY_HH_PD 48
+#define $KEY_HH_CT 49
+#define $KEY_HH_CS 50
+#define $KEY_HH_O1 51
+#define $KEY_HH_O2 52
+#define $KEY_HH_O3 53
+#define $KEY_HH_O4 54
+#define $KEY_HH_O5 55
+#define $KEY_HH_PO 56
+#define $KEY_RD1_BW 57
+#define $KEY_RD1_BL 58
+#define $KEY_RD1_CR 59
+#define $KEY_RD2_BW 60
+#define $KEY_RD2_CR 61
+#define $CHK_RD1 84
+#define $CHK_RD2 85
+//----------------------------------------------
+
+<control>
+default_path=samples/
+
+label_cc20=Kick
+label_cc21=Snare
+label_cc22=RackTom
+label_cc23=FloorTom
+label_cc24=Hihat
+label_cc25=Ride1
+label_cc26=Ride2
+label_cc27=Pan Kick
+label_cc28=Pan Snare
+label_cc29=Pan RackTom
+label_cc30=Pan FloorTom
+label_cc31=Pan Hihat
+label_cc32=Pan Ride1
+label_cc33=Pan Ride2
+label_cc99=Veltrack
+set_hdcc20=0.5
+set_hdcc21=0.5
+set_hdcc22=0.5
+set_hdcc23=0.5
+set_hdcc24=0.5
+set_hdcc25=0.5
+set_hdcc26=0.5
+set_hdcc27=0.5
+set_hdcc28=0.5
+set_hdcc29=0.5
+set_hdcc30=0.5
+set_hdcc31=0.5
+set_hdcc32=0.5
+set_hdcc33=0.5
+set_hdcc99=0.99
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+<global>
+loop_mode=one_shot
+amp_veltrack=0
+amp_veltrack_oncc99=100
+off_mode=time
+sw_lokey=$SN_OFF
+sw_hikey=$SN_ON
+sw_default=$SN_ON
+
+//================================================================
+<master>
+master_label=Snares switch
+master_volume=-20
+amp_veltrack_oncc99=0
+polyphony=1
+off_time=0.01
+group=0
+
+<group>
+group_label=Off
+key=$SN_OFF
+<region> region_label=V1 sample=turn off snares 1.wav lovel=1 hivel=127
+
+<group>
+group_label=On
+key=$SN_ON
+<region> region_label=V1 sample=turn snare on 1.wav lovel=1 hivel=41
+<region> region_label=V2 sample=turn snare on 2.wav lovel=42 hivel=84
+<region> region_label=V3 sample=turn snare on 3.wav lovel=85 hivel=127
+
+//================================================================
+<master>
+master_label=20x14 Gretsch Kick
+amplitude_oncc20=200
+pan_oncc27=100
+pan_curvecc27=1
+polyphony=2
+off_time=1.6
+group=1
+
+<group>
+group_label=Center
+key=$KEY_KICK_A
+sw_last=$SN_OFF
+<region> region_label=V1 sample=kick - snares off - 1.wav lovel=1 hivel=24
+<region> region_label=V2 sample=kick - snares off - 2.wav lovel=25 hivel=50
+<region> region_label=V3 sample=kick - snares off - 3.wav lovel=51 hivel=75
+<region> region_label=V4 sample=kick - snares off - 4.wav lovel=76 hivel=101
+<region> region_label=V5 sample=kick - snares off - 5.wav lovel=102 hivel=127
+
+<group>
+group_label=Center
+key=$KEY_KICK_A
+sw_last=$SN_ON
+<region> region_label=V1 sample=kick - snares on - 1.wav lovel=1 hivel=20
+<region> region_label=V2 sample=kick - snares on - 2.wav lovel=21 hivel=41
+<region> region_label=V3 sample=kick - snares on - 3.wav lovel=42 hivel=62
+<region> region_label=V4 sample=kick - snares on - 4.wav lovel=63 hivel=84
+<region> region_label=V5 sample=kick - snares on - 5.wav lovel=85 hivel=105
+<region> region_label=V6 sample=kick - snares on - 6.wav lovel=106 hivel=127
+
+//================================================================
+<master>
+master_label=15x15 Ludwig Kick
+amplitude_oncc20=200
+pan_oncc27=100
+pan_curvecc27=1
+polyphony=2
+off_time=1.5
+group=2
+
+<group>
+group_label=Center
+key=$KEY_KICK_B
+sw_last=$SN_OFF
+<region> region_label=V1 sample=bop kick - snares off - 1.wav lovel=1 hivel=20
+<region> region_label=V2 sample=bop kick - snares off - 2.wav lovel=21 hivel=41
+<region> region_label=V3 sample=bop kick - snares off - 3.wav lovel=42 hivel=62
+<region> region_label=V4 sample=bop kick - snares off - 4.wav lovel=63 hivel=84
+<region> region_label=V5 sample=bop kick - snares off - 5.wav lovel=85 hivel=105
+<region> region_label=V6 sample=bop kick - snares off - 6.wav lovel=106 hivel=127
+
+<group>
+group_label=Center
+key=$KEY_KICK_B
+sw_last=$SN_ON
+<region> region_label=V1 sample=bop kick - snares on - 1.wav lovel=1 hivel=12
+<region> region_label=V2 sample=bop kick - snares on - 2.wav lovel=13 hivel=24
+<region> region_label=V3 sample=bop kick - snares on - 3.wav lovel=25 hivel=37
+<region> region_label=V4 sample=bop kick - snares on - 4.wav lovel=38 hivel=50
+<region> region_label=V5 sample=bop kick - snares on - 5.wav lovel=51 hivel=62
+<region> region_label=V6 sample=bop kick - snares on - 6.wav lovel=63 hivel=75
+<region> region_label=V7 sample=bop kick - snares on - 7.wav lovel=76 hivel=88
+<region> region_label=V8 sample=bop kick - snares on - 8.wav lovel=89 hivel=101
+<region> region_label=V9 sample=bop kick - snares on - 9.wav lovel=102 hivel=113
+<region> region_label=V10 sample=bop kick - snares on - 91.wav lovel=114 hivel=127
+
+//================================================================
+<master>
+master_label=14x5.5 Ludwig Snare
+amplitude_oncc21=200
+pan_oncc28=100
+pan_curvecc28=1
+polyphony=2
+off_time=1.5
+group=3
+
+<group>
+group_label=Cross-stick
+key=$KEY_SN_CS
+sw_last=$SN_OFF
+group_volume=-5
+<region> region_label=V1 sample=xstick - snares off - 1.wav lovel=1 hivel=17
+<region> region_label=V2 sample=xstick - snares off - 2.wav lovel=18 hivel=35
+<region> region_label=V3 sample=xstick - snares off - 3.wav lovel=36 hivel=53
+<region> region_label=V4 sample=xstick - snares off - 4.wav lovel=54 hivel=72
+<region> region_label=V5 sample=xstick - snares off - 5.wav lovel=73 hivel=90
+<region> region_label=V6 sample=xstick - snares off - 6.wav lovel=91 hivel=108
+<region> region_label=V7 sample=xstick - snares off - 7.wav lovel=109 hivel=127
+
+<group>
+group_label=Cross-stick
+key=$KEY_SN_CS
+sw_last=$SN_ON
+group_volume=-5
+<region> region_label=V1 sample=xstick - snares on - 1.wav lovel=1 hivel=15
+<region> region_label=V2 sample=xstick - snares on - 2.wav lovel=16 hivel=31
+<region> region_label=V3 sample=xstick - snares on - 3.wav lovel=32 hivel=47
+<region> region_label=V4 sample=xstick - snares on - 4.wav lovel=48 hivel=62
+<region> region_label=V5 sample=xstick - snares on - 5.wav lovel=63 hivel=78
+<region> region_label=V6 sample=xstick - snares on - 6.wav lovel=79 hivel=94
+<region> region_label=V7 sample=xstick - snares on - 7.wav lovel=95 hivel=110
+<region> region_label=V8 sample=xstick - snares on - 8.wav lovel=111 hivel=127
+
+<group>
+group_label=Center
+key=$KEY_SN_CT
+sw_last=$SN_OFF
+<region> region_label=V1 sample=snare - snares off - 1.wav lovel=1 hivel=20
+<region> region_label=V2 sample=snare - snares off - 2.wav lovel=21 hivel=41
+<region> region_label=V3 sample=snare - snares off - 3.wav lovel=42 hivel=62
+<region> region_label=V4 sample=snare - snares off - 4.wav lovel=63 hivel=84
+<region> region_label=V5 sample=snare - snares off - 5.wav lovel=85 hivel=105
+<region> region_label=V6 sample=snare - snares off - 6.wav lovel=106 hivel=127
+
+<group>
+group_label=Center
+key=$KEY_SN_CT
+sw_last=$SN_ON
+<region> region_label=V1 sample=snare - snares on - 1.wav lovel=1 hivel=7
+<region> region_label=V2 sample=snare - snares on - 2.wav lovel=8 hivel=15
+<region> region_label=V3 sample=snare - snares on - 3.wav lovel=16 hivel=23
+<region> region_label=V4 sample=snare - snares on - 4.wav lovel=24 hivel=31
+<region> region_label=V5 sample=snare - snares on - 5.wav lovel=32 hivel=39
+<region> region_label=V6 sample=snare - snares on - 6.wav lovel=40 hivel=47
+<region> region_label=V7 sample=snare - snares on - 7.wav lovel=48 hivel=55
+<region> region_label=V8 sample=snare - snares on - 8.wav lovel=56 hivel=62
+<region> region_label=V9 sample=snare - snares on - 9.wav lovel=63 hivel=70
+<region> region_label=V10 sample=snare - snares on - 91.wav lovel=71 hivel=78
+<region> region_label=V11 sample=snare - snares on - 92.wav lovel=79 hivel=86
+<region> region_label=V12 sample=snare - snares on - 93.wav lovel=87 hivel=94
+<region> region_label=V13 sample=snare - snares on - 94.wav lovel=95 hivel=102
+<region> region_label=V14 sample=snare - snares on - 95.wav lovel=103 hivel=110
+<region> region_label=V15 sample=snare - snares on - 96.wav lovel=111 hivel=118
+<region> region_label=V16 sample=snare - snares on - 97.wav lovel=119 hivel=127
+
+<group>
+group_label=Stick shot
+key=$KEY_SN_SS
+sw_last=$SN_OFF
+<region> region_label=V1 sample=stickshot - snares off - 1.wav lovel=1 hivel=20
+<region> region_label=V2 sample=stickshot - snares off - 2.wav lovel=21 hivel=41
+<region> region_label=V3 sample=stickshot - snares off - 3.wav lovel=42 hivel=62
+<region> region_label=V4 sample=stickshot - snares off - 4.wav lovel=63 hivel=84
+<region> region_label=V5 sample=stickshot - snares off - 5.wav lovel=85 hivel=105
+<region> region_label=V6 sample=stickshot - snares off - 6.wav lovel=106 hivel=127
+
+<group>
+group_label=Stick shot
+key=$KEY_SN_SS
+sw_last=$SN_ON
+<region> region_label=V1 sample=stickshot - snares on - 1.wav lovel=1 hivel=15
+<region> region_label=V2 sample=stickshot - snares on - 2.wav lovel=16 hivel=31
+<region> region_label=V3 sample=stickshot - snares on - 3.wav lovel=32 hivel=47
+<region> region_label=V4 sample=stickshot - snares on - 4.wav lovel=48 hivel=62
+<region> region_label=V5 sample=stickshot - snares on - 5.wav lovel=63 hivel=78
+<region> region_label=V6 sample=stickshot - snares on - 6.wav lovel=79 hivel=94
+<region> region_label=V7 sample=stickshot - snares on - 7.wav lovel=95 hivel=110
+<region> region_label=V8 sample=stickshot - snares on - 8.wav lovel=111 hivel=127
+
+<group>
+group_label=Rimshot
+key=$KEY_SN_RS
+sw_last=$SN_OFF
+<region> region_label=V1 sample=rimshot - snares off - 1.wav lovel=1 hivel=20
+<region> region_label=V2 sample=rimshot - snares off - 2.wav lovel=21 hivel=41
+<region> region_label=V3 sample=rimshot - snares off - 3.wav lovel=42 hivel=62
+<region> region_label=V4 sample=rimshot - snares off - 4.wav lovel=63 hivel=84
+<region> region_label=V5 sample=rimshot - snares off - 5.wav lovel=85 hivel=105
+<region> region_label=V6 sample=rimshot - snares off - 6.wav lovel=106 hivel=127
+
+<group>
+group_label=Rimshot
+key=$KEY_SN_RS
+sw_last=$SN_ON
+<region> region_label=V1 sample=rimshot - snares on - 1.wav lovel=1 hivel=13
+<region> region_label=V2 sample=rimshot - snares on - 2.wav lovel=14 hivel=27
+<region> region_label=V3 sample=rimshot - snares on - 3.wav lovel=28 hivel=41
+<region> region_label=V4 sample=rimshot - snares on - 4.wav lovel=42 hivel=55
+<region> region_label=V5 sample=rimshot - snares on - 5.wav lovel=56 hivel=70
+<region> region_label=V6 sample=rimshot - snares on - 6.wav lovel=71 hivel=84
+<region> region_label=V7 sample=rimshot - snares on - 7.wav lovel=85 hivel=98
+<region> region_label=V8 sample=rimshot - snares on - 8.wav lovel=99 hivel=112
+<region> region_label=V9 sample=rimshot - snares on - 9.wav lovel=113 hivel=127
+
+//================================================================
+<master>
+master_label=12x8 Gretsch Rack Tom
+master_volume=-5
+amplitude_oncc22=200
+pan_oncc29=100
+pan_curvecc29=1
+polyphony=2
+off_time=2
+group=4
+
+<group>
+group_label=Center
+key=$KEY_RT
+sw_last=$SN_OFF
+<region> region_label=V1 sample=rack tom - snares off - 1.wav lovel=1 hivel=15
+<region> region_label=V2 sample=rack tom - snares off - 2.wav lovel=16 hivel=31
+<region> region_label=V3 sample=rack tom - snares off - 3.wav lovel=32 hivel=47
+<region> region_label=V4 sample=rack tom - snares off - 4.wav lovel=48 hivel=62
+<region> region_label=V5 sample=rack tom - snares off - 5.wav lovel=63 hivel=78
+<region> region_label=V6 sample=rack tom - snares off - 6.wav lovel=79 hivel=94
+<region> region_label=V7 sample=rack tom - snares off - 7.wav lovel=95 hivel=110
+<region> region_label=V8 sample=rack tom - snares off - 8.wav lovel=111 hivel=127
+
+<group>
+group_label=Center
+key=$KEY_RT
+sw_last=$SN_ON
+<region> region_label=V1 sample=rack tom - snares on - 1.wav lovel=1 hivel=13
+<region> region_label=V2 sample=rack tom - snares on - 2.wav lovel=14 hivel=27
+<region> region_label=V3 sample=rack tom - snares on - 3.wav lovel=28 hivel=41
+<region> region_label=V4 sample=rack tom - snares on - 4.wav lovel=42 hivel=55
+<region> region_label=V5 sample=rack tom - snares on - 5.wav lovel=56 hivel=70
+<region> region_label=V6 sample=rack tom - snares on - 6.wav lovel=71 hivel=84
+<region> region_label=V7 sample=rack tom - snares on - 7.wav lovel=85 hivel=98
+<region> region_label=V8 sample=rack tom - snares on - 8.wav lovel=99 hivel=112
+<region> region_label=V9 sample=rack tom - snares on - 9.wav lovel=113 hivel=127
+
+//================================================================
+<master>
+master_label=14x14 Gretsch Floor Tom
+master_volume=-5
+amplitude_oncc23=200
+pan_oncc30=100
+pan_curvecc30=1
+polyphony=2
+off_time=3
+group=5
+
+<group>
+group_label=Center
+key=$KEY_FT
+sw_last=$SN_OFF
+sw_label=Snares off
+<region> region_label=V1 sample=floor tom - snares off - 1.wav lovel=1 hivel=17
+<region> region_label=V2 sample=floor tom - snares off - 2.wav lovel=18 hivel=35
+<region> region_label=V3 sample=floor tom - snares off - 3.wav lovel=36 hivel=53
+<region> region_label=V4 sample=floor tom - snares off - 4.wav lovel=54 hivel=72
+<region> region_label=V5 sample=floor tom - snares off - 5.wav lovel=73 hivel=90
+<region> region_label=V6 sample=floor tom - snares off - 6.wav lovel=91 hivel=108
+<region> region_label=V7 sample=floor tom - snares off - 7.wav lovel=109 hivel=127
+
+<group>
+group_label=Center
+key=$KEY_FT
+sw_last=$SN_ON
+sw_label=Snares on
+<region> region_label=V1 sample=floor tom - snares on - 1.wav lovel=1 hivel=15
+<region> region_label=V2 sample=floor tom - snares on - 2.wav lovel=16 hivel=31
+<region> region_label=V3 sample=floor tom - snares on - 3.wav lovel=32 hivel=47
+<region> region_label=V4 sample=floor tom - snares on - 4.wav lovel=48 hivel=62
+<region> region_label=V5 sample=floor tom - snares on - 5.wav lovel=63 hivel=78
+<region> region_label=V6 sample=floor tom - snares on - 6.wav lovel=79 hivel=94
+<region> region_label=V7 sample=floor tom - snares on - 7.wav lovel=95 hivel=110
+<region> region_label=V8 sample=floor tom - snares on - 8.wav lovel=111 hivel=127
+
+//================================================================
+<master>
+master_label=Top: 13.75'' K. / Bottom: 14'' A. Zildjian Hi-hat
+master_volume=-12
+amplitude_oncc24=200
+pan_oncc31=100
+pan_curvecc31=1
+polyphony=3
+off_time=0.3
+
+//----------------------------------------------
+<group>
+group_label=choke
+sample=*silence
+<region> key=$KEY_HH_PD group=12
+<region> key=$KEY_HH_PD group=13
+<region> key=$KEY_HH_PD group=14
+<region> key=$KEY_HH_PD group=15
+<region> key=$KEY_HH_PD group=16
+<region> key=$KEY_HH_CT group=12
+<region> key=$KEY_HH_CT group=13
+<region> key=$KEY_HH_CT group=14
+<region> key=$KEY_HH_CT group=15
+<region> key=$KEY_HH_CT group=16
+<region> key=$KEY_HH_CS group=12
+<region> key=$KEY_HH_CS group=13
+<region> key=$KEY_HH_CS group=14
+<region> key=$KEY_HH_CS group=15
+<region> key=$KEY_HH_CS group=16
+<region> key=$KEY_HH_O1 group=13
+<region> key=$KEY_HH_O1 group=14
+<region> key=$KEY_HH_O1 group=15
+<region> key=$KEY_HH_O1 group=16
+<region> key=$KEY_HH_O2 group=14
+<region> key=$KEY_HH_O2 group=15
+<region> key=$KEY_HH_O2 group=16
+<region> key=$KEY_HH_O3 group=15
+<region> key=$KEY_HH_O3 group=16
+<region> key=$KEY_HH_O4 group=16
+<region> key=$KEY_HH_PO group=12
+<region> key=$KEY_HH_PO group=13
+<region> key=$KEY_HH_PO group=14
+<region> key=$KEY_HH_PO group=15
+<region> key=$KEY_HH_PO group=16
+//----------------------------------------------
+
+<group>
+group_label=Pedal
+key=$KEY_HH_PD
+group=6
+<region> region_label=V1 sample=hihat - close - 1.wav lovel=1 hivel=17
+<region> region_label=V2 sample=hihat - close - 2.wav lovel=18 hivel=35
+<region> region_label=V3 sample=hihat - close - 3.wav lovel=36 hivel=53
+<region> region_label=V4 sample=hihat - close - 4.wav lovel=54 hivel=72
+<region> region_label=V5 sample=hihat - close - 5.wav lovel=73 hivel=90
+<region> region_label=V6 sample=hihat - close - 6.wav lovel=91 hivel=108
+<region> region_label=V7 sample=hihat - close - 7.wav lovel=109 hivel=127
+
+<group>
+group_label=Closed tip
+key=$KEY_HH_CT
+group=6
+<region> region_label=V1 sample=hihat - closed - 1.wav lovel=1 hivel=15
+<region> region_label=V2 sample=hihat - closed - 2.wav lovel=16 hivel=31
+<region> region_label=V3 sample=hihat - closed - 3.wav lovel=32 hivel=47
+<region> region_label=V4 sample=hihat - closed - 4.wav lovel=48 hivel=62
+<region> region_label=V5 sample=hihat - closed - 5.wav lovel=63 hivel=78
+<region> region_label=V6 sample=hihat - closed - 6.wav lovel=79 hivel=94
+<region> region_label=V7 sample=hihat - closed - 7.wav lovel=95 hivel=110
+<region> region_label=V8 sample=hihat - closed - 8.wav lovel=111 hivel=127
+
+<group>
+group_label=Closed shaft
+key=$KEY_HH_CS
+group=6
+<region> region_label=V1 sample=hihat - closed side - 1.wav lovel=1 hivel=24
+<region> region_label=V2 sample=hihat - closed side - 2.wav lovel=25 hivel=50
+<region> region_label=V3 sample=hihat - closed side - 3.wav lovel=51 hivel=75
+<region> region_label=V4 sample=hihat - closed side - 4.wav lovel=76 hivel=101
+<region> region_label=V5 sample=hihat - closed side - 5.wav lovel=102 hivel=127
+
+<group>
+group_label=Openness 1
+key=$KEY_HH_O1
+group=7
+off_by=12
+<region> region_label=V1 sample=hihat - opened 1 - 1.wav lovel=1 hivel=15
+<region> region_label=V2 sample=hihat - opened 1 - 2.wav lovel=16 hivel=31
+<region> region_label=V3 sample=hihat - opened 1 - 3.wav lovel=32 hivel=47
+<region> region_label=V4 sample=hihat - opened 1 - 4.wav lovel=48 hivel=62
+<region> region_label=V5 sample=hihat - opened 1 - 5.wav lovel=63 hivel=78
+<region> region_label=V6 sample=hihat - opened 1 - 6.wav lovel=79 hivel=94
+<region> region_label=V7 sample=hihat - opened 1 - 7.wav lovel=95 hivel=110
+<region> region_label=V8 sample=hihat - opened 1 - 8.wav lovel=111 hivel=127
+
+<group>
+group_label=Openness 2
+key=$KEY_HH_O2
+group=8
+off_by=13
+<region> region_label=V1 sample=hihat - opened 2 - 1.wav lovel=1 hivel=17
+<region> region_label=V2 sample=hihat - opened 2 - 2.wav lovel=18 hivel=35
+<region> region_label=V3 sample=hihat - opened 2 - 3.wav lovel=36 hivel=53
+<region> region_label=V4 sample=hihat - opened 2 - 4.wav lovel=54 hivel=72
+<region> region_label=V5 sample=hihat - opened 2 - 5.wav lovel=73 hivel=90
+<region> region_label=V6 sample=hihat - opened 2 - 6.wav lovel=91 hivel=108
+<region> region_label=V7 sample=hihat - opened 2 - 7.wav lovel=109 hivel=127
+
+<group>
+group_label=Openness 3
+key=$KEY_HH_O3
+group=9
+off_by=14
+<region> region_label=V1 sample=hihat - opened 3 - 1.wav lovel=1 hivel=13
+<region> region_label=V2 sample=hihat - opened 3 - 2.wav lovel=14 hivel=27
+<region> region_label=V3 sample=hihat - opened 3 - 3.wav lovel=28 hivel=41
+<region> region_label=V4 sample=hihat - opened 3 - 4.wav lovel=42 hivel=55
+<region> region_label=V5 sample=hihat - opened 3 - 5.wav lovel=56 hivel=70
+<region> region_label=V6 sample=hihat - opened 3 - 6.wav lovel=71 hivel=84
+<region> region_label=V7 sample=hihat - opened 3 - 7.wav lovel=85 hivel=98
+<region> region_label=V8 sample=hihat - opened 3 - 8.wav lovel=99 hivel=112
+<region> region_label=V9 sample=hihat - opened 3 - 9.wav lovel=113 hivel=127
+
+<group>
+group_label=Openness 4
+key=$KEY_HH_O4
+group=10
+off_by=15
+<region> region_label=V1 sample=hihat - opened 4 - 1.wav lovel=1 hivel=20
+<region> region_label=V2 sample=hihat - opened 4 - 2.wav lovel=21 hivel=41
+<region> region_label=V3 sample=hihat - opened 4 - 3.wav lovel=42 hivel=62
+<region> region_label=V4 sample=hihat - opened 4 - 4.wav lovel=63 hivel=84
+<region> region_label=V5 sample=hihat - opened 4 - 5.wav lovel=85 hivel=105
+<region> region_label=V6 sample=hihat - opened 4 - 6.wav lovel=106 hivel=127
+
+<group>
+group_label=Openness 5
+key=$KEY_HH_O5
+group=11
+off_by=16
+<region> region_label=V1 sample=hihat - opened 5 - 1.wav lovel=1 hivel=31
+<region> region_label=V2 sample=hihat - opened 5 - 2.wav lovel=32 hivel=62
+<region> region_label=V3 sample=hihat - opened 5 - 3.wav lovel=63 hivel=94
+<region> region_label=V4 sample=hihat - opened 5 - 4.wav lovel=95 hivel=127
+
+<group>
+group_label=Pedal open
+key=$KEY_HH_PO
+group=11
+off_by=16
+trigger=release_key
+<region> region_label=V1 sample=hihat - open - 1.wav lovel=1 hivel=41
+<region> region_label=V2 sample=hihat - open - 2.wav lovel=42 hivel=84
+<region> region_label=V3 sample=hihat - open - 3.wav lovel=85 hivel=127
+
+//================================================================
+<master>
+master_label=22'' Istanbul Agop Jazz Ride
+master_volume=-11
+amplitude_oncc25=200
+pan_oncc32=100
+pan_curvecc32=1
+polyphony=4
+off_time=1.7
+
+<group>
+group_label=Bow
+key=$KEY_RD1_BW
+group=17
+off_by=20
+<region> region_label=V1 sample=ride - 1.wav lovel=1 hivel=24
+<region> region_label=V2 sample=ride - 2.wav lovel=25 hivel=50
+<region> region_label=V3 sample=ride - 3.wav lovel=51 hivel=75
+<region> region_label=V4 sample=ride - 4.wav lovel=76 hivel=101
+<region> region_label=V5 sample=ride - 5.wav lovel=102 hivel=127
+
+<group>
+group_label=Bell
+key=$KEY_RD1_BL
+group=18
+off_by=20
+<region> region_label=V1 sample=ride - bell - 1.wav lovel=1 hivel=41
+<region> region_label=V2 sample=ride - bell - 2.wav lovel=42 hivel=84
+<region> region_label=V3 sample=ride - bell - 3.wav lovel=85 hivel=127
+
+<group>
+group_label=Crash
+key=$KEY_RD1_CR
+group=19
+off_by=20
+<region> region_label=V1 sample=ride - crash - 1.wav lovel=1 hivel=24
+<region> region_label=V2 sample=ride - crash - 2.wav lovel=25 hivel=50
+<region> region_label=V3 sample=ride - crash - 3.wav lovel=51 hivel=75
+<region> region_label=V4 sample=ride - crash - 4.wav lovel=76 hivel=101
+<region> region_label=V5 sample=ride - crash - 5.wav lovel=102 hivel=127
+
+<group>
+master_label=Ride 1
+group_label=choke
+sample=*silence
+<region> key=$CHK_RD1 group=20
+
+//================================================================
+<master>
+master_label=21'' Bosphorus Flat Ride
+master_volume=-11
+amplitude_oncc26=200
+pan_oncc33=100
+pan_curvecc33=1
+polyphony=4
+off_time=1.7
+
+<group>
+group_label=Bow
+key=$KEY_RD2_BW
+group=21
+off_by=23
+<region> region_label=V1 sample=flat ride - 1.wav lovel=1 hivel=17
+<region> region_label=V2 sample=flat ride - 2.wav lovel=18 hivel=35
+<region> region_label=V3 sample=flat ride - 3.wav lovel=36 hivel=53
+<region> region_label=V4 sample=flat ride - 4.wav lovel=54 hivel=72
+<region> region_label=V5 sample=flat ride - 5.wav lovel=73 hivel=90
+<region> region_label=V6 sample=flat ride - 6.wav lovel=91 hivel=108
+<region> region_label=V7 sample=flat ride - 7.wav lovel=109 hivel=127
+
+<group>
+group_label=Crash
+key=$KEY_RD2_CR
+group=22
+off_by=23
+<region> region_label=V1 sample=flat ride - crash - 1.wav lovel=1 hivel=62
+<region> region_label=V2 sample=flat ride - crash - 2.wav lovel=63 hivel=127
+
+<group>
+master_label=Ride 2
+group_label=choke
+sample=*silence
+<region> key=$CHK_RD2 group=23
