@@ -1,0 +1,177 @@
+//------------------------------------------------------------------------------------------------------------------------------------------------
+// sfz Definition File
+// Version 2
+// created by Bjoerns Sample Mapper v0.640  -  http://www.bjoernbojahr.de/
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+<control>
+default_path=masonhamlin-a samples\
+
+<group> //AT2035 f ff
+  ampeg_attack=.005 ampeg_decay=0.5 ampeg_release=0.3
+<region> sample=MH AT2035 f A#3.wav key=a#4 lokey=g4 lovel=65 hivel=104 
+<region> sample=MH AT2035 f A#5.wav key=a#6 lokey=g#6 lovel=65 hivel=104
+<region> sample=MH AT2035 f A1.wav key=a2 lokey=g2 lovel=65 hivel=104
+<region> sample=MH AT2035 f A6.wav key=a7 hikey=c8 lokey=f#7 lovel=65 hivel=104
+<region> sample=MH AT2035 f B0.wav key=b1 lokey=g#1 lovel=65 hivel=104
+<region> sample=MH AT2035 f B2.wav key=b3 lokey=a3 lovel=65 hivel=104
+<region> sample=MH AT2035 f C#2-2.wav key=c#3 lokey=a#2 lovel=65 hivel=104
+<region> sample=MH AT2035 f C#4.wav key=c#5 lokey=b4 lovel=65 hivel=104
+<region> sample=MH AT2035 f C0.wav key=c1 lokey=a0 lovel=65 hivel=104
+<region> sample=MH AT2035 f C5.wav key=c6 lokey=a5 lovel=65 hivel=104
+<region> sample=MH AT2035 f D#3.wav key=d#4 lokey=c4 lovel=65 hivel=104
+<region> sample=MH AT2035 f D#5.wav key=d#6 lokey=c#6 lovel=65 hivel=104
+<region> sample=MH AT2035 f D1.wav key=d2 lokey=c2 lovel=65 hivel=104
+<region> sample=MH AT2035 f D6.wav key=d7 lokey=b6 lovel=65 hivel=104
+<region> sample=MH AT2035 f E0.wav key=e1 lokey=c#1 lovel=65 hivel=104
+<region> sample=MH AT2035 f E2.wav key=e3 lokey=d3 lovel=65 hivel=104
+<region> sample=MH AT2035 f F#1.wav key=f#2 lokey=d#2 lovel=65 hivel=104
+<region> sample=MH AT2035 f F#3.wav key=f#4 lokey=e4 lovel=65 hivel=104
+<region> sample=MH AT2035 f F4.wav key=f5 lokey=d5 lovel=65 hivel=104
+<region> sample=MH AT2035 f F6.wav key=f7 lokey=d#7 lovel=65 hivel=104
+<region> sample=MH AT2035 f G#2.wav key=g#3 lokey=f3 lovel=65 hivel=104
+<region> sample=MH AT2035 f G#4.wav key=g#5 lokey=f#5 lovel=65 hivel=104
+<region> sample=MH AT2035 f G0.wav key=g1 lokey=f1 lovel=65 hivel=104
+<region> sample=MH AT2035 f G5.wav key=g6 lokey=e6 lovel=65 hivel=104
+<region> sample=MH AT2035 ff A#3.wav key=a#4 lokey=g4 lovel=105
+<region> sample=MH AT2035 ff A#5.wav key=a#6 lokey=g#6 lovel=105
+<region> sample=MH AT2035 ff A1.wav key=a2 lokey=g2 lovel=105
+<region> sample=MH AT2035 ff A6.wav key=a7 hikey=c8 lokey=f#7 lovel=105
+<region> sample=MH AT2035 ff B0.wav key=b1 lokey=g#1 lovel=105
+<region> sample=MH AT2035 ff B2.wav key=b3 lokey=a3 lovel=105
+<region> sample=MH AT2035 ff C#2.wav key=c#3 lokey=a#2 lovel=105
+<region> sample=MH AT2035 ff C#4.wav key=c#5 lokey=b4 lovel=105
+<region> sample=MH AT2035 ff C0.wav key=c1 lokey=a0 lovel=105
+<region> sample=MH AT2035 ff C5.wav key=c6 lokey=a5 lovel=105
+<region> sample=MH AT2035 ff D#3.wav key=d#4 lokey=c4 lovel=105
+<region> sample=MH AT2035 ff D#5.wav key=d#6 lokey=c#6 lovel=105
+<region> sample=MH AT2035 ff D1.wav key=d2 lokey=c2 lovel=105
+<region> sample=MH AT2035 ff D6.wav key=d7 lokey=b6 lovel=105
+<region> sample=MH AT2035 ff E0.wav key=e1 lokey=c#1 lovel=105
+<region> sample=MH AT2035 ff E2.wav key=e3 lokey=d3 lovel=105
+<region> sample=MH AT2035 ff F#1.wav key=f#2 lokey=d#2 lovel=105
+<region> sample=MH AT2035 ff F#3.wav key=f#4 lokey=e4 lovel=105
+<region> sample=MH AT2035 ff F4.wav key=f5 lokey=d5 lovel=105
+<region> sample=MH AT2035 ff F6.wav key=f7 lokey=d#7 lovel=105
+<region> sample=MH AT2035 ff G#2.wav key=g#3 lokey=f3 lovel=105
+<region> sample=MH AT2035 ff G#4.wav key=g#5 lokey=f#5 lovel=105
+<region> sample=MH AT2035 ff G0.wav key=g1 lokey=f1 lovel=105
+<region> sample=MH AT2035 ff G5.wav key=g6 lokey=e6 lovel=105
+
+//<group> //GoMic
+ volume=-20  ampeg_attack=.005 ampeg_decay=0.5 ampeg_release=0.3
+<region> sample=MH GoMic f A#3.wav key=a#4 lokey=g4 lovel=65 hivel=104
+<region> sample=MH GoMic f A#5.wav key=a#6 lokey=g#6 lovel=65 hivel=104
+<region> sample=MH GoMic f A1.wav key=a2 lokey=g2 lovel=65 hivel=104
+<region> sample=MH GoMic f A6.wav key=a7 hikey=c8 lokey=f#7 lovel=65 hivel=104
+<region> sample=MH GoMic f B0.wav key=b1 lokey=g#1 lovel=65 hivel=104
+<region> sample=MH GoMic f B2.wav key=b3 lokey=a3 lovel=65 hivel=104
+<region> sample=MH GoMic f C#2.wav key=c#3 lokey=a#2 lovel=65 hivel=104
+<region> sample=MH GoMic f C#4.wav key=c#4 lokey=b4 lovel=65 hivel=104
+<region> sample=MH GoMic f C0.wav key=c1 lokey=a0 lovel=65 hivel=104
+<region> sample=MH GoMic f C5.wav key=c6 lokey=a5 lovel=65 hivel=104
+<region> sample=MH GoMic f D#3.wav key=d#4 lokey=c4 lovel=65 hivel=104
+<region> sample=MH GoMic f D#5.wav key=d#6 lokey=c#6 lovel=65 hivel=104
+<region> sample=MH GoMic f D1.wav key=d2 lokey=c2 lovel=65 hivel=104
+<region> sample=MH GoMic f D6.wav key=d7 lokey=b6 lovel=65 hivel=104
+<region> sample=MH GoMic f E0.wav key=e1 lokey=c#1 lovel=65 hivel=104
+<region> sample=MH GoMic f E2.wav key=e3 lokey=d3 lovel=65 hivel=104
+<region> sample=MH GoMic f F#1.wav key=f#2 lokey=d#2 lovel=65 hivel=104
+<region> sample=MH GoMic f F#3.wav key=f#4 lokey=e4 lovel=65 hivel=104
+<region> sample=MH GoMic f F4.wav key=f5 lokey=d5 lovel=65 hivel=104
+<region> sample=MH GoMic f F6.wav key=f7 lokey=d#7 lovel=65 hivel=104
+<region> sample=MH GoMic f G#2.wav key=g#3 lokey=f3 lovel=65 hivel=104
+<region> sample=MH GoMic f G#4.wav key=g#5 lokey=f#5 lovel=65 hivel=104
+<region> sample=MH GoMic f G0.wav key=g1 lokey=f1 lovel=65 hivel=104
+<region> sample=MH GoMic f G5.wav key=g6 lokey=e6 lovel=65 hivel=104
+<region> sample=MH GoMic ff A#3.wav key=a#4 lokey=g4 lovel=105
+<region> sample=MH GoMic ff A#5.wav key=a#6 lokey=g#6 lovel=105
+<region> sample=MH GoMic ff A1.wav key=a2 lokey=g2 lovel=105
+<region> sample=MH GoMic ff A6.wav key=a7 hikey=c8 lokey=f#7 lovel=105
+<region> sample=MH GoMic ff B0.wav key=b1 lokey=g#1 lovel=105
+<region> sample=MH GoMic ff B2.wav key=b3 lokey=a3 lovel=105
+<region> sample=MH GoMic ff C#2.wav key=c#3 lokey=a#2 lovel=105
+<region> sample=MH GoMic ff C#4.wav key=c#5 lokey=b4 lovel=105
+<region> sample=MH GoMic ff C0.wav key=c1 lokey=a0 lovel=105
+<region> sample=MH GoMic ff C5.wav key=c6 lokey=a5 lovel=105
+<region> sample=MH GoMic ff D#3.wav key=d#4 lokey=c4 lovel=105
+<region> sample=MH GoMic ff D#5.wav key=d#6 lokey=c#6 lovel=105
+<region> sample=MH GoMic ff D1.wav key=d2 lokey=c2 lovel=105
+<region> sample=MH GoMic ff D6.wav key=d7 lokey=b6 lovel=105
+<region> sample=MH GoMic ff E0.wav key=e1 lokey=c#1 lovel=105
+<region> sample=MH GoMic ff E2.wav key=e3 lokey=d3 lovel=105
+<region> sample=MH GoMic ff F#1.wav key=f#2 lokey=d#2 lovel=105
+<region> sample=MH GoMic ff F#3.wav key=f#4 lokey=e4 lovel=105
+<region> sample=MH GoMic ff F4.wav key=f5 lokey=d5 lovel=105
+<region> sample=MH GoMic ff F6.wav key=f7 lokey=d#7 lovel=105
+<region> sample=MH GoMic ff G#2.wav key=g#3 lokey=f3 lovel=105
+<region> sample=MH GoMic ff G#4.wav key=g#5 lokey=f#5 lovel=105
+<region> sample=MH GoMic ff G0.wav key=g1 lokey=f1 lovel=105
+<region> sample=MH GoMic ff G5.wav key=g6 lokey=e6 lovel=105
+<region> sample=MH GoMic p A#3.wav key=a#4 lokey=g4 hivel=64
+<region> sample=MH GoMic p A#5.wav key=a#6 lokey=g#6 hivel=64
+<region> sample=MH GoMic p A1.wav key=a2 lokey=g2 hivel=64
+<region> sample=MH GoMic p A6.wav key=a7 hikey=c8 lokey=f#7 hivel=64
+<region> sample=MH GoMic p B0.wav key=b1 lokey=g#1 hivel=64
+<region> sample=MH GoMic p B2.wav key=b3 lokey=a3 hivel=64
+<region> sample=MH GoMic p C#2.wav key=c#3 lokey=a#2 hivel=64
+<region> sample=MH GoMic p C#4.wav key=c#5 lokey=b4 hivel=64
+<region> sample=MH GoMic p C0.wav key=c1 lokey=a0 hivel=64
+<region> sample=MH GoMic p C5.wav key=c6 lokey=a5 hivel=64
+<region> sample=MH GoMic p D#3.wav key=d#4 lokey=c4 hivel=64
+<region> sample=MH GoMic p D#5.wav key=d#6 lokey=c#6 hivel=64
+<region> sample=MH GoMic p D1.wav key=d2 lokey=c2 hivel=64
+<region> sample=MH GoMic p D6.wav key=d7 lokey=b6 hivel=64
+<region> sample=MH GoMic p E0.wav key=e1 lokey=c#1 hivel=64
+<region> sample=MH GoMic p E2.wav key=e3 lokey=d3 hivel=64
+<region> sample=MH GoMic p F#1.wav key=f#2 lokey=d#2 hivel=64
+<region> sample=MH GoMic p F#3.wav key=f#4 lokey=e4 hivel=64
+<region> sample=MH GoMic p F4.wav key=f5 lokey=d5 hivel=64
+<region> sample=MH GoMic p F6.wav key=f7 lokey=d#7 hivel=64
+<region> sample=MH GoMic p G#2.wav key=g#3 lokey=f3 hivel=64
+<region> sample=MH GoMic p G#4.wav key=g#5 lokey=f#5 hivel=64
+<region> sample=MH GoMic p G0.wav key=g1 lokey=f1 hivel=64
+<region> sample=MH GoMic p G5.wav key=g6 lokey=e6 hivel=64
+
+<group> //Release Triggers
+ volume=-7 trigger=release
+<region> sample=MH AT2035 RT A#5.wav key=a#6 hikey=d#7 lokey=a6
+<region> sample=MH AT2035 RT A1.wav key=a2 hikey=d3 lokey=g#2
+<region> sample=MH AT2035 RT B2.wav key=b3 hikey=e4 lokey=a#3
+<region> sample=MH AT2035 RT C#4.wav key=c#5 hikey=f#5 lokey=c5
+<region> sample=MH AT2035 RT C0.wav key=c1 hikey=f1 lokey=c-1
+<region> sample=MH AT2035 RT D#5.wav key=d#6 hikey=g#6 lokey=d6
+<region> sample=MH AT2035 RT D1.wav key=d2 hikey=g2 lokey=c#2
+<region> sample=MH AT2035 RT E2.wav key=e3 hikey=a3 lokey=d#3
+<region> sample=MH AT2035 RT F#3.wav key=f#4 hikey=b4 lokey=f4
+<region> sample=MH AT2035 RT F6.wav key=f7 hikey=g8 lokey=e7
+<region> sample=MH AT2035 RT G#4.wav key=g#5 hikey=c#6 lokey=g5
+<region> sample=MH AT2035 RT G0.wav key=g1 hikey=c2 lokey=f#1
+
+<group> //AT2035 p
+  ampeg_attack=.005 ampeg_decay=0.5 ampeg_release=0.3 
+<region> sample=MH AT2035 p A#3.wav key=a#4 lokey=g4 hivel=64
+<region> sample=MH AT2035 p A#5.wav key=a#6 lokey=g#6 hivel=64
+<region> sample=MH AT2035 p A1.wav key=a2 lokey=g2 hivel=64
+<region> sample=MH AT2035 p A6.wav key=a7 hikey=c8 lokey=f#7 hivel=64
+<region> sample=MH AT2035 p B0.wav key=b1 lokey=g#1 hivel=64
+<region> sample=MH AT2035 p B2.wav key=b3 lokey=a3 hivel=64
+<region> sample=MH AT2035 p C#2.wav key=c#3 lokey=a#2 hivel=64
+<region> sample=MH AT2035 p C#4.wav key=c#5 lokey=b4 hivel=64
+<region> sample=MH AT2035 p C0.wav key=c1 lokey=a0 hivel=64
+<region> sample=MH AT2035 p C5.wav key=c6 lokey=a5 hivel=64
+<region> sample=MH AT2035 p D#3.wav key=d#4 lokey=c4 hivel=64
+<region> sample=MH AT2035 p D#5.wav key=d#6 lokey=c#6 hivel=64
+<region> sample=MH AT2035 p D1.wav key=d2 lokey=c2 hivel=64
+<region> sample=MH AT2035 p D6.wav key=d7 lokey=b6 hivel=64
+<region> sample=MH AT2035 p E0.wav key=e1 lokey=c#1 hivel=64
+<region> sample=MH AT2035 p E2.wav key=e3 lokey=d3 hivel=64
+<region> sample=MH AT2035 p F#1.wav key=f#2 lokey=d#2 hivel=64
+<region> sample=MH AT2035 p F#3.wav key=f#4 lokey=e4 hivel=64
+<region> sample=MH AT2035 p F4.wav key=f5 lokey=d5 hivel=64
+<region> sample=MH AT2035 p F6.wav key=f7 lokey=d#7 hivel=64
+<region> sample=MH AT2035 p G#2.wav key=g#3 lokey=f3 hivel=64
+<region> sample=MH AT2035 p G#4.wav key=g#5 lokey=f#5 hivel=64
+<region> sample=MH AT2035 p G0.wav key=g1 lokey=f1 hivel=64
+<region> sample=MH AT2035 p G5.wav key=g6 lokey=e6 hivel=64
+
