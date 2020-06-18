@@ -6,5 +6,5 @@ SFZ mapping for Mason & Hamlin's Model A Piano. Use this mapping with Sforzando.
 - Download the .sfz mapping and place it next to (not into) the "samples" folder of the original library
 - Load in Sforzando
 
-Thanks to Dore Mark for allowing SFZinstruments to share his SFZ mapping in this repo. The mapping will also be available from the original  Pianobook page soon to come. 
+Thanks to Dore Mark for allowing SFZinstruments to host his SFZ mapping in this repo. The mapping will also be available from the original  Pianobook page soon to come. 
 
