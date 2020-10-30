@@ -1,0 +1,767 @@
+//--------------------------------------
+// 60s Rogers Pop Kit
+// Drumdrops
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//keymap
+#define $KEY_KICK_SB 35
+#define $KEY_KICK_HB 36
+#define $KEY_SNR_CT 38
+#define $KEY_SNR_EG 40
+#define $KEY_SNR_RS 39
+#define $KEY_SNR_CU 76
+#define $KEY_SNR_EU 77
+#define $KEY_SNR_RU 79
+#define $KEY_SNR_SS 37
+#define $KEY_SNR_SO 81
+#define $KEY_TOM1_CT 47
+#define $KEY_TOM2_CT 43
+#define $KEY_HH_TP_CF 42
+#define $KEY_HH_TP_CL 68
+#define $KEY_HH_TP_OQ 70
+#define $KEY_HH_TP_OH 71
+#define $KEY_HH_TP_OT 72
+#define $KEY_HH_TP_OP 46
+#define $KEY_HH_EG_CF 75
+#define $KEY_HH_EG_CL 78
+#define $KEY_HH_EG_OQ 80
+#define $KEY_HH_EG_OH 82
+#define $KEY_HH_EG_OT 85
+#define $KEY_HH_EG_OP 87
+#define $KEY_HH_PS 44
+#define $KEY_HH_PO 69
+#define $KEY_RD_CT 51
+#define $KEY_RD_BL 53
+#define $KEY_RD_EG 52
+#define $KEY_CR_CT 54
+#define $KEY_CR_EG 55
+#define $KEY_GRO_HIT 34
+#define $KEY_GRO_SCR 33
+#define $KEY_TMB_HIT 32
+#define $KEY_TMB_SHK 31
+#define $KEY_SHK_HRD 30
+#define $KEY_SHK_SFT 29
+#define $CHK_RD 60
+#define $CHK_CR 61
+
+//velmap
+#define $VEL1LO 1
+#define $VEL1HI 76
+#define $VEL2LO 77
+#define $VEL2HI 101
+#define $VEL3LO 102
+#define $VEL3HI 127
+
+//midi cc
+#define $VOL_KICK 20
+#define $VOL_SNR 21
+#define $VOL_TOM1 22
+#define $VOL_TOM2 23
+#define $VOL_HH 24
+#define $VOL_RD 25
+#define $VOL_CR 26
+#define $VOL_GRO 27
+#define $VOL_TMB 28
+#define $VOL_SHK 29
+#define $PAN_KICK 30
+#define $PAN_SNR 31
+#define $PAN_TOM1 32
+#define $PAN_TOM2 33
+#define $PAN_HH 34
+#define $PAN_RD 35
+#define $PAN_CR 36
+#define $PAN_GRO 37
+#define $PAN_TMB 38
+#define $PAN_SHK 39
+#define $TUN_KICK 40
+#define $TUN_SNR 41
+#define $TUN_TOM1 42
+#define $TUN_TOM2 43
+#define $TUN_HH 44
+#define $TUN_RD 45
+#define $TUN_CR 46
+#define $TUN_GRO 47
+#define $TUN_TMB 48
+#define $TUN_SHK 49
+#define $VELTRACK 99
+
+<control>
+label_cc7=Master Vol
+label_cc10=Master Pan
+label_cc$VOL_KICK=Kick
+label_cc$VOL_SNR=Snare
+label_cc$VOL_TOM1=RackTom
+label_cc$VOL_TOM2=FloorTom
+label_cc$VOL_HH=Hihat
+label_cc$VOL_RD=Ride
+label_cc$VOL_CR=Crash
+label_cc$VOL_GRO=Guiro
+label_cc$VOL_TMB=Tamb
+label_cc$VOL_SHK=Shaker
+label_cc$PAN_KICK=Pan Kick
+label_cc$PAN_SNR=Pan Snare
+label_cc$PAN_TOM1=Pan RackTom
+label_cc$PAN_TOM2=Pan FloorTom
+label_cc$PAN_HH=Pan Hihat
+label_cc$PAN_RD=Pan Ride
+label_cc$PAN_CR=Pan Crash
+label_cc$PAN_GRO=Pan Guiro
+label_cc$PAN_TMB=Pan Tamb
+label_cc$PAN_SHK=Pan Shaker
+label_cc$TUN_KICK=Tune Kick
+label_cc$TUN_SNR=Tune Snare
+label_cc$TUN_TOM1=Tune RackTom
+label_cc$TUN_TOM2=Tune FloorTom
+label_cc$TUN_HH=Tune Hihat
+label_cc$TUN_RD=Tune Ride
+label_cc$TUN_CR=Tune Crash
+label_cc$TUN_GRO=Tune Guiro
+label_cc$TUN_TMB=Tune Tamb
+label_cc$TUN_SHK=Tune Shaker
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$VOL_KICK=0.5
+set_hdcc$VOL_SNR=0.5
+set_hdcc$VOL_TOM1=0.5
+set_hdcc$VOL_TOM2=0.5
+set_hdcc$VOL_HH=0.5
+set_hdcc$VOL_RD=0.5
+set_hdcc$VOL_CR=0.5
+set_hdcc$VOL_GRO=0.5
+set_hdcc$VOL_TMB=0.5
+set_hdcc$VOL_SHK=0.5
+set_hdcc$PAN_KICK=0.5
+set_hdcc$PAN_SNR=0.5
+set_hdcc$PAN_TOM1=0.5
+set_hdcc$PAN_TOM2=0.5
+set_hdcc$PAN_HH=0.5
+set_hdcc$PAN_RD=0.5
+set_hdcc$PAN_CR=0.5
+set_hdcc$PAN_GRO=0.5
+set_hdcc$PAN_TMB=0.5
+set_hdcc$PAN_SHK=0.5
+set_hdcc$TUN_KICK=0.5
+set_hdcc$TUN_SNR=0.5
+set_hdcc$TUN_TOM1=0.5
+set_hdcc$TUN_TOM2=0.5
+set_hdcc$TUN_HH=0.5
+set_hdcc$TUN_RD=0.5
+set_hdcc$TUN_CR=0.5
+set_hdcc$TUN_GRO=0.5
+set_hdcc$TUN_TMB=0.5
+set_hdcc$TUN_SHK=0.5
+set_hdcc$VELTRACK=1
+
+
+//*********************************************************
+<global>
+loop_mode=one_shot
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+amp_veltrack_oncc$VELTRACK=-100
+amp_veltrack_curvecc$VELTRACK=2
+sw_lokey=12
+sw_hikey=13
+sw_default=12
+
+
+//=============================================
+<master>
+master_label=Kick
+amplitude_oncc$VOL_KICK=200
+pan_oncc$PAN_KICK=100
+pan_curvecc$PAN_KICK=1
+tune_oncc$TUN_KICK=1200
+tune_curvecc$TUN_KICK=1
+note_polyphony=2
+off_time=1.5
+group=1
+
+<control> default_path=SAMPLES/Kick/Soft Beater/
+<group>
+key=$KEY_KICK_SB
+group_label=Soft Beater
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=RGRS_KICK_SFFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=RGRS_KICK_SFFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=RGRS_KICK_SFFL_HT_03.wav
+
+<control> default_path=SAMPLES/Kick/Hard Beater/
+<group>
+key=$KEY_KICK_HB
+group_label=Hard Beater
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=RGRS_KICK_HDFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=RGRS_KICK_HDFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=RGRS_KICK_HDFL_HT_03.wav
+
+
+//=============================================
+<master>
+master_label=Snare
+amplitude_oncc$VOL_SNR=200
+pan_oncc$PAN_SNR=100
+pan_curvecc$PAN_SNR=1
+tune_oncc$TUN_SNR=1200
+tune_curvecc$TUN_SNR=1
+note_polyphony=2
+off_time=1.2
+group=2
+sw_last=12
+sw_label=Ludwig 400 Snare
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Centre/
+<group>
+key=$KEY_SNR_CT
+group_label=Centre
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_DCFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_DCFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_DCFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Edge/
+<group>
+key=$KEY_SNR_EG
+group_label=Edge
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_DEFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_DEFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_DEFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Rimshot/
+<group>
+key=$KEY_SNR_RS
+group_label=Rimshot
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_DRFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_DRFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_DRFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Centre Undamped/
+<group>
+key=$KEY_SNR_CU
+group_label=Centre Undamped
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_LCFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_LCFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_LCFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Edge Undamped/
+<group>
+key=$KEY_SNR_EU
+group_label=Edge Undamped
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_LEFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_LEFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_LEFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Rimshot Undamped/
+<group>
+key=$KEY_SNR_RU
+group_label=Rimshot Undamped
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_LRFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_LRFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_LRFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Sidestick/
+<group>
+key=$KEY_SNR_SS
+group_label=Sidestick
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_XSFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_XSFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_XSFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig 400 Snare/Snares Off/
+<group>
+key=$KEY_SNR_SO
+group_label=Snares Off
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=L400_SNR_OFFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=L400_SNR_OFFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=L400_SNR_OFFL_HT_03.wav
+
+
+//=============================================
+<master>
+master_label=Snare
+amplitude_oncc$VOL_SNR=200
+pan_oncc$PAN_SNR=100
+pan_curvecc$PAN_SNR=1
+tune_oncc$TUN_SNR=1200
+tune_curvecc$TUN_SNR=1
+note_polyphony=2
+off_time=1.2
+group=2
+sw_last=13
+sw_label=Ludwig WFI Snare
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Centre/
+<group>
+key=$KEY_SNR_CT
+group_label=Centre
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_DCFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_DCFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_DCFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Edge/
+<group>
+key=$KEY_SNR_EG
+group_label=Edge
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_DEFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_DEFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_DEFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Rimshot/
+<group>
+key=$KEY_SNR_RS
+group_label=Rimshot
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_DRFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_DRFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_DRFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Centre Undamped/
+<group>
+key=$KEY_SNR_CU
+group_label=Centre Undamped
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_LCFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_LCFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_LCFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Edge Undamped/
+<group>
+key=$KEY_SNR_EU
+group_label=Edge Undamped
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_LEFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_LEFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_LEFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Rimshot Undamped/
+<group>
+key=$KEY_SNR_RU
+group_label=Rimshot Undamped
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_LRFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_LRFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_LRFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Sidestick/
+<group>
+key=$KEY_SNR_SS
+group_label=Sidestick
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_XSFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_XSFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_XSFL_HT_03.wav
+
+<control> default_path=SAMPLES/Ludwig WFI Snare/Snares Off/
+<group>
+key=$KEY_SNR_SO
+group_label=Snares Off
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=LWFI_SNR_OFFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=LWFI_SNR_OFFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=LWFI_SNR_OFFL_HT_03.wav
+
+
+//=============================================
+<master>
+master_label=Rack Tom
+amplitude_oncc$VOL_TOM1=200
+pan_oncc$PAN_TOM1=100
+pan_curvecc$PAN_TOM1=1
+tune_oncc$TUN_TOM1=1200
+tune_curvecc$TUN_TOM1=1
+note_polyphony=2
+off_time=1.5
+group=3
+
+<control> default_path=SAMPLES/Rack Tom/Centre/
+<group>
+key=$KEY_TOM1_CT
+group_label=Centre
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=RGRS_RTOM_CNFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=RGRS_RTOM_CNFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=RGRS_RTOM_CNFL_HT_03.wav
+
+
+//=============================================
+<master>
+master_label=Floor Tom
+amplitude_oncc$VOL_TOM2=200
+pan_oncc$PAN_TOM2=100
+pan_curvecc$PAN_TOM2=1
+tune_oncc$TUN_TOM2=1200
+tune_curvecc$TUN_TOM2=1
+note_polyphony=2
+off_time=2.5
+group=4
+
+<control> default_path=SAMPLES/Floor Tom/Centre/
+<group>
+key=$KEY_TOM2_CT
+group_label=Centre
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=RGRS_FTOM_CNFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=RGRS_FTOM_CNFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=RGRS_FTOM_CNFL_HT_03.wav
+
+
+//=============================================
+<master>
+master_label=Hihat
+amplitude_oncc$VOL_HH=200
+pan_oncc$PAN_HH=100
+pan_curvecc$PAN_HH=1
+tune_oncc$TUN_HH=1200
+tune_curvecc$TUN_HH=1
+note_polyphony=3
+off_time=0.2
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Fully Closed/
+<group>
+key=$KEY_HH_TP_CF
+group=5
+group_label=Tip Closed Full
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C1FL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C1FL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_C1FL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Closed/
+<group>
+key=$KEY_HH_TP_CL
+group=5
+group_label=Tip Closed
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C2FL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C2FL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_C2FL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open Quarter/
+<group>
+key=$KEY_HH_TP_OQ
+group=6
+off_by=10
+group_label=Tip Open Quarter
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C3FL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C3FL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_C3FL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open Half/
+<group>
+key=$KEY_HH_TP_OH
+group=7
+off_by=11
+group_label=Tip Open Half
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O1FL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O1FL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_O1FL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open Three Quarters/
+<group>
+key=$KEY_HH_TP_OT
+group=8
+off_by=12
+group_label=Tip Open Three Quarters
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O2FL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O2FL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_O2FL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open/
+<group>
+key=$KEY_HH_TP_OP
+group=9
+off_by=13
+group_label=Tip Open
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O3FL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O3FL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_O3FL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Fully Closed/
+<group>
+key=$KEY_HH_EG_CF
+group=5
+group_label=Edge Closed Full
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C1EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C1EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_C1EGFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Closed/
+<group>
+key=$KEY_HH_EG_CL
+group=5
+group_label=Edge Closed
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C2EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C2EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_C2EGFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open Quarter/
+<group>
+key=$KEY_HH_EG_OQ
+group=6
+off_by=10
+group_label=Edge Open Quarter
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C3EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C3EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_C3EGFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open Half/
+<group>
+key=$KEY_HH_EG_OH
+group=7
+off_by=11
+group_label=Edge Open Half
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O1EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O1EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_O1EGFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open Three Quarters/
+<group>
+key=$KEY_HH_EG_OT
+group=8
+off_by=12
+group_label=Edge Open Three Quarters
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O2EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O2EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_O2EGFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open/
+<group>
+key=$KEY_HH_EG_OP
+group=9
+off_by=13
+group_label=Edge Open
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O3EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O3EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_O3EGFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Pedal Shut/
+<group>
+key=$KEY_HH_PS
+group=5
+group_label=Pedal Shut
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_PSFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_PSFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_PSFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Zildjian Armand Hi Hat/Pedal Open/
+<group>
+key=$KEY_HH_PO
+group=9
+off_by=13
+trigger=release_key
+group_label=Pedal Open
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_POFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_POFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=ZDJN_HAT_POFL_HT_015_03.wav
+
+//--------------------
+<group>
+end=-1
+sample=*silence
+<region> key=$KEY_HH_TP_CF group=10
+<region> key=$KEY_HH_TP_CF group=11
+<region> key=$KEY_HH_TP_CF group=12
+<region> key=$KEY_HH_TP_CF group=13
+<region> key=$KEY_HH_TP_CL group=10
+<region> key=$KEY_HH_TP_CL group=11
+<region> key=$KEY_HH_TP_CL group=12
+<region> key=$KEY_HH_TP_CL group=13
+<region> key=$KEY_HH_TP_OQ group=11
+<region> key=$KEY_HH_TP_OQ group=12
+<region> key=$KEY_HH_TP_OQ group=13
+<region> key=$KEY_HH_TP_OH group=12
+<region> key=$KEY_HH_TP_OH group=13
+<region> key=$KEY_HH_TP_OT group=13
+<region> key=$KEY_HH_EG_CF group=10
+<region> key=$KEY_HH_EG_CF group=11
+<region> key=$KEY_HH_EG_CF group=12
+<region> key=$KEY_HH_EG_CF group=13
+<region> key=$KEY_HH_EG_CL group=10
+<region> key=$KEY_HH_EG_CL group=11
+<region> key=$KEY_HH_EG_CL group=12
+<region> key=$KEY_HH_EG_CL group=13
+<region> key=$KEY_HH_EG_OQ group=11
+<region> key=$KEY_HH_EG_OQ group=12
+<region> key=$KEY_HH_EG_OQ group=13
+<region> key=$KEY_HH_EG_OH group=12
+<region> key=$KEY_HH_EG_OH group=13
+<region> key=$KEY_HH_EG_OT group=13
+<region> key=$KEY_HH_PS group=10
+<region> key=$KEY_HH_PS group=11
+<region> key=$KEY_HH_PS group=12
+<region> key=$KEY_HH_PS group=13
+<region> key=$KEY_HH_PO group=10
+<region> key=$KEY_HH_PO group=11
+<region> key=$KEY_HH_PO group=12
+<region> key=$KEY_HH_PO group=13
+
+
+//=============================================
+<master>
+master_label=Ride
+amplitude_oncc$VOL_RD=200
+pan_oncc$PAN_RD=100
+pan_curvecc$PAN_RD=1
+tune_oncc$TUN_RD=1200
+tune_curvecc$TUN_RD=1
+note_polyphony=4
+off_time=1.6
+
+<control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Centre/
+<group>
+key=$KEY_RD_CT
+group=14
+off_by=17
+group_label=Centre
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_RIDE_CNFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_RIDE_CNFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=PSTE_RIDE_CNFL_HT_03.wav
+
+<control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Bell/
+<group>
+key=$KEY_RD_BL
+group=15
+off_by=17
+group_label=Bell
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_RIDE_BLFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_RIDE_BLFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=PSTE_RIDE_BLFL_HT_03.wav
+
+<control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Edge/
+<group>
+key=$KEY_RD_EG
+group=16
+off_by=17
+group_label=Edge
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_RIDE_EGFL_HT_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_RIDE_EGFL_HT_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=PSTE_RIDE_EGFL_HT_03.wav
+
+<group>
+key=$CHK_RD
+group=17
+ampeg_sustain=0
+group_label=Choke
+<region> sample=*silence
+
+
+//=============================================
+<master>
+master_label=Crash
+amplitude_oncc$VOL_CR=200
+pan_oncc$PAN_CR=100
+pan_curvecc$PAN_CR=1
+tune_oncc$TUN_CR=1200
+tune_curvecc$TUN_CR=1
+note_polyphony=4
+off_time=1.4
+
+<control> default_path=SAMPLES/Paiste 602 18 Inch Crash/Centre/
+<group>
+key=$KEY_CR_CT
+group=18
+off_by=20
+group_label=Centre
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_CRSH_CNFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_CRSH_CNFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=PSTE_CRSH_CNFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Paiste 602 18 Inch Crash/Edge/
+<group>
+key=$KEY_CR_EG
+group=19
+off_by=20
+group_label=Edge
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_CRSH_EGFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_CRSH_EGFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=PSTE_CRSH_EGFL_HT_015_03.wav
+
+<group>
+key=$CHK_CR
+group=20
+ampeg_sustain=0
+group_label=Choke
+<region> sample=*silence
+
+
+//=============================================
+<master>
+master_label=Guiro
+amplitude_oncc$VOL_GRO=200
+pan_oncc$PAN_GRO=100
+pan_curvecc$PAN_GRO=1
+tune_oncc$TUN_GRO=1200
+tune_curvecc$TUN_GRO=1
+note_polyphony=1
+off_time=0.1
+
+<control> default_path=SAMPLES/Guiro/Hit/
+<group>
+key=$KEY_GRO_HIT
+group=21
+group_label=Hit
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=GURO_HTFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=GURO_HTFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=GURO_HTFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Guiro/Scrape/
+<group>
+key=$KEY_GRO_SCR
+group=22
+off_by=21
+group_label=Scrape
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=GURO_SCFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=GURO_SCFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=GURO_SCFL_HT_015_03.wav
+
+
+//=============================================
+<master>
+master_label=Tambourine
+amplitude_oncc$VOL_TMB=200
+pan_oncc$PAN_TMB=100
+pan_curvecc$PAN_TMB=1
+tune_oncc$TUN_TMB=1200
+tune_curvecc$TUN_TMB=1
+note_polyphony=1
+off_time=1
+group=23
+
+<control> default_path=SAMPLES/Tambourine/Hit/
+<group>
+key=$KEY_TMB_HIT
+group_label=Hit
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=TAMB_HTFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=TAMB_HTFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=TAMB_HTFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Tambourine/Shake/
+<group>
+key=$KEY_TMB_SHK
+group_label=Shake
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=TAMB_SHFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=TAMB_SHFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=TAMB_SHFL_HT_015_03.wav
+
+
+//=============================================
+<master>
+master_label=Shaker
+amplitude_oncc$VOL_SHK=200
+pan_oncc$PAN_SHK=100
+pan_curvecc$PAN_SHK=1
+tune_oncc$TUN_SHK=1200
+tune_curvecc$TUN_SHK=1
+note_polyphony=1
+off_time=1
+group=24
+
+<control> default_path=SAMPLES/Shaker/Hard/
+<group>
+key=$KEY_SHK_HRD
+group_label=Hard
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=SHKR_HDFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=SHKR_HDFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=SHKR_HDFL_HT_015_03.wav
+
+<control> default_path=SAMPLES/Shaker/Soft/
+<group>
+key=$KEY_SHK_SFT
+group_label=Soft
+<region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=SHKR_SFFL_HT_015_01.wav
+<region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=SHKR_SFFL_HT_015_02.wav
+<region> region_label=V3 lovel=$VEL3LO hivel=$VEL3HI sample=SHKR_SFFL_HT_015_03.wav
