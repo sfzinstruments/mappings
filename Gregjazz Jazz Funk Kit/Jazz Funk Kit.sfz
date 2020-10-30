@@ -9,7 +9,7 @@
 // --------------------------------------
 
 //keymap
-#define $SN_OFF 33
+#define $SN_OF 33
 #define $SN_ON 34
 #define $KEY_KICK_A 35
 #define $KEY_KICK_B 36
@@ -33,13 +33,15 @@
 #define $KEY_RD1_CR 59
 #define $KEY_RD2_BW 60
 #define $KEY_RD2_CR 61
-#define $CHK_RD1 84
-#define $CHK_RD2 85
+#define $CHK_RD1 64
+#define $CHK_RD2 65
 //----------------------------------------------
 
 <control>
 default_path=samples/
 
+label_cc7=Master Vol
+label_cc10=Master Pan
 label_cc20=Kick
 label_cc21=Snare
 label_cc22=RackTom
@@ -55,6 +57,8 @@ label_cc31=Pan Hihat
 label_cc32=Pan Ride1
 label_cc33=Pan Ride2
 label_cc99=Veltrack
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc20=0.5
 set_hdcc21=0.5
 set_hdcc22=0.5
@@ -74,10 +78,13 @@ set_hdcc99=0.99
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 <global>
 loop_mode=one_shot
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 amp_veltrack=0
 amp_veltrack_oncc99=100
-off_mode=time
-sw_lokey=$SN_OFF
+sw_lokey=$SN_OF
 sw_hikey=$SN_ON
 sw_default=$SN_ON
 
@@ -87,12 +94,10 @@ master_label=Snares switch
 master_volume=-20
 amp_veltrack_oncc99=0
 polyphony=1
-off_time=0.01
-group=0
 
 <group>
 group_label=Off
-key=$SN_OFF
+key=$SN_OF
 <region> region_label=V1 sample=turn off snares 1.wav lovel=1 hivel=127
 
 <group>
@@ -108,14 +113,14 @@ master_label=20x14 Gretsch Kick
 amplitude_oncc20=200
 pan_oncc27=100
 pan_curvecc27=1
-polyphony=2
+note_polyphony=2
 off_time=1.6
 group=1
 
 <group>
 group_label=Center
 key=$KEY_KICK_A
-sw_last=$SN_OFF
+sw_last=$SN_OF
 <region> region_label=V1 sample=kick - snares off - 1.wav lovel=1 hivel=24
 <region> region_label=V2 sample=kick - snares off - 2.wav lovel=25 hivel=50
 <region> region_label=V3 sample=kick - snares off - 3.wav lovel=51 hivel=75
@@ -139,14 +144,14 @@ master_label=15x15 Ludwig Kick
 amplitude_oncc20=200
 pan_oncc27=100
 pan_curvecc27=1
-polyphony=2
+note_polyphony=2
 off_time=1.5
 group=2
 
 <group>
 group_label=Center
 key=$KEY_KICK_B
-sw_last=$SN_OFF
+sw_last=$SN_OF
 <region> region_label=V1 sample=bop kick - snares off - 1.wav lovel=1 hivel=20
 <region> region_label=V2 sample=bop kick - snares off - 2.wav lovel=21 hivel=41
 <region> region_label=V3 sample=bop kick - snares off - 3.wav lovel=42 hivel=62
@@ -175,14 +180,14 @@ master_label=14x5.5 Ludwig Snare
 amplitude_oncc21=200
 pan_oncc28=100
 pan_curvecc28=1
-polyphony=2
+note_polyphony=2
 off_time=1.5
 group=3
 
 <group>
 group_label=Cross-stick
 key=$KEY_SN_CS
-sw_last=$SN_OFF
+sw_last=$SN_OF
 group_volume=-5
 <region> region_label=V1 sample=xstick - snares off - 1.wav lovel=1 hivel=17
 <region> region_label=V2 sample=xstick - snares off - 2.wav lovel=18 hivel=35
@@ -209,7 +214,7 @@ group_volume=-5
 <group>
 group_label=Center
 key=$KEY_SN_CT
-sw_last=$SN_OFF
+sw_last=$SN_OF
 <region> region_label=V1 sample=snare - snares off - 1.wav lovel=1 hivel=20
 <region> region_label=V2 sample=snare - snares off - 2.wav lovel=21 hivel=41
 <region> region_label=V3 sample=snare - snares off - 3.wav lovel=42 hivel=62
@@ -241,7 +246,7 @@ sw_last=$SN_ON
 <group>
 group_label=Stick shot
 key=$KEY_SN_SS
-sw_last=$SN_OFF
+sw_last=$SN_OF
 <region> region_label=V1 sample=stickshot - snares off - 1.wav lovel=1 hivel=20
 <region> region_label=V2 sample=stickshot - snares off - 2.wav lovel=21 hivel=41
 <region> region_label=V3 sample=stickshot - snares off - 3.wav lovel=42 hivel=62
@@ -265,7 +270,7 @@ sw_last=$SN_ON
 <group>
 group_label=Rimshot
 key=$KEY_SN_RS
-sw_last=$SN_OFF
+sw_last=$SN_OF
 <region> region_label=V1 sample=rimshot - snares off - 1.wav lovel=1 hivel=20
 <region> region_label=V2 sample=rimshot - snares off - 2.wav lovel=21 hivel=41
 <region> region_label=V3 sample=rimshot - snares off - 3.wav lovel=42 hivel=62
@@ -294,14 +299,14 @@ master_volume=-5
 amplitude_oncc22=200
 pan_oncc29=100
 pan_curvecc29=1
-polyphony=2
+note_polyphony=2
 off_time=2
 group=4
 
 <group>
 group_label=Center
 key=$KEY_RT
-sw_last=$SN_OFF
+sw_last=$SN_OF
 <region> region_label=V1 sample=rack tom - snares off - 1.wav lovel=1 hivel=15
 <region> region_label=V2 sample=rack tom - snares off - 2.wav lovel=16 hivel=31
 <region> region_label=V3 sample=rack tom - snares off - 3.wav lovel=32 hivel=47
@@ -332,14 +337,14 @@ master_volume=-5
 amplitude_oncc23=200
 pan_oncc30=100
 pan_curvecc30=1
-polyphony=2
+note_polyphony=2
 off_time=3
 group=5
 
 <group>
 group_label=Center
 key=$KEY_FT
-sw_last=$SN_OFF
+sw_last=$SN_OF
 sw_label=Snares off
 <region> region_label=V1 sample=floor tom - snares off - 1.wav lovel=1 hivel=17
 <region> region_label=V2 sample=floor tom - snares off - 2.wav lovel=18 hivel=35
@@ -370,44 +375,8 @@ master_volume=-12
 amplitude_oncc24=200
 pan_oncc31=100
 pan_curvecc31=1
-polyphony=3
+note_polyphony=3
 off_time=0.3
-
-//----------------------------------------------
-<group>
-group_label=choke
-sample=*silence
-<region> key=$KEY_HH_PD group=12
-<region> key=$KEY_HH_PD group=13
-<region> key=$KEY_HH_PD group=14
-<region> key=$KEY_HH_PD group=15
-<region> key=$KEY_HH_PD group=16
-<region> key=$KEY_HH_CT group=12
-<region> key=$KEY_HH_CT group=13
-<region> key=$KEY_HH_CT group=14
-<region> key=$KEY_HH_CT group=15
-<region> key=$KEY_HH_CT group=16
-<region> key=$KEY_HH_CS group=12
-<region> key=$KEY_HH_CS group=13
-<region> key=$KEY_HH_CS group=14
-<region> key=$KEY_HH_CS group=15
-<region> key=$KEY_HH_CS group=16
-<region> key=$KEY_HH_O1 group=13
-<region> key=$KEY_HH_O1 group=14
-<region> key=$KEY_HH_O1 group=15
-<region> key=$KEY_HH_O1 group=16
-<region> key=$KEY_HH_O2 group=14
-<region> key=$KEY_HH_O2 group=15
-<region> key=$KEY_HH_O2 group=16
-<region> key=$KEY_HH_O3 group=15
-<region> key=$KEY_HH_O3 group=16
-<region> key=$KEY_HH_O4 group=16
-<region> key=$KEY_HH_PO group=12
-<region> key=$KEY_HH_PO group=13
-<region> key=$KEY_HH_PO group=14
-<region> key=$KEY_HH_PO group=15
-<region> key=$KEY_HH_PO group=16
-//----------------------------------------------
 
 <group>
 group_label=Pedal
@@ -518,6 +487,41 @@ trigger=release_key
 <region> region_label=V2 sample=hihat - open - 2.wav lovel=42 hivel=84
 <region> region_label=V3 sample=hihat - open - 3.wav lovel=85 hivel=127
 
+//----------------------------------------------
+<group>
+end=-1
+sample=*silence
+<region> key=$KEY_HH_PD group=12
+<region> key=$KEY_HH_PD group=13
+<region> key=$KEY_HH_PD group=14
+<region> key=$KEY_HH_PD group=15
+<region> key=$KEY_HH_PD group=16
+<region> key=$KEY_HH_CT group=12
+<region> key=$KEY_HH_CT group=13
+<region> key=$KEY_HH_CT group=14
+<region> key=$KEY_HH_CT group=15
+<region> key=$KEY_HH_CT group=16
+<region> key=$KEY_HH_CS group=12
+<region> key=$KEY_HH_CS group=13
+<region> key=$KEY_HH_CS group=14
+<region> key=$KEY_HH_CS group=15
+<region> key=$KEY_HH_CS group=16
+<region> key=$KEY_HH_O1 group=13
+<region> key=$KEY_HH_O1 group=14
+<region> key=$KEY_HH_O1 group=15
+<region> key=$KEY_HH_O1 group=16
+<region> key=$KEY_HH_O2 group=14
+<region> key=$KEY_HH_O2 group=15
+<region> key=$KEY_HH_O2 group=16
+<region> key=$KEY_HH_O3 group=15
+<region> key=$KEY_HH_O3 group=16
+<region> key=$KEY_HH_O4 group=16
+<region> key=$KEY_HH_PO group=12
+<region> key=$KEY_HH_PO group=13
+<region> key=$KEY_HH_PO group=14
+<region> key=$KEY_HH_PO group=15
+<region> key=$KEY_HH_PO group=16
+
 //================================================================
 <master>
 master_label=22'' Istanbul Agop Jazz Ride
@@ -525,7 +529,7 @@ master_volume=-11
 amplitude_oncc25=200
 pan_oncc32=100
 pan_curvecc32=1
-polyphony=4
+note_polyphony=4
 off_time=1.7
 
 <group>
@@ -561,8 +565,9 @@ off_by=20
 
 <group>
 master_label=Ride 1
-group_label=choke
 sample=*silence
+ampeg_sustain=0
+group_label=choke
 <region> key=$CHK_RD1 group=20
 
 //================================================================
@@ -572,7 +577,7 @@ master_volume=-11
 amplitude_oncc26=200
 pan_oncc33=100
 pan_curvecc33=1
-polyphony=4
+note_polyphony=4
 off_time=1.7
 
 <group>
@@ -598,6 +603,7 @@ off_by=23
 
 <group>
 master_label=Ride 2
-group_label=choke
 sample=*silence
+ampeg_sustain=0
+group_label=choke
 <region> key=$CHK_RD2 group=23
