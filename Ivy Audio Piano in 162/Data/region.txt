@@ -1,0 +1,90 @@
+group_label=$DYN
+
+<region> #define $NUM 01 #include "Data/sample.txt"
+<region> #define $NUM 02 #include "Data/sample.txt"
+<region> #define $NUM 03 #include "Data/sample.txt"
+<region> #define $NUM 04 #include "Data/sample.txt"
+<region> #define $NUM 05 #include "Data/sample.txt"
+<region> #define $NUM 06 #include "Data/sample.txt"
+<region> #define $NUM 07 #include "Data/sample.txt"
+<region> #define $NUM 08 #include "Data/sample.txt"
+<region> #define $NUM 09 #include "Data/sample.txt"
+<region> #define $NUM 10 #include "Data/sample.txt"
+<region> #define $NUM 11 #include "Data/sample.txt"
+<region> #define $NUM 12 #include "Data/sample.txt"
+<region> #define $NUM 13 #include "Data/sample.txt"
+<region> #define $NUM 14 #include "Data/sample.txt"
+<region> #define $NUM 15 #include "Data/sample.txt"
+<region> #define $NUM 16 #include "Data/sample.txt"
+<region> #define $NUM 17 #include "Data/sample.txt"
+<region> #define $NUM 18 #include "Data/sample.txt"
+<region> #define $NUM 19 #include "Data/sample.txt"
+<region> #define $NUM 20 #include "Data/sample.txt"
+<region> #define $NUM 21 #include "Data/sample.txt"
+<region> #define $NUM 22 #include "Data/sample.txt"
+<region> #define $NUM 23 #include "Data/sample.txt"
+<region> #define $NUM 24 #include "Data/sample.txt"
+<region> #define $NUM 25 #include "Data/sample.txt"
+<region> #define $NUM 26 #include "Data/sample.txt"
+<region> #define $NUM 27 #include "Data/sample.txt"
+<region> #define $NUM 28 #include "Data/sample.txt"
+<region> #define $NUM 29 #include "Data/sample.txt"
+<region> #define $NUM 30 #include "Data/sample.txt"
+<region> #define $NUM 31 #include "Data/sample.txt"
+<region> #define $NUM 32 #include "Data/sample.txt"
+<region> #define $NUM 33 #include "Data/sample.txt"
+<region> #define $NUM 34 #include "Data/sample.txt"
+<region> #define $NUM 35 #include "Data/sample.txt"
+<region> #define $NUM 36 #include "Data/sample.txt"
+<region> #define $NUM 37 #include "Data/sample.txt"
+<region> #define $NUM 38 #include "Data/sample.txt"
+<region> #define $NUM 39 #include "Data/sample.txt"
+<region> #define $NUM 40 #include "Data/sample.txt"
+<region> #define $NUM 41 #include "Data/sample.txt"
+<region> #define $NUM 42 #include "Data/sample.txt"
+<region> #define $NUM 43 #include "Data/sample.txt"
+<region> #define $NUM 44 #include "Data/sample.txt"
+<region> #define $NUM 45 #include "Data/sample.txt"
+<region> #define $NUM 46 #include "Data/sample.txt"
+<region> #define $NUM 47 #include "Data/sample.txt"
+<region> #define $NUM 48 #include "Data/sample.txt"
+<region> #define $NUM 49 #include "Data/sample.txt"
+<region> #define $NUM 50 #include "Data/sample.txt"
+<region> #define $NUM 51 #include "Data/sample.txt"
+<region> #define $NUM 52 #include "Data/sample.txt"
+<region> #define $NUM 53 #include "Data/sample.txt"
+<region> #define $NUM 54 #include "Data/sample.txt"
+<region> #define $NUM 55 #include "Data/sample.txt"
+<region> #define $NUM 56 #include "Data/sample.txt"
+<region> #define $NUM 57 #include "Data/sample.txt"
+<region> #define $NUM 58 #include "Data/sample.txt"
+<region> #define $NUM 59 #include "Data/sample.txt"
+<region> #define $NUM 60 #include "Data/sample.txt"
+<region> #define $NUM 61 #include "Data/sample.txt"
+<region> #define $NUM 62 #include "Data/sample.txt"
+<region> #define $NUM 63 #include "Data/sample.txt"
+<region> #define $NUM 64 #include "Data/sample.txt"
+<region> #define $NUM 65 #include "Data/sample.txt"
+<region> #define $NUM 66 #include "Data/sample.txt"
+<region> #define $NUM 67 #include "Data/sample.txt"
+<region> #define $NUM 68 #include "Data/sample.txt"
+<region> #define $NUM 69 #include "Data/sample.txt"
+<region> #define $NUM 70 #include "Data/sample.txt"
+<region> #define $NUM 71 #include "Data/sample.txt"
+<region> #define $NUM 72 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 73 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 74 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 75 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 76 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 77 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 78 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 79 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 80 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 81 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 82 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 83 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 84 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 85 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 86 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 87 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $NUM 88 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
