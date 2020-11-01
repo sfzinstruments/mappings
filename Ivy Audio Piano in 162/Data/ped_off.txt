@@ -1,0 +1,6 @@
+#define $PED PedalOff
+
+#define $SUS_LO 0
+#define $SUS_HI 63
+
+#include "Data/master.txt"

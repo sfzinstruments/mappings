@@ -1,0 +1,50 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Piano in 162
+// © 2015 by Ivy Audio
+// --------------------------------------
+// reconstructed by kinwie
+// --------------------------------------
+
+
+//midi cc
+#define $SUS_PED 64
+#define $DAMPER 67
+#define $RELEASE 72
+#define $VELTRACK 99
+
+//file extension
+#define $EXT flac
+
+
+/////////////////////////////////////////////////////
+<control>
+default_path=Piano in 162 Samples/
+
+label_cc7=Vol
+label_cc10=Pan
+label_cc$SUS_PED=SusPed
+label_cc$DAMPER=Damper
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$RELEASE=0.5
+set_hdcc$VELTRACK=0.755
+note_offset=20
+
+
+//****************************************************
+<global>
+#include "Data/global.txt"
+#include "Data/ambient.txt"
+#include "Data/ped_off.txt"
+#include "Data/ped_on.txt"
+
+//===============
+<curve>
+curve_index=7
+v000=1
+v001=0
+v127=0

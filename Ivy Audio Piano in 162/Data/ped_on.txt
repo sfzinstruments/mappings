@@ -1,0 +1,6 @@
+#define $PED PedalOn
+
+#define $SUS_LO 64
+#define $SUS_HI 127
+
+#include "Data/master.txt"

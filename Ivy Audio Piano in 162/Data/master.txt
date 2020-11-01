@@ -1,0 +1,9 @@
+<master>
+hirand=0.5
+#define $RR 1
+#include "Data/group.txt"
+
+<master>
+lorand=0.5
+#define $RR 2
+#include "Data/group.txt"

@@ -1,0 +1,40 @@
+master_label=$PED
+locc$SUS_PED=$SUS_LO
+hicc$SUS_PED=$SUS_HI
+ampeg_attack=0.0013
+ampeg_release_curvecc$DAMPER=7
+
+<group>
+lovel=1
+hivel=33
+group_volume=10
+#define $DYN Pianissimo
+#include "Data/region.txt"
+
+<group>
+lovel=34
+hivel=64
+group_volume=7
+#define $DYN Piano
+#include "Data/region.txt"
+
+<group>
+lovel=65
+hivel=80
+group_volume=5
+#define $DYN MezzoPiano
+#include "Data/region.txt"
+
+<group>
+lovel=81
+hivel=101
+group_volume=5
+#define $DYN MezzoForte
+#include "Data/region.txt"
+
+<group>
+lovel=102
+hivel=127
+group_volume=-8
+#define $DYN Forte
+#include "Data/region.txt"
