@@ -1,0 +1,165 @@
+//--------------------------------------
+// The Trumpet
+// by Sasje
+//--------------------------------------
+// SFZ format for ARIA Engine
+// reprogrammed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $ATTACK 80
+#define $HOLD 81
+#define $DECAY 82
+#define $SUSTAIN 83
+#define $RELEASE 84
+#define $VIB_RATE 76
+#define $VIBRATO 1
+#define $LEGATO 64
+#define $EXP 11
+#define $VELTRACK 99
+
+
+/////////////////////////////////////////////////////////////////////
+<control>
+default_path=The Trumpet Samples/
+
+label_cc7=Vol
+label_cc10=Pan
+label_cc$ATTACK=A
+label_cc$HOLD=H
+label_cc$DECAY=D
+label_cc$SUSTAIN=S
+label_cc$RELEASE=R
+label_cc$VIB_RATE=Vib.Rate
+label_cc$VIBRATO=Vibrato
+label_cc$LEGATO=Legato
+label_cc$EXP=Exp
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$SUSTAIN=1
+set_hdcc$RELEASE=0.15
+set_hdcc$VIB_RATE=0.5
+set_hdcc$EXP=1
+set_hdcc$VELTRACK=0.99
+
+
+//***********************************************************************
+<global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+ampeg_hold_oncc$HOLD=2
+ampeg_decay_oncc$DECAY=20
+ampeg_sustain=0
+ampeg_sustain_oncc$SUSTAIN=100
+ampeg_release_oncc$RELEASE=2
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+amplitude_oncc$EXP=100
+amplitude_curvecc$EXP=4
+pitchlfo_freq_oncc$VIB_RATE=10
+pitchlfo_depth_oncc$VIBRATO=50
+sustain_sw=off
+off_time=0.01
+off_shape=0
+
+
+//===============================================
+<group>
+group_label=attack
+trigger=attack
+group=1
+off_by=2
+ampeg_attack_oncc$ATTACK=2
+<region> key=52 offset=727 region_label=* sample=E3.wav tune=-10
+<region> key=53 offset=053 region_label=* sample=F3.wav tune=2
+<region> key=54 offset=252 region_label=* sample=F3#.wav tune=23
+<region> key=55 offset=578 region_label=* sample=G3.wav tune=5
+<region> key=56 offset=607 region_label=* sample=G3#.wav tune=20
+<region> key=57 offset=625 region_label=* sample=A3.wav tune=15
+<region> key=58 offset=250 region_label=* sample=A3#.wav tune=22
+<region> key=59 offset=595 region_label=* sample=B3.wav tune=8
+<region> key=60 offset=519 region_label=* sample=C4.wav tune=6
+<region> key=61 offset=874 region_label=* sample=C4#.wav tune=14
+<region> key=62 offset=104 region_label=* sample=D4.wav tune=2
+<region> key=63 offset=262 region_label=* sample=D4#.wav tune=17
+<region> key=64 offset=378 region_label=* sample=E4.wav tune=9
+<region> key=65 offset=160 region_label=* sample=F4.wav tune=17
+<region> key=66 offset=554 region_label=* sample=F4#.wav tune=10
+<region> key=67 offset=000 region_label=* sample=G4.wav tune=12
+<region> key=68 offset=474 region_label=* sample=G4#.wav tune=11
+<region> key=69 offset=226 region_label=* sample=A4.wav tune=12
+<region> key=70 offset=056 region_label=* sample=A4#.wav tune=9
+<region> key=71 offset=624 region_label=* sample=B4.wav tune=3
+<region> key=72 offset=209 region_label=* sample=C5.wav tune=4
+<region> key=73 offset=291 region_label=* sample=C5#.wav tune=6
+<region> key=74 offset=553 region_label=* sample=D5.wav tune=-7
+<region> key=75 offset=277 region_label=* sample=D5#.wav tune=-19
+<region> key=76 offset=122 region_label=* sample=E5.wav tune=-17
+<region> key=77 offset=560 region_label=* sample=F5.wav tune=-11
+<region> key=78 offset=144 region_label=* sample=F5#.wav tune=-9
+<region> key=79 offset=746 region_label=* sample=G5.wav tune=-12
+<region> key=80 offset=610 region_label=* sample=G5#.wav tune=4
+<region> key=81 offset=399 region_label=* sample=A5.wav tune=13
+<region> key=82 offset=663 region_label=* sample=A5#.wav tune=7
+<region> key=83 offset=184 region_label=* sample=B5.wav tune=2
+<region> key=84 offset=210 region_label=* sample=C6.wav tune=7
+<region> key=85 offset=575 region_label=* sample=C6#.wav tune=22
+<region> key=86 offset=000 region_label=* sample=D6.wav tune=15
+<region> key=87 offset=409 region_label=* sample=D6#.wav tune=-12
+
+<group>
+group_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset=10000
+offset_random=5000
+ampeg_attack=0.02
+locc$LEGATO=1
+<region> key=52 region_label=* sample=E3.wav tune=-10
+<region> key=53 region_label=* sample=F3.wav tune=2
+<region> key=54 region_label=* sample=F3#.wav tune=23
+<region> key=55 region_label=* sample=G3.wav tune=5
+<region> key=56 region_label=* sample=G3#.wav tune=20
+<region> key=57 region_label=* sample=A3.wav tune=15
+<region> key=58 region_label=* sample=A3#.wav tune=22
+<region> key=59 region_label=* sample=B3.wav tune=8
+<region> key=60 region_label=* sample=C4.wav tune=6
+<region> key=61 region_label=* sample=C4#.wav tune=14
+<region> key=62 region_label=* sample=D4.wav tune=2
+<region> key=63 region_label=* sample=D4#.wav tune=17
+<region> key=64 region_label=* sample=E4.wav tune=9
+<region> key=65 region_label=* sample=F4.wav tune=17
+<region> key=66 region_label=* sample=F4#.wav tune=10
+<region> key=67 region_label=* sample=G4.wav tune=12
+<region> key=68 region_label=* sample=G4#.wav tune=11
+<region> key=69 region_label=* sample=A4.wav tune=12
+<region> key=70 region_label=* sample=A4#.wav tune=9
+<region> key=71 region_label=* sample=B4.wav tune=3
+<region> key=72 region_label=* sample=C5.wav tune=4
+<region> key=73 region_label=* sample=C5#.wav tune=6
+<region> key=74 region_label=* sample=D5.wav tune=-7
+<region> key=75 region_label=* sample=D5#.wav tune=-19
+<region> key=76 region_label=* sample=E5.wav tune=-17
+<region> key=77 region_label=* sample=F5.wav tune=-11
+<region> key=78 region_label=* sample=F5#.wav tune=-9
+<region> key=79 region_label=* sample=G5.wav tune=-12
+<region> key=80 region_label=* sample=G5#.wav tune=4
+<region> key=81 region_label=* sample=A5.wav tune=13
+<region> key=82 region_label=* sample=A5#.wav tune=7
+<region> key=83 region_label=* sample=B5.wav tune=2
+<region> key=84 region_label=* sample=C6.wav tune=7
+<region> key=85 region_label=* sample=C6#.wav tune=22
+<region> key=86 region_label=* sample=D6.wav tune=15
+<region> key=87 region_label=* sample=D6#.wav tune=-12
+
+<group>
+group_label=breath noise
+seq_length=2
+key=48
+<region> seq_position=1 region_label=1 sample=breath_noise1.wav
+<region> seq_position=2 region_label=2 sample=breath_noise2.wav
