@@ -1,0 +1,33 @@
+//----------------------------------
+// TMKD - KICK SAMPLES
+// The Metal Kick Drum
+// SFZ mapping by Kinwie
+//----------------------------------
+
+<control>
+default_path=TMKD_Kick5_Sorrow/WAV/
+
+label_cc7=Vol
+label_cc10=Pan
+set_cc7=100
+set_hdcc10=0.5
+
+<group>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+loop_mode=one_shot
+amp_veltrack=99
+note_polyphony=2
+off_time=2
+seq_length=6
+lovel=1
+key=36
+
+<region> region_label=01 sample=TMKD05 - sorrow_kick_01.wav seq_position=1
+<region> region_label=02 sample=TMKD05 - sorrow_kick_02.wav seq_position=2
+<region> region_label=03 sample=TMKD05 - sorrow_kick_03.wav seq_position=3
+<region> region_label=04 sample=TMKD05 - sorrow_kick_04.wav seq_position=4
+<region> region_label=05 sample=TMKD05 - sorrow_kick_05.wav seq_position=5
+<region> region_label=06 sample=TMKD05 - sorrow_kick_06.wav seq_position=6

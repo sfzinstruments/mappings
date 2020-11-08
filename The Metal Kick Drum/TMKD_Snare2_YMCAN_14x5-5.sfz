@@ -1,0 +1,138 @@
+//----------------------------------
+// TMKD - SNARES SAMPLES
+// The Metal Kick Drum
+// SFZ mapping by Kinwie
+//----------------------------------
+
+<control>
+label_cc7=Vol
+label_cc10=Pan
+set_cc7=100
+set_hdcc10=0.5
+
+<global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+loop_mode=one_shot
+note_polyphony=2
+off_time=2
+
+//===========================================================================
+<control>
+default_path=TMKD_Snare2_YMCAN_14x5-5/WAV/YMCAN14x5.5_DYNAMICS/
+
+<master>
+group_label=dyn
+seq_length=6
+key=38
+
+<group> lovel=1 hivel=15 amp_velcurve_15=1
+<region> region_label=L1_01 sample=TMKD_SnareYMCAN_dyn_L1_01.wav seq_position=1
+<region> region_label=L1_02 sample=TMKD_SnareYMCAN_dyn_L1_02.wav seq_position=2
+<region> region_label=L1_03 sample=TMKD_SnareYMCAN_dyn_L1_03.wav seq_position=3
+<region> region_label=L1_04 sample=TMKD_SnareYMCAN_dyn_L1_04.wav seq_position=4
+<region> region_label=L1_05 sample=TMKD_SnareYMCAN_dyn_L1_05.wav seq_position=5
+<region> region_label=L1_06 sample=TMKD_SnareYMCAN_dyn_L1_06.wav seq_position=6
+
+<group> lovel=16 hivel=31 amp_velcurve_31=1
+<region> region_label=L2_01 sample=TMKD_SnareYMCAN_dyn_L2_01.wav seq_position=1
+<region> region_label=L2_02 sample=TMKD_SnareYMCAN_dyn_L2_02.wav seq_position=2
+<region> region_label=L2_03 sample=TMKD_SnareYMCAN_dyn_L2_03.wav seq_position=3
+<region> region_label=L2_04 sample=TMKD_SnareYMCAN_dyn_L2_04.wav seq_position=4
+<region> region_label=L2_05 sample=TMKD_SnareYMCAN_dyn_L2_05.wav seq_position=5
+<region> region_label=L2_06 sample=TMKD_SnareYMCAN_dyn_L2_06.wav seq_position=6
+
+<group> lovel=32 hivel=47 amp_velcurve_47=1
+<region> region_label=L3_01 sample=TMKD_SnareYMCAN_dyn_L3_01.wav seq_position=1
+<region> region_label=L3_02 sample=TMKD_SnareYMCAN_dyn_L3_02.wav seq_position=2
+<region> region_label=L3_03 sample=TMKD_SnareYMCAN_dyn_L3_03.wav seq_position=3
+<region> region_label=L3_04 sample=TMKD_SnareYMCAN_dyn_L3_04.wav seq_position=4
+<region> region_label=L3_05 sample=TMKD_SnareYMCAN_dyn_L3_05.wav seq_position=5
+<region> region_label=L3_06 sample=TMKD_SnareYMCAN_dyn_L3_06.wav seq_position=6
+
+<group> lovel=48 hivel=63 amp_velcurve_63=1
+<region> region_label=L4_01 sample=TMKD_SnareYMCAN_dyn_L4_01.wav seq_position=1
+<region> region_label=L4_02 sample=TMKD_SnareYMCAN_dyn_L4_02.wav seq_position=2
+<region> region_label=L4_03 sample=TMKD_SnareYMCAN_dyn_L4_03.wav seq_position=3
+<region> region_label=L4_04 sample=TMKD_SnareYMCAN_dyn_L4_04.wav seq_position=4
+<region> region_label=L4_05 sample=TMKD_SnareYMCAN_dyn_L4_05.wav seq_position=5
+<region> region_label=L4_06 sample=TMKD_SnareYMCAN_dyn_L4_06.wav seq_position=6
+
+<group> lovel=64 hivel=79 amp_velcurve_79=1
+<region> region_label=L5_01 sample=TMKD_SnareYMCAN_dyn_L5_01.wav seq_position=1
+<region> region_label=L5_02 sample=TMKD_SnareYMCAN_dyn_L5_02.wav seq_position=2
+<region> region_label=L5_03 sample=TMKD_SnareYMCAN_dyn_L5_03.wav seq_position=3
+<region> region_label=L5_04 sample=TMKD_SnareYMCAN_dyn_L5_04.wav seq_position=4
+<region> region_label=L5_05 sample=TMKD_SnareYMCAN_dyn_L5_05.wav seq_position=5
+<region> region_label=L5_06 sample=TMKD_SnareYMCAN_dyn_L5_06.wav seq_position=6
+
+<group> lovel=80 hivel=95 amp_velcurve_95=1
+<region> region_label=L6_01 sample=TMKD_SnareYMCAN_dyn_L6_01.wav seq_position=1
+<region> region_label=L6_02 sample=TMKD_SnareYMCAN_dyn_L6_02.wav seq_position=2
+<region> region_label=L6_03 sample=TMKD_SnareYMCAN_dyn_L6_03.wav seq_position=3
+<region> region_label=L6_04 sample=TMKD_SnareYMCAN_dyn_L6_04.wav seq_position=4
+<region> region_label=L6_05 sample=TMKD_SnareYMCAN_dyn_L6_05.wav seq_position=5
+<region> region_label=L6_06 sample=TMKD_SnareYMCAN_dyn_L6_06.wav seq_position=6
+
+<group> lovel=96 hivel=111 amp_velcurve_111=1
+<region> region_label=L7_01 sample=TMKD_SnareYMCAN_dyn_L7_01.wav seq_position=1
+<region> region_label=L7_02 sample=TMKD_SnareYMCAN_dyn_L7_02.wav seq_position=2
+<region> region_label=L7_03 sample=TMKD_SnareYMCAN_dyn_L7_03.wav seq_position=3
+<region> region_label=L7_04 sample=TMKD_SnareYMCAN_dyn_L7_04.wav seq_position=4
+<region> region_label=L7_05 sample=TMKD_SnareYMCAN_dyn_L7_05.wav seq_position=5
+<region> region_label=L7_06 sample=TMKD_SnareYMCAN_dyn_L7_06.wav seq_position=6
+
+<group> lovel=112 hivel=127 amp_velcurve_127=1
+<region> region_label=L8_01 sample=TMKD_SnareYMCAN_dyn_L8_01.wav seq_position=1
+<region> region_label=L8_02 sample=TMKD_SnareYMCAN_dyn_L8_02.wav seq_position=2
+<region> region_label=L8_03 sample=TMKD_SnareYMCAN_dyn_L8_03.wav seq_position=3
+<region> region_label=L8_04 sample=TMKD_SnareYMCAN_dyn_L8_04.wav seq_position=4
+<region> region_label=L8_05 sample=TMKD_SnareYMCAN_dyn_L8_05.wav seq_position=5
+<region> region_label=L8_06 sample=TMKD_SnareYMCAN_dyn_L8_06.wav seq_position=6
+
+//===========================================================================
+<control>
+default_path=TMKD_Snare2_YMCAN_14x5-5/WAV/YMCAN14x5.5_RIMSHOT/
+
+<master>
+group_label=rimshot
+amp_veltrack=99
+seq_length=6
+lovel=1
+key=40
+
+<region> region_label=01 sample=TMKD_SnareYMCAN_rimshot_01.wav seq_position=1
+<region> region_label=02 sample=TMKD_SnareYMCAN_rimshot_02.wav seq_position=2
+<region> region_label=03 sample=TMKD_SnareYMCAN_rimshot_03.wav seq_position=3
+<region> region_label=04 sample=TMKD_SnareYMCAN_rimshot_04.wav seq_position=4
+<region> region_label=05 sample=TMKD_SnareYMCAN_rimshot_05.wav seq_position=5
+<region> region_label=06 sample=TMKD_SnareYMCAN_rimshot_06.wav seq_position=6
+
+//===========================================================================
+<control>
+default_path=TMKD_Snare2_YMCAN_14x5-5/WAV/YMCAN14x5.5_SIDESTICK/
+
+<master>
+group_label=sidestick
+seq_length=4
+key=37
+
+<group> lovel=1 hivel=42 amp_velcurve_42=1
+<region> region_label=L1_01 sample=TMKD_SnareYMCAN_sidestick_L1_01.wav seq_position=1
+<region> region_label=L1_02 sample=TMKD_SnareYMCAN_sidestick_L1_02.wav seq_position=2
+<region> region_label=L1_03 sample=TMKD_SnareYMCAN_sidestick_L1_03.wav seq_position=3
+<region> region_label=L1_04 sample=TMKD_SnareYMCAN_sidestick_L1_04.wav seq_position=4
+
+<group> lovel=43 hivel=84 amp_velcurve_84=1
+<region> region_label=L2_01 sample=TMKD_SnareYMCAN_sidestick_L2_01.wav seq_position=1
+<region> region_label=L2_02 sample=TMKD_SnareYMCAN_sidestick_L2_02.wav seq_position=2
+<region> region_label=L2_03 sample=TMKD_SnareYMCAN_sidestick_L2_03.wav seq_position=3
+<region> region_label=L2_04 sample=TMKD_SnareYMCAN_sidestick_L2_04.wav seq_position=4 offset=143
+
+<group> lovel=85 hivel=127 amp_velcurve_127=1
+<region> region_label=L3_01 sample=TMKD_SnareYMCAN_sidestick_L3_01.wav seq_position=1
+<region> region_label=L3_02 sample=TMKD_SnareYMCAN_sidestick_L3_02.wav seq_position=2
+<region> region_label=L3_03 sample=TMKD_SnareYMCAN_sidestick_L3_03.wav seq_position=3
+<region> region_label=L3_04 sample=TMKD_SnareYMCAN_sidestick_L3_04.wav seq_position=4
