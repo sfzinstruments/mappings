@@ -17,10 +17,13 @@
 <control>
 default_path=David's CP70 Samples/
 
-label_cc$RELEASE=Release ($RELEASE)
-label_cc$STEREO=Stereo ($STEREO)
-label_cc$VELTRACK=Veltrack ($VELTRACK)
-
+label_cc7=Vol
+label_cc10=Pan
+label_cc$RELEASE=Release
+label_cc$STEREO=Stereo
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc$RELEASE=0.14
 set_hdcc$STEREO=0
 set_hdcc$VELTRACK=1
@@ -28,7 +31,10 @@ set_hdcc$VELTRACK=1
 
 //===========================================================================
 <global>
-loop_mode=no_loop
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 global_volume=-12
 ampeg_release_oncc$RELEASE=5
 amp_veltrack=0
