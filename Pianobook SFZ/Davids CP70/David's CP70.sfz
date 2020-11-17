@@ -39,11 +39,14 @@ global_volume=-12
 ampeg_release_oncc$RELEASE=5
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
+note_polyphony=1
+off_time=0.5
 
 
 //--------------------------------------------------------------------------------------------------------------------
 <master>
 hicc$STEREO=0
+group=1
 
 <group> group_label=01 pitch_keycenter=29 lokey=28 hikey=30
 <region> lovel=001 hivel=025 volume=37.6 region_label=V1 sample=F1 01.wav
@@ -268,6 +271,7 @@ hicc$STEREO=0
 locc$STEREO=1
 pan_oncc$STEREO=-100
 master_volume=-3
+group=2
 
 <group> group_label=Stereo pitch_keycenter=29 lokey=28 hikey=31
 <region> lovel=001 hivel=025 volume=37.6 region_label=V1 sample=F1 01.wav
@@ -384,6 +388,7 @@ master_volume=-3
 locc$STEREO=1
 pan_oncc$STEREO=100
 master_volume=-3
+group=3
 
 <group> group_label=Stereo pitch_keycenter=32 lokey=28 hikey=34
 <region> lovel=001 hivel=025 volume=34.3 region_label=V1 sample=Ab1 80.wav offset=1856 ampeg_attack=0.001
