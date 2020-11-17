@@ -10,6 +10,8 @@
 <control>
 default_path=Soft Drums Samples/
 
+label_cc7=Master Vol
+label_cc10=Master Pan
 label_cc20=Kick
 label_cc21=Snare
 label_cc22=Tom1
@@ -35,6 +37,8 @@ label_cc45=Tune Ride
 label_cc46=Tune Crash
 label_cc47=Tune Rattle
 label_cc98=Tightness
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc20=0.5
 set_hdcc21=0.5
 set_hdcc22=0.5
@@ -64,8 +68,11 @@ set_hdcc98=1
 
 //*******************************************
 <global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 loop_mode=one_shot
-off_mode=time
 seq_length=3
 
 
@@ -77,26 +84,26 @@ pan_oncc30=100
 pan_curvecc30=1
 tune_oncc40=1200
 tune_curvecc40=1
-polyphony=2
+note_polyphony=2
 off_time=1.5
 group=1
 
 <group> group_label=Hit key=36
-<region> lovel=001 hivel=025 amp_velcurve_025=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_kick_pp_RR1.wav offset_oncc98=3523
-<region> lovel=001 hivel=025 amp_velcurve_025=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_kick_pp_RR2.wav offset_oncc98=3598
-<region> lovel=001 hivel=025 amp_velcurve_025=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_kick_pp_RR3.wav offset_oncc98=3470
-<region> lovel=026 hivel=050 amp_velcurve_050=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_kick_p_RR1.wav offset_oncc98=3601
-<region> lovel=026 hivel=050 amp_velcurve_050=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_kick_p_RR2.wav offset_oncc98=3637
-<region> lovel=026 hivel=050 amp_velcurve_050=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_kick_p_RR3.wav offset_oncc98=3487
-<region> lovel=051 hivel=076 amp_velcurve_076=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_kick_mp_RR1.wav offset_oncc98=3811
-<region> lovel=051 hivel=076 amp_velcurve_076=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_kick_mp_RR2.wav offset_oncc98=3770
-<region> lovel=051 hivel=076 amp_velcurve_076=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_kick_mp_RR3.wav offset_oncc98=3703
-<region> lovel=077 hivel=101 amp_velcurve_101=1 region_label=V4 RR1 seq_position=1 sample=SoftDrums_NAT_kick_mf_RR1.wav offset_oncc98=3792
-<region> lovel=077 hivel=101 amp_velcurve_101=1 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_kick_mf_RR2.wav offset_oncc98=3707
-<region> lovel=077 hivel=101 amp_velcurve_101=1 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_kick_mf_RR3.wav offset_oncc98=3828
-<region> lovel=102 hivel=127 amp_velcurve_127=1 region_label=V5 RR1 seq_position=1 sample=SoftDrums_NAT_kick_f_RR1.wav offset_oncc98=3839
-<region> lovel=102 hivel=127 amp_velcurve_127=1 region_label=V5 RR2 seq_position=2 sample=SoftDrums_NAT_kick_f_RR2.wav offset_oncc98=3890
-<region> lovel=102 hivel=127 amp_velcurve_127=1 region_label=V5 RR3 seq_position=3 sample=SoftDrums_NAT_kick_f_RR3.wav offset_oncc98=3849
+<region> lovel=001 hivel=025 amp_velcurve_025=1 offset_oncc98=3523 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_kick_pp_RR1.wav
+<region> lovel=001 hivel=025 amp_velcurve_025=1 offset_oncc98=3598 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_kick_pp_RR2.wav
+<region> lovel=001 hivel=025 amp_velcurve_025=1 offset_oncc98=3470 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_kick_pp_RR3.wav
+<region> lovel=026 hivel=050 amp_velcurve_050=1 offset_oncc98=3601 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_kick_p_RR1.wav
+<region> lovel=026 hivel=050 amp_velcurve_050=1 offset_oncc98=3637 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_kick_p_RR2.wav
+<region> lovel=026 hivel=050 amp_velcurve_050=1 offset_oncc98=3487 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_kick_p_RR3.wav
+<region> lovel=051 hivel=076 amp_velcurve_076=1 offset_oncc98=3811 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_kick_mp_RR1.wav
+<region> lovel=051 hivel=076 amp_velcurve_076=1 offset_oncc98=3770 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_kick_mp_RR2.wav
+<region> lovel=051 hivel=076 amp_velcurve_076=1 offset_oncc98=3703 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_kick_mp_RR3.wav
+<region> lovel=077 hivel=101 amp_velcurve_101=1 offset_oncc98=3792 region_label=V4 RR1 seq_position=1 sample=SoftDrums_NAT_kick_mf_RR1.wav
+<region> lovel=077 hivel=101 amp_velcurve_101=1 offset_oncc98=3707 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_kick_mf_RR2.wav
+<region> lovel=077 hivel=101 amp_velcurve_101=1 offset_oncc98=3828 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_kick_mf_RR3.wav
+<region> lovel=102 hivel=127 amp_velcurve_127=1 offset_oncc98=3839 region_label=V5 RR1 seq_position=1 sample=SoftDrums_NAT_kick_f_RR1.wav
+<region> lovel=102 hivel=127 amp_velcurve_127=1 offset_oncc98=3890 region_label=V5 RR2 seq_position=2 sample=SoftDrums_NAT_kick_f_RR2.wav
+<region> lovel=102 hivel=127 amp_velcurve_127=1 offset_oncc98=3849 region_label=V5 RR3 seq_position=3 sample=SoftDrums_NAT_kick_f_RR3.wav
 
 
 //===========================================
@@ -107,40 +114,40 @@ pan_oncc31=100
 pan_curvecc31=1
 tune_oncc41=1200
 tune_curvecc41=1
-polyphony=2
+note_polyphony=2
 off_time=1.2
 group=2
 
 <group> group_label=Hit key=38
-<region> lovel=001 hivel=021 amp_velcurve_021=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_snare_pp_RR1.wav offset_oncc98=3723
-<region> lovel=001 hivel=021 amp_velcurve_021=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_snare_pp_RR2.wav offset_oncc98=3710
-<region> lovel=001 hivel=021 amp_velcurve_021=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_snare_pp_RR3.wav offset_oncc98=3690
-<region> lovel=022 hivel=042 amp_velcurve_042=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_snare_p_RR1.wav offset_oncc98=3729
-<region> lovel=022 hivel=042 amp_velcurve_042=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_snare_p_RR2.wav offset_oncc98=3808
-<region> lovel=022 hivel=042 amp_velcurve_042=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_snare_p_RR3.wav offset_oncc98=3887
-<region> lovel=043 hivel=063 amp_velcurve_063=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_snare_mp_RR1.wav offset_oncc98=3889
-<region> lovel=043 hivel=063 amp_velcurve_063=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_snare_mp_RR2.wav offset_oncc98=3836
-<region> lovel=043 hivel=063 amp_velcurve_063=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_snare_mp_RR3.wav offset_oncc98=3827
-<region> lovel=064 hivel=084 amp_velcurve_084=1 region_label=V4 RR1 seq_position=1 sample=SoftDrums_NAT_snare_mf_RR1.wav offset_oncc98=3969
-<region> lovel=064 hivel=084 amp_velcurve_084=1 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_snare_mf_RR2.wav offset_oncc98=3907
-<region> lovel=064 hivel=084 amp_velcurve_084=1 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_snare_mf_RR3.wav offset_oncc98=3951
-<region> lovel=085 hivel=105 amp_velcurve_105=1 region_label=V5 RR1 seq_position=1 sample=SoftDrums_NAT_snare_f_RR1.wav offset_oncc98=4014
-<region> lovel=085 hivel=105 amp_velcurve_105=1 region_label=V5 RR2 seq_position=2 sample=SoftDrums_NAT_snare_f_RR2.wav offset_oncc98=4046
-<region> lovel=085 hivel=105 amp_velcurve_105=1 region_label=V5 RR3 seq_position=3 sample=SoftDrums_NAT_snare_f_RR3.wav offset_oncc98=4040
-<region> lovel=106 hivel=127 amp_velcurve_127=1 region_label=V6 RR1 seq_position=1 sample=SoftDrums_NAT_snare_ff_RR1.wav offset_oncc98=3980
-<region> lovel=106 hivel=127 amp_velcurve_127=1 region_label=V6 RR2 seq_position=2 sample=SoftDrums_NAT_snare_ff_RR2.wav offset_oncc98=4055
-<region> lovel=106 hivel=127 amp_velcurve_127=1 region_label=V6 RR3 seq_position=3 sample=SoftDrums_NAT_snare_ff_RR3.wav offset_oncc98=3980
+<region> lovel=001 hivel=021 amp_velcurve_021=1 offset_oncc98=3723 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_snare_pp_RR1.wav
+<region> lovel=001 hivel=021 amp_velcurve_021=1 offset_oncc98=3710 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_snare_pp_RR2.wav
+<region> lovel=001 hivel=021 amp_velcurve_021=1 offset_oncc98=3690 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_snare_pp_RR3.wav
+<region> lovel=022 hivel=042 amp_velcurve_042=1 offset_oncc98=3729 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_snare_p_RR1.wav
+<region> lovel=022 hivel=042 amp_velcurve_042=1 offset_oncc98=3808 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_snare_p_RR2.wav
+<region> lovel=022 hivel=042 amp_velcurve_042=1 offset_oncc98=3887 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_snare_p_RR3.wav
+<region> lovel=043 hivel=063 amp_velcurve_063=1 offset_oncc98=3889 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_snare_mp_RR1.wav
+<region> lovel=043 hivel=063 amp_velcurve_063=1 offset_oncc98=3836 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_snare_mp_RR2.wav
+<region> lovel=043 hivel=063 amp_velcurve_063=1 offset_oncc98=3827 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_snare_mp_RR3.wav
+<region> lovel=064 hivel=084 amp_velcurve_084=1 offset_oncc98=3969 region_label=V4 RR1 seq_position=1 sample=SoftDrums_NAT_snare_mf_RR1.wav
+<region> lovel=064 hivel=084 amp_velcurve_084=1 offset_oncc98=3907 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_snare_mf_RR2.wav
+<region> lovel=064 hivel=084 amp_velcurve_084=1 offset_oncc98=3951 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_snare_mf_RR3.wav
+<region> lovel=085 hivel=105 amp_velcurve_105=1 offset_oncc98=4014 region_label=V5 RR1 seq_position=1 sample=SoftDrums_NAT_snare_f_RR1.wav
+<region> lovel=085 hivel=105 amp_velcurve_105=1 offset_oncc98=4046 region_label=V5 RR2 seq_position=2 sample=SoftDrums_NAT_snare_f_RR2.wav
+<region> lovel=085 hivel=105 amp_velcurve_105=1 offset_oncc98=4040 region_label=V5 RR3 seq_position=3 sample=SoftDrums_NAT_snare_f_RR3.wav
+<region> lovel=106 hivel=127 amp_velcurve_127=1 offset_oncc98=3980 region_label=V6 RR1 seq_position=1 sample=SoftDrums_NAT_snare_ff_RR1.wav
+<region> lovel=106 hivel=127 amp_velcurve_127=1 offset_oncc98=4055 region_label=V6 RR2 seq_position=2 sample=SoftDrums_NAT_snare_ff_RR2.wav
+<region> lovel=106 hivel=127 amp_velcurve_127=1 offset_oncc98=3980 region_label=V6 RR3 seq_position=3 sample=SoftDrums_NAT_snare_ff_RR3.wav
 
 <group> group_label=Flam key=39
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Snare Flam_p_RR1.wav offset_oncc98=2580
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Snare Flam_p_RR2.wav offset_oncc98=2604
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Snare Flam_p_RR3.wav offset_oncc98=2667
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_Snare Flam_mf_RR1.wav offset_oncc98=2682
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_Snare Flam_mf_RR2.wav offset_oncc98=2777
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_Snare Flam_mf_RR3.wav offset_oncc98=2871
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Snare Flam_f_RR1.wav offset_oncc98=2926
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_Snare Flam_f_RR2.wav offset_oncc98=2918
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_Snare Flam_f_RR3.wav offset_oncc98=2965
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2580 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Snare Flam_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2604 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Snare Flam_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2667 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Snare Flam_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2682 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_Snare Flam_mf_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2777 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_Snare Flam_mf_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2871 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_Snare Flam_mf_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2926 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Snare Flam_f_RR1.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2918 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_Snare Flam_f_RR2.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2965 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_Snare Flam_f_RR3.wav
 
 
 //===========================================
@@ -151,20 +158,20 @@ pan_oncc32=100
 pan_curvecc32=1
 tune_oncc42=1200
 tune_curvecc42=1
-polyphony=2
+note_polyphony=2
 off_time=1.5
 group=3
 
 <group> group_label=Hit key=47
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_T1_p_RR1.wav offset_oncc98=2966
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_T1_p_RR2.wav offset_oncc98=2992
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_T1_p_RR3.wav offset_oncc98=2983
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_T1_mf_RR1.wav offset_oncc98=2983
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_T1_mf_RR2.wav offset_oncc98=2966
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_T1_mf_RR3.wav offset_oncc98=2992
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_T1_f_RR1.wav offset_oncc98=3326
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_T1_f_RR2.wav offset_oncc98=3316
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_T1_f_RR3.wav offset_oncc98=3336
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2966 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_T1_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2992 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_T1_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2983 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_T1_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2983 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_T1_mf_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2966 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_T1_mf_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2992 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_T1_mf_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3326 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_T1_f_RR1.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3316 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_T1_f_RR2.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3336 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_T1_f_RR3.wav
 
 
 //===========================================
@@ -175,20 +182,20 @@ pan_oncc33=100
 pan_curvecc33=1
 tune_oncc43=1200
 tune_curvecc43=1
-polyphony=2
+note_polyphony=2
 off_time=2
 group=4
 
 <group> group_label=Hit key=43
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_T2_p_RR1.wav offset_oncc98=3000
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_T2_p_RR2.wav offset_oncc98=2931
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_T2_p_RR3.wav offset_oncc98=2969
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_T2_mf_RR1.wav offset_oncc98=2984
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_T2_mf_RR2.wav offset_oncc98=2984
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_T2_mf_RR3.wav offset_oncc98=2977
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_T2_f_RR1.wav offset_oncc98=3367
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_T2_f_RR2.wav offset_oncc98=3460
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_T2_f_RR3.wav offset_oncc98=3383
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=3000 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_T2_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2931 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_T2_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2969 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_T2_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2984 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_T2_mf_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2984 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_T2_mf_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2977 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_T2_mf_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3367 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_T2_f_RR1.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3460 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_T2_f_RR2.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3383 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_T2_f_RR3.wav
 
 
 //===========================================
@@ -199,10 +206,11 @@ pan_oncc34=100
 pan_curvecc34=1
 tune_oncc44=1200
 tune_curvecc44=1
-polyphony=3
+note_polyphony=3
 off_time=0.3
 
 <group>
+end=-1
 seq_length=1
 sample=*silence
 <region> key=42 group=8
@@ -212,51 +220,51 @@ sample=*silence
 <region> key=48 group=9
 
 <group> group_label=Closed group=5 key=42
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_p_RR1.wav offset_oncc98=2972
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_p_RR2.wav offset_oncc98=2972
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_p_RR3.wav offset_oncc98=2983
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_mf_RR1.wav offset_oncc98=2972
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_mf_RR2.wav offset_oncc98=2983
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_mf_RR3.wav offset_oncc98=2989
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_f_RR1.wav offset_oncc98=2994
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_f_RR2.wav offset_oncc98=3155
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_f_RR3.wav offset_oncc98=3134
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2972 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2972 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2983 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2972 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_mf_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2983 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_mf_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2989 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_mf_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2994 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_f_RR1.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3155 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_f_RR2.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3134 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_f_RR3.wav
 
 <group> group_label=Foot group=5 key=44
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_p_RR1.wav offset_oncc98=2272
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_p_RR2.wav offset_oncc98=2272
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_p_RR3.wav offset_oncc98=2609
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_mp_RR1.wav offset_oncc98=2886
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_mp_RR2.wav offset_oncc98=2632
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_mp_RR3.wav offset_oncc98=2863
-<region> lovel=085 hivel=126 amp_velcurve_126=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_f_RR1.wav offset_oncc98=1351
-<region> lovel=085 hivel=126 amp_velcurve_126=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_f_RR2.wav offset_oncc98=2709
-<region> lovel=085 hivel=126 amp_velcurve_126=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_f_RR3.wav offset_oncc98=2709
-<region> lovel=127 hivel=127 amp_velcurve_127=1 region_label=V4 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_ff_RR1.wav offset_oncc98=2026
-<region> lovel=127 hivel=127 amp_velcurve_127=1 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_ff_RR2.wav offset_oncc98=2126
-<region> lovel=127 hivel=127 amp_velcurve_127=1 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_ff_RR3.wav offset_oncc98=2095
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2272 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2272 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2609 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2886 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_mp_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2632 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_mp_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2863 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_mp_RR3.wav
+<region> lovel=085 hivel=126 amp_velcurve_126=1 offset_oncc98=1351 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_f_RR1.wav
+<region> lovel=085 hivel=126 amp_velcurve_126=1 offset_oncc98=2709 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_f_RR2.wav
+<region> lovel=085 hivel=126 amp_velcurve_126=1 offset_oncc98=2709 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_f_RR3.wav
+<region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=2026 region_label=V4 RR1 seq_position=1 sample=SoftDrums_NAT_HH Foot_ff_RR1.wav
+<region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=2126 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_ff_RR2.wav
+<region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=2095 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_ff_RR3.wav
 
 <group> group_label=Shank group=6 off_by=8 key=48
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_p_RR1.wav offset_oncc98=2930
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_p_RR2.wav offset_oncc98=2961
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_p_RR3.wav offset_oncc98=2945
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_mp_RR1.wav offset_oncc98=2961
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_mp_RR2.wav offset_oncc98=2914
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_mp_RR3.wav offset_oncc98=2969
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_f_RR1.wav offset_oncc98=3086
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_f_RR2.wav offset_oncc98=2964
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_f_RR3.wav offset_oncc98=2984
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2930 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2961 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2945 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2961 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_mp_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2914 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_mp_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2969 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_mp_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3086 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_f_RR1.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2964 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_f_RR2.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2984 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_f_RR3.wav
 
 <group> group_label=Open group=7 off_by=9 key=46
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_p_RR1.wav offset_oncc98=2918
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_p_RR2.wav offset_oncc98=2952
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_p_RR3.wav offset_oncc98=2958
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_mp_RR1.wav offset_oncc98=2952
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_mp_RR2.wav offset_oncc98=2975
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_mp_RR3.wav offset_oncc98=2975
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_f_RR1.wav offset_oncc98=2963
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_f_RR2.wav offset_oncc98=2969
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_f_RR3.wav offset_oncc98=2980
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2918 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2952 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2958 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2952 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_mp_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2975 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_mp_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2975 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_mp_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2963 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_f_RR1.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2969 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_f_RR2.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2980 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_f_RR3.wav
 
 
 //===========================================
@@ -267,18 +275,18 @@ pan_oncc35=100
 pan_curvecc35=1
 tune_oncc45=1200
 tune_curvecc45=1
-polyphony=4
-off_time=1.7
+note_polyphony=4
+off_time=1.4
 
 <group> group_label=Hit group=10 off_by=12 key=51
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_p_RR1.wav offset_oncc98=2974
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Ride_p_RR2.wav offset_oncc98=2959
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Ride_p_RR3.wav offset_oncc98=2951
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_mp_RR1.wav offset_oncc98=2899
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_Ride_mp_RR2.wav offset_oncc98=2974
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_Ride_mp_RR3.wav offset_oncc98=2936
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_f_RR1.wav offset_oncc98=3399 seq_length=2
-<region> lovel=085 hivel=127 amp_velcurve_127=1 region_label=V3 RR3 seq_position=2 sample=SoftDrums_NAT_Ride_f_RR3.wav offset_oncc98=2984 seq_length=2
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2974 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2959 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Ride_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2951 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Ride_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2899 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_mp_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2974 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_Ride_mp_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2936 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_Ride_mp_RR3.wav
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3399 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_f_RR1.wav seq_length=2
+<region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2984 region_label=V3 RR3 seq_position=2 sample=SoftDrums_NAT_Ride_f_RR3.wav seq_length=2
 
 <group> group_label=Rake group=11 off_by=12 key=52
 <region> region_label=RR1 seq_position=1 sample=SoftDrums_NAT_Rake_RR1.wav
@@ -286,12 +294,12 @@ off_time=1.7
 <region> region_label=RR3 seq_position=3 sample=SoftDrums_NAT_Rake_RR3.wav
 
 <group>
-group_label=Mute
+group_label=Choke
 seq_length=1
 group=12
 key=60
-<region>
-sample=*silence
+ampeg_sustain=0
+<region> sample=*silence
 
 
 //===========================================
@@ -302,29 +310,29 @@ pan_oncc36=100
 pan_curvecc36=1
 tune_oncc46=1200
 tune_curvecc46=1
-polyphony=4
-off_time=1.5
+note_polyphony=4
+off_time=1.2
 
 <group> group_label=Hit group=13 off_by=14 key=49
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_p_RR1.wav offset_oncc98=2673
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_p_RR2.wav offset_oncc98=2794
-<region> lovel=001 hivel=042 amp_velcurve_042=1 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_p_RR3.wav offset_oncc98=2826
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_mp_RR1.wav offset_oncc98=2890
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_mp_RR2.wav offset_oncc98=2866
-<region> lovel=043 hivel=084 amp_velcurve_084=1 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_mp_RR3.wav offset_oncc98=2908
-<region> lovel=085 hivel=126 amp_velcurve_126=1 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_f_RR1.wav offset_oncc98=2948
-<region> lovel=085 hivel=126 amp_velcurve_126=1 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_f_RR2.wav offset_oncc98=2930
-<region> lovel=085 hivel=126 amp_velcurve_126=1 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_f_RR3.wav offset_oncc98=2942
-<region> lovel=127 hivel=127 amp_velcurve_127=1 region_label=V4 RR2 seq_position=1 sample=SoftDrums_NAT_Crash_ff_RR2.wav offset_oncc98=3327 seq_length=2
-<region> lovel=127 hivel=127 amp_velcurve_127=1 region_label=V4 RR3 seq_position=2 sample=SoftDrums_NAT_Crash_ff_RR3.wav offset_oncc98=3288 seq_length=2
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2673 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_p_RR1.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2794 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_p_RR2.wav
+<region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2826 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_p_RR3.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2890 region_label=V2 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_mp_RR1.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2866 region_label=V2 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_mp_RR2.wav
+<region> lovel=043 hivel=084 amp_velcurve_084=1 offset_oncc98=2908 region_label=V2 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_mp_RR3.wav
+<region> lovel=085 hivel=126 amp_velcurve_126=1 offset_oncc98=2948 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_f_RR1.wav
+<region> lovel=085 hivel=126 amp_velcurve_126=1 offset_oncc98=2930 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_f_RR2.wav
+<region> lovel=085 hivel=126 amp_velcurve_126=1 offset_oncc98=2942 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_f_RR3.wav
+<region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=3327 region_label=V4 RR2 seq_position=1 sample=SoftDrums_NAT_Crash_ff_RR2.wav seq_length=2
+<region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=3288 region_label=V4 RR3 seq_position=2 sample=SoftDrums_NAT_Crash_ff_RR3.wav seq_length=2
 
 <group>
-group_label=Mute
+group_label=Choke
 seq_length=1
 group=14
 key=61
-<region>
-sample=*silence
+ampeg_sustain=0
+<region> sample=*silence
 
 
 //===========================================
@@ -335,9 +343,9 @@ pan_oncc37=100
 pan_curvecc37=1
 tune_oncc47=1200
 tune_curvecc47=1
-polyphony=1
+note_polyphony=1
 off_time=1
 group=15
 
 <group> group_label=Hit key=37
-<region> region_label=01 sample=SoftDrums_NAT_Rattle.wav offset_oncc98=9443 seq_length=1
+<region> offset_oncc98=9443 region_label=01 sample=SoftDrums_NAT_Rattle.wav seq_length=1
