@@ -10,8 +10,19 @@
 <control>
 default_path=samples_original/
 
+label_cc7=Vol
+label_cc10=Pan
+set_cc7=100
+set_hdcc10=0.5
+
 <global>
-ampeg_release=0.7
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+note_polyphony=1
+off_time=0.5
+group=1
 
 <group> group_label=p group_volume=15 hivel=63
 <region> lokey=33 hikey=39 pitch_keycenter=36 region_label=1 offset=48838 sample=Pianobook Helpenstill 1 p C0.wav
@@ -35,7 +46,7 @@ ampeg_release=0.7
 <region> lokey=82 hikey=88 pitch_keycenter=85 region_label=8 offset=34949 sample=Pianobook Helpenstill 1 f C#4.wav
 <region> lokey=89 hikey=96 pitch_keycenter=92 region_label=9 offset=35998 sample=Pianobook Helpenstill 1 f G#4.wav
 
-<group> group_label=rt group_volume=-16 trigger=release rt_decay=3 group=1 polyphony=1 pitch_keytrack=25
+<group> group_label=rt group_volume=-8 trigger=release rt_decay=3 pitch_keytrack=10
 <region> lokey=33 hikey=39 pitch_keycenter=36 region_label=1 offset=31031 sample=Pianobook Helpenstill 1 RT C0.wav
 <region> lokey=40 hikey=46 pitch_keycenter=43 region_label=2 offset=32735 sample=Pianobook Helpenstill 1 RT G0.wav
 <region> lokey=47 hikey=53 pitch_keycenter=50 region_label=3 offset=30730 sample=Pianobook Helpenstill 1 RT D1.wav
