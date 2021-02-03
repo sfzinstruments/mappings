@@ -1,6 +1,7 @@
 # Instructions for ML Brass
 
-ML Brass can be downloaded here: https://www.waverunneraudio.com/shop/pisces-rising-ml-brass/\
+ML Brass can be downloaded here: https://www.waverunneraudio.com/shop/pisces-rising-ml-brass/
+
 Before you continue, download the .SFZ mapping from the "ML Brass SFZ File" folder.
 
 ## How to use the sfz mapping
