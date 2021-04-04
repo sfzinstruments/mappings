@@ -11,6 +11,8 @@
 #define $PAD_VOL 1
 #define $PAD_ATT 20
 #define $PAD_REL 21
+#define $REL_NOI 22
+#define $PED_NOI 23
 #define $SUS_PED 64
 #define $SOF_PED 67
 
@@ -23,21 +25,35 @@
 <control>
 default_path=Samples/
 
-label_cc$PAD_VOL=Pad Blend ($PAD_VOL)
-label_cc$PAD_ATT=Pad Attack ($PAD_ATT)
-label_cc$PAD_REL=Pad Release ($PAD_REL)
-label_cc$SUS_PED=Sus Pedal ($SUS_PED)
-label_cc$SOF_PED=Fast Resp ($SOF_PED)
-
+label_cc7=Vol
+label_cc10=Pan
+label_cc$PAD_VOL=Pad Blend
+label_cc$PAD_ATT=Pad Attack
+label_cc$PAD_REL=Pad Release
+label_cc$REL_NOI=Rel.Noise
+label_cc$PED_NOI=Ped.Noise
+label_cc$SUS_PED=Sus.Pedal
+label_cc$SOF_PED=Fast Resp
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc$PAD_VOL=0
 set_hdcc$PAD_ATT=0.5
 set_hdcc$PAD_REL=0.5
+set_hdcc$REL_NOI=0.5
+set_hdcc$PED_NOI=0.5
 
 
 //===========================================
 <group>
 group_volume=-12
 loop_mode=loop_continuous
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+note_polyphony=1
+off_time=0.7
+locc$PAD_VOL=1
 amplitude_oncc$PAD_VOL=100
 ampeg_attack_oncc$PAD_ATT=5
 ampeg_release_oncc$PAD_REL=5
@@ -51,18 +67,24 @@ ampeg_release_oncc$PAD_REL=5
 //*********************************************************************
 <global>
 global_volume=-6
-loop_mode=no_loop
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 seq_length=3
 ampeg_release=0.8
 ampeg_attack_oncc$SOF_PED=0.001
 ampeg_attack_curvecc$SOF_PED=7
 offset_curvecc$SOF_PED=7
+note_polyphony=1
+off_time=0.5
 
 
 //---------------------------------------------------------------------
 <master>
 hivel=84
-group_volume=12
+group=1
+group_volume=16
 
 <group> group_label=p_rr1 seq_position=1
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=34350 offset_oncc$SOF_PED=0538 sample=TKI_C0_Level1_RR1.wav
@@ -84,10 +106,10 @@ group_volume=12
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=32944 offset_oncc$SOF_PED=2633 sample=TKI_G#4_Level1_RR1.wav
 <region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=32123 offset_oncc$SOF_PED=1540 sample=TKI_B4_Level1_RR1.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=32656 offset_oncc$SOF_PED=3451 sample=TKI_D#5_Level1_RR1.wav
-<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=33081 offset_oncc$SOF_PED=2731 sample=TKI_F#5_Level1_RR1.wav
-<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=37238 offset_oncc$SOF_PED=0643 sample=TKI_A#5_Level1_RR1.wav
-<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32100 offset_oncc$SOF_PED=2814 sample=TKI_D#6_Level1_RR1.wav
-<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=31106 offset_oncc$SOF_PED=3370 sample=TKI_F6_Level1_RR1.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=33081 offset_oncc$SOF_PED=2731 ampeg_release=10 sample=TKI_F#5_Level1_RR1.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=37238 offset_oncc$SOF_PED=0643 ampeg_release=10 sample=TKI_A#5_Level1_RR1.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32100 offset_oncc$SOF_PED=2814 ampeg_release=10 sample=TKI_D#6_Level1_RR1.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=31106 offset_oncc$SOF_PED=3370 ampeg_release=10 sample=TKI_F6_Level1_RR1.wav
 
 <group> group_label=p_rr2 seq_position=2
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=35352 offset_oncc$SOF_PED=0478 sample=TKI_C0_Level1_RR2.wav
@@ -109,10 +131,10 @@ group_volume=12
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=34162 offset_oncc$SOF_PED=2530 sample=TKI_G#4_Level1_RR2.wav
 <region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=34523 offset_oncc$SOF_PED=1954 sample=TKI_B4_Level1_RR2.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=33980 offset_oncc$SOF_PED=2714 sample=TKI_D#5_Level1_RR2.wav
-<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34611 offset_oncc$SOF_PED=1741 sample=TKI_F#5_Level1_RR2.wav
-<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=34884 offset_oncc$SOF_PED=0403 sample=TKI_A#5_Level1_RR2.wav
-<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32595 offset_oncc$SOF_PED=1705 sample=TKI_D#6_Level1_RR2.wav
-<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=33554 offset_oncc$SOF_PED=2086 sample=TKI_F6_Level1_RR2.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34611 offset_oncc$SOF_PED=1741 ampeg_release=10 sample=TKI_F#5_Level1_RR2.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=34884 offset_oncc$SOF_PED=0403 ampeg_release=10 sample=TKI_A#5_Level1_RR2.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=32595 offset_oncc$SOF_PED=1705 ampeg_release=10 sample=TKI_D#6_Level1_RR2.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=33554 offset_oncc$SOF_PED=2086 ampeg_release=10 sample=TKI_F6_Level1_RR2.wav
 
 <group> group_label=p_rr3 seq_position=3
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=35221 offset_oncc$SOF_PED=3254 sample=TKI_C0_Level1_RR3.wav
@@ -134,15 +156,16 @@ group_volume=12
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=32121 offset_oncc$SOF_PED=2602 sample=TKI_G#4_Level1_RR3.wav
 <region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=33002 offset_oncc$SOF_PED=2307 sample=TKI_B4_Level1_RR3.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=32217 offset_oncc$SOF_PED=3842 sample=TKI_D#5_Level1_RR3.wav
-<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=32657 offset_oncc$SOF_PED=3025 sample=TKI_F#5_Level1_RR3.wav
-<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=36229 offset_oncc$SOF_PED=0577 sample=TKI_A#5_Level1_RR3.wav
-<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=30803 offset_oncc$SOF_PED=2375 sample=TKI_D#6_Level1_RR3.wav
-<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=33301 offset_oncc$SOF_PED=1925 sample=TKI_F6_Level1_RR3.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=32657 offset_oncc$SOF_PED=3025 ampeg_release=10 sample=TKI_F#5_Level1_RR3.wav
+<region> pitch_keycenter=094 lokey=093 hikey=096 region_label=21 offset=36229 offset_oncc$SOF_PED=0577 ampeg_release=10 sample=TKI_A#5_Level1_RR3.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=30803 offset_oncc$SOF_PED=2375 ampeg_release=10 sample=TKI_D#6_Level1_RR3.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=33301 offset_oncc$SOF_PED=1925 ampeg_release=10 sample=TKI_F6_Level1_RR3.wav
 
 
 //---------------------------------------------------------------------
 <master>
 lovel=85
+group=1
 
 <group> group_label=f_rr1 seq_position=1
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32353 offset_oncc$SOF_PED=3130 sample=TKI_C0_Level2_RR1.wav
@@ -164,10 +187,10 @@ lovel=85
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=31679 offset_oncc$SOF_PED=2139 sample=TKI_G#4_Level2_RR1.wav
 <region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=31395 offset_oncc$SOF_PED=1756 sample=TKI_B4_Level2_RR1.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=34130 offset_oncc$SOF_PED=1491 sample=TKI_D#5_Level2_RR1.wav
-<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34468 offset_oncc$SOF_PED=1301 sample=TKI_F#5_Level2_RR1.wav
-<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=33097 offset_oncc$SOF_PED=1288 sample=TKI_A5_Level2_RR1.wav
-<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=33968 offset_oncc$SOF_PED=1362 sample=TKI_D#6_Level2_RR1.wav
-<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=34327 offset_oncc$SOF_PED=1411 sample=TKI_F6_Level2_RR1.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34468 offset_oncc$SOF_PED=1301 ampeg_release=10 sample=TKI_F#5_Level2_RR1.wav
+<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=33097 offset_oncc$SOF_PED=1288 ampeg_release=10 sample=TKI_A5_Level2_RR1.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=33968 offset_oncc$SOF_PED=1362 ampeg_release=10 sample=TKI_D#6_Level2_RR1.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=34327 offset_oncc$SOF_PED=1411 ampeg_release=10 sample=TKI_F6_Level2_RR1.wav
 
 <group> group_label=f_rr2 seq_position=2
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32776 offset_oncc$SOF_PED=2961 sample=TKI_C0_Level2_RR2.wav
@@ -189,10 +212,10 @@ lovel=85
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=34274 offset_oncc$SOF_PED=2210 sample=TKI_G#4_Level2_RR2.wav
 <region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=33682 offset_oncc$SOF_PED=2050 sample=TKI_B4_Level2_RR2.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=33689 offset_oncc$SOF_PED=1674 sample=TKI_D#5_Level2_RR2.wav
-<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=33548 offset_oncc$SOF_PED=1413 sample=TKI_F#5_Level2_RR2.wav
-<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=34619 offset_oncc$SOF_PED=1241 sample=TKI_A5_Level2_RR2.wav
-<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=34245 offset_oncc$SOF_PED=1625 sample=TKI_D#6_Level2_RR2.wav
-<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35262 offset_oncc$SOF_PED=0979 sample=TKI_F6_Level2_RR2.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=33548 offset_oncc$SOF_PED=1413 ampeg_release=10 sample=TKI_F#5_Level2_RR2.wav
+<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=34619 offset_oncc$SOF_PED=1241 ampeg_release=10 sample=TKI_A5_Level2_RR2.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=34245 offset_oncc$SOF_PED=1625 ampeg_release=10 sample=TKI_D#6_Level2_RR2.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35262 offset_oncc$SOF_PED=0979 ampeg_release=10 sample=TKI_F6_Level2_RR2.wav
 
 <group> group_label=f_rr3 seq_position=3
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=32564 offset_oncc$SOF_PED=3657 sample=TKI_C0_Level2_RR3.wav
@@ -214,19 +237,22 @@ lovel=85
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=33005 offset_oncc$SOF_PED=2340 sample=TKI_G#4_Level2_RR3.wav
 <region> pitch_keycenter=083 lokey=082 hikey=085 region_label=18 offset=35183 offset_oncc$SOF_PED=2367 sample=TKI_B4_Level2_RR3.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=34115 offset_oncc$SOF_PED=1667 sample=TKI_D#5_Level2_RR3.wav
-<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34578 offset_oncc$SOF_PED=1485 sample=TKI_F#5_Level2_RR3.wav
-<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=35332 offset_oncc$SOF_PED=1146 sample=TKI_A5_Level2_RR3.wav
-<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=35678 offset_oncc$SOF_PED=1323 sample=TKI_D#6_Level2_RR3.wav
-<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35652 offset_oncc$SOF_PED=1072 sample=TKI_F6_Level2_RR3.wav
+<region> pitch_keycenter=090 lokey=089 hikey=092 region_label=20 offset=34578 offset_oncc$SOF_PED=1485 ampeg_release=10 sample=TKI_F#5_Level2_RR3.wav
+<region> pitch_keycenter=093 lokey=093 hikey=096 region_label=21 offset=35332 offset_oncc$SOF_PED=1146 ampeg_release=10 sample=TKI_A5_Level2_RR3.wav
+<region> pitch_keycenter=099 lokey=097 hikey=100 region_label=22 offset=35678 offset_oncc$SOF_PED=1323 ampeg_release=10 sample=TKI_D#6_Level2_RR3.wav
+<region> pitch_keycenter=101 lokey=101 hikey=108 region_label=23 offset=35652 offset_oncc$SOF_PED=1072 ampeg_release=10 sample=TKI_F6_Level2_RR3.wav
 
 
 //---------------------------------------------------------------------
 <master>
 trigger=release
-pitch_keytrack=25
-rt_decay=2
-group=1
-polyphony=1
+pitch_keytrack=10
+rt_decay=3
+group_volume=8
+group=2
+off_by=1
+amplitude_oncc$REL_NOI=200
+locc$REL_NOI=1
 
 <group> group_label=rt_rr1 seq_position=1
 <region> pitch_keycenter=024 lokey=021 hikey=026 region_label=01 offset=35549 sample=TKI_C0_RT_RR1.wav
@@ -307,10 +333,11 @@ polyphony=1
 //---------------------------------------------------------------------
 <master>
 master_volume=-30
-group=2
+group=3
 polyphony=1
 lokey=-1
 hikey=-1
+amplitude_oncc$PED_NOI=200
 
 <group> group_label=pd on_locc$SUS_PED=$SUS_DOWN
 <region> seq_position=1 region_label=rr1 offset=32246 sample=TKI_PD_RR1.wav
