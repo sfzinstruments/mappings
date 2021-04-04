@@ -338,6 +338,7 @@ polyphony=1
 lokey=-1
 hikey=-1
 amplitude_oncc$PED_NOI=200
+locc$PED_NOI=1
 
 <group> group_label=pd on_locc$SUS_PED=$SUS_DOWN
 <region> seq_position=1 region_label=rr1 offset=32246 sample=TKI_PD_RR1.wav
