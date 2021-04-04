@@ -7,18 +7,39 @@
 //--------------------------------------
 
 
+//midi cc
+#define $RELNOI 20
+
+
+////////////////////////
+<control>
+label_cc7=Vol
+label_cc10=Pan
+label_cc$RELNOI=Rel.Noise
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$RELNOI=0.5
+
+
 //***********************************************
 <global>
-loop_mode=no_loop
-ampeg_release=0.8
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+note_polyphony=1
+off_time=0.5
 
 
 //==============================================
+<master>
+ampeg_release=0.8
+group=1
 
 <control> default_path=1910 Steinway B Samples/1910 Steinway B Samples MP/
 <group>
 hivel=42
-amp_velcurve_42=1
+group_volume=19.2
 group_label=MP
 <region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=0000 sample=1920SteinwayBEwks_MP_C0.wav
 <region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=0000 sample=1920SteinwayBEwks_MP_E0.wav
@@ -39,18 +60,18 @@ group_label=MP
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=1885 sample=1920SteinwayBEwks_MP_Ab4.wav
 <region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=0284 sample=1920SteinwayBEwks_MP_C5.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=0000 sample=1920SteinwayBEwks_MP_Eb5.wav
-<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=1515 sample=1920SteinwayBEwks_MP_G5.wav
-<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=1503 sample=1920SteinwayBEwks_MP_Bb5.wav
-<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=1020 sample=1920SteinwayBEwks_MP_D6.wav
-<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=1241 sample=1920SteinwayBEwks_MP_F6.wav
-<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=1132 sample=1920SteinwayBEwks_MP_A6.wav
-<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=1590 sample=1920SteinwayBEwks_MP_C7.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=1515 ampeg_release=10 sample=1920SteinwayBEwks_MP_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=1503 ampeg_release=10 sample=1920SteinwayBEwks_MP_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=1020 ampeg_release=10 sample=1920SteinwayBEwks_MP_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=1241 ampeg_release=10 sample=1920SteinwayBEwks_MP_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=1132 ampeg_release=10 sample=1920SteinwayBEwks_MP_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=1590 ampeg_release=10 sample=1920SteinwayBEwks_MP_C7.wav
 
 <control> default_path=1910 Steinway B Samples/1910 Steinway B Samples MF/
 <group>
 lovel=43
 hivel=70
-amp_velcurve_70=1
+group_volume=10.4
 group_label=MF
 <region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=0746 sample=1920SteinwayBEwks_MF_C0.wav
 <region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=0674 sample=1920SteinwayBEwks_MF_E0.wav
@@ -71,18 +92,18 @@ group_label=MF
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=2726 sample=1920SteinwayBEwks_MF_Ab4.wav
 <region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=0000 sample=1920SteinwayBEwks_MF_C5.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=3049 sample=1920SteinwayBEwks_MF_Eb5.wav
-<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=3376 sample=1920SteinwayBEwks_MF_G5.wav
-<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=4125 sample=1920SteinwayBEwks_MF_Bb5.wav
-<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3815 sample=1920SteinwayBEwks_MF_D6.wav
-<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=6006 sample=1920SteinwayBEwks_MF_F6.wav
-<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=3340 sample=1920SteinwayBEwks_MF_A6.wav
-<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=3377 sample=1920SteinwayBEwks_MF_C7.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=3376 ampeg_release=10 sample=1920SteinwayBEwks_MF_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=4125 ampeg_release=10 sample=1920SteinwayBEwks_MF_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3815 ampeg_release=10 sample=1920SteinwayBEwks_MF_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=6006 ampeg_release=10 sample=1920SteinwayBEwks_MF_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=3340 ampeg_release=10 sample=1920SteinwayBEwks_MF_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=3377 ampeg_release=10 sample=1920SteinwayBEwks_MF_C7.wav
 
 <control> default_path=1910 Steinway B Samples/1910 Steinway B Samples F/
 <group>
 lovel=71
 hivel=98
-amp_velcurve_98=1
+group_volume=4.5
 group_label=F
 <region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=4661 sample=1910SteinwayBEwks_F_C0.wav
 <region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=4988 sample=1910SteinwayBEwks_F_E0.wav
@@ -103,12 +124,12 @@ group_label=F
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=7184 sample=1910SteinwayBEwks_F_Ab4.wav
 <region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=5927 sample=1910SteinwayBEwks_F_C5.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=7577 sample=1910SteinwayBEwks_F_Eb5.wav
-<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=7017 sample=1910SteinwayBEwks_F_G5.wav
-<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=5980 sample=1910SteinwayBEwks_F_Bb5.wav
-<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=2033 sample=1910SteinwayBEwks_F_D6.wav
-<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=5748 sample=1910SteinwayBEwks_F_F6.wav
-<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=5437 sample=1910SteinwayBEwks_F_A6.wav
-<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=4929 sample=1910SteinwayBEwks_F_C7.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=7017 ampeg_release=10 sample=1910SteinwayBEwks_F_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=5980 ampeg_release=10 sample=1910SteinwayBEwks_F_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=2033 ampeg_release=10 sample=1910SteinwayBEwks_F_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=5748 ampeg_release=10 sample=1910SteinwayBEwks_F_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=5437 ampeg_release=10 sample=1910SteinwayBEwks_F_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=4929 ampeg_release=10 sample=1910SteinwayBEwks_F_C7.wav
 
 <control> default_path=1910 Steinway B Samples/1910 Steinway B Samples FF/
 <group>
@@ -133,25 +154,27 @@ group_label=FF
 <region> pitch_keycenter=080 lokey=079 hikey=081 region_label=17 offset=0515 sample=1910SteinwayBEwks_FF_Ab4.wav
 <region> pitch_keycenter=084 lokey=082 hikey=085 region_label=18 offset=3193 sample=1910SteinwayBEwks_FF_C5.wav
 <region> pitch_keycenter=087 lokey=086 hikey=088 region_label=19 offset=6757 sample=1910SteinwayBEwks_FF_Eb5.wav
-<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=5676 sample=1910SteinwayBEwks_FF_G5.wav
-<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=2420 sample=1910SteinwayBEwks_FF_Bb5.wav
-<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3454 sample=1910SteinwayBEwks_FF_D6.wav
-<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=3710 sample=1910SteinwayBEwks_FF_F6.wav
-<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=4348 sample=1910SteinwayBEwks_FF_A6.wav
-<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=5283 sample=1910SteinwayBEwks_FF_C7.wav
+<region> pitch_keycenter=091 lokey=089 hikey=092 region_label=20 offset=5676 ampeg_release=10 sample=1910SteinwayBEwks_FF_G5.wav
+<region> pitch_keycenter=094 lokey=093 hikey=095 region_label=21 offset=2420 ampeg_release=10 sample=1910SteinwayBEwks_FF_Bb5.wav
+<region> pitch_keycenter=098 lokey=096 hikey=099 region_label=22 offset=3454 ampeg_release=10 sample=1910SteinwayBEwks_FF_D6.wav
+<region> pitch_keycenter=101 lokey=100 hikey=102 region_label=23 offset=3710 ampeg_release=10 sample=1910SteinwayBEwks_FF_F6.wav
+<region> pitch_keycenter=105 lokey=103 hikey=106 region_label=24 offset=4348 ampeg_release=10 sample=1910SteinwayBEwks_FF_A6.wav
+<region> pitch_keycenter=108 lokey=107 hikey=108 region_label=25 offset=5283 ampeg_release=10 sample=1910SteinwayBEwks_FF_C7.wav
 
 
 //==============================================
 <master>
 trigger=release
-pitch_keytrack=25
-rt_decay=2
-group=1
-polyphony=1
-group_volume=12
+pitch_keytrack=10
+rt_decay=3
+group_volume=24
+group_label=RT
+group=2
+off_by=1
+amplitude_oncc$RELNOI=200
+locc$RELNOI=1
 
 <control> default_path=1910 Steinway B Samples/1910 Steinway B Release Triggers/
-<group> group_label=RT
 <region> pitch_keycenter=024 lokey=021 hikey=025 region_label=01 offset=1441 sample=Rlse_MP_C0.wav
 <region> pitch_keycenter=028 lokey=026 hikey=029 region_label=02 offset=4903 sample=Rlse_MP_E0.wav
 <region> pitch_keycenter=031 lokey=030 hikey=032 region_label=03 offset=4157 sample=Rlse_MP_G0.wav
