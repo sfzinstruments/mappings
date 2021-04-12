@@ -24,15 +24,18 @@
 <control>
 default_path=Soft String Spurs Samples/
 
-label_cc$MW=MW ($MW)
-label_cc$EXP=Exp ($EXP)
+label_cc7=Vol
+label_cc10=Pan
+label_cc$MW=Mod Wheel
+label_cc$EXP=Exp
 label_cc$ATTACK=Attack
 label_cc$RELEASE=Release
 label_cc$HARM=Harmonics
 label_cc$SWELL=Swells
 label_cc$SOFT=Soft Longs
 label_cc$HARD=Hard Longs
-
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc$MW=0.3
 set_hdcc$EXP=1
 set_hdcc$ATTACK=0.1
@@ -45,6 +48,10 @@ set_hdcc$HARD=0.5
 
 //**************************************************************************
 <global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 loop_mode=loop_continuous
 amp_veltrack=50
 amplitude_oncc$EXP=100
@@ -61,6 +68,7 @@ xfin_hicc$MW=127
 <group>
 group_label=Harmonics
 amplitude_oncc$HARM=200
+locc$HARM=1
 
 <region> region_label=01
 sample=SSS_Harmonics_C3.wav
@@ -112,6 +120,7 @@ xfin_hikey=81
 <group>
 group_label=Swells
 amplitude_oncc$SWELL=200
+locc$SWELL=1
 <region> pitch_keycenter=48 lokey=43 hikey=49 region_label=01 offset=12332 loop_start=15200 loop_end=593343 sample=SSS_Swells_C2.wav
 <region> pitch_keycenter=50 lokey=50 hikey=51 region_label=02 offset=08999 loop_start=10262 loop_end=421058 sample=SSS_Swells_D2.wav
 <region> pitch_keycenter=52 lokey=52 hikey=53 region_label=03 offset=28498 loop_start=03872 loop_end=442495 sample=SSS_Swells_E2.wav
@@ -136,6 +145,7 @@ amplitude_oncc$SWELL=200
 //===============================================
 <master>
 amplitude_oncc$SOFT=200
+locc$SOFT=1
 
 <group>
 xfin_locc$MW=0
@@ -193,6 +203,7 @@ group_label=Layer //2
 //===============================================
 <master>
 amplitude_oncc$HARD=200
+locc$HARD=1
 
 <group>
 xfin_locc$MW=64
