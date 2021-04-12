@@ -55,6 +55,7 @@ pan_curvecc10=1
 loop_mode=loop_continuous
 amp_veltrack=50
 amplitude_oncc$EXP=100
+amplitude_curvecc$EXP=4
 ampeg_attack_oncc$ATTACK=1
 ampeg_release_oncc$RELEASE=5
 
