@@ -1,0 +1,776 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Schiby Tabla
+// By PC Sam
+// --------------------------------------
+// converted by kinwie
+// --------------------------------------
+
+<control>
+default_path=PC Sam Schiby Tabla Samples/
+
+label_cc7=Vol
+label_cc10=Pan
+label_cc20=GeSub
+label_cc21=GeClassic
+label_cc22=Taka
+label_cc23=Ta
+label_cc24=TinClosed
+label_cc25=TinOpen
+label_cc26=Pan GeSub
+label_cc27=Pan GeClassic
+label_cc28=Pan Taka
+label_cc29=Pan Ta
+label_cc30=Pan TinClosed
+label_cc31=Pan TinOpen
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc20=0.5
+set_hdcc21=0.5
+set_hdcc22=0.5
+set_hdcc23=0.5
+set_hdcc24=0.5
+set_hdcc25=0.5
+set_hdcc26=0.5
+set_hdcc27=0.6
+set_hdcc28=0.62
+set_hdcc29=0.4
+set_hdcc30=0.5
+set_hdcc31=0.43
+
+<global>
+global_volume=-6
+loop_mode=one_shot
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+amp_veltrack=0
+off_time=1
+polyphony=1
+
+
+//=========================================================
+<master>
+locc20=1
+amplitude_oncc20=200
+pan_oncc26=100
+pan_curvecc26=1
+group_label=Ge Sub
+group=1
+
+<group> key=36
+<region> region_label=01 sample=STablaq SubA h.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablaq SubA i.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablaq SubA j.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablaq SubA k.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablaq SubA.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablaq SubA a.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablaq SubA b.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablaq SubA c.wav lovel=106 hivel=127
+
+<group> key=37
+<region> region_label=01 sample=STablaq SubA l.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablaq SubA m.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablaq SubA n.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablaq SubA o.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablaq SubA p.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablaq SubA q.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablaq SubA r.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablaq SubA s.wav lovel=106 hivel=127
+
+<group> key=38
+<region> region_label=01 sample=STablaq SubA t.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablaq SubA u.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablaq SubA v.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablaq SubA w.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablaq SubA x.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablaq SubA z.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablaq SubA y.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablaq SubA xa.wav lovel=106 hivel=127
+
+<group> key=39
+<region> region_label=01 sample=STablaq SubA xb.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablaq SubA xc.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablaq SubA xd.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablaq SubA xe.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablaq SubA xf.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablaq SubA xg.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablaq SubA xh.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablaq SubA xi.wav lovel=106 hivel=127
+
+<group> key=40
+<region> region_label=01 sample=STablaq SubA xn.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablaq SubA xo.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablaq SubA xp.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablaq SubA xq.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablaq SubA xj.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablaq SubA xk.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablaq SubA xl.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablaq SubA xm.wav lovel=106 hivel=127
+
+<group> key=41
+<region> region_label=01 sample=STablaq SubA xv.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablaq SubA xw.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablaq SubA xx.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablaq SubA xy.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablaq SubA xr.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablaq SubA xs.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablaq SubA xt.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablaq SubA xu.wav lovel=106 hivel=127
+
+<group> key=42
+<region> region_label=01 sample=STablaq SubA y.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablaq SubA ya.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablaq SubA yb.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablaq SubA yc.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablaq SubA yd.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablaq SubA ye.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablaq SubA yf.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablaq SubA yg.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablaq SubA yh.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablaq SubA yi.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablaq SubA yj.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablaq SubA yk.wav lovel=111 hivel=127
+
+<group> key=43
+<region> region_label=01 sample=STabaSubSDwn d.wav lovel=1 hivel=30
+<region> region_label=02 sample=STabaSubSDwn a.wav lovel=31 hivel=60
+<region> region_label=03 sample=STabaSubSDwn b.wav lovel=61 hivel=90
+<region> region_label=04 sample=STabaSubSDwn c.wav lovel=91 hivel=127
+
+<group> key=44
+<region> region_label=01 sample=STabaSubSDwn.wav lovel=1 hivel=30
+<region> region_label=02 sample=STabaSubSDwn e.wav lovel=31 hivel=60
+<region> region_label=03 sample=STabaSubSDwn f.wav lovel=61 hivel=90
+<region> region_label=04 sample=STabaSubSDwn g.wav lovel=91 hivel=127
+
+<group> key=45
+<region> region_label=01 sample=STabaSubSUp a.wav lovel=1 hivel=30
+<region> region_label=02 sample=STabaSubSUp b.wav lovel=31 hivel=60
+<region> region_label=03 sample=STabaSubSUp d.wav lovel=61 hivel=90
+<region> region_label=04 sample=STabaSubSUp c.wav lovel=91 hivel=127
+
+<group> key=46
+<region> region_label=01 sample=STabaSubSUp.wav lovel=1 hivel=30
+<region> region_label=02 sample=STabaSubSUp f.wav lovel=31 hivel=60
+<region> region_label=03 sample=STabaSubSUp e.wav lovel=61 hivel=90
+<region> region_label=04 sample=STabaSubSUp g.wav lovel=91 hivel=127
+
+<group> key=47
+<region> region_label=01 sample=STabaSubBClos.wav lovel=1 hivel=15
+<region> region_label=02 sample=STabaSubBClos a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STabaSubBClos b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STabaSubBClos c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STabaSubBClos d.wav lovel=61 hivel=75
+<region> region_label=06 sample=STabaSubBClos e.wav lovel=76 hivel=90
+<region> region_label=07 sample=STabaSubBClos f.wav lovel=91 hivel=105
+<region> region_label=08 sample=STabaSubBClos g.wav lovel=106 hivel=115
+<region> region_label=09 sample=STabaSubBClos h.wav lovel=116 hivel=127
+
+<group> key=48
+<region> region_label=01 sample=STabaSubAClos.wav lovel=1 hivel=15
+<region> region_label=02 sample=STabaSubAClos a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STabaSubAClos b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STabaSubAClos c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STabaSubAClos d.wav lovel=61 hivel=75
+<region> region_label=06 sample=STabaSubAClos e.wav lovel=76 hivel=90
+<region> region_label=07 sample=STabaSubAClos f.wav lovel=91 hivel=105
+<region> region_label=08 sample=STabaSubAClos g.wav lovel=106 hivel=115
+<region> region_label=09 sample=STabaSubAClos h.wav lovel=116 hivel=127
+
+<group> key=49
+<region> region_label=01 sample=STabaSubCClos a.wav lovel=1 hivel=15
+<region> region_label=02 sample=STabaSubCClos b.wav lovel=16 hivel=30
+<region> region_label=03 sample=STabaSubCClos c.wav lovel=31 hivel=45
+<region> region_label=04 sample=STabaSubCClos d.wav lovel=46 hivel=60
+<region> region_label=05 sample=STabaSubCClos e.wav lovel=61 hivel=75
+<region> region_label=06 sample=STabaSubCClos f.wav lovel=76 hivel=90
+<region> region_label=07 sample=STabaSubCClos g.wav lovel=91 hivel=105
+<region> region_label=08 sample=STabaSubCClos h.wav lovel=106 hivel=115
+<region> region_label=09 sample=STabaSubCClos i.wav lovel=116 hivel=127
+
+<group> key=50
+<region> region_label=01 sample=STabaSubCClos.wav lovel=1 hivel=15
+<region> region_label=02 sample=STabaSubCClos l.wav lovel=16 hivel=30
+<region> region_label=03 sample=STabaSubCClos m.wav lovel=31 hivel=45
+<region> region_label=04 sample=STabaSubCClos r.wav lovel=46 hivel=60
+<region> region_label=05 sample=STabaSubCClos j.wav lovel=61 hivel=75
+<region> region_label=06 sample=STabaSubCClos n.wav lovel=76 hivel=90
+<region> region_label=07 sample=STabaSubCClos o.wav lovel=91 hivel=105
+<region> region_label=08 sample=STabaSubCClos p.wav lovel=106 hivel=115
+<region> region_label=09 sample=STabaSubCClos k.wav lovel=116 hivel=127
+
+<group> key=51
+<region> region_label=01 sample=STabaSubCDwn f.wav lovel=1 hivel=20
+<region> region_label=02 sample=STabaSubCDwn d.wav lovel=21 hivel=40
+<region> region_label=03 sample=STabaSubCDwn e.wav lovel=41 hivel=60
+<region> region_label=04 sample=STabaSubCDwn b.wav lovel=61 hivel=80
+<region> region_label=05 sample=STabaSubCDwn c.wav lovel=81 hivel=100
+<region> region_label=06 sample=STabaSubCDwn a.wav lovel=101 hivel=127
+
+<group> key=52
+<region> region_label=01 sample=STabaSubCDwn.wav lovel=1 hivel=20
+<region> region_label=02 sample=STabaSubCDwn g.wav lovel=21 hivel=40
+<region> region_label=03 sample=STabaSubCDwn h.wav lovel=41 hivel=60
+<region> region_label=04 sample=STabaSubCDwn i.wav lovel=61 hivel=80
+<region> region_label=05 sample=STabaSubCDwn j.wav lovel=81 hivel=100
+<region> region_label=06 sample=STabaSubCDwn k.wav lovel=101 hivel=127
+
+<group> key=53
+<region> region_label=01 sample=STabaSubCUp.wav lovel=1 hivel=20
+<region> region_label=02 sample=STabaSubCUp a.wav lovel=21 hivel=40
+<region> region_label=03 sample=STabaSubCUp b.wav lovel=41 hivel=60
+<region> region_label=04 sample=STabaSubCUp c.wav lovel=61 hivel=80
+<region> region_label=05 sample=STabaSubCUp d.wav lovel=81 hivel=100
+<region> region_label=06 sample=STabaSubCUp e.wav lovel=101 hivel=127
+
+<group> key=54
+<region> region_label=01 sample=STabaSubCUp f.wav lovel=1 hivel=20
+<region> region_label=02 sample=STabaSubCUp g.wav lovel=21 hivel=40
+<region> region_label=03 sample=STabaSubCUp h.wav lovel=41 hivel=60
+<region> region_label=04 sample=STabaSubCUp i.wav lovel=61 hivel=80
+<region> region_label=05 sample=STabaSubCUp j.wav lovel=81 hivel=100
+<region> region_label=06 sample=STabaSubCUp k.wav lovel=101 hivel=127
+
+<group> key=55
+<region> region_label=01 sample=STabaSubCUp l.wav lovel=1 hivel=20
+<region> region_label=02 sample=STabaSubCUp m.wav lovel=21 hivel=40
+<region> region_label=03 sample=STabaSubCUp n.wav lovel=41 hivel=60
+<region> region_label=04 sample=STabaSubCUp o.wav lovel=61 hivel=80
+<region> region_label=05 sample=STabaSubCUp p.wav lovel=81 hivel=100
+<region> region_label=06 sample=STabaSubCUp q.wav lovel=101 hivel=127
+
+<group> key=56
+<region> region_label=01 sample=STabaSubDClos b.wav lovel=1 hivel=25
+<region> region_label=02 sample=STabaSubDClos c.wav lovel=26 hivel=50
+<region> region_label=03 sample=STabaSubEClos e.wav lovel=51 hivel=75
+<region> region_label=04 sample=STabaSubEClos d.wav lovel=76 hivel=100
+<region> region_label=05 sample=STabaSubEClos g.wav lovel=101 hivel=127
+
+<group> key=57
+<region> region_label=01 sample=STabaSubEClos h.wav lovel=1 hivel=25
+<region> region_label=02 sample=STabaSubFClos e.wav lovel=26 hivel=50
+<region> region_label=03 sample=STabaSubFClos h.wav lovel=51 hivel=75
+<region> region_label=04 sample=STabaSubGClos e.wav lovel=76 hivel=100
+<region> region_label=05 sample=STabaSubGClos h.wav lovel=101 hivel=127
+
+<group> key=58
+<region> region_label=01 sample=STablaq Sub Reso a.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablaq Sub Reso f.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablaq Sub Reso.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablaq Sub Reso g.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablaq Sub Reso b.wav lovel=81 hivel=95
+<region> region_label=06 sample=STablaq Sub Reso e.wav lovel=96 hivel=110
+<region> region_label=07 sample=STablaq Sub Reso c.wav lovel=111 hivel=127
+
+
+//=========================================================
+<master>
+locc21=1
+amplitude_oncc21=200
+pan_oncc27=100
+pan_curvecc27=1
+group_label=Ge Classic
+group=2
+
+<group> key=60
+<region> region_label=01 sample=STablaClss Gha.wav lovel=1 hivel=12 volume=-8
+<region> region_label=02 sample=STablaClss Gha a.wav lovel=13 hivel=24 volume=-8
+<region> region_label=03 sample=STablaClss Gha b.wav lovel=25 hivel=36 volume=-8
+<region> region_label=04 sample=STablaClss Gha c.wav lovel=37 hivel=48
+<region> region_label=05 sample=STablaClss Gha d.wav lovel=49 hivel=60
+<region> region_label=06 sample=STablaClss Gha e.wav lovel=61 hivel=72
+<region> region_label=07 sample=STablaClss Gha n.wav lovel=73 hivel=84
+<region> region_label=08 sample=STablaClss Gha l.wav lovel=85 hivel=96
+<region> region_label=09 sample=STablaClss Gha m.wav lovel=97 hivel=108
+<region> region_label=10 sample=STablaClss Gha o.wav lovel=109 hivel=127
+
+<group> key=61
+<region> region_label=01 sample=STablaClss Ghb.wav lovel=1 hivel=12 volume=-8
+<region> region_label=02 sample=STablaClss Ghb a.wav lovel=13 hivel=24 volume=-9
+<region> region_label=03 sample=STablaClss Ghb b.wav lovel=25 hivel=36 volume=-8
+<region> region_label=04 sample=STablaClss Ghb c.wav lovel=37 hivel=48
+<region> region_label=05 sample=STablaClss Ghb d.wav lovel=49 hivel=60
+<region> region_label=06 sample=STablaClss Ghb e.wav lovel=61 hivel=72
+<region> region_label=07 sample=STablaClss Ghb n.wav lovel=73 hivel=84
+<region> region_label=08 sample=STablaClss Ghb l.wav lovel=85 hivel=96
+<region> region_label=09 sample=STablaClss Ghb m.wav lovel=97 hivel=108
+<region> region_label=10 sample=STablaClss Ghb o.wav lovel=109 hivel=127
+
+<group> key=62
+<region> region_label=01 sample=STablaClss Ghc.wav lovel=1 hivel=12
+<region> region_label=02 sample=STablaClss Ghc a.wav lovel=13 hivel=24
+<region> region_label=03 sample=STablaClss Ghc b.wav lovel=25 hivel=36
+<region> region_label=04 sample=STablaClss Ghc c.wav lovel=37 hivel=48
+<region> region_label=05 sample=STablaClss Ghc d.wav lovel=49 hivel=60
+<region> region_label=06 sample=STablaClss Ghc e.wav lovel=61 hivel=72
+<region> region_label=07 sample=STablaClss Ghc n.wav lovel=73 hivel=84
+<region> region_label=08 sample=STablaClss Ghc l.wav lovel=85 hivel=96
+<region> region_label=09 sample=STablaClss Ghc m.wav lovel=97 hivel=108
+<region> region_label=10 sample=STablaClss Ghc o.wav lovel=109 hivel=127
+
+<group> key=63
+<region> region_label=01 sample=STablaClss Gha f.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablaClss Gha g.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablaClss Gha h.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablaClss Gha i.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablaClss Gha j.wav lovel=81 hivel=100
+<region> region_label=06 sample=STablaClss Gha k.wav lovel=101 hivel=127
+
+<group> key=64
+<region> region_label=01 sample=STablaClss Ghb f.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablaClss Ghb g.wav lovel=21 hivel=40 tune=40
+<region> region_label=03 sample=STablaClss Ghb h.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablaClss Ghb i.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablaClss Ghb j.wav lovel=81 hivel=100
+<region> region_label=06 sample=STablaClss Ghb k.wav lovel=101 hivel=127
+
+<group> key=65
+<region> region_label=01 sample=STablaClss Ghc j.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablaClss Ghc k.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablaClss Ghc i.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablaClss Ghc h.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablaClss Ghc g.wav lovel=81 hivel=100 tune=60
+<region> region_label=06 sample=STablaClss Ghc f.wav lovel=101 hivel=127
+
+<group> key=66
+<region> region_label=01 sample=STablClssa SDC a.wav lovel=1 hivel=12 volume=-10
+<region> region_label=02 sample=STablClssa SDC b.wav lovel=13 hivel=24 volume=-9 transpose=-4
+<region> region_label=03 sample=STablClssa SDC c.wav lovel=25 hivel=36
+<region> region_label=04 sample=STablClssa SDC d.wav lovel=37 hivel=48
+<region> region_label=05 sample=STablClssa SDC e.wav lovel=49 hivel=60 volume=-6 transpose=-4
+<region> region_label=06 sample=STablClssa SDC f.wav lovel=61 hivel=72
+<region> region_label=07 sample=STablClssa SDC g.wav lovel=73 hivel=84
+<region> region_label=08 sample=STablClssa SDC h.wav lovel=85 hivel=96 transpose=-4
+<region> region_label=09 sample=STablClssa SDC.wav lovel=97 hivel=108 volume=-4
+<region> region_label=10 sample=STablClssa SDC.wav lovel=109 hivel=127
+
+<group> key=67
+<region> region_label=01 sample=STablClssa SUC e.wav lovel=1 hivel=10 volume=-8
+<region> region_label=02 sample=STablClssa SUC f.wav lovel=11 hivel=20 volume=-8
+<region> region_label=03 sample=STablClssa SUC g.wav lovel=21 hivel=30 volume=-8
+<region> region_label=04 sample=STablClssa SUC h.wav lovel=31 hivel=40 volume=-8
+<region> region_label=05 sample=STablClssa SUC i.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablClssa SUC j.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablClssa SUC k.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablClssa SUC l.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablClssa SUC m.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablClssa SUC d.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablClssa SUC c.wav lovel=101 hivel=110 volume=-5
+<region> region_label=12 sample=STablClssa SUC n.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablClssa SUC b.wav lovel=121 hivel=127
+
+<group> key=68
+<region> region_label=01 sample=STablClssa SUO l.wav lovel=1 hivel=12 volume=-17
+<region> region_label=02 sample=STablClssa SUO n.wav lovel=13 hivel=24 volume=-14
+<region> region_label=03 sample=STablClssa SUO m.wav lovel=25 hivel=36 volume=-11
+<region> region_label=04 sample=STablClssa SUO.wav lovel=37 hivel=48 volume=-8
+<region> region_label=05 sample=STablClssa SUO a.wav lovel=49 hivel=60 volume=-8
+<region> region_label=06 sample=STablClssa SUO d.wav lovel=61 hivel=72
+<region> region_label=07 sample=STablClssa SUO e.wav lovel=73 hivel=84
+<region> region_label=08 sample=STablClssa SUO h.wav lovel=85 hivel=96
+<region> region_label=09 sample=STablClssa SUO i.wav lovel=97 hivel=108
+<region> region_label=10 sample=STablClssa SUO.wav lovel=109 hivel=127
+
+<group> key=69
+<region> region_label=01 sample=STablClssa SUO j.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablClssa SUO k.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablClssa SUO g.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablClssa SUO f.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablClssa SUO c.wav lovel=81 hivel=100
+<region> region_label=06 sample=STablClssa SUO b.wav lovel=101 hivel=127
+
+<group> key=70
+<region> region_label=01 sample=STablClssa SUO m.wav lovel=1 hivel=40
+<region> region_label=02 sample=STablClssa SUO n.wav lovel=41 hivel=80
+<region> region_label=03 sample=STablClssa SUO l.wav lovel=81 hivel=127
+
+
+//=========================================================
+<master>
+locc22=1
+amplitude_oncc22=200
+pan_oncc28=100
+pan_curvecc28=1
+group_label=Taka
+group=3
+
+<group> key=72
+<region> region_label=01 sample=STablTaka.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaka a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaka b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaka c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaka e.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaka f.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaka g.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaka h.wav lovel=106 hivel=127
+
+<group> key=73
+<region> region_label=01 sample=STablTaka i.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaka j.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaka k.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaka l.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaka m.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaka n.wav lovel=76 hivel=105
+<region> region_label=07 sample=STablTaka o.wav lovel=106 hivel=127
+
+<group> key=74
+<region> region_label=01 sample=STablTakaa.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTakaa a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTakaa b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTakaa c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTakaa d.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTakaa e.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTakaa f.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTakaa g.wav lovel=106 hivel=127
+
+<group> key=75
+<region> region_label=01 sample=STablTakaa h.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTakaa i.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTakaa j.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTakaa k.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTakaa l.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTakaa m.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTakab.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTakab a.wav lovel=106 hivel=127
+
+<group> key=76
+<region> region_label=01 sample=STablTakab b.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTakab c.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTakab d.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTakab e.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTakab f.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTakab g.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTakab h.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTakab i.wav lovel=106 hivel=127
+
+<group> key=77
+<region> region_label=01 sample=STablTakab j.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTakab k.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTakab l.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTakab m.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTakac t.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTakac a.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTakac b.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTakac m.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTakac c.wav lovel=116 hivel=127
+
+<group> key=78
+<region> region_label=01 sample=STablTakac d.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTakac e.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTakac f.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTakac g.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTakac h.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTakac i.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTakac j.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTakac l.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTakac k.wav lovel=116 hivel=127
+
+<group> key=79
+<region> region_label=01 sample=STablTakac n.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablTakac o.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablTakac p.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablTakac r.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablTakac s.wav lovel=81 hivel=100
+<region> region_label=06 sample=STablTakac t.wav lovel=101 hivel=127 volume=-10
+
+<group> key=80
+<region> region_label=01 sample=STablTakab n.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablTakab o.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablTakab p.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablTakab r.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablTakab s.wav lovel=81 hivel=100
+<region> region_label=06 sample=STablTakab t.wav lovel=101 hivel=127 volume=-6
+
+<group> key=81
+<region> region_label=01 sample=STablTakaa n.wav lovel=1 hivel=20
+<region> region_label=02 sample=STablTakaa o.wav lovel=21 hivel=40
+<region> region_label=03 sample=STablTakaa p.wav lovel=41 hivel=60
+<region> region_label=04 sample=STablTakaa r.wav lovel=61 hivel=80
+<region> region_label=05 sample=STablTakaa s.wav lovel=81 hivel=100
+<region> region_label=06 sample=STablTakaa t.wav lovel=101 hivel=127
+
+
+//=========================================================
+<master>
+locc23=1
+amplitude_oncc23=200
+pan_oncc29=100
+pan_curvecc29=1
+group_label=Ta
+group=4
+
+<group> key=84
+<region> region_label=01 sample=STablTaOpna.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaOpna a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaOpna b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaOpna c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaOpna d.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaOpna e.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaOpna f.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaOpna t.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTaOpna g.wav lovel=116 hivel=127
+
+<group> key=85
+<region> region_label=01 sample=STablTaOpna i.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaOpna j.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaOpna k.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaOpna l.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaOpna m.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaOpna n.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaOpna o.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaOpna p.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTaOpna r.wav lovel=116 hivel=127
+
+<group> key=86
+<region> region_label=01 sample=STablTaOpnb.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaOpnb a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaOpnb b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaOpnb c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaOpnb d.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaOpnb e.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaOpnb f.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaOpnb g.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTaOpna s.wav lovel=116 hivel=127
+
+<group> key=87
+<region> region_label=01 sample=STablTaOpnb i.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaOpnb j.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaOpnb k.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaOpnb l.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaOpnb m.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaOpnb n.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaOpnb o.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaOpnb p.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTaOpnb r.wav lovel=116 hivel=127
+
+<group> key=88
+<region> region_label=01 sample=STablTaOpnc.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaOpnc a.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaOpnc b.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaOpnc c.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaOpnc d.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaOpnc e.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaOpnc f.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaOpnc g.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTaOpnc h.wav lovel=116 hivel=127
+
+<group> key=89
+<region> region_label=01 sample=STablTaOpnc i.wav lovel=1 hivel=15
+<region> region_label=02 sample=STablTaOpnc j.wav lovel=16 hivel=30
+<region> region_label=03 sample=STablTaOpnc k.wav lovel=31 hivel=45
+<region> region_label=04 sample=STablTaOpnc l.wav lovel=46 hivel=60
+<region> region_label=05 sample=STablTaOpnc m.wav lovel=61 hivel=75
+<region> region_label=06 sample=STablTaOpnc n.wav lovel=76 hivel=90
+<region> region_label=07 sample=STablTaOpnc o.wav lovel=91 hivel=105
+<region> region_label=08 sample=STablTaOpnc p.wav lovel=106 hivel=115
+<region> region_label=09 sample=STablTaOpnc r.wav lovel=116 hivel=127
+
+<group> key=90
+<region> region_label=01 sample=STablTaOpnc s.wav lovel=1 hivel=30
+<region> region_label=02 sample=STablTaOpnc t.wav lovel=31 hivel=60
+<region> region_label=03 sample=STablTaOpnb s.wav lovel=61 hivel=90
+<region> region_label=04 sample=STablTaOpnb t.wav lovel=91 hivel=115
+<region> region_label=05 sample=STablTaOpna t.wav lovel=116 hivel=127
+
+
+//=========================================================
+<master>
+locc24=1
+amplitude_oncc24=200
+pan_oncc30=100
+pan_curvecc30=1
+group_label=Tin Closed
+group=5
+
+<group> key=93
+<region> region_label=01 sample=STablTinClosa 001.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinClosa 003.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinClosa 005.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinClosa 009.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinClosa 011.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinClosa 013.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinClosa 017.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinClosa 019.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinClosa 021.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinClosa 025.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinClosa 027.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinClosa 029.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinClosa 033.wav lovel=121 hivel=127
+
+<group> key=94
+<region> region_label=01 sample=STablTinClosa 035.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinClosa 037.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinClosa 041.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinClosa 043.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinClosa 045.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinClosa 049.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinClosa 051.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinClosa 053.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinClosa 055.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinClosa 057.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinClosa 059.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinClosa 061.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinClosa 063.wav lovel=121 hivel=127
+
+<group> key=95
+<region> region_label=01 sample=STablTinClosb 001.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinClosb 003.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinClosb 005.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinClosb 009.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinClosb 011.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinClosb 013.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinClosb 017.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinClosb 019.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinClosb 021.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinClosb 025.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinClosb 027.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinClosb 029.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinClosb 033.wav lovel=121 hivel=127
+
+<group> key=96
+<region> region_label=01 sample=STablTinClosb 035.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinClosb 037.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinClosb 041.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinClosb 043.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinClosb 045.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinClosb 049.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinClosb 051.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinClosb 053.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinClosb 055.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinClosb 057.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinClosb 059.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinClosb 061.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinClosb 063.wav lovel=121 hivel=127
+
+<group> key=97
+<region> region_label=01 sample=STablTinClosc 001.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinClosc 003.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinClosc 005.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinClosc 009.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinClosc 011.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinClosc 013.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinClosc 017.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinClosc 019.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinClosc 021.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinClosc 025.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinClosc 027.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinClosc 029.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinClosc 033.wav lovel=121 hivel=127
+
+<group> key=98
+<region> region_label=01 sample=STablTinClosc 035.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinClosc 037.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinClosc 041.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinClosc 043.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinClosc 045.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinClosc 049.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinClosc 053.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinClosc 055.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinClosc 063.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinClosc 051.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinClosc 059.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinClosc 061.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinClosc 057.wav lovel=121 hivel=127
+
+
+//=========================================================
+<master>
+locc25=1
+amplitude_oncc25=200
+pan_oncc31=100
+pan_curvecc31=1
+group_label=Tin Open
+group=6
+
+<group> key=101
+<region> region_label=01 sample=STablTinOpna 001.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinOpna 003.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinOpna 005.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinOpna 007.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinOpna 009.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinOpna 011.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinOpna 013.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinOpna 015.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinOpna 025.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinOpna 017.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinOpna 019.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinOpna 021.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinOpna 023.wav lovel=121 hivel=127
+
+<group> key=102
+<region> region_label=01 sample=STablTinOpna 027.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinOpna 029.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinOpna 031.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinOpna 033.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinOpna 035.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinOpna 037.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinOpna 039.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinOpna 041.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinOpna 043.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinOpna 045.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinOpna 047.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinOpna 049.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinOpna 051.wav lovel=121 hivel=127
+
+<group> key=103
+<region> region_label=01 sample=STablTinOpnb 001.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinOpnb 003.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinOpnb 005.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinOpnb 009.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinOpnb 011.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinOpnb 013.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinOpnb 015.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinOpnb 017.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinOpnb 019.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinOpnb 021.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinOpnb 023.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinOpnb 025.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinOpnb 027.wav lovel=121 hivel=127
+
+<group> key=104
+<region> region_label=01 sample=STablTinOpnb 029.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinOpnb 031.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinOpnb 033.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinOpnb 035.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinOpnb 037.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinOpnb 039.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinOpnb 041.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinOpnb 043.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinOpnb 045.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinOpnb 047.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinOpnb 049.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinOpnb 051.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinOpnb 053.wav lovel=121 hivel=127
+
+<group> key=105
+<region> region_label=01 sample=STablTinOpnc 003.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinOpnc 005.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinOpnc 007.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinOpnc 011.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinOpnc 015.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinOpnc 017.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinOpnc 021.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinOpnc 025.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinOpnc 027.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinOpnc 035.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinOpnc 037.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinOpnc 039.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinOpnc 047.wav lovel=121 hivel=127
+
+<group> key=106
+<region> region_label=01 sample=STablTinOpnc 051.wav lovel=1 hivel=10
+<region> region_label=02 sample=STablTinOpnc 053.wav lovel=11 hivel=20
+<region> region_label=03 sample=STablTinOpnc 055.wav lovel=21 hivel=30
+<region> region_label=04 sample=STablTinOpnc 057.wav lovel=31 hivel=40
+<region> region_label=05 sample=STablTinOpnc 059.wav lovel=41 hivel=50
+<region> region_label=06 sample=STablTinOpnb 053.wav lovel=51 hivel=60
+<region> region_label=07 sample=STablTinOpnb 055.wav lovel=61 hivel=70
+<region> region_label=08 sample=STablTinOpnb 057.wav lovel=71 hivel=80
+<region> region_label=09 sample=STablTinOpnb 059.wav lovel=81 hivel=90
+<region> region_label=10 sample=STablTinOpna 051.wav lovel=91 hivel=100
+<region> region_label=11 sample=STablTinOpna 053.wav lovel=101 hivel=110
+<region> region_label=12 sample=STablTinOpna 057.wav lovel=111 hivel=120
+<region> region_label=13 sample=STablTinOpna 059.wav lovel=121 hivel=127
