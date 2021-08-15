@@ -13,21 +13,21 @@ set_cc7=100
 set_hdcc10=0.5
 
 <group>
+loop_mode=one_shot
 amplitude_oncc7=100
 amplitude_curvecc7=4
 pan_oncc10=100
 pan_curvecc10=1
-loop_mode=one_shot
-amp_veltrack=99
-note_polyphony=2
+note_polyphony=1
 off_time=2
-seq_length=6
+seq_length=2
 lovel=1
+amp_velcurve_127=1
 key=36
 
-<region> region_label=01 sample=TMKD03 - lust_kick_01.wav seq_position=1
-<region> region_label=02 sample=TMKD03 - lust_kick_02.wav seq_position=2
-<region> region_label=03 sample=TMKD03 - lust_kick_03.wav seq_position=3
-<region> region_label=04 sample=TMKD03 - lust_kick_04.wav seq_position=4
-<region> region_label=05 sample=TMKD03 - lust_kick_05.wav seq_position=5
-<region> region_label=06 sample=TMKD03 - lust_kick_06.wav seq_position=6
+<region> region_label=01 sample=TMKD03 - lust_kick_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=02 sample=TMKD03 - lust_kick_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=03 sample=TMKD03 - lust_kick_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=04 sample=TMKD03 - lust_kick_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=05 sample=TMKD03 - lust_kick_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=06 sample=TMKD03 - lust_kick_06.wav seq_position=2 lorand=0.667 hirand=1.000
