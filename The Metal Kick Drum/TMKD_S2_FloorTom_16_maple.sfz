@@ -13,68 +13,68 @@ set_cc7=100
 set_hdcc10=0.5
 
 <global>
+loop_mode=one_shot
 amplitude_oncc7=100
 amplitude_curvecc7=4
 pan_oncc10=100
 pan_curvecc10=1
-loop_mode=one_shot
-note_polyphony=2
+note_polyphony=1
 off_time=2
-seq_length=6
+seq_length=2
 key=43
 
 <group> lovel=1 hivel=18 amp_velcurve_18=1
-<region> region_label=L1_01 sample=TMKD_S2_tom16_maple_L1_01.wav seq_position=1
-<region> region_label=L1_02 sample=TMKD_S2_tom16_maple_L1_02.wav seq_position=2
-<region> region_label=L1_03 sample=TMKD_S2_tom16_maple_L1_03.wav seq_position=3
-<region> region_label=L1_04 sample=TMKD_S2_tom16_maple_L1_04.wav seq_position=4
-<region> region_label=L1_05 sample=TMKD_S2_tom16_maple_L1_05.wav seq_position=5
-<region> region_label=L1_06 sample=TMKD_S2_tom16_maple_L1_06.wav seq_position=6
+<region> region_label=L1_01 sample=TMKD_S2_tom16_maple_L1_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L1_02 sample=TMKD_S2_tom16_maple_L1_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L1_03 sample=TMKD_S2_tom16_maple_L1_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L1_04 sample=TMKD_S2_tom16_maple_L1_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L1_05 sample=TMKD_S2_tom16_maple_L1_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L1_06 sample=TMKD_S2_tom16_maple_L1_06.wav seq_position=2 lorand=0.667 hirand=1.000
 
 <group> lovel=19 hivel=36 amp_velcurve_36=1
-<region> region_label=L2_01 sample=TMKD_S2_tom16_maple_L2_01.wav seq_position=1
-<region> region_label=L2_02 sample=TMKD_S2_tom16_maple_L2_02.wav seq_position=2
-<region> region_label=L2_03 sample=TMKD_S2_tom16_maple_L2_03.wav seq_position=3
-<region> region_label=L2_04 sample=TMKD_S2_tom16_maple_L2_04.wav seq_position=4
-<region> region_label=L2_05 sample=TMKD_S2_tom16_maple_L2_05.wav seq_position=5
-<region> region_label=L2_06 sample=TMKD_S2_tom16_maple_L2_06.wav seq_position=6
+<region> region_label=L2_01 sample=TMKD_S2_tom16_maple_L2_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L2_02 sample=TMKD_S2_tom16_maple_L2_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L2_03 sample=TMKD_S2_tom16_maple_L2_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L2_04 sample=TMKD_S2_tom16_maple_L2_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L2_05 sample=TMKD_S2_tom16_maple_L2_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L2_06 sample=TMKD_S2_tom16_maple_L2_06.wav seq_position=2 lorand=0.667 hirand=1.000
 
 <group> lovel=37 hivel=54 amp_velcurve_54=1
-<region> region_label=L3_01 sample=TMKD_S2_tom16_maple_L3_01.wav seq_position=1
-<region> region_label=L3_02 sample=TMKD_S2_tom16_maple_L3_02.wav seq_position=2
-<region> region_label=L3_03 sample=TMKD_S2_tom16_maple_L3_03.wav seq_position=3
-<region> region_label=L3_04 sample=TMKD_S2_tom16_maple_L3_04.wav seq_position=4
-<region> region_label=L3_05 sample=TMKD_S2_tom16_maple_L3_05.wav seq_position=5
-<region> region_label=L3_06 sample=TMKD_S2_tom16_maple_L3_06.wav seq_position=6
+<region> region_label=L3_01 sample=TMKD_S2_tom16_maple_L3_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L3_02 sample=TMKD_S2_tom16_maple_L3_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L3_03 sample=TMKD_S2_tom16_maple_L3_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L3_04 sample=TMKD_S2_tom16_maple_L3_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L3_05 sample=TMKD_S2_tom16_maple_L3_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L3_06 sample=TMKD_S2_tom16_maple_L3_06.wav seq_position=2 lorand=0.667 hirand=1.000
 
 <group> lovel=55 hivel=72 amp_velcurve_72=1
-<region> region_label=L4_01 sample=TMKD_S2_tom16_maple_L4_01.wav seq_position=1
-<region> region_label=L4_02 sample=TMKD_S2_tom16_maple_L4_02.wav seq_position=2
-<region> region_label=L4_03 sample=TMKD_S2_tom16_maple_L4_03.wav seq_position=3
-<region> region_label=L4_04 sample=TMKD_S2_tom16_maple_L4_04.wav seq_position=4
-<region> region_label=L4_05 sample=TMKD_S2_tom16_maple_L4_05.wav seq_position=5
-<region> region_label=L4_06 sample=TMKD_S2_tom16_maple_L4_06.wav seq_position=6
+<region> region_label=L4_01 sample=TMKD_S2_tom16_maple_L4_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L4_02 sample=TMKD_S2_tom16_maple_L4_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L4_03 sample=TMKD_S2_tom16_maple_L4_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L4_04 sample=TMKD_S2_tom16_maple_L4_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L4_05 sample=TMKD_S2_tom16_maple_L4_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L4_06 sample=TMKD_S2_tom16_maple_L4_06.wav seq_position=2 lorand=0.667 hirand=1.000
 
 <group> lovel=73 hivel=90 amp_velcurve_90=1
-<region> region_label=L5_01 sample=TMKD_S2_tom16_maple_L5_01.wav seq_position=1
-<region> region_label=L5_02 sample=TMKD_S2_tom16_maple_L5_02.wav seq_position=2
-<region> region_label=L5_03 sample=TMKD_S2_tom16_maple_L5_03.wav seq_position=3
-<region> region_label=L5_04 sample=TMKD_S2_tom16_maple_L5_04.wav seq_position=4
-<region> region_label=L5_05 sample=TMKD_S2_tom16_maple_L5_05.wav seq_position=5
-<region> region_label=L5_06 sample=TMKD_S2_tom16_maple_L5_06.wav seq_position=6
+<region> region_label=L5_01 sample=TMKD_S2_tom16_maple_L5_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L5_02 sample=TMKD_S2_tom16_maple_L5_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L5_03 sample=TMKD_S2_tom16_maple_L5_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L5_04 sample=TMKD_S2_tom16_maple_L5_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L5_05 sample=TMKD_S2_tom16_maple_L5_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L5_06 sample=TMKD_S2_tom16_maple_L5_06.wav seq_position=2 lorand=0.667 hirand=1.000
 
 <group> lovel=91 hivel=108 amp_velcurve_108=1
-<region> region_label=L6_01 sample=TMKD_S2_tom16_maple_L6_01.wav seq_position=1
-<region> region_label=L6_02 sample=TMKD_S2_tom16_maple_L6_02.wav seq_position=2
-<region> region_label=L6_03 sample=TMKD_S2_tom16_maple_L6_03.wav seq_position=3
-<region> region_label=L6_04 sample=TMKD_S2_tom16_maple_L6_04.wav seq_position=4
-<region> region_label=L6_05 sample=TMKD_S2_tom16_maple_L6_05.wav seq_position=5
-<region> region_label=L6_06 sample=TMKD_S2_tom16_maple_L6_06.wav seq_position=6
+<region> region_label=L6_01 sample=TMKD_S2_tom16_maple_L6_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L6_02 sample=TMKD_S2_tom16_maple_L6_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L6_03 sample=TMKD_S2_tom16_maple_L6_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L6_04 sample=TMKD_S2_tom16_maple_L6_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L6_05 sample=TMKD_S2_tom16_maple_L6_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L6_06 sample=TMKD_S2_tom16_maple_L6_06.wav seq_position=2 lorand=0.667 hirand=1.000
 
 <group> lovel=109 hivel=127 amp_velcurve_127=1
-<region> region_label=L7_01 sample=TMKD_S2_tom16_maple_L7_01.wav seq_position=1
-<region> region_label=L7_02 sample=TMKD_S2_tom16_maple_L7_02.wav seq_position=2
-<region> region_label=L7_03 sample=TMKD_S2_tom16_maple_L7_03.wav seq_position=3
-<region> region_label=L7_04 sample=TMKD_S2_tom16_maple_L7_04.wav seq_position=4
-<region> region_label=L7_05 sample=TMKD_S2_tom16_maple_L7_05.wav seq_position=5
-<region> region_label=L7_06 sample=TMKD_S2_tom16_maple_L7_06.wav seq_position=6
+<region> region_label=L7_01 sample=TMKD_S2_tom16_maple_L7_01.wav seq_position=1 lorand=0.000 hirand=0.333
+<region> region_label=L7_02 sample=TMKD_S2_tom16_maple_L7_02.wav seq_position=1 lorand=0.333 hirand=0.667
+<region> region_label=L7_03 sample=TMKD_S2_tom16_maple_L7_03.wav seq_position=1 lorand=0.667 hirand=1.000
+<region> region_label=L7_04 sample=TMKD_S2_tom16_maple_L7_04.wav seq_position=2 lorand=0.000 hirand=0.333
+<region> region_label=L7_05 sample=TMKD_S2_tom16_maple_L7_05.wav seq_position=2 lorand=0.333 hirand=0.667
+<region> region_label=L7_06 sample=TMKD_S2_tom16_maple_L7_06.wav seq_position=2 lorand=0.667 hirand=1.000
