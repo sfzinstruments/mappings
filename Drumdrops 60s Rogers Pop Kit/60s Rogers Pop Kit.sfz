@@ -180,7 +180,7 @@ pan_oncc$PAN_KICK=100
 pan_curvecc$PAN_KICK=1
 tune_oncc$TUN_KICK=1200
 tune_curvecc$TUN_KICK=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.5
 group=1
 
@@ -209,7 +209,7 @@ pan_oncc$PAN_SNR=100
 pan_curvecc$PAN_SNR=1
 tune_oncc$TUN_SNR=1200
 tune_curvecc$TUN_SNR=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.2
 group=2
 sw_last=12
@@ -288,7 +288,7 @@ pan_oncc$PAN_SNR=100
 pan_curvecc$PAN_SNR=1
 tune_oncc$TUN_SNR=1200
 tune_curvecc$TUN_SNR=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.2
 group=2
 sw_last=13
@@ -367,7 +367,7 @@ pan_oncc$PAN_TOM1=100
 pan_curvecc$PAN_TOM1=1
 tune_oncc$TUN_TOM1=1200
 tune_curvecc$TUN_TOM1=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.5
 group=3
 
@@ -388,7 +388,7 @@ pan_oncc$PAN_TOM2=100
 pan_curvecc$PAN_TOM2=1
 tune_oncc$TUN_TOM2=1200
 tune_curvecc$TUN_TOM2=1
-note_polyphony=2
+note_polyphony=1
 off_time=2.5
 group=4
 
@@ -410,7 +410,7 @@ pan_curvecc$PAN_HH=1
 tune_oncc$TUN_HH=1200
 tune_curvecc$TUN_HH=1
 note_polyphony=3
-off_time=0.2
+off_time=0.3
 
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Fully Closed/
 <group>
@@ -599,7 +599,8 @@ pan_curvecc$PAN_RD=1
 tune_oncc$TUN_RD=1200
 tune_curvecc$TUN_RD=1
 note_polyphony=4
-off_time=1.6
+off_shape=-3
+off_time=0.5
 
 <control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Centre/
 <group>
@@ -648,7 +649,8 @@ pan_curvecc$PAN_CR=1
 tune_oncc$TUN_CR=1200
 tune_curvecc$TUN_CR=1
 note_polyphony=4
-off_time=1.4
+off_shape=-3
+off_time=0.3
 
 <control> default_path=SAMPLES/Paiste 602 18 Inch Crash/Centre/
 <group>
@@ -747,7 +749,7 @@ pan_curvecc$PAN_SHK=1
 tune_oncc$TUN_SHK=1200
 tune_curvecc$TUN_SHK=1
 note_polyphony=1
-off_time=1
+off_time=0.5
 group=24
 
 <control> default_path=SAMPLES/Shaker/Hard/
