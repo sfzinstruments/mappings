@@ -110,10 +110,11 @@ key=$SN_ON
 //================================================================
 <master>
 master_label=20x14 Gretsch Kick
+locc20=1
 amplitude_oncc20=200
 pan_oncc27=100
 pan_curvecc27=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.6
 group=1
 
@@ -141,10 +142,11 @@ sw_last=$SN_ON
 //================================================================
 <master>
 master_label=15x15 Ludwig Kick
+locc20=1
 amplitude_oncc20=200
 pan_oncc27=100
 pan_curvecc27=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.5
 group=2
 
@@ -177,10 +179,11 @@ sw_last=$SN_ON
 //================================================================
 <master>
 master_label=14x5.5 Ludwig Snare
+locc21=1
 amplitude_oncc21=200
 pan_oncc28=100
 pan_curvecc28=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.5
 group=3
 
@@ -296,10 +299,11 @@ sw_last=$SN_ON
 <master>
 master_label=12x8 Gretsch Rack Tom
 master_volume=-5
+locc22=1
 amplitude_oncc22=200
 pan_oncc29=100
 pan_curvecc29=1
-note_polyphony=2
+note_polyphony=1
 off_time=2
 group=4
 
@@ -334,10 +338,11 @@ sw_last=$SN_ON
 <master>
 master_label=14x14 Gretsch Floor Tom
 master_volume=-5
+locc23=1
 amplitude_oncc23=200
 pan_oncc30=100
 pan_curvecc30=1
-note_polyphony=2
+note_polyphony=1
 off_time=3
 group=5
 
@@ -372,6 +377,7 @@ sw_label=Snares on
 <master>
 master_label=Top: 13.75'' K. / Bottom: 14'' A. Zildjian Hi-hat
 master_volume=-12
+locc24=1
 amplitude_oncc24=200
 pan_oncc31=100
 pan_curvecc31=1
@@ -526,11 +532,13 @@ sample=*silence
 <master>
 master_label=22'' Istanbul Agop Jazz Ride
 master_volume=-11
+locc25=1
 amplitude_oncc25=200
 pan_oncc32=100
 pan_curvecc32=1
 note_polyphony=4
-off_time=1.7
+off_shape=-3
+off_time=0.5
 
 <group>
 group_label=Bow
@@ -574,11 +582,13 @@ group_label=choke
 <master>
 master_label=21'' Bosphorus Flat Ride
 master_volume=-11
+locc26=1
 amplitude_oncc26=200
 pan_oncc33=100
 pan_curvecc33=1
 note_polyphony=4
-off_time=1.7
+off_shape=-3
+off_time=0.5
 
 <group>
 group_label=Bow
