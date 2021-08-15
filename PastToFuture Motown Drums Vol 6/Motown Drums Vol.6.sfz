@@ -67,8 +67,8 @@ amplitude_oncc7=100
 amplitude_curvecc7=4
 pan_oncc10=100
 pan_curvecc10=1
-amp_veltrack=0
-amp_veltrack_oncc99=100
+amp_veltrack_oncc99=-100
+amp_veltrack_curvecc99=2
 seq_length=2
 
 
@@ -81,7 +81,7 @@ pan_curvecc30=1
 tune_oncc40=1200
 tune_curvecc40=1
 group=1
-note_polyphony=2
+note_polyphony=1
 off_time=1.5
 
 <group> group_label=soft hivel=63 key=36
@@ -111,7 +111,7 @@ pan_curvecc31=1
 tune_oncc41=1200
 tune_curvecc41=1
 group=2
-note_polyphony=2
+note_polyphony=1
 off_time=1.2
 
 <group> group_label=soft hivel=63 key=38
@@ -157,7 +157,7 @@ pan_curvecc32=1
 tune_oncc42=1200
 tune_curvecc42=1
 group=3
-note_polyphony=2
+note_polyphony=1
 off_time=1.5
 
 <group> group_label=hit key=47
@@ -179,7 +179,7 @@ pan_curvecc33=1
 tune_oncc43=1200
 tune_curvecc43=1
 group=4
-note_polyphony=2
+note_polyphony=1
 off_time=2
 
 <group> group_label=hit key=43
@@ -250,7 +250,8 @@ pan_curvecc35=1
 tune_oncc45=1200
 tune_curvecc45=1
 note_polyphony=4
-off_time=1.2
+off_shape=-3
+off_time=0.5
 
 <group> group_label=soft group=7 off_by=9 key=51
 <region> region_label=1 sample=rides (1).wav seq_position=1 lorand=0.000 hirand=0.333
@@ -283,7 +284,8 @@ pan_curvecc36=1
 tune_oncc46=1200
 tune_curvecc46=1
 note_polyphony=4
-off_time=1
+off_shape=-3
+off_time=0.3
 
 <group> group_label=hit group=10 off_by=11 key=49
 <region> region_label=1 sample=crash (1).wav seq_position=1 lorand=0.00 hirand=0.25
