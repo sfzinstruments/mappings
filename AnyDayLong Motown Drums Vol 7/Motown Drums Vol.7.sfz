@@ -67,8 +67,8 @@ amplitude_oncc7=100
 amplitude_curvecc7=4
 pan_oncc10=100
 pan_curvecc10=1
-amp_veltrack=0
-amp_veltrack_oncc99=100
+amp_veltrack_oncc99=-100
+amp_veltrack_curvecc99=2
 seq_length=2
 
 
@@ -318,7 +318,8 @@ pan_curvecc35=1
 tune_oncc45=1200
 tune_curvecc45=1
 note_polyphony=4
-off_time=1.2
+off_shape=-3
+off_time=0.5
 
 <group> group_label=hit group=7 off_by=8 key=51
 <region> region_label=1 sample=rides (1).wav seq_position=1 lorand=0.00 hirand=0.25
@@ -361,7 +362,8 @@ pan_curvecc36=1
 tune_oncc46=1200
 tune_curvecc46=1
 note_polyphony=4
-off_time=1
+off_shape=-3
+off_time=0.3
 
 <group> group_label=hit group=9 off_by=10 key=49
 <region> region_label=1 sample=crash (1).wav seq_position=1 lorand=0.00 hirand=0.25
