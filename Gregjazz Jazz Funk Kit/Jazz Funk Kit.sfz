@@ -399,7 +399,8 @@ group=6
 <group>
 group_label=Closed tip
 key=$KEY_HH_CT
-group=6
+group=7
+off_by=14
 <region> region_label=V1 sample=hihat - closed - 1.wav lovel=1 hivel=15
 <region> region_label=V2 sample=hihat - closed - 2.wav lovel=16 hivel=31
 <region> region_label=V3 sample=hihat - closed - 3.wav lovel=32 hivel=47
@@ -412,7 +413,8 @@ group=6
 <group>
 group_label=Closed shaft
 key=$KEY_HH_CS
-group=6
+group=8
+off_by=15
 <region> region_label=V1 sample=hihat - closed side - 1.wav lovel=1 hivel=24
 <region> region_label=V2 sample=hihat - closed side - 2.wav lovel=25 hivel=50
 <region> region_label=V3 sample=hihat - closed side - 3.wav lovel=51 hivel=75
@@ -422,8 +424,8 @@ group=6
 <group>
 group_label=Openness 1
 key=$KEY_HH_O1
-group=7
-off_by=12
+group=9
+off_by=16
 <region> region_label=V1 sample=hihat - opened 1 - 1.wav lovel=1 hivel=15
 <region> region_label=V2 sample=hihat - opened 1 - 2.wav lovel=16 hivel=31
 <region> region_label=V3 sample=hihat - opened 1 - 3.wav lovel=32 hivel=47
@@ -436,8 +438,8 @@ off_by=12
 <group>
 group_label=Openness 2
 key=$KEY_HH_O2
-group=8
-off_by=13
+group=10
+off_by=17
 <region> region_label=V1 sample=hihat - opened 2 - 1.wav lovel=1 hivel=17
 <region> region_label=V2 sample=hihat - opened 2 - 2.wav lovel=18 hivel=35
 <region> region_label=V3 sample=hihat - opened 2 - 3.wav lovel=36 hivel=53
@@ -449,8 +451,8 @@ off_by=13
 <group>
 group_label=Openness 3
 key=$KEY_HH_O3
-group=9
-off_by=14
+group=11
+off_by=18
 <region> region_label=V1 sample=hihat - opened 3 - 1.wav lovel=1 hivel=13
 <region> region_label=V2 sample=hihat - opened 3 - 2.wav lovel=14 hivel=27
 <region> region_label=V3 sample=hihat - opened 3 - 3.wav lovel=28 hivel=41
@@ -464,8 +466,8 @@ off_by=14
 <group>
 group_label=Openness 4
 key=$KEY_HH_O4
-group=10
-off_by=15
+group=12
+off_by=19
 <region> region_label=V1 sample=hihat - opened 4 - 1.wav lovel=1 hivel=20
 <region> region_label=V2 sample=hihat - opened 4 - 2.wav lovel=21 hivel=41
 <region> region_label=V3 sample=hihat - opened 4 - 3.wav lovel=42 hivel=62
@@ -476,8 +478,8 @@ off_by=15
 <group>
 group_label=Openness 5
 key=$KEY_HH_O5
-group=11
-off_by=16
+group=13
+off_by=20
 <region> region_label=V1 sample=hihat - opened 5 - 1.wav lovel=1 hivel=31
 <region> region_label=V2 sample=hihat - opened 5 - 2.wav lovel=32 hivel=62
 <region> region_label=V3 sample=hihat - opened 5 - 3.wav lovel=63 hivel=94
@@ -486,8 +488,8 @@ off_by=16
 <group>
 group_label=Pedal open
 key=$KEY_HH_PO
-group=11
-off_by=16
+group=13
+off_by=20
 trigger=release_key
 <region> region_label=V1 sample=hihat - open - 1.wav lovel=1 hivel=41
 <region> region_label=V2 sample=hihat - open - 2.wav lovel=42 hivel=84
@@ -497,36 +499,41 @@ trigger=release_key
 <group>
 end=-1
 sample=*silence
-<region> key=$KEY_HH_PD group=12
-<region> key=$KEY_HH_PD group=13
 <region> key=$KEY_HH_PD group=14
 <region> key=$KEY_HH_PD group=15
 <region> key=$KEY_HH_PD group=16
-<region> key=$KEY_HH_CT group=12
-<region> key=$KEY_HH_CT group=13
-<region> key=$KEY_HH_CT group=14
+<region> key=$KEY_HH_PD group=17
+<region> key=$KEY_HH_PD group=18
+<region> key=$KEY_HH_PD group=19
+<region> key=$KEY_HH_PD group=20
 <region> key=$KEY_HH_CT group=15
 <region> key=$KEY_HH_CT group=16
-<region> key=$KEY_HH_CS group=12
-<region> key=$KEY_HH_CS group=13
-<region> key=$KEY_HH_CS group=14
-<region> key=$KEY_HH_CS group=15
+<region> key=$KEY_HH_CT group=17
+<region> key=$KEY_HH_CT group=18
+<region> key=$KEY_HH_CT group=19
+<region> key=$KEY_HH_CT group=20
 <region> key=$KEY_HH_CS group=16
-<region> key=$KEY_HH_O1 group=13
-<region> key=$KEY_HH_O1 group=14
-<region> key=$KEY_HH_O1 group=15
-<region> key=$KEY_HH_O1 group=16
-<region> key=$KEY_HH_O2 group=14
-<region> key=$KEY_HH_O2 group=15
-<region> key=$KEY_HH_O2 group=16
-<region> key=$KEY_HH_O3 group=15
-<region> key=$KEY_HH_O3 group=16
-<region> key=$KEY_HH_O4 group=16
-<region> key=$KEY_HH_PO group=12
-<region> key=$KEY_HH_PO group=13
+<region> key=$KEY_HH_CS group=17
+<region> key=$KEY_HH_CS group=18
+<region> key=$KEY_HH_CS group=19
+<region> key=$KEY_HH_CS group=20
+<region> key=$KEY_HH_O1 group=17
+<region> key=$KEY_HH_O1 group=18
+<region> key=$KEY_HH_O1 group=19
+<region> key=$KEY_HH_O1 group=20
+<region> key=$KEY_HH_O2 group=18
+<region> key=$KEY_HH_O2 group=19
+<region> key=$KEY_HH_O2 group=20
+<region> key=$KEY_HH_O3 group=19
+<region> key=$KEY_HH_O3 group=20
+<region> key=$KEY_HH_O4 group=20
 <region> key=$KEY_HH_PO group=14
 <region> key=$KEY_HH_PO group=15
 <region> key=$KEY_HH_PO group=16
+<region> key=$KEY_HH_PO group=17
+<region> key=$KEY_HH_PO group=18
+<region> key=$KEY_HH_PO group=19
+<region> key=$KEY_HH_PO group=20
 
 //================================================================
 <master>
@@ -543,8 +550,8 @@ off_time=0.5
 <group>
 group_label=Bow
 key=$KEY_RD1_BW
-group=17
-off_by=20
+group=21
+off_by=24
 <region> region_label=V1 sample=ride - 1.wav lovel=1 hivel=24
 <region> region_label=V2 sample=ride - 2.wav lovel=25 hivel=50
 <region> region_label=V3 sample=ride - 3.wav lovel=51 hivel=75
@@ -554,8 +561,8 @@ off_by=20
 <group>
 group_label=Bell
 key=$KEY_RD1_BL
-group=18
-off_by=20
+group=22
+off_by=24
 <region> region_label=V1 sample=ride - bell - 1.wav lovel=1 hivel=41
 <region> region_label=V2 sample=ride - bell - 2.wav lovel=42 hivel=84
 <region> region_label=V3 sample=ride - bell - 3.wav lovel=85 hivel=127
@@ -563,8 +570,8 @@ off_by=20
 <group>
 group_label=Crash
 key=$KEY_RD1_CR
-group=19
-off_by=20
+group=23
+off_by=24
 <region> region_label=V1 sample=ride - crash - 1.wav lovel=1 hivel=24
 <region> region_label=V2 sample=ride - crash - 2.wav lovel=25 hivel=50
 <region> region_label=V3 sample=ride - crash - 3.wav lovel=51 hivel=75
@@ -576,7 +583,7 @@ master_label=Ride 1
 sample=*silence
 ampeg_sustain=0
 group_label=choke
-<region> key=$CHK_RD1 group=20
+<region> key=$CHK_RD1 group=24
 
 //================================================================
 <master>
@@ -593,8 +600,8 @@ off_time=0.5
 <group>
 group_label=Bow
 key=$KEY_RD2_BW
-group=21
-off_by=23
+group=25
+off_by=27
 <region> region_label=V1 sample=flat ride - 1.wav lovel=1 hivel=17
 <region> region_label=V2 sample=flat ride - 2.wav lovel=18 hivel=35
 <region> region_label=V3 sample=flat ride - 3.wav lovel=36 hivel=53
@@ -606,8 +613,8 @@ off_by=23
 <group>
 group_label=Crash
 key=$KEY_RD2_CR
-group=22
-off_by=23
+group=26
+off_by=27
 <region> region_label=V1 sample=flat ride - crash - 1.wav lovel=1 hivel=62
 <region> region_label=V2 sample=flat ride - crash - 2.wav lovel=63 hivel=127
 
@@ -616,4 +623,4 @@ master_label=Ride 2
 sample=*silence
 ampeg_sustain=0
 group_label=choke
-<region> key=$CHK_RD2 group=23
+<region> key=$CHK_RD2 group=27
