@@ -1,0 +1,402 @@
+//--------------------------------------
+// The Crispy Clean Strat
+// by Jakob Reinhardt
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $ATTACK 71
+#define $RELEASE 72
+#define $TONE 74
+#define $VIB_RATE 3
+#define $VIBRATO 1
+#define $LEGATO 67
+#define $EXPRESSION 11
+#define $VELTRACK 99
+
+
+//////////////////////////////////////////////////////////
+<control>
+default_path=Crispy Clean Strat Samples/
+
+label_cc7=Vol
+label_cc10=Pan
+label_cc$ATTACK=Attack
+label_cc$RELEASE=Release
+label_cc$TONE=Tone
+label_cc$VIB_RATE=Vib Rate
+label_cc$VIBRATO=Vibrato
+label_cc$LEGATO=Legato
+label_cc$EXPRESSION=Exp
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$RELEASE=0.05
+set_hdcc$TONE=1
+set_hdcc$VIB_RATE=0.5
+set_hdcc$EXPRESSION=1
+set_hdcc$VELTRACK=1
+
+
+//*****************************************
+<global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+seq_length=3
+ampeg_release_oncc$RELEASE=5
+amplitude_oncc$EXPRESSION=100
+amp_veltrack_oncc$VELTRACK=-100
+amp_veltrack_curvecc$VELTRACK=2
+fil_type=lpf_1p
+cutoff=24000
+cutoff_oncc$TONE=-8400
+cutoff_curvecc$TONE=2
+pitchlfo_freq_oncc$VIB_RATE=10
+pitchlfo_depth_oncc$VIBRATO=50
+pitchlfo_fade=2
+off_time=0.01
+off_shape=0
+
+
+//==========================
+<master>
+master_label=attack
+ampeg_attack=0.0005
+ampeg_attack_oncc$ATTACK=5
+group=1
+off_by=2
+
+<group> group_label=rr1 seq_position=1
+<region> region_label=01 key=36 offset_oncc131=357 sample=Cripsy Clean Strat - C2.wav
+<region> region_label=02 key=37 offset_oncc131=331 sample=Cripsy Clean Strat - C#2.wav
+<region> region_label=03 key=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=04 key=39 offset_oncc131=203 sample=Cripsy Clean Strat - D#2.wav
+<region> region_label=05 key=40 offset_oncc131=377 sample=Cripsy Clean Strat - E2.wav
+<region> region_label=06 key=41 offset_oncc131=981 sample=Cripsy Clean Strat - F2.wav
+<region> region_label=07 key=42 offset_oncc131=985 sample=Cripsy Clean Strat - F#2.wav
+<region> region_label=08 key=43 offset_oncc131=797 sample=Cripsy Clean Strat - G2.wav
+<region> region_label=09 key=44 offset_oncc131=909 sample=Cripsy Clean Strat - G#2.wav
+<region> region_label=10 key=45 offset_oncc131=427 sample=Cripsy Clean Strat - A2.wav
+<region> region_label=11 key=46 offset_oncc131=451 sample=Cripsy Clean Strat - A#2.wav
+<region> region_label=12 key=47 offset_oncc131=535 sample=Cripsy Clean Strat - B2.wav
+<region> region_label=13 key=48 offset_oncc131=438 sample=Cripsy Clean Strat - C3.wav
+<region> region_label=14 key=49 offset_oncc131=446 sample=Cripsy Clean Strat - C#3.wav
+<region> region_label=15 key=50 offset_oncc131=370 sample=Cripsy Clean Strat - D3.wav
+<region> region_label=16 key=51 offset_oncc131=372 sample=Cripsy Clean Strat - D#3.wav
+<region> region_label=17 key=52 offset_oncc131=342 sample=Cripsy Clean Strat - E3.wav
+<region> region_label=18 key=53 offset_oncc131=397 sample=Cripsy Clean Strat - F3.wav
+<region> region_label=19 key=54 offset_oncc131=369 sample=Cripsy Clean Strat - F#3.wav
+<region> region_label=20 key=55 offset_oncc131=316 sample=Cripsy Clean Strat - G3.wav
+<region> region_label=21 key=56 offset_oncc131=325 sample=Cripsy Clean Strat - G#3.wav
+<region> region_label=22 key=57 offset_oncc131=332 sample=Cripsy Clean Strat - A3.wav
+<region> region_label=23 key=58 offset_oncc131=364 sample=Cripsy Clean Strat - A#3.wav
+<region> region_label=24 key=59 offset_oncc131=317 sample=Cripsy Clean Strat - B3.wav
+<region> region_label=25 key=60 offset_oncc131=331 sample=Cripsy Clean Strat - C4.wav
+<region> region_label=26 key=61 offset_oncc131=283 sample=Cripsy Clean Strat - C#4.wav
+<region> region_label=27 key=62 offset_oncc131=300 sample=Cripsy Clean Strat - D4.wav
+<region> region_label=28 key=63 offset_oncc131=300 sample=Cripsy Clean Strat - D#4.wav
+<region> region_label=29 key=64 offset_oncc131=203 sample=Cripsy Clean Strat - E4.wav
+<region> region_label=30 key=65 offset_oncc131=230 sample=Cripsy Clean Strat - F4.wav
+<region> region_label=31 key=66 offset_oncc131=405 sample=Cripsy Clean Strat - F#4.wav
+<region> region_label=32 key=67 offset_oncc131=364 sample=Cripsy Clean Strat - G4.wav
+<region> region_label=33 key=68 offset_oncc131=426 sample=Cripsy Clean Strat - G#4.wav
+<region> region_label=34 key=69 offset_oncc131=212 sample=Cripsy Clean Strat - A4.wav
+<region> region_label=35 key=70 offset_oncc131=382 sample=Cripsy Clean Strat - A#4.wav
+<region> region_label=36 key=71 offset_oncc131=320 sample=Cripsy Clean Strat - B4.wav
+<region> region_label=37 key=72 offset_oncc131=316 sample=Cripsy Clean Strat - C5.wav
+<region> region_label=38 key=73 offset_oncc131=336 sample=Cripsy Clean Strat - C#5.wav
+<region> region_label=39 key=74 offset_oncc131=306 sample=Cripsy Clean Strat - D5.wav
+<region> region_label=40 key=75 offset_oncc131=173 sample=Cripsy Clean Strat - D#5.wav
+<region> region_label=41 key=76 offset_oncc131=313 sample=Cripsy Clean Strat - E5.wav
+<region> region_label=42 key=77 offset_oncc131=388 sample=Cripsy Clean Strat - F5.wav
+<region> region_label=43 key=78 offset_oncc131=398 sample=Cripsy Clean Strat - F#5.wav
+<region> region_label=44 key=79 offset_oncc131=357 sample=Cripsy Clean Strat - G5.wav
+<region> region_label=45 key=80 offset_oncc131=530 sample=Cripsy Clean Strat - G#5.wav
+<region> region_label=46 key=81 offset_oncc131=350 sample=Cripsy Clean Strat - A5.wav
+<region> region_label=47 key=82 offset_oncc131=337 sample=Cripsy Clean Strat - A#5.wav
+<region> region_label=48 key=83 offset_oncc131=379 sample=Cripsy Clean Strat - B5.wav
+<region> region_label=49 key=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+<region> region_label=50 key=85 offset_oncc131=415 sample=Cripsy Clean Strat - C#6.wav
+<region> region_label=51 key=86 offset_oncc131=429 sample=Cripsy Clean Strat - D6.wav
+
+<group> group_label=rr2 seq_position=2
+<region> region_label=01 key=36 pitch_keycenter=37 offset_oncc131=331 sample=Cripsy Clean Strat - C#2.wav
+<region> region_label=02 key=37 pitch_keycenter=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=03 key=38 pitch_keycenter=39 offset_oncc131=203 sample=Cripsy Clean Strat - D#2.wav
+<region> region_label=04 key=39 pitch_keycenter=40 offset_oncc131=377 sample=Cripsy Clean Strat - E2.wav
+<region> region_label=05 key=40 pitch_keycenter=41 offset_oncc131=981 sample=Cripsy Clean Strat - F2.wav
+<region> region_label=06 key=41 pitch_keycenter=42 offset_oncc131=985 sample=Cripsy Clean Strat - F#2.wav
+<region> region_label=07 key=42 pitch_keycenter=43 offset_oncc131=797 sample=Cripsy Clean Strat - G2.wav
+<region> region_label=08 key=43 pitch_keycenter=44 offset_oncc131=909 sample=Cripsy Clean Strat - G#2.wav
+<region> region_label=09 key=44 pitch_keycenter=45 offset_oncc131=427 sample=Cripsy Clean Strat - A2.wav
+<region> region_label=10 key=45 pitch_keycenter=46 offset_oncc131=451 sample=Cripsy Clean Strat - A#2.wav
+<region> region_label=11 key=46 pitch_keycenter=47 offset_oncc131=535 sample=Cripsy Clean Strat - B2.wav
+<region> region_label=12 key=47 pitch_keycenter=48 offset_oncc131=438 sample=Cripsy Clean Strat - C3.wav
+<region> region_label=13 key=48 pitch_keycenter=49 offset_oncc131=446 sample=Cripsy Clean Strat - C#3.wav
+<region> region_label=14 key=49 pitch_keycenter=50 offset_oncc131=370 sample=Cripsy Clean Strat - D3.wav
+<region> region_label=15 key=50 pitch_keycenter=51 offset_oncc131=372 sample=Cripsy Clean Strat - D#3.wav
+<region> region_label=16 key=51 pitch_keycenter=52 offset_oncc131=342 sample=Cripsy Clean Strat - E3.wav
+<region> region_label=17 key=52 pitch_keycenter=53 offset_oncc131=397 sample=Cripsy Clean Strat - F3.wav
+<region> region_label=18 key=53 pitch_keycenter=54 offset_oncc131=369 sample=Cripsy Clean Strat - F#3.wav
+<region> region_label=19 key=54 pitch_keycenter=55 offset_oncc131=316 sample=Cripsy Clean Strat - G3.wav
+<region> region_label=20 key=55 pitch_keycenter=56 offset_oncc131=325 sample=Cripsy Clean Strat - G#3.wav
+<region> region_label=21 key=56 pitch_keycenter=57 offset_oncc131=332 sample=Cripsy Clean Strat - A3.wav
+<region> region_label=22 key=57 pitch_keycenter=58 offset_oncc131=364 sample=Cripsy Clean Strat - A#3.wav
+<region> region_label=23 key=58 pitch_keycenter=59 offset_oncc131=317 sample=Cripsy Clean Strat - B3.wav
+<region> region_label=24 key=59 pitch_keycenter=60 offset_oncc131=331 sample=Cripsy Clean Strat - C4.wav
+<region> region_label=25 key=60 pitch_keycenter=61 offset_oncc131=283 sample=Cripsy Clean Strat - C#4.wav
+<region> region_label=26 key=61 pitch_keycenter=62 offset_oncc131=300 sample=Cripsy Clean Strat - D4.wav
+<region> region_label=27 key=62 pitch_keycenter=63 offset_oncc131=300 sample=Cripsy Clean Strat - D#4.wav
+<region> region_label=28 key=63 pitch_keycenter=64 offset_oncc131=203 sample=Cripsy Clean Strat - E4.wav
+<region> region_label=29 key=64 pitch_keycenter=65 offset_oncc131=230 sample=Cripsy Clean Strat - F4.wav
+<region> region_label=30 key=65 pitch_keycenter=66 offset_oncc131=405 sample=Cripsy Clean Strat - F#4.wav
+<region> region_label=31 key=66 pitch_keycenter=67 offset_oncc131=364 sample=Cripsy Clean Strat - G4.wav
+<region> region_label=32 key=67 pitch_keycenter=68 offset_oncc131=426 sample=Cripsy Clean Strat - G#4.wav
+<region> region_label=33 key=68 pitch_keycenter=69 offset_oncc131=212 sample=Cripsy Clean Strat - A4.wav
+<region> region_label=34 key=69 pitch_keycenter=70 offset_oncc131=382 sample=Cripsy Clean Strat - A#4.wav
+<region> region_label=35 key=70 pitch_keycenter=71 offset_oncc131=320 sample=Cripsy Clean Strat - B4.wav
+<region> region_label=36 key=71 pitch_keycenter=72 offset_oncc131=316 sample=Cripsy Clean Strat - C5.wav
+<region> region_label=37 key=72 pitch_keycenter=73 offset_oncc131=336 sample=Cripsy Clean Strat - C#5.wav
+<region> region_label=38 key=73 pitch_keycenter=74 offset_oncc131=306 sample=Cripsy Clean Strat - D5.wav
+<region> region_label=39 key=74 pitch_keycenter=75 offset_oncc131=173 sample=Cripsy Clean Strat - D#5.wav
+<region> region_label=40 key=75 pitch_keycenter=76 offset_oncc131=313 sample=Cripsy Clean Strat - E5.wav
+<region> region_label=41 key=76 pitch_keycenter=77 offset_oncc131=388 sample=Cripsy Clean Strat - F5.wav
+<region> region_label=42 key=77 pitch_keycenter=78 offset_oncc131=398 sample=Cripsy Clean Strat - F#5.wav
+<region> region_label=43 key=78 pitch_keycenter=79 offset_oncc131=357 sample=Cripsy Clean Strat - G5.wav
+<region> region_label=44 key=79 pitch_keycenter=80 offset_oncc131=530 sample=Cripsy Clean Strat - G#5.wav
+<region> region_label=45 key=80 pitch_keycenter=81 offset_oncc131=350 sample=Cripsy Clean Strat - A5.wav
+<region> region_label=46 key=81 pitch_keycenter=82 offset_oncc131=337 sample=Cripsy Clean Strat - A#5.wav
+<region> region_label=47 key=82 pitch_keycenter=83 offset_oncc131=379 sample=Cripsy Clean Strat - B5.wav
+<region> region_label=48 key=83 pitch_keycenter=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+<region> region_label=49 key=84 pitch_keycenter=85 offset_oncc131=415 sample=Cripsy Clean Strat - C#6.wav
+<region> region_label=50 key=85 pitch_keycenter=86 offset_oncc131=429 sample=Cripsy Clean Strat - D6.wav
+<region> region_label=51 key=86 pitch_keycenter=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+
+<group> group_label=rr3 seq_position=3
+<region> region_label=01 key=36 pitch_keycenter=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=02 key=37 pitch_keycenter=36 offset_oncc131=357 sample=Cripsy Clean Strat - C2.wav
+<region> region_label=03 key=38 pitch_keycenter=37 offset_oncc131=331 sample=Cripsy Clean Strat - C#2.wav
+<region> region_label=04 key=39 pitch_keycenter=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=05 key=40 pitch_keycenter=39 offset_oncc131=203 sample=Cripsy Clean Strat - D#2.wav
+<region> region_label=06 key=41 pitch_keycenter=40 offset_oncc131=377 sample=Cripsy Clean Strat - E2.wav
+<region> region_label=07 key=42 pitch_keycenter=41 offset_oncc131=981 sample=Cripsy Clean Strat - F2.wav
+<region> region_label=08 key=43 pitch_keycenter=42 offset_oncc131=985 sample=Cripsy Clean Strat - F#2.wav
+<region> region_label=09 key=44 pitch_keycenter=43 offset_oncc131=797 sample=Cripsy Clean Strat - G2.wav
+<region> region_label=10 key=45 pitch_keycenter=44 offset_oncc131=909 sample=Cripsy Clean Strat - G#2.wav
+<region> region_label=11 key=46 pitch_keycenter=45 offset_oncc131=427 sample=Cripsy Clean Strat - A2.wav
+<region> region_label=12 key=47 pitch_keycenter=46 offset_oncc131=451 sample=Cripsy Clean Strat - A#2.wav
+<region> region_label=13 key=48 pitch_keycenter=47 offset_oncc131=535 sample=Cripsy Clean Strat - B2.wav
+<region> region_label=14 key=49 pitch_keycenter=48 offset_oncc131=438 sample=Cripsy Clean Strat - C3.wav
+<region> region_label=15 key=50 pitch_keycenter=49 offset_oncc131=446 sample=Cripsy Clean Strat - C#3.wav
+<region> region_label=16 key=51 pitch_keycenter=50 offset_oncc131=370 sample=Cripsy Clean Strat - D3.wav
+<region> region_label=17 key=52 pitch_keycenter=51 offset_oncc131=372 sample=Cripsy Clean Strat - D#3.wav
+<region> region_label=18 key=53 pitch_keycenter=52 offset_oncc131=342 sample=Cripsy Clean Strat - E3.wav
+<region> region_label=19 key=54 pitch_keycenter=53 offset_oncc131=397 sample=Cripsy Clean Strat - F3.wav
+<region> region_label=20 key=55 pitch_keycenter=54 offset_oncc131=369 sample=Cripsy Clean Strat - F#3.wav
+<region> region_label=21 key=56 pitch_keycenter=55 offset_oncc131=316 sample=Cripsy Clean Strat - G3.wav
+<region> region_label=22 key=57 pitch_keycenter=56 offset_oncc131=325 sample=Cripsy Clean Strat - G#3.wav
+<region> region_label=23 key=58 pitch_keycenter=57 offset_oncc131=332 sample=Cripsy Clean Strat - A3.wav
+<region> region_label=24 key=59 pitch_keycenter=58 offset_oncc131=364 sample=Cripsy Clean Strat - A#3.wav
+<region> region_label=25 key=60 pitch_keycenter=59 offset_oncc131=317 sample=Cripsy Clean Strat - B3.wav
+<region> region_label=26 key=61 pitch_keycenter=60 offset_oncc131=331 sample=Cripsy Clean Strat - C4.wav
+<region> region_label=27 key=62 pitch_keycenter=61 offset_oncc131=283 sample=Cripsy Clean Strat - C#4.wav
+<region> region_label=28 key=63 pitch_keycenter=62 offset_oncc131=300 sample=Cripsy Clean Strat - D4.wav
+<region> region_label=29 key=64 pitch_keycenter=63 offset_oncc131=300 sample=Cripsy Clean Strat - D#4.wav
+<region> region_label=30 key=65 pitch_keycenter=64 offset_oncc131=203 sample=Cripsy Clean Strat - E4.wav
+<region> region_label=31 key=66 pitch_keycenter=65 offset_oncc131=230 sample=Cripsy Clean Strat - F4.wav
+<region> region_label=32 key=67 pitch_keycenter=66 offset_oncc131=405 sample=Cripsy Clean Strat - F#4.wav
+<region> region_label=33 key=68 pitch_keycenter=67 offset_oncc131=364 sample=Cripsy Clean Strat - G4.wav
+<region> region_label=34 key=69 pitch_keycenter=68 offset_oncc131=426 sample=Cripsy Clean Strat - G#4.wav
+<region> region_label=35 key=70 pitch_keycenter=69 offset_oncc131=212 sample=Cripsy Clean Strat - A4.wav
+<region> region_label=36 key=71 pitch_keycenter=70 offset_oncc131=382 sample=Cripsy Clean Strat - A#4.wav
+<region> region_label=37 key=72 pitch_keycenter=71 offset_oncc131=320 sample=Cripsy Clean Strat - B4.wav
+<region> region_label=38 key=73 pitch_keycenter=72 offset_oncc131=316 sample=Cripsy Clean Strat - C5.wav
+<region> region_label=39 key=74 pitch_keycenter=73 offset_oncc131=336 sample=Cripsy Clean Strat - C#5.wav
+<region> region_label=40 key=75 pitch_keycenter=74 offset_oncc131=306 sample=Cripsy Clean Strat - D5.wav
+<region> region_label=41 key=76 pitch_keycenter=75 offset_oncc131=173 sample=Cripsy Clean Strat - D#5.wav
+<region> region_label=42 key=77 pitch_keycenter=76 offset_oncc131=313 sample=Cripsy Clean Strat - E5.wav
+<region> region_label=43 key=78 pitch_keycenter=77 offset_oncc131=388 sample=Cripsy Clean Strat - F5.wav
+<region> region_label=44 key=79 pitch_keycenter=78 offset_oncc131=398 sample=Cripsy Clean Strat - F#5.wav
+<region> region_label=45 key=80 pitch_keycenter=79 offset_oncc131=357 sample=Cripsy Clean Strat - G5.wav
+<region> region_label=46 key=81 pitch_keycenter=80 offset_oncc131=530 sample=Cripsy Clean Strat - G#5.wav
+<region> region_label=47 key=82 pitch_keycenter=81 offset_oncc131=350 sample=Cripsy Clean Strat - A5.wav
+<region> region_label=48 key=83 pitch_keycenter=82 offset_oncc131=337 sample=Cripsy Clean Strat - A#5.wav
+<region> region_label=49 key=84 pitch_keycenter=83 offset_oncc131=379 sample=Cripsy Clean Strat - B5.wav
+<region> region_label=50 key=85 pitch_keycenter=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+<region> region_label=51 key=86 pitch_keycenter=85 offset_oncc131=415 sample=Cripsy Clean Strat - C#6.wav
+
+
+//==========================
+<master>
+master_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset=10000
+offset_random=10000
+ampeg_attack=0.005
+locc$LEGATO=1
+
+<group> group_label=rr1 seq_position=1
+<region> region_label=01 key=36 offset_oncc131=357 sample=Cripsy Clean Strat - C2.wav
+<region> region_label=02 key=37 offset_oncc131=331 sample=Cripsy Clean Strat - C#2.wav
+<region> region_label=03 key=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=04 key=39 offset_oncc131=203 sample=Cripsy Clean Strat - D#2.wav
+<region> region_label=05 key=40 offset_oncc131=377 sample=Cripsy Clean Strat - E2.wav
+<region> region_label=06 key=41 offset_oncc131=981 sample=Cripsy Clean Strat - F2.wav
+<region> region_label=07 key=42 offset_oncc131=985 sample=Cripsy Clean Strat - F#2.wav
+<region> region_label=08 key=43 offset_oncc131=797 sample=Cripsy Clean Strat - G2.wav
+<region> region_label=09 key=44 offset_oncc131=909 sample=Cripsy Clean Strat - G#2.wav
+<region> region_label=10 key=45 offset_oncc131=427 sample=Cripsy Clean Strat - A2.wav
+<region> region_label=11 key=46 offset_oncc131=451 sample=Cripsy Clean Strat - A#2.wav
+<region> region_label=12 key=47 offset_oncc131=535 sample=Cripsy Clean Strat - B2.wav
+<region> region_label=13 key=48 offset_oncc131=438 sample=Cripsy Clean Strat - C3.wav
+<region> region_label=14 key=49 offset_oncc131=446 sample=Cripsy Clean Strat - C#3.wav
+<region> region_label=15 key=50 offset_oncc131=370 sample=Cripsy Clean Strat - D3.wav
+<region> region_label=16 key=51 offset_oncc131=372 sample=Cripsy Clean Strat - D#3.wav
+<region> region_label=17 key=52 offset_oncc131=342 sample=Cripsy Clean Strat - E3.wav
+<region> region_label=18 key=53 offset_oncc131=397 sample=Cripsy Clean Strat - F3.wav
+<region> region_label=19 key=54 offset_oncc131=369 sample=Cripsy Clean Strat - F#3.wav
+<region> region_label=20 key=55 offset_oncc131=316 sample=Cripsy Clean Strat - G3.wav
+<region> region_label=21 key=56 offset_oncc131=325 sample=Cripsy Clean Strat - G#3.wav
+<region> region_label=22 key=57 offset_oncc131=332 sample=Cripsy Clean Strat - A3.wav
+<region> region_label=23 key=58 offset_oncc131=364 sample=Cripsy Clean Strat - A#3.wav
+<region> region_label=24 key=59 offset_oncc131=317 sample=Cripsy Clean Strat - B3.wav
+<region> region_label=25 key=60 offset_oncc131=331 sample=Cripsy Clean Strat - C4.wav
+<region> region_label=26 key=61 offset_oncc131=283 sample=Cripsy Clean Strat - C#4.wav
+<region> region_label=27 key=62 offset_oncc131=300 sample=Cripsy Clean Strat - D4.wav
+<region> region_label=28 key=63 offset_oncc131=300 sample=Cripsy Clean Strat - D#4.wav
+<region> region_label=29 key=64 offset_oncc131=203 sample=Cripsy Clean Strat - E4.wav
+<region> region_label=30 key=65 offset_oncc131=230 sample=Cripsy Clean Strat - F4.wav
+<region> region_label=31 key=66 offset_oncc131=405 sample=Cripsy Clean Strat - F#4.wav
+<region> region_label=32 key=67 offset_oncc131=364 sample=Cripsy Clean Strat - G4.wav
+<region> region_label=33 key=68 offset_oncc131=426 sample=Cripsy Clean Strat - G#4.wav
+<region> region_label=34 key=69 offset_oncc131=212 sample=Cripsy Clean Strat - A4.wav
+<region> region_label=35 key=70 offset_oncc131=382 sample=Cripsy Clean Strat - A#4.wav
+<region> region_label=36 key=71 offset_oncc131=320 sample=Cripsy Clean Strat - B4.wav
+<region> region_label=37 key=72 offset_oncc131=316 sample=Cripsy Clean Strat - C5.wav
+<region> region_label=38 key=73 offset_oncc131=336 sample=Cripsy Clean Strat - C#5.wav
+<region> region_label=39 key=74 offset_oncc131=306 sample=Cripsy Clean Strat - D5.wav
+<region> region_label=40 key=75 offset_oncc131=173 sample=Cripsy Clean Strat - D#5.wav
+<region> region_label=41 key=76 offset_oncc131=313 sample=Cripsy Clean Strat - E5.wav
+<region> region_label=42 key=77 offset_oncc131=388 sample=Cripsy Clean Strat - F5.wav
+<region> region_label=43 key=78 offset_oncc131=398 sample=Cripsy Clean Strat - F#5.wav
+<region> region_label=44 key=79 offset_oncc131=357 sample=Cripsy Clean Strat - G5.wav
+<region> region_label=45 key=80 offset_oncc131=530 sample=Cripsy Clean Strat - G#5.wav
+<region> region_label=46 key=81 offset_oncc131=350 sample=Cripsy Clean Strat - A5.wav
+<region> region_label=47 key=82 offset_oncc131=337 sample=Cripsy Clean Strat - A#5.wav
+<region> region_label=48 key=83 offset_oncc131=379 sample=Cripsy Clean Strat - B5.wav
+<region> region_label=49 key=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+<region> region_label=50 key=85 offset_oncc131=415 sample=Cripsy Clean Strat - C#6.wav
+<region> region_label=51 key=86 offset_oncc131=429 sample=Cripsy Clean Strat - D6.wav
+
+<group> group_label=rr2 seq_position=2
+<region> region_label=01 key=36 pitch_keycenter=37 offset_oncc131=331 sample=Cripsy Clean Strat - C#2.wav
+<region> region_label=02 key=37 pitch_keycenter=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=03 key=38 pitch_keycenter=39 offset_oncc131=203 sample=Cripsy Clean Strat - D#2.wav
+<region> region_label=04 key=39 pitch_keycenter=40 offset_oncc131=377 sample=Cripsy Clean Strat - E2.wav
+<region> region_label=05 key=40 pitch_keycenter=41 offset_oncc131=981 sample=Cripsy Clean Strat - F2.wav
+<region> region_label=06 key=41 pitch_keycenter=42 offset_oncc131=985 sample=Cripsy Clean Strat - F#2.wav
+<region> region_label=07 key=42 pitch_keycenter=43 offset_oncc131=797 sample=Cripsy Clean Strat - G2.wav
+<region> region_label=08 key=43 pitch_keycenter=44 offset_oncc131=909 sample=Cripsy Clean Strat - G#2.wav
+<region> region_label=09 key=44 pitch_keycenter=45 offset_oncc131=427 sample=Cripsy Clean Strat - A2.wav
+<region> region_label=10 key=45 pitch_keycenter=46 offset_oncc131=451 sample=Cripsy Clean Strat - A#2.wav
+<region> region_label=11 key=46 pitch_keycenter=47 offset_oncc131=535 sample=Cripsy Clean Strat - B2.wav
+<region> region_label=12 key=47 pitch_keycenter=48 offset_oncc131=438 sample=Cripsy Clean Strat - C3.wav
+<region> region_label=13 key=48 pitch_keycenter=49 offset_oncc131=446 sample=Cripsy Clean Strat - C#3.wav
+<region> region_label=14 key=49 pitch_keycenter=50 offset_oncc131=370 sample=Cripsy Clean Strat - D3.wav
+<region> region_label=15 key=50 pitch_keycenter=51 offset_oncc131=372 sample=Cripsy Clean Strat - D#3.wav
+<region> region_label=16 key=51 pitch_keycenter=52 offset_oncc131=342 sample=Cripsy Clean Strat - E3.wav
+<region> region_label=17 key=52 pitch_keycenter=53 offset_oncc131=397 sample=Cripsy Clean Strat - F3.wav
+<region> region_label=18 key=53 pitch_keycenter=54 offset_oncc131=369 sample=Cripsy Clean Strat - F#3.wav
+<region> region_label=19 key=54 pitch_keycenter=55 offset_oncc131=316 sample=Cripsy Clean Strat - G3.wav
+<region> region_label=20 key=55 pitch_keycenter=56 offset_oncc131=325 sample=Cripsy Clean Strat - G#3.wav
+<region> region_label=21 key=56 pitch_keycenter=57 offset_oncc131=332 sample=Cripsy Clean Strat - A3.wav
+<region> region_label=22 key=57 pitch_keycenter=58 offset_oncc131=364 sample=Cripsy Clean Strat - A#3.wav
+<region> region_label=23 key=58 pitch_keycenter=59 offset_oncc131=317 sample=Cripsy Clean Strat - B3.wav
+<region> region_label=24 key=59 pitch_keycenter=60 offset_oncc131=331 sample=Cripsy Clean Strat - C4.wav
+<region> region_label=25 key=60 pitch_keycenter=61 offset_oncc131=283 sample=Cripsy Clean Strat - C#4.wav
+<region> region_label=26 key=61 pitch_keycenter=62 offset_oncc131=300 sample=Cripsy Clean Strat - D4.wav
+<region> region_label=27 key=62 pitch_keycenter=63 offset_oncc131=300 sample=Cripsy Clean Strat - D#4.wav
+<region> region_label=28 key=63 pitch_keycenter=64 offset_oncc131=203 sample=Cripsy Clean Strat - E4.wav
+<region> region_label=29 key=64 pitch_keycenter=65 offset_oncc131=230 sample=Cripsy Clean Strat - F4.wav
+<region> region_label=30 key=65 pitch_keycenter=66 offset_oncc131=405 sample=Cripsy Clean Strat - F#4.wav
+<region> region_label=31 key=66 pitch_keycenter=67 offset_oncc131=364 sample=Cripsy Clean Strat - G4.wav
+<region> region_label=32 key=67 pitch_keycenter=68 offset_oncc131=426 sample=Cripsy Clean Strat - G#4.wav
+<region> region_label=33 key=68 pitch_keycenter=69 offset_oncc131=212 sample=Cripsy Clean Strat - A4.wav
+<region> region_label=34 key=69 pitch_keycenter=70 offset_oncc131=382 sample=Cripsy Clean Strat - A#4.wav
+<region> region_label=35 key=70 pitch_keycenter=71 offset_oncc131=320 sample=Cripsy Clean Strat - B4.wav
+<region> region_label=36 key=71 pitch_keycenter=72 offset_oncc131=316 sample=Cripsy Clean Strat - C5.wav
+<region> region_label=37 key=72 pitch_keycenter=73 offset_oncc131=336 sample=Cripsy Clean Strat - C#5.wav
+<region> region_label=38 key=73 pitch_keycenter=74 offset_oncc131=306 sample=Cripsy Clean Strat - D5.wav
+<region> region_label=39 key=74 pitch_keycenter=75 offset_oncc131=173 sample=Cripsy Clean Strat - D#5.wav
+<region> region_label=40 key=75 pitch_keycenter=76 offset_oncc131=313 sample=Cripsy Clean Strat - E5.wav
+<region> region_label=41 key=76 pitch_keycenter=77 offset_oncc131=388 sample=Cripsy Clean Strat - F5.wav
+<region> region_label=42 key=77 pitch_keycenter=78 offset_oncc131=398 sample=Cripsy Clean Strat - F#5.wav
+<region> region_label=43 key=78 pitch_keycenter=79 offset_oncc131=357 sample=Cripsy Clean Strat - G5.wav
+<region> region_label=44 key=79 pitch_keycenter=80 offset_oncc131=530 sample=Cripsy Clean Strat - G#5.wav
+<region> region_label=45 key=80 pitch_keycenter=81 offset_oncc131=350 sample=Cripsy Clean Strat - A5.wav
+<region> region_label=46 key=81 pitch_keycenter=82 offset_oncc131=337 sample=Cripsy Clean Strat - A#5.wav
+<region> region_label=47 key=82 pitch_keycenter=83 offset_oncc131=379 sample=Cripsy Clean Strat - B5.wav
+<region> region_label=48 key=83 pitch_keycenter=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+<region> region_label=49 key=84 pitch_keycenter=85 offset_oncc131=415 sample=Cripsy Clean Strat - C#6.wav
+<region> region_label=50 key=85 pitch_keycenter=86 offset_oncc131=429 sample=Cripsy Clean Strat - D6.wav
+<region> region_label=51 key=86 pitch_keycenter=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+
+<group> group_label=rr3 seq_position=3
+<region> region_label=01 key=36 pitch_keycenter=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=02 key=37 pitch_keycenter=36 offset_oncc131=357 sample=Cripsy Clean Strat - C2.wav
+<region> region_label=03 key=38 pitch_keycenter=37 offset_oncc131=331 sample=Cripsy Clean Strat - C#2.wav
+<region> region_label=04 key=39 pitch_keycenter=38 offset_oncc131=440 sample=Cripsy Clean Strat - D2.wav
+<region> region_label=05 key=40 pitch_keycenter=39 offset_oncc131=203 sample=Cripsy Clean Strat - D#2.wav
+<region> region_label=06 key=41 pitch_keycenter=40 offset_oncc131=377 sample=Cripsy Clean Strat - E2.wav
+<region> region_label=07 key=42 pitch_keycenter=41 offset_oncc131=981 sample=Cripsy Clean Strat - F2.wav
+<region> region_label=08 key=43 pitch_keycenter=42 offset_oncc131=985 sample=Cripsy Clean Strat - F#2.wav
+<region> region_label=09 key=44 pitch_keycenter=43 offset_oncc131=797 sample=Cripsy Clean Strat - G2.wav
+<region> region_label=10 key=45 pitch_keycenter=44 offset_oncc131=909 sample=Cripsy Clean Strat - G#2.wav
+<region> region_label=11 key=46 pitch_keycenter=45 offset_oncc131=427 sample=Cripsy Clean Strat - A2.wav
+<region> region_label=12 key=47 pitch_keycenter=46 offset_oncc131=451 sample=Cripsy Clean Strat - A#2.wav
+<region> region_label=13 key=48 pitch_keycenter=47 offset_oncc131=535 sample=Cripsy Clean Strat - B2.wav
+<region> region_label=14 key=49 pitch_keycenter=48 offset_oncc131=438 sample=Cripsy Clean Strat - C3.wav
+<region> region_label=15 key=50 pitch_keycenter=49 offset_oncc131=446 sample=Cripsy Clean Strat - C#3.wav
+<region> region_label=16 key=51 pitch_keycenter=50 offset_oncc131=370 sample=Cripsy Clean Strat - D3.wav
+<region> region_label=17 key=52 pitch_keycenter=51 offset_oncc131=372 sample=Cripsy Clean Strat - D#3.wav
+<region> region_label=18 key=53 pitch_keycenter=52 offset_oncc131=342 sample=Cripsy Clean Strat - E3.wav
+<region> region_label=19 key=54 pitch_keycenter=53 offset_oncc131=397 sample=Cripsy Clean Strat - F3.wav
+<region> region_label=20 key=55 pitch_keycenter=54 offset_oncc131=369 sample=Cripsy Clean Strat - F#3.wav
+<region> region_label=21 key=56 pitch_keycenter=55 offset_oncc131=316 sample=Cripsy Clean Strat - G3.wav
+<region> region_label=22 key=57 pitch_keycenter=56 offset_oncc131=325 sample=Cripsy Clean Strat - G#3.wav
+<region> region_label=23 key=58 pitch_keycenter=57 offset_oncc131=332 sample=Cripsy Clean Strat - A3.wav
+<region> region_label=24 key=59 pitch_keycenter=58 offset_oncc131=364 sample=Cripsy Clean Strat - A#3.wav
+<region> region_label=25 key=60 pitch_keycenter=59 offset_oncc131=317 sample=Cripsy Clean Strat - B3.wav
+<region> region_label=26 key=61 pitch_keycenter=60 offset_oncc131=331 sample=Cripsy Clean Strat - C4.wav
+<region> region_label=27 key=62 pitch_keycenter=61 offset_oncc131=283 sample=Cripsy Clean Strat - C#4.wav
+<region> region_label=28 key=63 pitch_keycenter=62 offset_oncc131=300 sample=Cripsy Clean Strat - D4.wav
+<region> region_label=29 key=64 pitch_keycenter=63 offset_oncc131=300 sample=Cripsy Clean Strat - D#4.wav
+<region> region_label=30 key=65 pitch_keycenter=64 offset_oncc131=203 sample=Cripsy Clean Strat - E4.wav
+<region> region_label=31 key=66 pitch_keycenter=65 offset_oncc131=230 sample=Cripsy Clean Strat - F4.wav
+<region> region_label=32 key=67 pitch_keycenter=66 offset_oncc131=405 sample=Cripsy Clean Strat - F#4.wav
+<region> region_label=33 key=68 pitch_keycenter=67 offset_oncc131=364 sample=Cripsy Clean Strat - G4.wav
+<region> region_label=34 key=69 pitch_keycenter=68 offset_oncc131=426 sample=Cripsy Clean Strat - G#4.wav
+<region> region_label=35 key=70 pitch_keycenter=69 offset_oncc131=212 sample=Cripsy Clean Strat - A4.wav
+<region> region_label=36 key=71 pitch_keycenter=70 offset_oncc131=382 sample=Cripsy Clean Strat - A#4.wav
+<region> region_label=37 key=72 pitch_keycenter=71 offset_oncc131=320 sample=Cripsy Clean Strat - B4.wav
+<region> region_label=38 key=73 pitch_keycenter=72 offset_oncc131=316 sample=Cripsy Clean Strat - C5.wav
+<region> region_label=39 key=74 pitch_keycenter=73 offset_oncc131=336 sample=Cripsy Clean Strat - C#5.wav
+<region> region_label=40 key=75 pitch_keycenter=74 offset_oncc131=306 sample=Cripsy Clean Strat - D5.wav
+<region> region_label=41 key=76 pitch_keycenter=75 offset_oncc131=173 sample=Cripsy Clean Strat - D#5.wav
+<region> region_label=42 key=77 pitch_keycenter=76 offset_oncc131=313 sample=Cripsy Clean Strat - E5.wav
+<region> region_label=43 key=78 pitch_keycenter=77 offset_oncc131=388 sample=Cripsy Clean Strat - F5.wav
+<region> region_label=44 key=79 pitch_keycenter=78 offset_oncc131=398 sample=Cripsy Clean Strat - F#5.wav
+<region> region_label=45 key=80 pitch_keycenter=79 offset_oncc131=357 sample=Cripsy Clean Strat - G5.wav
+<region> region_label=46 key=81 pitch_keycenter=80 offset_oncc131=530 sample=Cripsy Clean Strat - G#5.wav
+<region> region_label=47 key=82 pitch_keycenter=81 offset_oncc131=350 sample=Cripsy Clean Strat - A5.wav
+<region> region_label=48 key=83 pitch_keycenter=82 offset_oncc131=337 sample=Cripsy Clean Strat - A#5.wav
+<region> region_label=49 key=84 pitch_keycenter=83 offset_oncc131=379 sample=Cripsy Clean Strat - B5.wav
+<region> region_label=50 key=85 pitch_keycenter=84 offset_oncc131=385 sample=Cripsy Clean Strat - C6.wav
+<region> region_label=51 key=86 pitch_keycenter=85 offset_oncc131=415 sample=Cripsy Clean Strat - C#6.wav

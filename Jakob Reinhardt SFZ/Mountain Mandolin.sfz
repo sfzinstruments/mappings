@@ -1,0 +1,162 @@
+//--------------------------------------
+// The Mountain Mandolin
+// by Jakob Reinhardt
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $VELTRACK 99
+
+
+//////////////////////////////////////////////////////////
+<control>
+default_path=Mountain Mandolin Samples/
+
+label_cc7=Vol
+label_cc10=Pan
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$RELEASE=0.05
+set_hdcc$VELTRACK=1
+
+
+//*****************************************
+<global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+seq_length=3
+ampeg_attack=0.0005
+ampeg_release_oncc$RELEASE=5
+amp_veltrack_oncc$VELTRACK=-100
+amp_veltrack_curvecc$VELTRACK=2
+
+<group> group_label=rr1 seq_position=1
+<region> region_label=01 key=55 offset_oncc131=355 sample=Mandolin - G3.wav
+<region> region_label=02 key=56 offset_oncc131=355 sample=Mandolin - G#3.wav
+<region> region_label=03 key=57 offset_oncc131=342 sample=Mandolin - A3.wav
+<region> region_label=04 key=58 offset_oncc131=320 sample=Mandolin - A#3.wav
+<region> region_label=05 key=59 offset_oncc131=341 sample=Mandolin - B3.wav
+<region> region_label=06 key=60 offset_oncc131=315 sample=Mandolin - C4.wav
+<region> region_label=07 key=61 offset_oncc131=254 sample=Mandolin - C#4.wav
+<region> region_label=08 key=62 offset_oncc131=237 sample=Mandolin - D4.wav
+<region> region_label=09 key=63 offset_oncc131=264 sample=Mandolin - D#4.wav
+<region> region_label=10 key=64 offset_oncc131=310 sample=Mandolin - E4.wav
+<region> region_label=11 key=65 offset_oncc131=297 sample=Mandolin - F4.wav
+<region> region_label=12 key=66 offset_oncc131=293 sample=Mandolin - F#4.wav
+<region> region_label=13 key=67 offset_oncc131=249 sample=Mandolin - G4.wav
+<region> region_label=14 key=68 offset_oncc131=281 sample=Mandolin - G#4.wav
+<region> region_label=15 key=69 offset_oncc131=272 sample=Mandolin - A4.wav
+<region> region_label=16 key=70 offset_oncc131=293 sample=Mandolin - A#4.wav
+<region> region_label=17 key=71 offset_oncc131=243 sample=Mandolin - B4.wav
+<region> region_label=18 key=72 offset_oncc131=264 sample=Mandolin - C5.wav
+<region> region_label=19 key=73 offset_oncc131=260 sample=Mandolin - C#5.wav
+<region> region_label=20 key=74 offset_oncc131=261 sample=Mandolin - D5.wav
+<region> region_label=21 key=75 offset_oncc131=234 sample=Mandolin - D#5.wav
+<region> region_label=22 key=76 offset_oncc131=303 sample=Mandolin - E5.wav
+<region> region_label=23 key=77 offset_oncc131=281 sample=Mandolin - F5.wav
+<region> region_label=24 key=78 offset_oncc131=206 sample=Mandolin - F#5.wav
+<region> region_label=25 key=79 offset_oncc131=209 sample=Mandolin - G5.wav
+<region> region_label=26 key=80 offset_oncc131=227 sample=Mandolin - G#5.wav
+<region> region_label=27 key=81 offset_oncc131=281 sample=Mandolin - A5.wav
+<region> region_label=28 key=82 offset_oncc131=288 sample=Mandolin - A#5.wav
+<region> region_label=29 key=83 offset_oncc131=220 sample=Mandolin - B5.wav
+<region> region_label=30 key=84 offset_oncc131=263 sample=Mandolin - C6.wav
+<region> region_label=31 key=85 offset_oncc131=259 sample=Mandolin - C#6.wav
+<region> region_label=32 key=86 offset_oncc131=228 sample=Mandolin - D6.wav
+<region> region_label=33 key=87 offset_oncc131=252 sample=Mandolin - D#6.wav
+<region> region_label=34 key=88 offset_oncc131=209 sample=Mandolin - E6.wav
+<region> region_label=35 key=89 offset_oncc131=216 sample=Mandolin - F6.wav
+<region> region_label=36 key=90 offset_oncc131=315 sample=Mandolin - F#6.wav
+<region> region_label=37 key=91 offset_oncc131=296 sample=Mandolin - G6.wav
+<region> region_label=38 key=92 offset_oncc131=284 sample=Mandolin - G#6.wav
+<region> region_label=39 key=93 offset_oncc131=315 sample=Mandolin - A6.wav
+
+<group> group_label=rr2 seq_position=2
+<region> region_label=01 key=55 pitch_keycenter=56 offset_oncc131=355 sample=Mandolin - G#3.wav
+<region> region_label=02 key=56 pitch_keycenter=57 offset_oncc131=342 sample=Mandolin - A3.wav
+<region> region_label=03 key=57 pitch_keycenter=58 offset_oncc131=320 sample=Mandolin - A#3.wav
+<region> region_label=04 key=58 pitch_keycenter=59 offset_oncc131=341 sample=Mandolin - B3.wav
+<region> region_label=05 key=59 pitch_keycenter=60 offset_oncc131=315 sample=Mandolin - C4.wav
+<region> region_label=06 key=60 pitch_keycenter=61 offset_oncc131=254 sample=Mandolin - C#4.wav
+<region> region_label=07 key=61 pitch_keycenter=62 offset_oncc131=237 sample=Mandolin - D4.wav
+<region> region_label=08 key=62 pitch_keycenter=63 offset_oncc131=264 sample=Mandolin - D#4.wav
+<region> region_label=09 key=63 pitch_keycenter=64 offset_oncc131=310 sample=Mandolin - E4.wav
+<region> region_label=10 key=64 pitch_keycenter=65 offset_oncc131=297 sample=Mandolin - F4.wav
+<region> region_label=11 key=65 pitch_keycenter=66 offset_oncc131=293 sample=Mandolin - F#4.wav
+<region> region_label=12 key=66 pitch_keycenter=67 offset_oncc131=249 sample=Mandolin - G4.wav
+<region> region_label=13 key=67 pitch_keycenter=68 offset_oncc131=281 sample=Mandolin - G#4.wav
+<region> region_label=14 key=68 pitch_keycenter=69 offset_oncc131=272 sample=Mandolin - A4.wav
+<region> region_label=15 key=69 pitch_keycenter=70 offset_oncc131=293 sample=Mandolin - A#4.wav
+<region> region_label=16 key=70 pitch_keycenter=71 offset_oncc131=243 sample=Mandolin - B4.wav
+<region> region_label=17 key=71 pitch_keycenter=72 offset_oncc131=264 sample=Mandolin - C5.wav
+<region> region_label=18 key=72 pitch_keycenter=73 offset_oncc131=260 sample=Mandolin - C#5.wav
+<region> region_label=19 key=73 pitch_keycenter=74 offset_oncc131=261 sample=Mandolin - D5.wav
+<region> region_label=20 key=74 pitch_keycenter=75 offset_oncc131=234 sample=Mandolin - D#5.wav
+<region> region_label=21 key=75 pitch_keycenter=76 offset_oncc131=303 sample=Mandolin - E5.wav
+<region> region_label=22 key=76 pitch_keycenter=77 offset_oncc131=281 sample=Mandolin - F5.wav
+<region> region_label=23 key=77 pitch_keycenter=78 offset_oncc131=206 sample=Mandolin - F#5.wav
+<region> region_label=24 key=78 pitch_keycenter=79 offset_oncc131=209 sample=Mandolin - G5.wav
+<region> region_label=25 key=79 pitch_keycenter=80 offset_oncc131=227 sample=Mandolin - G#5.wav
+<region> region_label=26 key=80 pitch_keycenter=81 offset_oncc131=281 sample=Mandolin - A5.wav
+<region> region_label=27 key=81 pitch_keycenter=82 offset_oncc131=288 sample=Mandolin - A#5.wav
+<region> region_label=28 key=82 pitch_keycenter=83 offset_oncc131=220 sample=Mandolin - B5.wav
+<region> region_label=29 key=83 pitch_keycenter=84 offset_oncc131=263 sample=Mandolin - C6.wav
+<region> region_label=30 key=84 pitch_keycenter=85 offset_oncc131=259 sample=Mandolin - C#6.wav
+<region> region_label=31 key=85 pitch_keycenter=86 offset_oncc131=228 sample=Mandolin - D6.wav
+<region> region_label=32 key=86 pitch_keycenter=87 offset_oncc131=252 sample=Mandolin - D#6.wav
+<region> region_label=33 key=87 pitch_keycenter=88 offset_oncc131=209 sample=Mandolin - E6.wav
+<region> region_label=34 key=88 pitch_keycenter=89 offset_oncc131=216 sample=Mandolin - F6.wav
+<region> region_label=35 key=89 pitch_keycenter=90 offset_oncc131=315 sample=Mandolin - F#6.wav
+<region> region_label=36 key=90 pitch_keycenter=91 offset_oncc131=296 sample=Mandolin - G6.wav
+<region> region_label=37 key=91 pitch_keycenter=92 offset_oncc131=284 sample=Mandolin - G#6.wav
+<region> region_label=38 key=92 pitch_keycenter=93 offset_oncc131=315 sample=Mandolin - A6.wav
+<region> region_label=39 key=93 pitch_keycenter=91 offset_oncc131=296 sample=Mandolin - G6.wav
+
+<group> group_label=rr3 seq_position=3
+<region> region_label=01 key=55 pitch_keycenter=57 offset_oncc131=342 sample=Mandolin - A3.wav
+<region> region_label=02 key=56 pitch_keycenter=55 offset_oncc131=355 sample=Mandolin - G3.wav
+<region> region_label=03 key=57 pitch_keycenter=56 offset_oncc131=355 sample=Mandolin - G#3.wav
+<region> region_label=04 key=58 pitch_keycenter=57 offset_oncc131=342 sample=Mandolin - A3.wav
+<region> region_label=05 key=59 pitch_keycenter=58 offset_oncc131=320 sample=Mandolin - A#3.wav
+<region> region_label=06 key=60 pitch_keycenter=59 offset_oncc131=341 sample=Mandolin - B3.wav
+<region> region_label=07 key=61 pitch_keycenter=60 offset_oncc131=315 sample=Mandolin - C4.wav
+<region> region_label=08 key=62 pitch_keycenter=61 offset_oncc131=254 sample=Mandolin - C#4.wav
+<region> region_label=09 key=63 pitch_keycenter=62 offset_oncc131=237 sample=Mandolin - D4.wav
+<region> region_label=10 key=64 pitch_keycenter=63 offset_oncc131=264 sample=Mandolin - D#4.wav
+<region> region_label=11 key=65 pitch_keycenter=64 offset_oncc131=310 sample=Mandolin - E4.wav
+<region> region_label=12 key=66 pitch_keycenter=65 offset_oncc131=297 sample=Mandolin - F4.wav
+<region> region_label=13 key=67 pitch_keycenter=66 offset_oncc131=293 sample=Mandolin - F#4.wav
+<region> region_label=14 key=68 pitch_keycenter=67 offset_oncc131=249 sample=Mandolin - G4.wav
+<region> region_label=15 key=69 pitch_keycenter=68 offset_oncc131=281 sample=Mandolin - G#4.wav
+<region> region_label=16 key=70 pitch_keycenter=69 offset_oncc131=272 sample=Mandolin - A4.wav
+<region> region_label=17 key=71 pitch_keycenter=70 offset_oncc131=293 sample=Mandolin - A#4.wav
+<region> region_label=18 key=72 pitch_keycenter=71 offset_oncc131=243 sample=Mandolin - B4.wav
+<region> region_label=19 key=73 pitch_keycenter=72 offset_oncc131=264 sample=Mandolin - C5.wav
+<region> region_label=20 key=74 pitch_keycenter=73 offset_oncc131=260 sample=Mandolin - C#5.wav
+<region> region_label=21 key=75 pitch_keycenter=74 offset_oncc131=261 sample=Mandolin - D5.wav
+<region> region_label=22 key=76 pitch_keycenter=75 offset_oncc131=234 sample=Mandolin - D#5.wav
+<region> region_label=23 key=77 pitch_keycenter=76 offset_oncc131=303 sample=Mandolin - E5.wav
+<region> region_label=24 key=78 pitch_keycenter=77 offset_oncc131=281 sample=Mandolin - F5.wav
+<region> region_label=25 key=79 pitch_keycenter=78 offset_oncc131=206 sample=Mandolin - F#5.wav
+<region> region_label=26 key=80 pitch_keycenter=79 offset_oncc131=209 sample=Mandolin - G5.wav
+<region> region_label=27 key=81 pitch_keycenter=80 offset_oncc131=227 sample=Mandolin - G#5.wav
+<region> region_label=28 key=82 pitch_keycenter=81 offset_oncc131=281 sample=Mandolin - A5.wav
+<region> region_label=29 key=83 pitch_keycenter=82 offset_oncc131=288 sample=Mandolin - A#5.wav
+<region> region_label=30 key=84 pitch_keycenter=83 offset_oncc131=220 sample=Mandolin - B5.wav
+<region> region_label=31 key=85 pitch_keycenter=84 offset_oncc131=263 sample=Mandolin - C6.wav
+<region> region_label=32 key=86 pitch_keycenter=85 offset_oncc131=259 sample=Mandolin - C#6.wav
+<region> region_label=33 key=87 pitch_keycenter=86 offset_oncc131=228 sample=Mandolin - D6.wav
+<region> region_label=34 key=88 pitch_keycenter=87 offset_oncc131=252 sample=Mandolin - D#6.wav
+<region> region_label=35 key=89 pitch_keycenter=88 offset_oncc131=209 sample=Mandolin - E6.wav
+<region> region_label=36 key=90 pitch_keycenter=89 offset_oncc131=216 sample=Mandolin - F6.wav
+<region> region_label=37 key=91 pitch_keycenter=90 offset_oncc131=315 sample=Mandolin - F#6.wav
+<region> region_label=38 key=92 pitch_keycenter=91 offset_oncc131=296 sample=Mandolin - G6.wav
+<region> region_label=39 key=93 pitch_keycenter=92 offset_oncc131=284 sample=Mandolin - G#6.wav

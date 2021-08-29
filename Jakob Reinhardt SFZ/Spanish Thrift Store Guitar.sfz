@@ -1,0 +1,369 @@
+//--------------------------------------
+// The Spanish Thrift Store Guitar
+// by Jakob Reinhardt
+//--------------------------------------
+// SFZ format for ARIA Engine
+// programmed by kinwie
+//--------------------------------------
+
+
+//midi cc
+#define $RELEASE 72
+#define $VIB_RATE 3
+#define $VIBRATO 1
+#define $LEGATO 67
+#define $VELTRACK 99
+
+
+//////////////////////////////////////////////////////////
+<control>
+default_path=Spanish Thrift Store Guitar Samples/
+
+label_cc7=Vol
+label_cc10=Pan
+label_cc$RELEASE=Release
+label_cc$VIB_RATE=Vib Rate
+label_cc$VIBRATO=Vibrato
+label_cc$LEGATO=Legato
+label_cc$VELTRACK=Veltrack
+set_cc7=100
+set_hdcc10=0.5
+set_hdcc$RELEASE=0.05
+set_hdcc$VIB_RATE=0.5
+set_hdcc$VELTRACK=0.95
+
+
+//*****************************************
+<global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
+seq_length=3
+ampeg_release_oncc$RELEASE=5
+amp_veltrack_oncc$VELTRACK=-100
+amp_veltrack_curvecc$VELTRACK=2
+cutoff=24000
+cutoff_oncc131=-7200
+cutoff_curvecc131=2
+pitchlfo_freq_oncc$VIB_RATE=10
+pitchlfo_depth_oncc$VIBRATO=50
+pitchlfo_fade=2
+off_time=0.01
+off_shape=0
+
+
+//==========================
+<master>
+master_label=attack
+group=1
+off_by=2
+
+<group> group_label=rr1 seq_position=1
+<region> region_label=01 key=36 offset=0496 sample=1 - C2.wav
+<region> region_label=02 key=37 offset=0147 sample=1 - C#2.wav
+<region> region_label=03 key=38 offset=0153 sample=1 - D2.wav
+<region> region_label=04 key=39 offset=0000 sample=1 - D#2.wav
+<region> region_label=05 key=40 offset=0404 sample=1 - E2.wav
+<region> region_label=06 key=41 offset=0545 sample=1 - F2.wav
+<region> region_label=07 key=42 offset=0438 sample=1 - F#2.wav
+<region> region_label=08 key=43 offset=0000 sample=1 - G2.wav
+<region> region_label=09 key=44 offset=1469 sample=1 - G#2.wav
+<region> region_label=10 key=45 offset=1365 sample=1 - A2.wav
+<region> region_label=11 key=46 offset=0433 sample=1 - A#2.wav
+<region> region_label=12 key=47 offset=0477 sample=1 - B2.wav
+<region> region_label=13 key=48 offset=1049 sample=1 - C3.wav
+<region> region_label=14 key=49 offset=0768 sample=1 - C#3.wav
+<region> region_label=15 key=50 offset=0655 sample=1 - D3.wav
+<region> region_label=16 key=51 offset=0739 sample=1 - D#3.wav
+<region> region_label=17 key=52 offset=0317 sample=1 - E3.wav
+<region> region_label=18 key=53 offset=0319 sample=1 - F3.wav
+<region> region_label=19 key=54 offset=0000 sample=1 - F#3.wav
+<region> region_label=20 key=55 offset=0070 sample=1 - G3.wav
+<region> region_label=21 key=56 offset=0000 sample=1 - G#3.wav
+<region> region_label=22 key=57 offset=0000 sample=1 - A3.wav
+<region> region_label=23 key=58 offset=1268 sample=1 - A#3.wav
+<region> region_label=24 key=59 offset=1636 sample=1 - B3.wav
+<region> region_label=25 key=60 offset=0178 sample=1 - C4.wav
+<region> region_label=26 key=61 offset=1563 sample=1 - C#4.wav
+<region> region_label=27 key=62 offset=0658 sample=1 - D4.wav
+<region> region_label=28 key=63 offset=0201 sample=1 - D#4.wav
+<region> region_label=29 key=64 offset=0000 sample=1 - E4.wav
+<region> region_label=30 key=65 offset=0000 sample=1 - F4.wav
+<region> region_label=31 key=66 offset=0000 sample=1 - F#4.wav
+<region> region_label=32 key=67 offset=0516 sample=1 - G4.wav
+<region> region_label=33 key=68 offset=0853 sample=1 - G#4.wav
+<region> region_label=34 key=69 offset=0000 sample=1 - A4.wav
+<region> region_label=35 key=70 offset=0000 sample=1 - A#4.wav
+<region> region_label=36 key=71 offset=0000 sample=1 - B4.wav
+<region> region_label=37 key=72 offset=0654 sample=1 - C5.wav
+<region> region_label=38 key=73 offset=0000 sample=1 - C#5.wav
+<region> region_label=39 key=74 offset=0000 sample=1 - D5.wav
+<region> region_label=40 key=75 offset=0340 sample=1 - D#5.wav
+<region> region_label=41 key=76 offset=1103 sample=1 - E5.wav
+<region> region_label=42 key=77 offset=0327 sample=1 - F5.wav
+<region> region_label=43 key=78 offset=0327 sample=1 - F#5.wav
+<region> region_label=44 key=79 offset=0330 sample=1 - G5.wav
+<region> region_label=45 key=80 offset=0412 sample=1 - G#5.wav
+<region> region_label=46 key=81 offset=0327 sample=1 - A5.wav
+
+<group> group_label=rr2 seq_position=2
+<region> region_label=01 key=36 offset=0435 sample=2 - C2.wav
+<region> region_label=02 key=37 offset=0316 sample=2 - C#2.wav
+<region> region_label=03 key=38 offset=0348 sample=2 - D2.wav
+<region> region_label=04 key=39 offset=0307 sample=2 - D#2.wav
+<region> region_label=05 key=40 offset=0285 sample=2 - E2.wav
+<region> region_label=06 key=41 offset=0373 sample=2 - F2.wav
+<region> region_label=07 key=42 offset=0434 sample=2 - F#2.wav
+<region> region_label=08 key=43 offset=0295 sample=2 - G2.wav
+<region> region_label=09 key=44 offset=0171 sample=2 - G#2.wav
+<region> region_label=10 key=45 offset=0432 sample=2 - A2.wav
+<region> region_label=11 key=46 offset=0337 sample=2 - A#2.wav
+<region> region_label=12 key=47 offset=0469 sample=2 - B2.wav
+<region> region_label=13 key=48 offset=0294 sample=2 - C3.wav
+<region> region_label=14 key=49 offset=0337 sample=2 - C#3.wav
+<region> region_label=15 key=50 offset=0319 sample=2 - D3.wav
+<region> region_label=16 key=51 offset=0316 sample=2 - D#3.wav
+<region> region_label=17 key=52 offset=0372 sample=2 - E3.wav
+<region> region_label=18 key=53 offset=0136 sample=2 - F3.wav
+<region> region_label=19 key=54 offset=0356 sample=2 - F#3.wav
+<region> region_label=20 key=55 offset=0167 sample=2 - G3.wav
+<region> region_label=21 key=56 offset=0357 sample=2 - G#3.wav
+<region> region_label=22 key=57 offset=0281 sample=2 - A3.wav
+<region> region_label=23 key=58 offset=0362 sample=2 - A#3.wav
+<region> region_label=24 key=59 offset=0476 sample=2 - B3.wav
+<region> region_label=25 key=60 offset=0411 sample=2 - C4.wav
+<region> region_label=26 key=61 offset=0330 sample=2 - C#4.wav
+<region> region_label=27 key=62 offset=0656 sample=2 - D4.wav
+<region> region_label=28 key=63 offset=0204 sample=2 - D#4.wav
+<region> region_label=29 key=64 offset=0354 sample=2 - E4.wav
+<region> region_label=30 key=65 offset=0323 sample=2 - F4.wav
+<region> region_label=31 key=66 offset=0350 sample=2 - F#4.wav
+<region> region_label=32 key=67 offset=0367 sample=2 - G4.wav
+<region> region_label=33 key=68 offset=0292 sample=2 - G#4.wav
+<region> region_label=34 key=69 offset=0337 sample=2 - A4.wav
+<region> region_label=35 key=70 offset=2557 sample=2 - A#4.wav
+<region> region_label=36 key=71 offset=0340 sample=2 - B4.wav
+<region> region_label=37 key=72 offset=0429 sample=2 - C5.wav
+<region> region_label=38 key=73 offset=0382 sample=2 - C#5.wav
+<region> region_label=39 key=74 offset=0335 sample=2 - D5.wav
+<region> region_label=40 key=75 offset=0373 sample=2 - D#5.wav
+<region> region_label=41 key=76 offset=0329 sample=2 - E5.wav
+<region> region_label=42 key=77 offset=0344 sample=2 - F5.wav
+<region> region_label=43 key=78 offset=0329 sample=2 - F#5.wav
+<region> region_label=44 key=79 offset=0328 sample=2 - G5.wav
+<region> region_label=45 key=80 offset=0329 sample=2 - G#5.wav
+<region> region_label=46 key=81 offset=0385 sample=2 - A5.wav
+
+<group> group_label=rr3 seq_position=3
+<region> region_label=01 key=36 offset=0318 sample=3 - C2.wav
+<region> region_label=02 key=37 offset=1651 sample=3 - C#2.wav
+<region> region_label=03 key=38 offset=0309 sample=3 - D2.wav
+<region> region_label=04 key=39 offset=0000 sample=3 - D#2.wav
+<region> region_label=05 key=40 offset=0324 sample=3 - E2.wav
+<region> region_label=06 key=41 offset=0378 sample=3 - F2.wav
+<region> region_label=07 key=42 offset=0329 sample=3 - F#2.wav
+<region> region_label=08 key=43 offset=0451 sample=3 - G2.wav
+<region> region_label=09 key=44 offset=0283 sample=3 - G#2.wav
+<region> region_label=10 key=45 offset=0000 sample=3 - A2.wav
+<region> region_label=11 key=46 offset=0297 sample=3 - A#2.wav
+<region> region_label=12 key=47 offset=0140 sample=3 - B2.wav
+<region> region_label=13 key=48 offset=0252 sample=3 - C3.wav
+<region> region_label=14 key=49 offset=0198 sample=3 - C#3.wav
+<region> region_label=15 key=50 offset=0296 sample=3 - D3.wav
+<region> region_label=16 key=51 offset=0341 sample=3 - D#3.wav
+<region> region_label=17 key=52 offset=0336 sample=3 - E3.wav
+<region> region_label=18 key=53 offset=0362 sample=3 - F3.wav
+<region> region_label=19 key=54 offset=0183 sample=3 - F#3.wav
+<region> region_label=20 key=55 offset=0338 sample=3 - G3.wav
+<region> region_label=21 key=56 offset=0347 sample=3 - G#3.wav
+<region> region_label=22 key=57 offset=0344 sample=3 - A3.wav
+<region> region_label=23 key=58 offset=0289 sample=3 - A#3.wav
+<region> region_label=24 key=59 offset=0154 sample=3 - B3.wav
+<region> region_label=25 key=60 offset=0169 sample=3 - C4.wav
+<region> region_label=26 key=61 offset=0305 sample=3 - C#4.wav
+<region> region_label=27 key=62 offset=0654 sample=3 - D4.wav
+<region> region_label=28 key=63 offset=0299 sample=3 - D#4.wav
+<region> region_label=29 key=64 offset=0280 sample=3 - E4.wav
+<region> region_label=30 key=65 offset=0326 sample=3 - F4.wav
+<region> region_label=31 key=66 offset=0360 sample=3 - F#4.wav
+<region> region_label=32 key=67 offset=0367 sample=3 - G4.wav
+<region> region_label=33 key=68 offset=0324 sample=3 - G#4.wav
+<region> region_label=34 key=69 offset=0229 sample=3 - A4.wav
+<region> region_label=35 key=70 offset=0320 sample=3 - A#4.wav
+<region> region_label=36 key=71 offset=0393 sample=3 - B4.wav
+<region> region_label=37 key=72 offset=0298 sample=3 - C5.wav
+<region> region_label=38 key=73 offset=0287 sample=3 - C#5.wav
+<region> region_label=39 key=74 offset=0314 sample=3 - D5.wav
+<region> region_label=40 key=75 offset=0365 sample=3 - D#5.wav
+<region> region_label=41 key=76 offset=0335 sample=3 - E5.wav
+<region> region_label=42 key=77 offset=0346 sample=3 - F5.wav
+<region> region_label=43 key=78 offset=0353 sample=3 - F#5.wav
+<region> region_label=44 key=79 offset=0273 sample=3 - G5.wav
+<region> region_label=45 key=80 offset=0326 sample=3 - G#5.wav
+<region> region_label=46 key=81 offset=0330 sample=3 - A5.wav
+
+
+//==========================
+<master>
+master_label=legato
+trigger=legato
+group=2
+polyphony=1
+offset_oncc$LEGATO=5000
+offset_curvecc$LEGATO=7
+offset_random=5000
+ampeg_attack=0.005
+locc$LEGATO=1
+
+<group> group_label=rr1 seq_position=1
+<region> region_label=01 key=36 offset=0496 sample=1 - C2.wav
+<region> region_label=02 key=37 offset=0147 sample=1 - C#2.wav
+<region> region_label=03 key=38 offset=0153 sample=1 - D2.wav
+<region> region_label=04 key=39 offset=0000 sample=1 - D#2.wav
+<region> region_label=05 key=40 offset=0404 sample=1 - E2.wav
+<region> region_label=06 key=41 offset=0545 sample=1 - F2.wav
+<region> region_label=07 key=42 offset=0438 sample=1 - F#2.wav
+<region> region_label=08 key=43 offset=0000 sample=1 - G2.wav
+<region> region_label=09 key=44 offset=1469 sample=1 - G#2.wav
+<region> region_label=10 key=45 offset=1365 sample=1 - A2.wav
+<region> region_label=11 key=46 offset=0433 sample=1 - A#2.wav
+<region> region_label=12 key=47 offset=0477 sample=1 - B2.wav
+<region> region_label=13 key=48 offset=1049 sample=1 - C3.wav
+<region> region_label=14 key=49 offset=0768 sample=1 - C#3.wav
+<region> region_label=15 key=50 offset=0655 sample=1 - D3.wav
+<region> region_label=16 key=51 offset=0739 sample=1 - D#3.wav
+<region> region_label=17 key=52 offset=0317 sample=1 - E3.wav
+<region> region_label=18 key=53 offset=0319 sample=1 - F3.wav
+<region> region_label=19 key=54 offset=0000 sample=1 - F#3.wav
+<region> region_label=20 key=55 offset=0070 sample=1 - G3.wav
+<region> region_label=21 key=56 offset=0000 sample=1 - G#3.wav
+<region> region_label=22 key=57 offset=0000 sample=1 - A3.wav
+<region> region_label=23 key=58 offset=1268 sample=1 - A#3.wav
+<region> region_label=24 key=59 offset=1636 sample=1 - B3.wav
+<region> region_label=25 key=60 offset=0178 sample=1 - C4.wav
+<region> region_label=26 key=61 offset=1563 sample=1 - C#4.wav
+<region> region_label=27 key=62 offset=0658 sample=1 - D4.wav
+<region> region_label=28 key=63 offset=0201 sample=1 - D#4.wav
+<region> region_label=29 key=64 offset=0000 sample=1 - E4.wav
+<region> region_label=30 key=65 offset=0000 sample=1 - F4.wav
+<region> region_label=31 key=66 offset=0000 sample=1 - F#4.wav
+<region> region_label=32 key=67 offset=0516 sample=1 - G4.wav
+<region> region_label=33 key=68 offset=0853 sample=1 - G#4.wav
+<region> region_label=34 key=69 offset=0000 sample=1 - A4.wav
+<region> region_label=35 key=70 offset=0000 sample=1 - A#4.wav
+<region> region_label=36 key=71 offset=0000 sample=1 - B4.wav
+<region> region_label=37 key=72 offset=0654 sample=1 - C5.wav
+<region> region_label=38 key=73 offset=0000 sample=1 - C#5.wav
+<region> region_label=39 key=74 offset=0000 sample=1 - D5.wav
+<region> region_label=40 key=75 offset=0340 sample=1 - D#5.wav
+<region> region_label=41 key=76 offset=1103 sample=1 - E5.wav
+<region> region_label=42 key=77 offset=0327 sample=1 - F5.wav
+<region> region_label=43 key=78 offset=0327 sample=1 - F#5.wav
+<region> region_label=44 key=79 offset=0330 sample=1 - G5.wav
+<region> region_label=45 key=80 offset=0412 sample=1 - G#5.wav
+<region> region_label=46 key=81 offset=0327 sample=1 - A5.wav
+
+<group> group_label=rr2 seq_position=2
+<region> region_label=01 key=36 offset=0435 sample=2 - C2.wav
+<region> region_label=02 key=37 offset=0316 sample=2 - C#2.wav
+<region> region_label=03 key=38 offset=0348 sample=2 - D2.wav
+<region> region_label=04 key=39 offset=0307 sample=2 - D#2.wav
+<region> region_label=05 key=40 offset=0285 sample=2 - E2.wav
+<region> region_label=06 key=41 offset=0373 sample=2 - F2.wav
+<region> region_label=07 key=42 offset=0434 sample=2 - F#2.wav
+<region> region_label=08 key=43 offset=0295 sample=2 - G2.wav
+<region> region_label=09 key=44 offset=0171 sample=2 - G#2.wav
+<region> region_label=10 key=45 offset=0432 sample=2 - A2.wav
+<region> region_label=11 key=46 offset=0337 sample=2 - A#2.wav
+<region> region_label=12 key=47 offset=0469 sample=2 - B2.wav
+<region> region_label=13 key=48 offset=0294 sample=2 - C3.wav
+<region> region_label=14 key=49 offset=0337 sample=2 - C#3.wav
+<region> region_label=15 key=50 offset=0319 sample=2 - D3.wav
+<region> region_label=16 key=51 offset=0316 sample=2 - D#3.wav
+<region> region_label=17 key=52 offset=0372 sample=2 - E3.wav
+<region> region_label=18 key=53 offset=0136 sample=2 - F3.wav
+<region> region_label=19 key=54 offset=0356 sample=2 - F#3.wav
+<region> region_label=20 key=55 offset=0167 sample=2 - G3.wav
+<region> region_label=21 key=56 offset=0357 sample=2 - G#3.wav
+<region> region_label=22 key=57 offset=0281 sample=2 - A3.wav
+<region> region_label=23 key=58 offset=0362 sample=2 - A#3.wav
+<region> region_label=24 key=59 offset=0476 sample=2 - B3.wav
+<region> region_label=25 key=60 offset=0411 sample=2 - C4.wav
+<region> region_label=26 key=61 offset=0330 sample=2 - C#4.wav
+<region> region_label=27 key=62 offset=0656 sample=2 - D4.wav
+<region> region_label=28 key=63 offset=0204 sample=2 - D#4.wav
+<region> region_label=29 key=64 offset=0354 sample=2 - E4.wav
+<region> region_label=30 key=65 offset=0323 sample=2 - F4.wav
+<region> region_label=31 key=66 offset=0350 sample=2 - F#4.wav
+<region> region_label=32 key=67 offset=0367 sample=2 - G4.wav
+<region> region_label=33 key=68 offset=0292 sample=2 - G#4.wav
+<region> region_label=34 key=69 offset=0337 sample=2 - A4.wav
+<region> region_label=35 key=70 offset=2557 sample=2 - A#4.wav
+<region> region_label=36 key=71 offset=0340 sample=2 - B4.wav
+<region> region_label=37 key=72 offset=0429 sample=2 - C5.wav
+<region> region_label=38 key=73 offset=0382 sample=2 - C#5.wav
+<region> region_label=39 key=74 offset=0335 sample=2 - D5.wav
+<region> region_label=40 key=75 offset=0373 sample=2 - D#5.wav
+<region> region_label=41 key=76 offset=0329 sample=2 - E5.wav
+<region> region_label=42 key=77 offset=0344 sample=2 - F5.wav
+<region> region_label=43 key=78 offset=0329 sample=2 - F#5.wav
+<region> region_label=44 key=79 offset=0328 sample=2 - G5.wav
+<region> region_label=45 key=80 offset=0329 sample=2 - G#5.wav
+<region> region_label=46 key=81 offset=0385 sample=2 - A5.wav
+
+<group> group_label=rr3 seq_position=3
+<region> region_label=01 key=36 offset=0318 sample=3 - C2.wav
+<region> region_label=02 key=37 offset=1651 sample=3 - C#2.wav
+<region> region_label=03 key=38 offset=0309 sample=3 - D2.wav
+<region> region_label=04 key=39 offset=0000 sample=3 - D#2.wav
+<region> region_label=05 key=40 offset=0324 sample=3 - E2.wav
+<region> region_label=06 key=41 offset=0378 sample=3 - F2.wav
+<region> region_label=07 key=42 offset=0329 sample=3 - F#2.wav
+<region> region_label=08 key=43 offset=0451 sample=3 - G2.wav
+<region> region_label=09 key=44 offset=0283 sample=3 - G#2.wav
+<region> region_label=10 key=45 offset=0000 sample=3 - A2.wav
+<region> region_label=11 key=46 offset=0297 sample=3 - A#2.wav
+<region> region_label=12 key=47 offset=0140 sample=3 - B2.wav
+<region> region_label=13 key=48 offset=0252 sample=3 - C3.wav
+<region> region_label=14 key=49 offset=0198 sample=3 - C#3.wav
+<region> region_label=15 key=50 offset=0296 sample=3 - D3.wav
+<region> region_label=16 key=51 offset=0341 sample=3 - D#3.wav
+<region> region_label=17 key=52 offset=0336 sample=3 - E3.wav
+<region> region_label=18 key=53 offset=0362 sample=3 - F3.wav
+<region> region_label=19 key=54 offset=0183 sample=3 - F#3.wav
+<region> region_label=20 key=55 offset=0338 sample=3 - G3.wav
+<region> region_label=21 key=56 offset=0347 sample=3 - G#3.wav
+<region> region_label=22 key=57 offset=0344 sample=3 - A3.wav
+<region> region_label=23 key=58 offset=0289 sample=3 - A#3.wav
+<region> region_label=24 key=59 offset=0154 sample=3 - B3.wav
+<region> region_label=25 key=60 offset=0169 sample=3 - C4.wav
+<region> region_label=26 key=61 offset=0305 sample=3 - C#4.wav
+<region> region_label=27 key=62 offset=0654 sample=3 - D4.wav
+<region> region_label=28 key=63 offset=0299 sample=3 - D#4.wav
+<region> region_label=29 key=64 offset=0280 sample=3 - E4.wav
+<region> region_label=30 key=65 offset=0326 sample=3 - F4.wav
+<region> region_label=31 key=66 offset=0360 sample=3 - F#4.wav
+<region> region_label=32 key=67 offset=0367 sample=3 - G4.wav
+<region> region_label=33 key=68 offset=0324 sample=3 - G#4.wav
+<region> region_label=34 key=69 offset=0229 sample=3 - A4.wav
+<region> region_label=35 key=70 offset=0320 sample=3 - A#4.wav
+<region> region_label=36 key=71 offset=0393 sample=3 - B4.wav
+<region> region_label=37 key=72 offset=0298 sample=3 - C5.wav
+<region> region_label=38 key=73 offset=0287 sample=3 - C#5.wav
+<region> region_label=39 key=74 offset=0314 sample=3 - D5.wav
+<region> region_label=40 key=75 offset=0365 sample=3 - D#5.wav
+<region> region_label=41 key=76 offset=0335 sample=3 - E5.wav
+<region> region_label=42 key=77 offset=0346 sample=3 - F5.wav
+<region> region_label=43 key=78 offset=0353 sample=3 - F#5.wav
+<region> region_label=44 key=79 offset=0273 sample=3 - G5.wav
+<region> region_label=45 key=80 offset=0326 sample=3 - G#5.wav
+<region> region_label=46 key=81 offset=0330 sample=3 - A5.wav
+
+
+//----------------
+<curve>
+curve_index=7
+v000=0
+v001=1
+v127=1
