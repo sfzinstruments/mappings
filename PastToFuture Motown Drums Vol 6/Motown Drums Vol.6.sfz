@@ -75,6 +75,7 @@ seq_length=2
 //===========================================
 <master>
 master_label=kick
+locc20=1
 amplitude_oncc20=200
 pan_oncc30=100
 pan_curvecc30=1
@@ -105,6 +106,7 @@ off_time=1.5
 <master>
 master_label=snare
 master_volume=-6
+locc21=1
 amplitude_oncc21=200
 pan_oncc31=100
 pan_curvecc31=1
@@ -151,6 +153,7 @@ off_time=1.2
 <master>
 master_label=rack tom
 master_volume=-6
+locc22=1
 amplitude_oncc22=200
 pan_oncc32=100
 pan_curvecc32=1
@@ -173,6 +176,7 @@ off_time=1.5
 <master>
 master_label=floor tom
 master_volume=-6
+locc23=1
 amplitude_oncc23=200
 pan_oncc33=100
 pan_curvecc33=1
@@ -195,6 +199,7 @@ off_time=2
 <master>
 master_label=hihat
 master_volume=-12
+locc24=1
 amplitude_oncc24=200
 pan_oncc34=100
 pan_curvecc34=1
@@ -244,6 +249,7 @@ ampeg_sustain=0
 <master>
 master_label=ride
 master_volume=-12
+locc25=1
 amplitude_oncc25=200
 pan_oncc35=100
 pan_curvecc35=1
@@ -278,6 +284,7 @@ ampeg_sustain=0
 <master>
 master_label=crash
 master_volume=-12
+locc26=1
 amplitude_oncc26=200
 pan_oncc36=100
 pan_curvecc36=1
