@@ -175,6 +175,7 @@ sw_default=12
 //=============================================
 <master>
 master_label=Kick
+locc$VOL_KICK=1
 amplitude_oncc$VOL_KICK=200
 pan_oncc$PAN_KICK=100
 pan_curvecc$PAN_KICK=1
@@ -204,6 +205,7 @@ group_label=Hard Beater
 //=============================================
 <master>
 master_label=Snare
+locc$VOL_SNR=1
 amplitude_oncc$VOL_SNR=200
 pan_oncc$PAN_SNR=100
 pan_curvecc$PAN_SNR=1
@@ -283,6 +285,7 @@ group_label=Snares Off
 //=============================================
 <master>
 master_label=Snare
+locc$VOL_SNR=1
 amplitude_oncc$VOL_SNR=200
 pan_oncc$PAN_SNR=100
 pan_curvecc$PAN_SNR=1
@@ -362,6 +365,7 @@ group_label=Snares Off
 //=============================================
 <master>
 master_label=Rack Tom
+locc$VOL_TOM1=1
 amplitude_oncc$VOL_TOM1=200
 pan_oncc$PAN_TOM1=100
 pan_curvecc$PAN_TOM1=1
@@ -383,6 +387,7 @@ group_label=Centre
 //=============================================
 <master>
 master_label=Floor Tom
+locc$VOL_TOM2=1
 amplitude_oncc$VOL_TOM2=200
 pan_oncc$PAN_TOM2=100
 pan_curvecc$PAN_TOM2=1
@@ -404,6 +409,7 @@ group_label=Centre
 //=============================================
 <master>
 master_label=Hihat
+locc$VOL_HH=1
 amplitude_oncc$VOL_HH=200
 pan_oncc$PAN_HH=100
 pan_curvecc$PAN_HH=1
@@ -415,7 +421,8 @@ off_time=0.3
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Fully Closed/
 <group>
 key=$KEY_HH_TP_CF
-group=5
+group=6
+off_by=12
 group_label=Tip Closed Full
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C1FL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C1FL_HT_015_02.wav
@@ -424,7 +431,8 @@ group_label=Tip Closed Full
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Closed/
 <group>
 key=$KEY_HH_TP_CL
-group=5
+group=7
+off_by=13
 group_label=Tip Closed
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C2FL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C2FL_HT_015_02.wav
@@ -433,8 +441,8 @@ group_label=Tip Closed
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open Quarter/
 <group>
 key=$KEY_HH_TP_OQ
-group=6
-off_by=10
+group=8
+off_by=14
 group_label=Tip Open Quarter
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C3FL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C3FL_HT_015_02.wav
@@ -443,8 +451,8 @@ group_label=Tip Open Quarter
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open Half/
 <group>
 key=$KEY_HH_TP_OH
-group=7
-off_by=11
+group=9
+off_by=15
 group_label=Tip Open Half
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O1FL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O1FL_HT_015_02.wav
@@ -453,8 +461,8 @@ group_label=Tip Open Half
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open Three Quarters/
 <group>
 key=$KEY_HH_TP_OT
-group=8
-off_by=12
+group=10
+off_by=16
 group_label=Tip Open Three Quarters
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O2FL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O2FL_HT_015_02.wav
@@ -463,8 +471,8 @@ group_label=Tip Open Three Quarters
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Open/
 <group>
 key=$KEY_HH_TP_OP
-group=9
-off_by=13
+group=11
+off_by=17
 group_label=Tip Open
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O3FL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O3FL_HT_015_02.wav
@@ -473,7 +481,8 @@ group_label=Tip Open
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Fully Closed/
 <group>
 key=$KEY_HH_EG_CF
-group=5
+group=6
+off_by=12
 group_label=Edge Closed Full
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C1EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C1EGFL_HT_015_02.wav
@@ -482,7 +491,8 @@ group_label=Edge Closed Full
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Closed/
 <group>
 key=$KEY_HH_EG_CL
-group=5
+group=7
+off_by=13
 group_label=Edge Closed
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C2EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C2EGFL_HT_015_02.wav
@@ -491,8 +501,8 @@ group_label=Edge Closed
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open Quarter/
 <group>
 key=$KEY_HH_EG_OQ
-group=6
-off_by=10
+group=8
+off_by=14
 group_label=Edge Open Quarter
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_C3EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_C3EGFL_HT_015_02.wav
@@ -501,8 +511,8 @@ group_label=Edge Open Quarter
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open Half/
 <group>
 key=$KEY_HH_EG_OH
-group=7
-off_by=11
+group=9
+off_by=15
 group_label=Edge Open Half
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O1EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O1EGFL_HT_015_02.wav
@@ -511,8 +521,8 @@ group_label=Edge Open Half
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open Three Quarters/
 <group>
 key=$KEY_HH_EG_OT
-group=8
-off_by=12
+group=10
+off_by=16
 group_label=Edge Open Three Quarters
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O2EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O2EGFL_HT_015_02.wav
@@ -521,8 +531,8 @@ group_label=Edge Open Three Quarters
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Edge Open/
 <group>
 key=$KEY_HH_EG_OP
-group=9
-off_by=13
+group=11
+off_by=17
 group_label=Edge Open
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_O3EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=ZDJN_HAT_O3EGFL_HT_015_02.wav
@@ -540,8 +550,8 @@ group_label=Pedal Shut
 <control> default_path=SAMPLES/Zildjian Armand Hi Hat/Pedal Open/
 <group>
 key=$KEY_HH_PO
-group=9
-off_by=13
+group=11
+off_by=17
 trigger=release_key
 group_label=Pedal Open
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=ZDJN_HAT_POFL_HT_015_01.wav
@@ -552,47 +562,53 @@ group_label=Pedal Open
 <group>
 end=-1
 sample=*silence
-<region> key=$KEY_HH_TP_CF group=10
-<region> key=$KEY_HH_TP_CF group=11
-<region> key=$KEY_HH_TP_CF group=12
 <region> key=$KEY_HH_TP_CF group=13
-<region> key=$KEY_HH_TP_CL group=10
-<region> key=$KEY_HH_TP_CL group=11
-<region> key=$KEY_HH_TP_CL group=12
-<region> key=$KEY_HH_TP_CL group=13
-<region> key=$KEY_HH_TP_OQ group=11
-<region> key=$KEY_HH_TP_OQ group=12
-<region> key=$KEY_HH_TP_OQ group=13
-<region> key=$KEY_HH_TP_OH group=12
-<region> key=$KEY_HH_TP_OH group=13
-<region> key=$KEY_HH_TP_OT group=13
-<region> key=$KEY_HH_EG_CF group=10
-<region> key=$KEY_HH_EG_CF group=11
-<region> key=$KEY_HH_EG_CF group=12
+<region> key=$KEY_HH_TP_CF group=14
+<region> key=$KEY_HH_TP_CF group=15
+<region> key=$KEY_HH_TP_CF group=16
+<region> key=$KEY_HH_TP_CF group=17
+<region> key=$KEY_HH_TP_CL group=14
+<region> key=$KEY_HH_TP_CL group=15
+<region> key=$KEY_HH_TP_CL group=16
+<region> key=$KEY_HH_TP_CL group=17
+<region> key=$KEY_HH_TP_OQ group=15
+<region> key=$KEY_HH_TP_OQ group=16
+<region> key=$KEY_HH_TP_OQ group=17
+<region> key=$KEY_HH_TP_OH group=16
+<region> key=$KEY_HH_TP_OH group=17
+<region> key=$KEY_HH_TP_OT group=17
 <region> key=$KEY_HH_EG_CF group=13
-<region> key=$KEY_HH_EG_CL group=10
-<region> key=$KEY_HH_EG_CL group=11
-<region> key=$KEY_HH_EG_CL group=12
-<region> key=$KEY_HH_EG_CL group=13
-<region> key=$KEY_HH_EG_OQ group=11
-<region> key=$KEY_HH_EG_OQ group=12
-<region> key=$KEY_HH_EG_OQ group=13
-<region> key=$KEY_HH_EG_OH group=12
-<region> key=$KEY_HH_EG_OH group=13
-<region> key=$KEY_HH_EG_OT group=13
-<region> key=$KEY_HH_PS group=10
-<region> key=$KEY_HH_PS group=11
+<region> key=$KEY_HH_EG_CF group=14
+<region> key=$KEY_HH_EG_CF group=15
+<region> key=$KEY_HH_EG_CF group=16
+<region> key=$KEY_HH_EG_CF group=17
+<region> key=$KEY_HH_EG_CL group=14
+<region> key=$KEY_HH_EG_CL group=15
+<region> key=$KEY_HH_EG_CL group=16
+<region> key=$KEY_HH_EG_CL group=17
+<region> key=$KEY_HH_EG_OQ group=15
+<region> key=$KEY_HH_EG_OQ group=16
+<region> key=$KEY_HH_EG_OQ group=17
+<region> key=$KEY_HH_EG_OH group=16
+<region> key=$KEY_HH_EG_OH group=17
+<region> key=$KEY_HH_EG_OT group=17
 <region> key=$KEY_HH_PS group=12
 <region> key=$KEY_HH_PS group=13
-<region> key=$KEY_HH_PO group=10
-<region> key=$KEY_HH_PO group=11
+<region> key=$KEY_HH_PS group=14
+<region> key=$KEY_HH_PS group=15
+<region> key=$KEY_HH_PS group=16
+<region> key=$KEY_HH_PS group=17
 <region> key=$KEY_HH_PO group=12
 <region> key=$KEY_HH_PO group=13
-
+<region> key=$KEY_HH_PO group=14
+<region> key=$KEY_HH_PO group=15
+<region> key=$KEY_HH_PO group=16
+<region> key=$KEY_HH_PO group=17
 
 //=============================================
 <master>
 master_label=Ride
+locc$VOL_RD=1
 amplitude_oncc$VOL_RD=200
 pan_oncc$PAN_RD=100
 pan_curvecc$PAN_RD=1
@@ -605,8 +621,8 @@ off_time=0.5
 <control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Centre/
 <group>
 key=$KEY_RD_CT
-group=14
-off_by=17
+group=18
+off_by=21
 group_label=Centre
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_RIDE_CNFL_HT_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_RIDE_CNFL_HT_02.wav
@@ -615,8 +631,8 @@ group_label=Centre
 <control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Bell/
 <group>
 key=$KEY_RD_BL
-group=15
-off_by=17
+group=19
+off_by=21
 group_label=Bell
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_RIDE_BLFL_HT_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_RIDE_BLFL_HT_02.wav
@@ -625,8 +641,8 @@ group_label=Bell
 <control> default_path=SAMPLES/Paiste 602 20 Inch Ride/Edge/
 <group>
 key=$KEY_RD_EG
-group=16
-off_by=17
+group=20
+off_by=21
 group_label=Edge
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_RIDE_EGFL_HT_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_RIDE_EGFL_HT_02.wav
@@ -634,7 +650,7 @@ group_label=Edge
 
 <group>
 key=$CHK_RD
-group=17
+group=21
 ampeg_sustain=0
 group_label=Choke
 <region> sample=*silence
@@ -643,6 +659,7 @@ group_label=Choke
 //=============================================
 <master>
 master_label=Crash
+locc$VOL_CR=1
 amplitude_oncc$VOL_CR=200
 pan_oncc$PAN_CR=100
 pan_curvecc$PAN_CR=1
@@ -655,8 +672,8 @@ off_time=0.3
 <control> default_path=SAMPLES/Paiste 602 18 Inch Crash/Centre/
 <group>
 key=$KEY_CR_CT
-group=18
-off_by=20
+group=22
+off_by=24
 group_label=Centre
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_CRSH_CNFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_CRSH_CNFL_HT_015_02.wav
@@ -665,8 +682,8 @@ group_label=Centre
 <control> default_path=SAMPLES/Paiste 602 18 Inch Crash/Edge/
 <group>
 key=$KEY_CR_EG
-group=19
-off_by=20
+group=23
+off_by=24
 group_label=Edge
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=PSTE_CRSH_EGFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=PSTE_CRSH_EGFL_HT_015_02.wav
@@ -674,7 +691,7 @@ group_label=Edge
 
 <group>
 key=$CHK_CR
-group=20
+group=24
 ampeg_sustain=0
 group_label=Choke
 <region> sample=*silence
@@ -683,6 +700,7 @@ group_label=Choke
 //=============================================
 <master>
 master_label=Guiro
+locc$VOL_GRO=1
 amplitude_oncc$VOL_GRO=200
 pan_oncc$PAN_GRO=100
 pan_curvecc$PAN_GRO=1
@@ -694,7 +712,7 @@ off_time=0.1
 <control> default_path=SAMPLES/Guiro/Hit/
 <group>
 key=$KEY_GRO_HIT
-group=21
+group=25
 group_label=Hit
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=GURO_HTFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=GURO_HTFL_HT_015_02.wav
@@ -703,8 +721,8 @@ group_label=Hit
 <control> default_path=SAMPLES/Guiro/Scrape/
 <group>
 key=$KEY_GRO_SCR
-group=22
-off_by=21
+group=26
+off_by=25
 group_label=Scrape
 <region> region_label=V1 lovel=$VEL1LO hivel=$VEL1HI sample=GURO_SCFL_HT_015_01.wav
 <region> region_label=V2 lovel=$VEL2LO hivel=$VEL2HI sample=GURO_SCFL_HT_015_02.wav
@@ -714,6 +732,7 @@ group_label=Scrape
 //=============================================
 <master>
 master_label=Tambourine
+locc$VOL_TMB=1
 amplitude_oncc$VOL_TMB=200
 pan_oncc$PAN_TMB=100
 pan_curvecc$PAN_TMB=1
@@ -721,7 +740,7 @@ tune_oncc$TUN_TMB=1200
 tune_curvecc$TUN_TMB=1
 note_polyphony=1
 off_time=1
-group=23
+group=27
 
 <control> default_path=SAMPLES/Tambourine/Hit/
 <group>
@@ -743,6 +762,7 @@ group_label=Shake
 //=============================================
 <master>
 master_label=Shaker
+locc$VOL_SHK=1
 amplitude_oncc$VOL_SHK=200
 pan_oncc$PAN_SHK=100
 pan_curvecc$PAN_SHK=1
@@ -750,7 +770,7 @@ tune_oncc$TUN_SHK=1200
 tune_curvecc$TUN_SHK=1
 note_polyphony=1
 off_time=0.5
-group=24
+group=28
 
 <control> default_path=SAMPLES/Shaker/Hard/
 <group>
