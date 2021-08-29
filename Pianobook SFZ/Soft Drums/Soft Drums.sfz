@@ -79,6 +79,7 @@ seq_length=3
 //===========================================
 <master>
 master_label=Kick
+locc20=1
 amplitude_oncc20=200
 pan_oncc30=100
 pan_curvecc30=1
@@ -109,6 +110,7 @@ group=1
 //===========================================
 <master>
 master_label=Snare
+locc21=1
 amplitude_oncc21=200
 pan_oncc31=100
 pan_curvecc31=1
@@ -153,6 +155,7 @@ group=2
 //===========================================
 <master>
 master_label=Rack Tom
+locc22=1
 amplitude_oncc22=200
 pan_oncc32=100
 pan_curvecc32=1
@@ -177,6 +180,7 @@ group=3
 //===========================================
 <master>
 master_label=Floor Tom
+locc23=1
 amplitude_oncc23=200
 pan_oncc33=100
 pan_curvecc33=1
@@ -201,6 +205,7 @@ group=4
 //===========================================
 <master>
 master_label=Hihat
+locc24=1
 amplitude_oncc24=200
 pan_oncc34=100
 pan_curvecc34=1
@@ -209,7 +214,7 @@ tune_curvecc44=1
 note_polyphony=3
 off_time=0.3
 
-<group> group_label=Closed group=5 key=42
+<group> group_label=Closed group=6 off_by=9 key=42
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2972 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Closed_p_RR1.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2972 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Closed_p_RR2.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2983 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Closed_p_RR3.wav
@@ -234,7 +239,7 @@ off_time=0.3
 <region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=2126 region_label=V4 RR2 seq_position=2 sample=SoftDrums_NAT_HH Foot_ff_RR2.wav
 <region> lovel=127 hivel=127 amp_velcurve_127=1 offset_oncc98=2095 region_label=V4 RR3 seq_position=3 sample=SoftDrums_NAT_HH Foot_ff_RR3.wav
 
-<group> group_label=Shank group=6 off_by=8 key=48
+<group> group_label=Shank group=7 off_by=10 key=48
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2930 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Open_p_RR1.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2961 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_p_RR2.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2945 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_p_RR3.wav
@@ -245,7 +250,7 @@ off_time=0.3
 <region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2964 region_label=V3 RR2 seq_position=2 sample=SoftDrums_NAT_HH Open_f_RR2.wav
 <region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2984 region_label=V3 RR3 seq_position=3 sample=SoftDrums_NAT_HH Open_f_RR3.wav
 
-<group> group_label=Open group=7 off_by=9 key=46
+<group> group_label=Open group=8 off_by=11 key=46
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2918 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_HH Slosh_p_RR1.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2952 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_HH Slosh_p_RR2.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2958 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_HH Slosh_p_RR3.wav
@@ -260,16 +265,18 @@ off_time=0.3
 end=-1
 seq_length=1
 sample=*silence
-<region> key=42 group=8
-<region> key=42 group=9
-<region> key=44 group=8
+<region> key=42 group=10
+<region> key=42 group=11
 <region> key=44 group=9
-<region> key=48 group=9
+<region> key=44 group=10
+<region> key=44 group=11
+<region> key=48 group=11
 
 
 //===========================================
 <master>
 master_label=Ride
+locc25=1
 amplitude_oncc25=200
 pan_oncc35=100
 pan_curvecc35=1
@@ -279,7 +286,7 @@ note_polyphony=4
 off_shape=-3
 off_time=0.5
 
-<group> group_label=Hit group=10 off_by=12 key=51
+<group> group_label=Hit group=12 off_by=14 key=51
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2974 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_p_RR1.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2959 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Ride_p_RR2.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2951 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Ride_p_RR3.wav
@@ -289,7 +296,7 @@ off_time=0.5
 <region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=3399 region_label=V3 RR1 seq_position=1 sample=SoftDrums_NAT_Ride_f_RR1.wav seq_length=2
 <region> lovel=085 hivel=127 amp_velcurve_127=1 offset_oncc98=2984 region_label=V3 RR3 seq_position=2 sample=SoftDrums_NAT_Ride_f_RR3.wav seq_length=2
 
-<group> group_label=Rake group=11 off_by=12 key=52
+<group> group_label=Rake group=13 off_by=14 key=52
 <region> amp_velcurve_127=1 region_label=RR1 seq_position=1 sample=SoftDrums_NAT_Rake_RR1.wav
 <region> amp_velcurve_127=1 region_label=RR2 seq_position=2 sample=SoftDrums_NAT_Rake_RR2.wav
 <region> amp_velcurve_127=1 region_label=RR3 seq_position=3 sample=SoftDrums_NAT_Rake_RR3.wav
@@ -297,7 +304,7 @@ off_time=0.5
 <group>
 group_label=Choke
 seq_length=1
-group=12
+group=14
 key=60
 ampeg_sustain=0
 <region> sample=*silence
@@ -306,6 +313,7 @@ ampeg_sustain=0
 //===========================================
 <master>
 master_label=Crash
+locc26=1
 amplitude_oncc26=200
 pan_oncc36=100
 pan_curvecc36=1
@@ -315,7 +323,7 @@ note_polyphony=4
 off_shape=-3
 off_time=0.3
 
-<group> group_label=Hit group=13 off_by=14 key=49
+<group> group_label=Hit group=15 off_by=16 key=49
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2673 region_label=V1 RR1 seq_position=1 sample=SoftDrums_NAT_Crash_p_RR1.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2794 region_label=V1 RR2 seq_position=2 sample=SoftDrums_NAT_Crash_p_RR2.wav
 <region> lovel=001 hivel=042 amp_velcurve_042=1 offset_oncc98=2826 region_label=V1 RR3 seq_position=3 sample=SoftDrums_NAT_Crash_p_RR3.wav
@@ -331,7 +339,7 @@ off_time=0.3
 <group>
 group_label=Choke
 seq_length=1
-group=14
+group=16
 key=61
 ampeg_sustain=0
 <region> sample=*silence
@@ -340,6 +348,7 @@ ampeg_sustain=0
 //===========================================
 <master>
 master_label=Rattle
+locc27=1
 amplitude_oncc27=200
 pan_oncc37=100
 pan_curvecc37=1
@@ -347,7 +356,7 @@ tune_oncc47=1200
 tune_curvecc47=1
 note_polyphony=1
 off_time=1
-group=15
+group=17
 
 <group> group_label=Hit key=37
 <region> amp_velcurve_127=1 offset_oncc98=9443 region_label=01 sample=SoftDrums_NAT_Rattle.wav seq_length=1
