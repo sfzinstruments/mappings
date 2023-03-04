@@ -1,0 +1,81 @@
+// 82'-Vox1245
+<region>
+    sample=Samples\Philicorda 82-V1245 C1.$EXT
+    name=Philicorda 82-V1245 C1
+    pitch_keycenter=36
+    lokey=29
+    hikey=39
+    loop_start=34698
+    loop_end=56191
+
+<region>
+    sample=Samples\Philicorda 82-V1245 F#1.$EXT
+    name=Philicorda 82-V1245 F#1
+    pitch_keycenter=42
+    lokey=40
+    hikey=45
+    loop_start=29701
+    loop_end=48744
+
+<region>
+    sample=Samples\Philicorda 82-V1245 C2.$EXT
+    name=Philicorda 82-V1245 C2
+    pitch_keycenter=48
+    lokey=46
+    hikey=51
+    loop_start=22886
+    loop_end=43036
+
+<region>
+    sample=Samples\Philicorda 82-V1245 F#2.$EXT
+    name=Philicorda 82-V1245 F#2
+    pitch_keycenter=54
+    lokey=52
+    hikey=57
+    loop_start=11813
+    loop_end=30856
+
+<region>
+    sample=Samples\Philicorda 82-V1245 C3.$EXT
+    name=Philicorda 82-V1245 C3
+    pitch_keycenter=60
+    lokey=58
+    hikey=63
+    loop_start=25810
+    loop_end=47639
+
+<region>
+    sample=Samples\Philicorda 82-V1245 F#3.$EXT
+    name=Philicorda 82-V1245 F#3
+    pitch_keycenter=66
+    lokey=64
+    hikey=69
+    loop_start=49172
+    loop_end=71428
+
+<region>
+    sample=Samples\Philicorda 82-V1245 C4.$EXT
+    name=Philicorda 82-V1245 C4
+    pitch_keycenter=72
+    lokey=70
+    hikey=75
+    loop_start=46940
+    loop_end=64235
+
+<region>
+    sample=Samples\Philicorda 82-V1245 F#4.$EXT
+    name=Philicorda 82-V1245 F#4
+    pitch_keycenter=78
+    lokey=76
+    hikey=81
+    loop_start=46686
+    loop_end=67871
+
+<region>
+    sample=Samples\Philicorda 82-V1245 C5.$EXT
+    name=Philicorda 82-V1245 C5
+    pitch_keycenter=84
+    lokey=82
+    hikey=96
+    loop_start=19392
+    loop_end=78245

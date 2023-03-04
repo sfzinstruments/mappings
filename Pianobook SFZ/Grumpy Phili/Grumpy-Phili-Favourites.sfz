@@ -1,0 +1,82 @@
+<control>
+    #define $CC_ATTACK 22
+    #define $CC_CUTOFF 6
+    #define $CC_RELEASE 23
+    #define $CC_RESONANCE 13
+    #define $CC_TREMOLO_DEPTH 26
+    #define $CC_TREMOLO_FREQ 25
+    #define $CC_VIBRATO_DEPTH 1
+    #define $CC_VIBRATO_FREQ 24
+    #define $EXT wav
+
+    label_cc$CC_ATTACK=Attack
+    label_cc$CC_CUTOFF=LPF Cutoff
+    label_cc$CC_RELEASE=Release
+    label_cc$CC_RESONANCE=LPF Resonance
+    label_cc$CC_TREMOLO_DEPTH=Tremolo Depth
+    label_cc$CC_TREMOLO_FREQ=Tremolo Frequency
+    label_cc$CC_VIBRATO_DEPTH=Vibrato Depth
+    label_cc$CC_VIBRATO_FREQ=Vibrato Frequency
+
+    set_cc$CC_ATTACK=0
+    set_cc$CC_CUTOFF=127
+    set_cc$CC_RELEASE=0
+    set_cc$CC_RESONANCE=0
+    set_cc$CC_TREMOLO_DEPTH=0
+    set_cc$CC_TREMOLO_FREQ=64
+    set_cc$CC_VIBRATO_DEPTH=0
+    set_cc$CC_VIBRATO_FREQ=64
+
+<global>
+    sw_lokey=24
+    sw_hikey=28
+    sw_default=24
+    amp_veltrack=0
+    loop_mode=loop_continuous
+    loop_crossfade=0.1
+
+    // controls
+
+    // Vibrato
+    pitchlfo_freq=3.0
+    pitchlfo_freqcc$CC_VIBRATO_FREQ=6.0
+    pitchlfo_depthcc$CC_VIBRATO_DEPTH=50
+
+    // Tremolo
+    amplfo_freq=1.0
+    amplfo_freqcc$CC_TREMOLO_FREQ=9.0
+    amplfo_depth=0.0
+    amplfo_depthcc$CC_TREMOLO_DEPTH=6.0
+
+    // Amp AR envelope
+    ampeg_attack=0.0
+    ampeg_release=0.02
+    ampeg_attackcc$CC_ATTACK=3.0
+    ampeg_releasecc$CC_RELEASE=3.0
+
+    // Filter
+    fil_type=lpf_2p
+    cutoff=100
+    cutoff_cc$CC_CUTOFF=9900
+    resonance=0.0
+    resonance_oncc$CC_RESONANCE=12.0
+
+<group>
+    sw_last=24
+    #include "Grumpy-Phili-8-V13.sfz"
+
+<group>
+    sw_last=25
+    #include "Grumpy-Phili-8-V1245.sfz"
+
+<group>
+    sw_last=26
+    #include "Grumpy-Phili-82-V1245.sfz"
+
+<group>
+    sw_last=27
+    #include "Grumpy-Phili-842-V1245.sfz"
+
+<group>
+    sw_last=28
+    #include "Grumpy-Phili-84-V14.sfz"
