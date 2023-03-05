@@ -1,0 +1,81 @@
+// 84'-Vox14
+<region>
+    sample=Samples\Philicorda 84-V14 C1.$EXT
+    name=Philicorda 84-V14 C1
+    pitch_keycenter=36
+    lokey=29
+    hikey=39
+    loop_start=12877
+    loop_end=33705
+
+<region>
+    sample=Samples\Philicorda 84-V14 F#1.$EXT
+    name=Philicorda 84-V14 F#1
+    pitch_keycenter=42
+    lokey=40
+    hikey=45
+    loop_start=35601
+    loop_end=55602
+
+<region>
+    sample=Samples\Philicorda 84-V14 C2.$EXT
+    name=Philicorda 84-V14 C2
+    pitch_keycenter=48
+    lokey=46
+    hikey=51
+    loop_start=24522
+    loop_end=40647
+
+<region>
+    sample=Samples\Philicorda 84-V14 F#2.$EXT
+    name=Philicorda 84-V14 F#2
+    pitch_keycenter=54
+    lokey=52
+    hikey=57
+    loop_start=35731
+    loop_end=55732
+
+<region>
+    sample=Samples\Philicorda 84-V14 C3.$EXT
+    name=Philicorda 84-V14 C3
+    pitch_keycenter=60
+    lokey=58
+    hikey=63
+    loop_start=45765
+    loop_end=69280
+
+<region>
+    sample=Samples\Philicorda 84-V14 F#3.$EXT
+    name=Philicorda 84-V14 F#3
+    pitch_keycenter=66
+    lokey=64
+    hikey=69
+    loop_start=39392
+    loop_end=62369
+
+<region>
+    sample=Samples\Philicorda 84-V14 C4.$EXT
+    name=Philicorda 84-V14 C4
+    pitch_keycenter=72
+    lokey=70
+    hikey=75
+    loop_start=20733
+    loop_end=44584
+
+<region>
+    sample=Samples\Philicorda 84-V14 F#4.$EXT
+    name=Philicorda 84-V14 F#4
+    pitch_keycenter=78
+    lokey=76
+    hikey=81
+    loop_start=27698
+    loop_end=45615
+
+<region>
+    sample=Samples\Philicorda 84-V14 C5.$EXT
+    name=Philicorda 84-V14 C5
+    pitch_keycenter=84
+    lokey=82
+    hikey=96
+    loop_start=7321
+    loop_end=58634
