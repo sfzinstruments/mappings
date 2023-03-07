@@ -1,0 +1,529 @@
+<control>
+    default_path=Samples\
+    #define $EXT wav
+
+    #define $CC_RELEASE 6
+    #define $CC_TREMOLO_DEPTH 1
+    #define $CC_TREMOLO_FREQ 13
+    #define $CC_VIBRATO_DEPTH 22
+    #define $CC_VIBRATO_FREQ 23
+
+    label_cc$CC_RELEASE=Amp Release
+    label_cc$CC_TREMOLO_DEPTH=Tremolo Depth
+    label_cc$CC_TREMOLO_FREQ=Tremolo Frequency
+    label_cc$CC_VIBRATO_DEPTH=Vibrato Depth
+    label_cc$CC_VIBRATO_FREQ=Vibrato Frequency
+
+    set_cc$CC_TREMOLO_DEPTH=0
+    set_cc$CC_TREMOLO_FREQ=64
+    set_cc$CC_VIBRATO_DEPTH=0
+    set_cc$CC_VIBRATO_FREQ=64
+    set_cc$CC_RELEASE=127
+
+
+<global>
+    loop_mode=no_loop
+    volume=6
+    amp_veltrack=75
+
+    // Amp Ebevelop Release
+    ampeg_release=0.02
+    ampeg_releasecc$CC_RELEASE=3.0
+
+    // Vibrato
+    pitchlfo_freq=3.0
+    pitchlfo_freqcc$CC_VIBRATO_FREQ=6.0
+    pitchlfo_depthcc$CC_VIBRATO_DEPTH=50
+
+    // Tremolo
+    amplfo_freq=1.0
+    amplfo_freqcc$CC_TREMOLO_FREQ=9.0
+    amplfo_depth=0.0
+    amplfo_depthcc$CC_TREMOLO_DEPTH=9.0
+
+
+<group>
+    lokey=55
+    pitch_keycenter=57
+    hikey=57
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK A4 soft V1.$EXT
+    volume=9
+
+<region>
+    seq_position=2
+    sample=GLOCK A4 soft V2.$EXT
+    volume=9
+
+
+<group>
+    lokey=55
+    pitch_keycenter=57
+    hikey=57
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK A4 loud V1.$EXT
+    volume=10
+
+<region>
+    seq_position=2
+    sample=GLOCK A4 loud V2.$EXT
+    volume=10
+
+
+<group>
+    lokey=58
+    pitch_keycenter=59
+    hikey=59
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK B4 soft V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK B4 soft V2.$EXT
+    volume=3
+
+
+<group>
+    lokey=58
+    pitch_keycenter=59
+    hikey=59
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK B4 loud V2.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK B4 loud V1.$EXT
+
+
+<group>
+    lokey=60
+    pitch_keycenter=60
+    hikey=60
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK C5 soft V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK C5 soft V2.$EXT
+
+
+<group>
+    lokey=60
+    pitch_keycenter=60
+    hikey=60
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK C5 loud V2.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK C5 loud V1.$EXT
+
+
+<group>
+    lokey=61
+    pitch_keycenter=62
+    hikey=62
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK D5 soft V1.$EXT
+    volume=4
+
+<region>
+    seq_position=2
+    sample=GLOCK D5 soft V2.$EXT
+    volume=4
+
+
+<group>
+    lokey=61
+    pitch_keycenter=62
+    hikey=62
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK D5 loud V1.$EXT
+    volume=3
+
+<region>
+    seq_position=2
+    sample=GLOCK D5 loud V2.$EXT
+    volume=3
+
+
+<group>
+    lokey=63
+    pitch_keycenter=64
+    hikey=64
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK E5 soft V2.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK E5 soft V1.$EXT
+
+
+<group>
+    lokey=63
+    pitch_keycenter=64
+    hikey=64
+    lovel=64
+    seq_length=2
+    <region>
+    seq_position=1
+    sample=GLOCK E5 loud V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK E5 loud V2.$EXT
+
+
+<group>
+    lokey=65
+    pitch_keycenter=65
+    hikey=66
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK F5 soft V2.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK F5 soft V1.$EXT
+
+
+<group>
+    lokey=65
+    pitch_keycenter=65
+    hikey=66
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK F5 loud V2.$EXT
+    volume=4
+
+<region>
+    seq_position=2
+    sample=GLOCK F5 loud V1.$EXT
+    volume=4
+
+<group>
+    lokey=67
+    pitch_keycenter=67
+    hikey=67
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK G5 soft V2.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK G5 soft V1.$EXT
+
+
+<group>
+    lokey=67
+    pitch_keycenter=67
+    hikey=67
+    lovel=64
+    seq_length=1
+
+// sample with double attack
+//<region>
+//    seq_position=1
+//    sample=GLOCK G5 loud V2.$EXT
+
+<region>
+    seq_position=1
+    sample=GLOCK G5 loud V1.$EXT
+
+
+<group>
+    lokey=68
+    pitch_keycenter=69
+    hikey=69
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=1
+
+// sample contains background noise
+//<region>
+//    seq_position=1
+//    sample=GLOCK A5 soft V1.$EXT
+
+<region>
+    seq_position=1
+    sample=GLOCK A5 soft V2.$EXT
+
+
+<group>
+    lokey=68
+    pitch_keycenter=69
+    hikey=69
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK A5 loud V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK A5 loud V2.$EXT
+
+
+<group>
+    lokey=70
+    pitch_keycenter=71
+    hikey=71
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK B5 soft V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK B5 soft V2.$EXT
+
+
+<group>
+    lokey=70
+    pitch_keycenter=71
+    hikey=71
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK B5 loud V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK B5 loud V2.$EXT
+
+
+<group>
+    lokey=72
+    pitch_keycenter=72
+    hikey=72
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK C6 soft V1.$EXT
+    volume=3
+
+<region>
+    seq_position=2
+    sample=GLOCK C6 soft V2.$EXT
+    volume=3
+
+
+<group>
+    lokey=72
+    pitch_keycenter=72
+    hikey=72
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK C6 loud V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK C6 loud V2.$EXT
+
+
+<group>
+    lokey=73
+    pitch_keycenter=74
+    hikey=74
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK D6 soft V1.$EXT
+    volume=3
+
+<region>
+    seq_position=2
+    sample=GLOCK D6 soft V2.$EXT
+    volume=3
+
+
+<group>
+    lokey=73
+    pitch_keycenter=74
+    hikey=74
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK D6 loud V1.$EXT
+    volume=3
+
+<region>
+    seq_position=2
+    sample=GLOCK D6 loud V2.$EXT
+    volume=3
+
+
+<group>
+    lokey=75
+    pitch_keycenter=76
+    hikey=77
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK E6 soft V2.$EXT
+    volume=3
+
+<region>
+    seq_position=2
+    sample=GLOCK E6 soft V1.$EXT
+    volume=3
+
+
+<group>
+    lokey=75
+    pitch_keycenter=76
+    hikey=76
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK E6 loud V1.$EXT
+    volume=2
+
+<region>
+    seq_position=2
+    sample=GLOCK E6 loud V2.$EXT
+    volume=3
+
+
+//<group>
+//    lokey=77
+//    pitch_keycenter=77
+//    hikey=77
+//    hivel=63
+//    amp_velcurve_63=1
+//    seq_length=2
+//
+// sample has background noise
+//<region>
+//    seq_position=1
+//    sample=GLOCK F6 soft V2.$EXT
+//
+// sample has background noise
+//<region>
+//    seq_position=2
+//    sample=GLOCK F6 soft V1.$EXT
+
+
+<group>
+    lokey=77
+    pitch_keycenter=77
+    hikey=78
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK F6 loud V1.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK F6 loud V2.$EXT
+
+
+<group>
+    lokey=78
+    pitch_keycenter=79
+    hikey=79
+    hivel=63
+    amp_velcurve_63=1
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK G6 soft V1.$EXT
+    volume=9
+
+<region>
+    seq_position=2
+    sample=GLOCK G6 soft V2.$EXT
+    volume=9
+
+
+<group>
+    lokey=78
+    pitch_keycenter=79
+    hikey=79
+    lovel=64
+    seq_length=2
+
+<region>
+    seq_position=1
+    sample=GLOCK G6 loud V2.$EXT
+
+<region>
+    seq_position=2
+    sample=GLOCK G6 loud V1.$EXT

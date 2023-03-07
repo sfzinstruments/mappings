@@ -1,0 +1,16 @@
+This is a Vintage Glockenspiel I've had laying around for a very long time.
+But due to its dilapidated nature it hasn't been used much.
+It's pretty much unplayable as an instrument,
+as the frame work is not solid and only a handful of notes work depending on how you position it.
+
+Sampled each note in the key of C and entered into Kontakt.
+It has two velocity layers and a round robin count of a grand-2
+
+This is my first foray into "proper" sampling, so I do hope you will find it fun.
+
+I used Kontakt 5 as I know a lot of people may have not taken the plunge to 6 yet.
+
+
+All the best.
+
+Carl.
