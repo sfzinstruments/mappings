@@ -1,0 +1,19 @@
+<control>
+    default_path=samples\
+    #define $EXT wav
+    #include "data\control.sfz"
+
+<global>
+    #include "data\global.sfz"
+
+<group>
+    group_label=Low Velocity layer
+    #include "data\low.sfz"
+
+<group>
+    group_label=Medium Velocity layer
+    #include "data\medium.sfz"
+
+<group>
+    group_label=High Velocity layer
+    #include "data\high.sfz"

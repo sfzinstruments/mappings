@@ -1,0 +1,281 @@
+<region>
+    lokey=41
+    hikey=41
+    pitch_keycenter=41
+    sample=n_F1-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=42
+    hikey=43
+    pitch_keycenter=43
+    sample=n_G1-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=44
+    hikey=45
+    pitch_keycenter=45
+    sample=n_A1-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=46
+    hikey=47
+    pitch_keycenter=47
+    sample=n_B1-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=48
+    hikey=48
+    pitch_keycenter=48
+    sample=n_C2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=49
+    hikey=50
+    pitch_keycenter=50
+    sample=n_D2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=51
+    hikey=52
+    pitch_keycenter=52
+    sample=n_E2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=53
+    hikey=53
+    pitch_keycenter=53
+    sample=n_F2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=54
+    hikey=55
+    pitch_keycenter=55
+    sample=n_G2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=56
+    hikey=57
+    pitch_keycenter=57
+    sample=n_A2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=58
+    hikey=59
+    pitch_keycenter=59
+    sample=n_B2-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=60
+    hikey=60
+    pitch_keycenter=60
+    sample=n_C3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=61
+    hikey=62
+    pitch_keycenter=62
+    sample=n_D3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=63
+    hikey=64
+    pitch_keycenter=64
+    sample=n_E3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=65
+    hikey=65
+    pitch_keycenter=65
+    sample=n_F3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=66
+    hikey=67
+    pitch_keycenter=67
+    sample=n_G3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=68
+    hikey=69
+    pitch_keycenter=69
+    sample=n_A3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=70
+    hikey=71
+    pitch_keycenter=71
+    sample=n_B3-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=72
+    hikey=72
+    pitch_keycenter=72
+    sample=n_C4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=73
+    hikey=74
+    pitch_keycenter=74
+    sample=n_D4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=75
+    hikey=76
+    pitch_keycenter=76
+    sample=n_E4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=77
+    hikey=77
+    pitch_keycenter=77
+    sample=n_F4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=78
+    hikey=79
+    pitch_keycenter=79
+    sample=n_G4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=80
+    hikey=81
+    pitch_keycenter=81
+    sample=n_A4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=82
+    hikey=83
+    pitch_keycenter=83
+    sample=n_B4-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=84
+    hikey=84
+    pitch_keycenter=84
+    sample=n_C5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=85
+    hikey=86
+    pitch_keycenter=86
+    sample=n_D5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=87
+    hikey=88
+    pitch_keycenter=88
+    sample=n_E5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=89
+    hikey=89
+    pitch_keycenter=89
+    sample=n_F5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+    offset=19
+    ampeg_attack=0.001
+
+<region>
+    lokey=90
+    hikey=91
+    pitch_keycenter=91
+    sample=n_G5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=92
+    hikey=93
+    pitch_keycenter=93
+    sample=n_A5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=94
+    hikey=95
+    pitch_keycenter=95
+    sample=n_B5-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=96
+    hikey=96
+    pitch_keycenter=96
+    sample=n_C6-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=97
+    hikey=98
+    pitch_keycenter=98
+    sample=n_D6-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H
+
+<region>
+    lokey=99
+    hikey=100
+    pitch_keycenter=100
+    sample=n_E6-H.$EXT
+    lovel=$LOVEL_H
+    hivel=$HIVEL_H

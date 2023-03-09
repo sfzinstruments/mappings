@@ -1,0 +1,22 @@
+// Before using this, you need to convert the original WAV format samples
+// to FLAC. You can use the provided script "convert-to-flac.sh".
+
+<control>
+    default_path=flac\
+    #define $EXT flac
+    #include "data\control.sfz"
+
+<global>
+    #include "data\global.sfz"
+
+<group>
+    group_label=Low Velocity layer
+    #include "data\low.sfz"
+
+<group>
+    group_label=Medium Velocity layer
+    #include "data\medium.sfz"
+
+<group>
+    group_label=High Velocity layer
+    #include "data\high.sfz"
