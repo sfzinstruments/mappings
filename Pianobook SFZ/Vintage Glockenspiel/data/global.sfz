@@ -1,0 +1,18 @@
+loop_mode=no_loop
+volume=6
+amp_veltrack=75
+
+// Amp Envelop Release
+ampeg_release=0.02
+ampeg_releasecc$CC_RELEASE=3.0
+
+// Vibrato
+pitchlfo_freq=3.0
+pitchlfo_freqcc$CC_VIBRATO_FREQ=6.0
+pitchlfo_depthcc$CC_VIBRATO_DEPTH=50
+
+// Tremolo
+amplfo_freq=1.0
+amplfo_freqcc$CC_TREMOLO_FREQ=9.0
+amplfo_depth=0.0
+amplfo_depthcc$CC_TREMOLO_DEPTH=9.0
