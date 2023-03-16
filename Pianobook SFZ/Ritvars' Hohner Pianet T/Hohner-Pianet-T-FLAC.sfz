@@ -1,0 +1,10 @@
+<control>
+    default_path=flac/
+    #define $EXT flac
+    #include "data/control.sfz"
+
+<global>
+    #include "data/global.sfz"
+
+<group>
+    #include "data/samples.sfz"

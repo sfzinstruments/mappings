@@ -1,0 +1,20 @@
+#define $CC_RELEASE 6
+#define $CC_TREMOLO_DEPTH 1
+#define $CC_TREMOLO_FREQ 13
+#define $CC_VIBRATO_DEPTH 22
+#define $CC_VIBRATO_FREQ 23
+
+label_cc7=Volume
+label_cc10=Pan
+label_cc11=Expression
+label_cc$CC_RELEASE=Release
+label_cc$CC_TREMOLO_DEPTH=Tremolo Depth
+label_cc$CC_TREMOLO_FREQ=Tremolo Frequency
+label_cc$CC_VIBRATO_DEPTH=Vibrato Depth
+label_cc$CC_VIBRATO_FREQ=Vibrato Frequency
+
+set_cc$CC_RELEASE=32
+set_cc$CC_TREMOLO_DEPTH=0
+set_cc$CC_TREMOLO_FREQ=64
+set_cc$CC_VIBRATO_DEPTH=0
+set_cc$CC_VIBRATO_FREQ=64
