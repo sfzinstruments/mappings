@@ -1,6 +1,6 @@
 <control>
-    default_path=Samples/
-    #define $EXT wav
+    default_path=flac/
+    #define $EXT flac
     #include "data/control.sfz"
 
 <global>

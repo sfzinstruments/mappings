@@ -1,6 +1,6 @@
 // 8'-Vox1245
 <region>
-    sample=Samples\Philicorda 8-V1245 C1.$EXT
+    sample=Philicorda 8-V1245 C1.$EXT
     name=Philicorda 8-V1245 C1
     pitch_keycenter=36
     lokey=29
@@ -9,7 +9,7 @@
     loop_end=62875
 
 <region>
-    sample=Samples\Philicorda 8-V1245 F#1.$EXT
+    sample=Philicorda 8-V1245 F#1.$EXT
     name=Philicorda 8-V1245 F#1
     pitch_keycenter=42
     lokey=40
@@ -18,7 +18,7 @@
     loop_end=54926
 
 <region>
-    sample=Samples\Philicorda 8-V1245 C2.$EXT
+    sample=Philicorda 8-V1245 C2.$EXT
     name=Philicorda 8-V1245 C2
     pitch_keycenter=48
     lokey=46
@@ -27,7 +27,7 @@
     loop_end=60366
 
 <region>
-    sample=Samples\Philicorda 8-V1245 F#2.$EXT
+    sample=Philicorda 8-V1245 F#2.$EXT
     name=Philicorda 8-V1245 F#2
     pitch_keycenter=54
     lokey=52
@@ -36,7 +36,7 @@
     loop_end=50889
 
 <region>
-    sample=Samples\Philicorda 8-V1245 C3.$EXT
+    sample=Philicorda 8-V1245 C3.$EXT
     name=Philicorda 8-V1245 C3
     pitch_keycenter=60
     lokey=58
@@ -45,7 +45,7 @@
     loop_end=32411
 
 <region>
-    sample=Samples\Philicorda 8-V1245 F#3.$EXT
+    sample=Philicorda 8-V1245 F#3.$EXT
     name=Philicorda 8-V1245 F#3
     pitch_keycenter=66
     lokey=64
@@ -54,7 +54,7 @@
     loop_end=35120
 
 <region>
-    sample=Samples\Philicorda 8-V1245 C4.$EXT
+    sample=Philicorda 8-V1245 C4.$EXT
     name=Philicorda 8-V1245 C4
     pitch_keycenter=72
     lokey=70
@@ -63,7 +63,7 @@
     loop_end=65195
 
 <region>
-    sample=Samples\Philicorda 8-V1245 F#4.$EXT
+    sample=Philicorda 8-V1245 F#4.$EXT
     name=Philicorda 8-V1245 F#4
     pitch_keycenter=78
     lokey=76
@@ -72,7 +72,7 @@
     loop_end=57711
 
 <region>
-    sample=Samples\Philicorda 8-V1245 C5.$EXT
+    sample=Philicorda 8-V1245 C5.$EXT
     name=Philicorda 8-V1245 C5
     pitch_keycenter=84
     lokey=82

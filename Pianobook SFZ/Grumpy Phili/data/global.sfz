@@ -1,0 +1,33 @@
+sw_lokey=24
+sw_hikey=28
+sw_default=24
+amp_veltrack=0
+loop_mode=loop_continuous
+loop_crossfade=0.1
+
+// controls
+
+// Vibrato
+pitchlfo_freq=3.0
+pitchlfo_freqcc$CC_VIBRATO_FREQ=6.0
+pitchlfo_depthcc$CC_VIBRATO_DEPTH=50
+
+// Tremolo
+amplfo_freq=1.0
+amplfo_freqcc$CC_TREMOLO_FREQ=9.0
+amplfo_depth=0.0
+amplfo_depthcc$CC_TREMOLO_DEPTH=6.0
+
+// Amp AR envelope
+ampeg_attack=0.0
+ampeg_release=0.02
+ampeg_attackcc$CC_ATTACK=3.0
+ampeg_releasecc$CC_RELEASE=3.0
+
+// Filter
+fil_type=lpf_2p
+cutoff=100
+cutoff_cc$CC_CUTOFF=9900
+resonance=0.0
+resonance_oncc$CC_RESONANCE=12.0
+

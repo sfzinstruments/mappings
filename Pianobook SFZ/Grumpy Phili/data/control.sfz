@@ -1,0 +1,26 @@
+#define $CC_ATTACK 22
+#define $CC_CUTOFF 6
+#define $CC_RELEASE 23
+#define $CC_RESONANCE 13
+#define $CC_TREMOLO_DEPTH 26
+#define $CC_TREMOLO_FREQ 25
+#define $CC_VIBRATO_DEPTH 1
+#define $CC_VIBRATO_FREQ 24
+
+label_cc$CC_ATTACK=Attack
+label_cc$CC_CUTOFF=LPF Cutoff
+label_cc$CC_RELEASE=Release
+label_cc$CC_RESONANCE=LPF Resonance
+label_cc$CC_TREMOLO_DEPTH=Tremolo Depth
+label_cc$CC_TREMOLO_FREQ=Tremolo Frequency
+label_cc$CC_VIBRATO_DEPTH=Vibrato Depth
+label_cc$CC_VIBRATO_FREQ=Vibrato Frequency
+
+set_cc$CC_ATTACK=0
+set_cc$CC_CUTOFF=127
+set_cc$CC_RELEASE=0
+set_cc$CC_RESONANCE=0
+set_cc$CC_TREMOLO_DEPTH=0
+set_cc$CC_TREMOLO_FREQ=64
+set_cc$CC_VIBRATO_DEPTH=0
+set_cc$CC_VIBRATO_FREQ=64
