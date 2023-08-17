@@ -1,0 +1,186 @@
+// ===========================================
+// Hi Hat
+<master>
+  master_label=hihat
+  master_volume=-12
+  locc$VOLUME_HIHAT=1
+  amplitude_oncc$VOLUME_HIHAT=200
+  pan_oncc$PAN_HIHAT=100
+  pan_curvecc$PAN_HIHAT=1
+  tune_oncc$TUNE_HIHAT=1200
+  tune_curvecc$TUNE_HIHAT=1
+  note_polyphony=3
+  off_time=0.3
+  output=$OUTPUT_HIHAT
+
+<group>
+  group_label=closed hihat
+  group=5
+  group_volume=-2
+  key=42
+  seq_length=2
+
+<region>
+  region_label=closed hihat 1
+  sample=hhats (1).$EXT
+  seq_position=1
+  lorand=0.0000
+  hirand=0.1667
+<region>
+  region_label=closed hihat 2
+  sample=hhats (2).$EXT
+  seq_position=1
+  lorand=0.1667
+  hirand=0.3334
+<region>
+  region_label=closed hihat 3
+  sample=hhats (3).$EXT
+  seq_position=1
+  lorand=0.3334
+  hirand=0.5000
+<region>
+  region_label=closed hihat 4
+  sample=hhats (4).$EXT
+  seq_position=1
+  lorand=0.5000
+  hirand=0.6667
+<region>
+  region_label=closed hihat 5
+  sample=hhats (5).$EXT
+  seq_position=1
+  lorand=0.6667
+  hirand=0.8334
+<region>
+  region_label=closed hihat 6
+  sample=hhats (6).$EXT
+  seq_position=1
+  lorand=0.8334
+  hirand=1.0000
+<region>
+  region_label=closed hihat 7
+  sample=hhats (7).$EXT
+  seq_position=2
+  lorand=0.0000
+  hirand=0.1667
+<region>
+  region_label=closed hihat 8
+  sample=hhats (8).$EXT
+  seq_position=2
+  lorand=0.1667
+  hirand=0.3334
+<region>
+  region_label=closed hihat 9
+  sample=hhats (9).$EXT
+  seq_position=2
+  lorand=0.3334
+  hirand=0.5000
+<region>
+  region_label=closed hihat 10
+  sample=hhats (10).$EXT
+  seq_position=2
+  lorand=0.5000
+  hirand=0.6667
+<region>
+  region_label=closed hihat 11
+  sample=hhats (11).$EXT
+  seq_position=2
+  lorand=0.6667
+  hirand=0.8334
+<region>
+  region_label=closed hihat 12
+  sample=hhats (12).$EXT
+  seq_position=2
+  lorand=0.8334
+  hirand=1.0000
+
+<group>
+  group_label=open hihat
+  group=6
+  off_by=5
+  key=46
+  seq_length=2
+
+<region>
+  region_label=open hihat 1
+  sample=hh open (1).$EXT
+  seq_position=1
+  lorand=0.0000
+  hirand=0.1667
+<region>
+  region_label=open hihat 2
+  sample=hh open (2).$EXT
+  seq_position=1
+  lorand=0.1667
+  hirand=0.3334
+<region>
+  region_label=open hihat 3
+  sample=hh open (3).$EXT
+  seq_position=1
+  lorand=0.3334
+  hirand=0.5000
+<region>
+  region_label=open hihat 4
+  sample=hh open (4).$EXT
+  seq_position=1
+  lorand=0.5000
+  hirand=0.6667
+<region>
+  region_label=open hihat 5
+  sample=hh open (5).$EXT
+  seq_position=1
+  lorand=0.6667
+  hirand=0.8334
+<region>
+  region_label=open hihat 6
+  sample=hh open (6).$EXT
+  seq_position=1
+  lorand=0.8334
+  hirand=1.0000
+<region>
+  region_label=open hihat 7
+  sample=hh open (7).$EXT
+  seq_position=2
+  lorand=0.0000
+  hirand=0.1667
+<region>
+  region_label=open hihat 8
+  sample=hh open (8).$EXT
+  seq_position=2
+  lorand=0.1667
+  hirand=0.3334
+<region>
+  region_label=open hihat 9
+  sample=hh open (9).$EXT
+  seq_position=2
+  lorand=0.3334
+  hirand=0.5000
+<region>
+  region_label=open hihat 10
+  sample=hh open (10).$EXT
+  seq_position=2
+  lorand=0.5000
+  hirand=0.6667
+<region>
+  region_label=open hihat 11
+  sample=hh open (11).$EXT
+  seq_position=2
+  lorand=0.6667
+  hirand=0.8334
+<region>
+  region_label=open hihat 12
+  sample=hh open (12).$EXT
+  seq_position=2
+  lorand=0.8334
+  hirand=1.0000
+
+<group>
+  group_label=hihat mute
+  seq_length=1
+  group=5
+  key=44
+  ampeg_sustain=0
+
+<region>
+  sample=*silence
+
+

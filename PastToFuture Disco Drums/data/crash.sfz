@@ -1,0 +1,101 @@
+// ===========================================
+// Crash Cymbal
+<master>
+  master_label=crash
+  master_volume=-12
+  locc$VOLUME_CRASH=1
+  amplitude_oncc$VOLUME_CRASH=200
+  pan_oncc$PAN_CRASH=100
+  pan_curvecc$PAN_CRASH=1
+  tune_oncc$TUNE_CRASH=1200
+  tune_curvecc$TUNE_CRASH=1
+  note_polyphony=4
+  off_shape=-3
+  off_time=0.3
+  output=$OUTPUT_CRASH
+
+<group>
+  group_label=crash soft
+  group=10
+  off_by=11
+  key=49
+  hivel=64
+
+<region>
+  region_label=crash soft 1
+  sample=crash (1).$EXT
+  lorand=0.000
+  hirand=0.500
+<region>
+  region_label=crash soft 2
+  sample=crash (5).$EXT
+  seq_position=1
+  lorand=0.500
+  hirand=1.000
+
+<group>
+  group_label=crash medium
+  group=10
+  off_by=11
+  key=49
+  lovel=65
+  hivel=72
+
+<region>
+  region_label=crash medium 1
+  sample=crash (6).$EXT
+
+<group>
+  group_label=crash medium hard
+  group=10
+  off_by=11
+  key=49
+  lovel=73
+  hivel=120
+  seq_length=2
+
+<region>
+  region_label=crash medium hard 1
+  sample=crash (3).$EXT
+  seq_position=1
+<region>
+  region_label=crash medium hard 2
+  sample=crash (8).$EXT
+  seq_position=2
+  lorand=0.000
+  hirand=0.500
+<region>
+  region_label=crash medium hard 3
+  sample=crash (4).$EXT
+  seq_position=2
+  lorand=0.500
+  hirand=1.000
+
+<group>
+  group_label=crash hard
+  group=10
+  off_by=11
+  key=49
+  lovel=121
+
+<region>
+  region_label=crash hard 1
+  sample=crash (7).$EXT
+  lorand=0.000
+  hirand=0.500
+
+<region>
+  region_label=crash hard 2
+  sample=crash (2).$EXT
+  lorand=0.500
+  hirand=1.000
+
+<group>
+  group_label=crash mute
+  seq_length=1
+  group=11
+  key=60
+  ampeg_sustain=0
+
+<region>
+  sample=*silence

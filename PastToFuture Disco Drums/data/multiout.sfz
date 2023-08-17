@@ -1,0 +1,7 @@
+#define $OUTPUT_KICK 0
+#define $OUTPUT_SNARE 1
+#define $OUTPUT_HIHAT 2
+#define $OUTPUT_TOM1 3
+#define $OUTPUT_TOM2 3
+#define $OUTPUT_RIDE 4
+#define $OUTPUT_CRASH 4
