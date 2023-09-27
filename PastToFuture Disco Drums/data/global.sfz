@@ -1,0 +1,10 @@
+// ===========================================
+<global>
+  loop_mode=one_shot
+  amplitude_oncc$VOLUME_MASTER=100
+  amplitude_curvecc$VOLUME_MASTER=4
+  pan_oncc$PAN_MASTER=100
+  pan_curvecc$PAN_MASTER=1
+  amp_veltrack_oncc$VELTRACK=-100
+  amp_veltrack_curvecc$VELTRACK=2
+

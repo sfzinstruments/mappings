@@ -1,0 +1,57 @@
+// ===========================================
+// Rack Tom
+<master>
+  master_label=rack tom
+  master_volume=-6
+  locc$VOLUME_TOM1=1
+  amplitude_oncc$VOLUME_TOM1=200
+  pan_oncc$PAN_TOM1=100
+  pan_curvecc$PAN_TOM1=1
+  tune_oncc$TUNE_TOM1=1200
+  tune_curvecc$TUNE_TOM1=1
+  group=3
+  note_polyphony=1
+  off_time=1.5
+  output=$OUTPUT_TOM1
+
+<group>
+  group_label=rack rom
+  key=47
+  seq_length=2
+
+<region>
+  region_label=rack tom 1
+  sample=tom2 (1).$EXT
+  seq_position=1
+  lorand=0.000
+  hirand=0.333
+<region>
+  region_label=rack tom 2
+  sample=tom2 (2).$EXT
+  seq_position=1
+  lorand=0.333
+  hirand=0.667
+<region>
+  region_label=rack tom 3
+  sample=tom2 (3).$EXT
+  seq_position=1
+  lorand=0.667
+  hirand=1.000
+<region>
+  region_label=rack tom 4
+  sample=tom2 (4).$EXT
+  seq_position=2
+  lorand=0.000
+  hirand=0.333
+<region>
+  region_label=rack tom 5
+  sample=tom2 (5).$EXT
+  seq_position=2
+  lorand=0.333
+  hirand=0.667
+<region>
+  region_label=rack tom 6
+  sample=tom2 (6).$EXT
+  seq_position=2
+  lorand=0.667
+  hirand=1.000

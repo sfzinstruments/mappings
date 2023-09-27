@@ -1,0 +1,89 @@
+// ===========================================
+// Ride Cymbal
+<master>
+  master_label=ride
+  master_volume=-12
+  locc$VOLUME_RIDE=1
+  amplitude_oncc$VOLUME_RIDE=200
+  pan_oncc$PAN_RIDE=100
+  pan_curvecc$PAN_RIDE=1
+  tune_oncc$TUNE_RIDE=1200
+  tune_curvecc$TUNE_RIDE=1
+  note_polyphony=4
+  off_shape=-3
+  off_time=0.5
+  output=$OUTPUT_RIDE
+
+<group>
+  group_label=ride rim
+  group=7
+  off_by=9
+  key=51
+
+<region>
+  region_label=ride rim soft
+  sample=rides (7).$EXT
+  hivel=90
+<region>
+  region_label=ride rim medium
+  sample=rides (7).$EXT
+  lovel=81
+  hivel=120
+<region>
+  region_label=ride rim hard
+  sample=rides (8).$EXT
+  lovel=121
+
+<group>
+  group_label=ride bell medium
+  group=7
+  off_by=9
+  key=53
+  hivel=110
+  seq_length=2
+
+<region>
+  region_label=ride bell medium 1
+  sample=rides (2).$EXT
+  seq_position=1
+<region>
+  region_label=ride bell medium 2
+  sample=rides (3).$EXT
+  seq_position=2
+
+<group>
+  group_label=ride bell medium
+  group=7
+  off_by=9
+  key=53
+  lovel=111
+
+<region>
+  region_label=ride bell hard 1
+  sample=rides (4).$EXT
+
+<group>
+  group_label=ride splash
+  group=7
+  off_by=9
+  key=55
+
+<region>
+  region_label=ride splash medium
+  sample=rides (1).$EXT
+  hivel=110
+
+<region>
+  region_label=ride splash hard
+  sample=rides (5).$EXT
+  lovel=111
+
+<group>
+  group_label=ride mute
+  seq_length=1
+  group=9
+  key=59
+  ampeg_sustain=0
+
+<region>
+  sample=*silence

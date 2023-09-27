@@ -1,0 +1,23 @@
+// --------------------------------------
+// Disco Drums
+// PastToFutureSamples
+// --------------------------------------
+// SFZ format for sfizz
+// programmed by SpotlightKid
+// based on a template by kinwie
+// --------------------------------------
+
+<control>
+    default_path=Samples\
+    #define $EXT wav
+    #include "data\control.sfz"
+    #include "data\singleout.sfz"
+
+#include "data\global.sfz"
+#include "data\kick.sfz"
+#include "data\snare.sfz"
+#include "data\tom1.sfz"
+#include "data\tom2.sfz"
+#include "data\hihat.sfz"
+#include "data\ride.sfz"
+#include "data\crash.sfz"

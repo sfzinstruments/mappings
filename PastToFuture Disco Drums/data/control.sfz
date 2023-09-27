@@ -1,0 +1,88 @@
+#define $VOLUME_MASTER 7
+#define $PAN_MASTER 10
+#define $EXPRESSION 11
+
+#define $VOLUME_KICK 20
+#define $VOLUME_SNARE 21
+#define $VOLUME_TOM1 22
+#define $VOLUME_TOM2 23
+#define $VOLUME_HIHAT 24
+#define $VOLUME_RIDE 25
+#define $VOLUME_CRASH 26
+
+#define $PAN_KICK 30
+#define $PAN_SNARE 31
+#define $PAN_TOM1 32
+#define $PAN_TOM2 33
+#define $PAN_HIHAT 34
+#define $PAN_RIDE 35
+#define $PAN_CRASH 36
+
+#define $TUNE_KICK 40
+#define $TUNE_SNARE 41
+#define $TUNE_TOM1 42
+#define $TUNE_TOM2 43
+#define $TUNE_HIHAT 44
+#define $TUNE_RIDE 45
+#define $TUNE_CRASH 46
+
+#define $VELTRACK 99
+
+label_cc$VOLUME_MASTER=Master Volume
+label_cc$PAN_MASTER=Master Pan
+label_cc$EXPRESSION=Expression
+
+label_cc$VOLUME_KICK=Volume Kick
+label_cc$VOLUME_SNARE=Volume Snare
+label_cc$VOLUME_TOM1=Volume Tom 1
+label_cc$VOLUME_TOM2=Volume Tom 2
+label_cc$VOLUME_HIHAT=Volume Hi-hat
+label_cc$VOLUME_RIDE=Volume Ride
+label_cc$VOLUME_CRASH=Volume Crash
+
+label_cc$PAN_KICK=Pan Kick
+label_cc$PAN_SNARE=Pan Snare
+label_cc$PAN_TOM1=Pan Tom 1
+label_cc$PAN_TOM2=Pan Tom 2
+label_cc$PAN_HIHAT=Pan Hi-hat
+label_cc$PAN_RIDE=Pan Ride
+label_cc$PAN_CRASH=Pan Crash
+
+label_cc$TUNE_KICK=Tuning Kick
+label_cc$TUNE_SNARE=Tuning Snare
+label_cc$TUNE_TOM1=Tuning Tom 1
+label_cc$TUNE_TOM2=Tuning Tom 2
+label_cc$TUNE_HIHAT=Tuning Hi-hat
+label_cc$TUNE_RIDE=Tuning Ride
+label_cc$TUNE_CRASH=Tuning Crash
+
+label_cc$VELTRACK=Velocity Track
+
+set_cc$VOLUME_MASTER=100
+set_hdcc$PAN_MASTER=0.5
+
+set_hdcc$VOLUME_KICK=0.5
+set_hdcc$VOLUME_SNARE=0.5
+set_hdcc$VOLUME_TOM1=0.5
+set_hdcc$VOLUME_TOM2=0.5
+set_hdcc$VOLUME_HIHAT=0.5
+set_hdcc$VOLUME_RIDE=0.5
+set_hdcc$VOLUME_CRASH=0.5
+
+set_hdcc$PAN_KICK=0.5
+set_hdcc$PAN_SNARE=0.5
+set_hdcc$PAN_TOM1=0.5
+set_hdcc$PAN_TOM2=0.5
+set_hdcc$PAN_HIHAT=0.5
+set_hdcc$PAN_RIDE=0.5
+set_hdcc$PAN_CRASH=0.5
+
+set_hdcc$TUNE_KICK=0.5
+set_hdcc$TUNE_SNARE=0.5
+set_hdcc$TUNE_TOM1=0.5
+set_hdcc$TUNE_TOM2=0.5
+set_hdcc$TUNE_HIHAT=0.5
+set_hdcc$TUNE_RIDE=0.5
+set_hdcc$TUNE_CRASH=0.5
+
+set_hdcc$VELTRACK=1

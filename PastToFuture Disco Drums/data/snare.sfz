@@ -1,0 +1,305 @@
+// ===========================================
+// Snare
+
+<master>
+  master_label=snare
+  master_volume=-6
+  locc$VOLUME_SNARE=1
+  amplitude_oncc$VOLUME_SNARE=200
+  pan_oncc$PAN_SNARE=100
+  pan_curvecc$PAN_SNARE=1
+  tune_oncc$TUNE_SNARE=1200
+  tune_curvecc$TUNE_SNARE=1
+  group=2
+  note_polyphony=1
+  off_time=1.2
+  output=$OUTPUT_SNARE
+
+<group>
+  group_label=snare soft
+  hivel=63
+  key=38
+  seq_length=2
+
+<region>
+  region_label=snare soft 1
+  sample=snare s (1).$EXT
+  seq_position=1
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare soft 2
+  sample=snare s (2).$EXT
+  seq_position=1
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare soft 3
+  sample=snare s (3).$EXT
+  seq_position=1
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare soft 4
+  sample=snare s (4).$EXT
+  seq_position=1
+  lorand=0.75
+  hirand=1.00
+<region>
+  region_label=snare soft 5
+  sample=snare s (5).$EXT
+  seq_position=2
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare soft 6
+  sample=snare s (6).$EXT
+  seq_position=2
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare soft 7
+  sample=snare s (7).$EXT
+  seq_position=2
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare soft 8
+  sample=snare s (8).$EXT
+  seq_position=2
+  lorand=0.75
+  hirand=1.00
+
+<group>
+  group_label=snare hard
+  lovel=64
+  key=38
+  seq_length=2
+
+<region>
+  region_label=snare hard 1
+  sample=snare h (1).$EXT
+  seq_position=1
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare hard 2
+  sample=snare h (2).$EXT
+  seq_position=1
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare hard 3
+  sample=snare h (3).$EXT
+  seq_position=1
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare hard 4
+  sample=snare h (4).$EXT
+  seq_position=1
+  lorand=0.75
+  hirand=1.00
+<region>
+  region_label=snare hard 5
+  sample=snare h (5).$EXT
+  seq_position=2
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare hard 6
+  sample=snare h (6).$EXT
+  seq_position=2
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare hard 7
+  sample=snare h (7).$EXT
+  seq_position=2
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare hard 8
+  sample=snare h (8).$EXT
+  seq_position=2
+  lorand=0.75
+  hirand=1.00
+
+<group>
+  group_label=snare ring soft
+  hivel=63
+  key=40
+  seq_length=2
+  volume=-6
+
+<region>
+  region_label=snare ring soft 1
+  sample=snare ring s (1).$EXT
+  seq_position=1
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare ring soft 2
+  sample=snare ring s (2).$EXT
+  seq_position=1
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare ring soft 3
+  sample=snare ring s (3).$EXT
+  seq_position=1
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare ring soft 4
+  sample=snare ring s (4).$EXT
+  seq_position=1
+  lorand=0.75
+  hirand=1.00
+<region>
+  region_label=snare ring soft 5
+  sample=snare ring s (5).$EXT
+  seq_position=2
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare ring soft 6
+  sample=snare ring s (6).$EXT
+  seq_position=2
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare ring soft 7
+  sample=snare ring s (7).$EXT
+  seq_position=2
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare ring soft 8
+  sample=snare ring s (8).$EXT
+  seq_position=2
+  lorand=0.75
+  hirand=1.00
+
+<group>
+  group_label=snare ring hard
+  lovel=64
+  key=40
+  seq_length=2
+  volume=-9
+
+<region>
+  region_label=snare ring hard 1
+  sample=snare ring h (1).$EXT
+  seq_position=1
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare ring hard 2
+  sample=snare ring h (2).$EXT
+  seq_position=1
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare ring hard 3
+  sample=snare ring h (3).$EXT
+  seq_position=1
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare ring hard 4
+  sample=snare ring h (4).$EXT
+  seq_position=1
+  lorand=0.75
+  hirand=1.00
+<region>
+  region_label=snare ring hard 5
+  sample=snare ring h (5).$EXT
+  seq_position=2
+  lorand=0.00
+  hirand=0.25
+<region>
+  region_label=snare ring hard 6
+  sample=snare ring h (6).$EXT
+  seq_position=2
+  lorand=0.25
+  hirand=0.50
+<region>
+  region_label=snare ring hard 7
+  sample=snare ring h (7).$EXT
+  seq_position=2
+  lorand=0.50
+  hirand=0.75
+<region>
+  region_label=snare ring hard 8
+  sample=snare ring h (8).$EXT
+  seq_position=2
+  lorand=0.75
+  hirand=1.00
+
+<group>
+  group_label=snare rolls
+  group_volume=-4
+  key=39
+  seq_length=2
+
+<region>
+  region_label=snare rolls 1
+  sample=sn rolls (1).$EXT
+  seq_position=1
+  lorand=0.0
+  hirand=0.2
+<region>
+  region_label=snare rolls 2
+  sample=sn rolls (2).$EXT
+  seq_position=1
+  lorand=0.2
+  hirand=0.4
+<region>
+  region_label=snare rolls 3
+  sample=sn rolls (3).$EXT
+  seq_position=1
+  lorand=0.4
+  hirand=0.6
+<region>
+  region_label=snare rolls 4
+  sample=sn rolls (4).$EXT
+  seq_position=1
+  lorand=0.6
+  hirand=0.8
+<region>
+  region_label=snare rolls 5
+  sample=sn rolls (5).$EXT
+  seq_position=1
+  lorand=0.8
+  hirand=1.0
+<region>
+  region_label=snare rolls 6
+  sample=sn rolls (6).$EXT
+  seq_position=2
+  lorand=0.0
+  hirand=0.2
+<region>
+  region_label=snare rolls 7
+  sample=sn rolls (7).$EXT
+  seq_position=2
+  lorand=0.2
+  hirand=0.4
+<region>
+  region_label=snare rolls 8
+  sample=sn rolls (8).$EXT
+  seq_position=2
+  lorand=0.4
+  hirand=0.6
+<region>
+  region_label=snare rolls 9
+  sample=sn rolls (9).$EXT
+  seq_position=2
+  lorand=0.6
+  hirand=0.8
+<region>
+  region_label=snare rolls 10
+  sample=sn rolls (10).$EXT
+  seq_position=2
+  lorand=0.8
+  hirand=1.0
